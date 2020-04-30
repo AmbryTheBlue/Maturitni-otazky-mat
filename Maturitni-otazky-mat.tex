@@ -1,0 +1,2133 @@
+\documentclass[12pt]{article}
+\usepackage{graphicx, tabularx}
+\usepackage[czech]{babel}
+\usepackage{fontspec}
+\usepackage{titlesec}										% Balíček pro změnu velikosti nadpisů
+\titleformat{\chapter}{\normalfont\bfseries\LARGE}{\thechapter}{1em}{}
+															% Odstranění „Kapitola“ z názvu kapitoly, děkuji Ambrymu
+
+%to pass udělá to, že to bude url rozdělovat i na pomlčce
+\PassOptionsToPackage{hyphens}{url}\usepackage[colorlinks = true]{hyperref}
+\usepackage{amsmath}
+\usepackage{soul}
+\usepackage[table,xcdraw]{xcolor}
+\usepackage{amssymb}
+\usepackage{ellipsis}
+\usepackage{csquotes}
+\usepackage{pgfplots}
+\usepackage{pgf-pie}
+\usepackage{float}
+\usepackage{accents}
+\usepackage{scalerel} % jen na pokus
+
+%Moje komandy
+\providecommand{\lxor}{\veebar}
+\begin{document}
+\rightline{\today}
+\rightline{Jakub Ambroz 8.E}
+
+%\thechapter{Maturitní otázky z Matematiky}
+\subsection{Meta}
+\paragraph*{Deníček:\\}
+Tak jdeme na to! 24.03.20\\
+25.03.20 dopsáno 23,24,25 ale ještě tam chce něco dopilovat\\
+29.03.20 - dodělal jsem kuželosečky (21)\\
+01.04.20 - jdu na tělesa (17), done\\
+04.04.20 - otázka 15\\
+05.04.20 - od rána (cca 9h) pokračuji na 15, už je skoro 12h a myslím, že bude hotová.\\
+ - 18:50 tak jdu zkusit ještě jednu MO dneska,\\
+ - 19:59 a 16 je asi dodělána, je nějaká EZ a část mám v 15\\
+11.04.20 Začal jsem dělat 18, \st{ještě trocha chybí z geometrie} done
+-21:39 tak ještě jednu MO dneska, zkusím 22\\
+- 23:23 Ideální čas na zakončení otázky 22\\
+15.04.20 - otázka 19 začata, 20 hotovo(jsem jen odkázal na 18 a 22, protože tam je vše), 19 hotovo (zkusím dát ještě jednu), tak asi ne no\\
+16.04.20 - zkusím MO ještě, 11 +- done (\st{zpřehlednit pravidla} done a \st{zjistit, co je skupina v kombinatorice} je to $k$-tice) čas 13:27\\
+- 20:00 zkusím udělat ještě 12 (pravděpodobnost), uhlazena 11(kombinatorika), 12 asi done v 22:40\\
+20.04.20 - 10:06 jdu na 13(Statistika) a 14 (Posloupnosti a řady). No tak samozřejmě existuje znak $\overset{*}{x}$ \st{ akorát jsem nepřišel na to, jak tu hvězdičku vycentrovat, jako to mají v tabulkách.} aha $\overset{*}{x_r}$ vs $\overset{*}{x}_r$ pořád ale  nechápu, co tam má za $ \overset{hvezdicka}{vyznam}$\\
+ - 10:50 To je způsobů, jak udělat 3 tečky \dots vs ... vs $ \dots vs \ldots vs \dotsc vs ...$ vs ($\dotsm vs \dotsb vs \dotso $)\\
+ - 12:50 Debilní sloupcový graf on nezobrazuje poslední souřadnice, takže jsem pořád hledal chybu v nastavení os a pak zjistím, že tam stačí přidat další prázdný sloupec nakonec a ten nyní předposlední se zobrazí, to je pěkná blbost.\\
+ - 13:10 kruhový diagram má vlastní package a je ez. umí ale zobrazovat jen přes procenta. Neřeším \dots\\
+ - 14:50 a co třeba $\accentset{*}{x}^2$ vs $\accentset{*}{x^2}$ vs $\overset{*}{x^2}$ vs $\overset{*}{x}^2$ . To první teda vypadá dost sexy oproti ostatním, ale předtím jsem používal overset, takže musím porovnat, jestli oko rozená rozdíl mezi $\overset{*}{x}$ a $\accentset{*}{x}$ a $\accentset{\scriptstyle *}{x}$ Za mě accentset vyhrál jakožto estetičtější, ale ty rovnice co už mám napsaný kvůli tomu předělávat nebudu \dots \\
+ - $\overset{\underline{tak\, to}\, je}{ \accentset{\overline{x}}{*}_{\bar{lol}}^{dost}}$ \\%tak to asi nevyjde :D
+ -15:55 Tak statistika(13) asi komplet (ještě přidám navíc korelaci)\\ 
+ -17:30 kolo opraveno,  hmm $ \sum^n_{i=1}x_i y_i$ vs $ \sum\limits^n_{i=1}x_i y_i$, no asi done\\
+21.04.20 - jedu 14 (posloupnosti a řady)\\
+ - Jonáš schválil $\exists \, d \in \mathbb{R}; \; \left( \forall \, n \in \mathbb{N}; \; a_n \geq d \right)$ takže jsem asi pochopil matematicko-logický zápis věcí, nice\\
+ Dále:  $\exists \, c \in \mathbb{R} | \left( \forall \, n \in \mathbb{N} | a_n \leq c \right) $ a $\left( \exists \, d \in \mathbb{R} \right) \left( \forall \, n \in \mathbb{N} \right) \left( a_{n+1} = a_n + d \right)$ jsou taky validní způsoby zápisu\\
+ - 17:09 oh shit, ty zápisy jsou psycho viz limita posloupnosti (\ref{sec:posl_limita} a \ref{sec:posl_limita_nev}), řekl bych, že v nich mám asi chybu \dots \\
+ - 18:49 Tak jsem řešil s Jonášem ještě jak to správně psát, on mi něco poradil a pak prozradil, že není žádná pořádná konvence \dots \\
+  - 20:43 celý den to dělám a ještě chybí finanční matematika, wtf\\
+24.04.20 - Množiny (2),  btw $| vs \mid$: $| a |b|$ vs $\mid a\mid b\mid$ -> Hmm mezera. $\mid | \mid \mid \mid |||$ asi začínám mít halucinace, mám pocit, že se mění, která z těch čar je šedivější \dots \\
+Prázdný se $\emptyset$ vs $\varnothing$ vs $\O$ vs $\not 0$ (to poslední jsem si vymyslel, předposlední nefunguje a to druhý vypadá divně, takže naštěstí jasná volba)\\
+Pokusy na doplňky $A'$ vs  jiný způsob:  $\complement$ vs $\mathsf{c}$ v praxi $A^\mathsf{c}$ vs $A^\complement$. A co velká písmena %$\Complement$ %neexisutje
+neexistuje vs $\mathsf{C}$\\
+Finální porovnání možností: $A^c$ nebo $A^C$ nebo $A^\mathsf{C}$ nebo $A^\mathsf{c}$ nebo $A^\complement$ nebo $A'$ nebo $\complement_U A$. Příkaz complement jasně vyhrává miss nejlepšího doplňku.\\
+Jak na zobrazit zobrazení (a pěkné šipky):  $y = f(x) $ nebo $ y = F(x) $ nebo $ f: x \mapsto y $ nebo $ f: x \to y $ nebo $ f: x \rightarrow y$ \\
+Jak udělat kolečko $ (h ∘ g)$ vs $ (h \circ g)$, 18:46 no nic množiny (2) asi done, měl bych dělat EuropuSecuru \dots, ale moc se mi nechce\\
+25.04.20 - obecná rovnice kuželoseček (21) a finanční matematika (14-posloupnosti a řady) dodělány, sakra měl bych dělat EuropuSecuru \dots \\
+
+
+
+\subsubsection{TODO-list}
+\begin{itemize}
+\item  \st{21 - Obecná rovnice u kuželoseček, dodělat} done (podle tabulek)
+\item nějaký konstrukce ?15-18?
+\item 18 vymyslet rychlý postup získání kolmé přímky (to asi vymyslím u vektorů)  \st{-> na vzdálenosti} (vzdálenosti nalezeny v tabulkách a wiki)\\ A asi něco s řezy/ průnikem přímky tělesy.
+\item 25 Asymptota a monotónnost.
+\item oh shit, terminologie směrnice a směrový vektor v 18
+\item zápisy posloupností pomocí logicko-matematických zápisů
+\item "\textbf{Prakitcké}" využití aritmetické a geometrické posloupnosti
+\item \st{Finanční matematika (spadá pod 14 -posloupnosti a řady)} done, podle tabulek
+\item 2 (Množiny) nakreslit Vennovy diagramy
+
+\end{itemize}
+\subsubsection{Latex tipy}
+\begin{itemize}
+\item jak na tři tečky, kdy jaké používat \url{https://tex.stackexchange.com/questions/122491/difference-of-the-dots}
+\item jak udělat jednostrannou složenou závorku \url{https://tex.stackexchange.com/questions/47170/how-to-write-conditional-equations-with-one-sided-curly-brackets}
+\end{itemize}
+
+\begin{align*}
+ \left.
+    \begin{array}{ll}
+       \text{červená} \\
+       \\
+       \text{zelená}
+    \end{array}
+\right\}_{\scaleto{a+b}{9pt}}^{\scaleto{a+d?}{9pt}} \mspace{-40mu} \text{chloroplast vznik primární endosymbiózou}\\
+       \text{červená}
+ {^{\scaleto{\text{červená}}{9pt}}_{\scaleto{\text{zelená}}{9pt}}}\scaleto{ \}}{30pt}
+_{\scaleto{a+b}{9pt}}^{\scaleto{a+d?}{9pt}} \mspace{-40mu} \text{chloroplast vznik primární endosymbiózou}
+\end{align*} %well tak druhý pokus nefunguje
+\section{Logická výstavba matematiky}
+1
+%Pojem matematického výrazu, axiómy, definice, věty, výrok, pravdivostní hodnota výroku, negace, konjunkce, disjunkce, implikace, ekvivalence, kvantifikátory, negování složených výroků, výroková forma, číslo, číslice, číselné soustavy, dekadický poziční systém, prvočísla a čísla složená, základní věta aritmetiky, násobek, dělitel, nejmenší společný násobek a největší společný dělitel, čísla soudělná a nesoudělná, kriteria dělitelnosti, důkazy matematických vět, důkaz přímý, nepřímý, důkaz sporem, důkaz matematickou indukcí, důkazové úlohy o dělitelnosti.
+
+\section{Množiny}
+\subsection{Definice a značení}
+Je to nějaká skupina (/ soubor) prvků, těch může být konečně (včetně  nuly) nebo nekonečně mnoho. Obvykle se značí velkým tiskacím písmenem.
+\paragraph{Rigorózní definice:\\}
+Množina je souhrn objektů, které jsou přesně určené a rozlišitelné a tvoří součást světa našich představ a myšlenek; tyto objekty nazýváme prvky množiny. - Georg Cantor \\
+Množina je jednoznačně určena svými prvky ale nevšímá si jejich pořadí nebo jiné struktury. Prvkem množiny může být číslo, písmeno, (ne)uspořádaná k-tice, nějaká množina \dots
+\subsection{Pojmy}
+\begin{itemize}
+\item Určení množiny:\\  \emph{Výčtem prvků} $A = \{2,4,8,16\} ­$\\
+\emph{Charakteristickou vlastností prvků} $B = \{b \in \mathbb{N}; \; b \leq15 \}$\\
+\emph{Pomocí jiných množin} $C = A \cap B$
+\item \emph{Prvek} množiny značí se $a \in A$ (čteme $a$ je prvkem množiny $A$), případně $b \notin A$ ($b$ není prvkem množiny $A$).
+\item \emph{Prázdná množina} je taková, která nemá žádný prvek, značí se $\emptyset$ ( v \TeX u ještě možnost $\varnothing$ ) nebo $\{ \}$
+\item \emph{Počet prvků} konečné množiny $A$ se značí $|A|$
+\item \emph{Podmnožina} (neboli část), značí se $ B \subset A$ (to říká, že množina $B$ je podmnožinou množiny $A$).  Vztah být podmnožinou se nazývá \emph{inkluze}. To znamená, že každý prvek množiny $B$ je prvkem množiny $A$.
+\begin{align}
+B \subset A &&( \forall x) \left( x \in B  \implies x \in A \right)
+\end{align}
+Nový zápis podle normy ISO 31-11:
+\begin{align}
+B \subseteq A && \forall x \in B; \; x \in A && \text{$B$ je podmnožinou  $A$}\\
+B \subset A && B \subseteq A \land B \neq A && \text{$B$ je \emph{vlastní} podmnožinou $A$}
+\end{align}
+U ostré inkluze hovoříme o vlastní podmnožině. U neostré inkluze hovoříme o nevlastní podmnožině.
+\item \emph{Rovnost} množin $A,B$ se značí $A=B$. O rovnosti platí: $A = B \iff A \subset B \land B \subset A$ Jiná definice :
+\begin{align}
+A = B && (\forall x)(x \in A \iff \ x \in B)
+\end{align}
+\item \emph{Průnik} množin $A,B$ se značí $A \cap B$. Průnikem jsou všechny prvky, které patří do obou množin.
+\begin{align}
+A \cap B = \{ x: x \in A \land x \in B\}
+\end{align}
+\item \emph{Průnik systému množin} - to je množina všech prvků, které patří do každé z množin $A_1, A_2, \dotsc , A_n$. Značení:
+\begin{align}
+A_1 \cap A_2 \cap \dotso \cap A_n \\
+\bigcap_{i=1}^n A_i
+\end{align}
+\item \emph{Disjunktní} množiny nemají žádný společný prvek. Jejich průnik je tedy prázdná množina. $ A \cap B = \emptyset$
+\item \emph{Sjednocení} množin $A,B$ se zapisuje $A \cup B$. Říká že prvek je ve sjednocení množin vyskytuje-li se alespoň v jedné ze sjednocovaných množin.
+\begin{align}
+A \cup B = {x: x \in A \lor x \in B}
+\end{align}
+\item \emph{Sjednocení systému množin} je množina všech prvků, které patří do alespoň jedné z množin $A_1, A_2, \dotsc , A_n$. Zápis:
+\begin{align}
+A_1 \cup A_2 \cup \dotso \cup  A_n \\
+\bigcup_{i=1}^{n} A_1
+\end{align}
+\item \emph{Princip inkluze a exkluze} - platí pro konečné množiny, popisuje vztah mezi velikostmi sjednocení množin a velikostmi všech možných průniků:
+\begin{align}
+|A \cup B| = |A| + |B| - |A \cap B|
+|A \cup B \cup C| = |A| + |B| + |C| - |A \cap B| - |A \cap C| - |B \cap C| + |A \cap B \cap C|
+\end{align}
+Například: máme 10 anglicky mluvících , 7 bulharsky mluvících a 3 z nich mluví i anglicky. Kolik je ve skupině lidí?\\
+Existuje obecný zápis tohoto pravidla, ale mimo SŠ:
+\begin{align}
+\left| \bigcup_{i=1}^n A_1  \right| = \sum_{\emptyset \neq I \subseteq \{ 1,2, \dotsc , n\} } \left(-1 \right)^{|I|-1} \left| \bigcap_{i \in I} A_i \right|
+\end{align}
+\item \emph{Rozdíl} množin $A,B$ zapíšeme jako $A \setminus B$ (nebo i jako $A -B$) a to říká, že výsledná množina obsahuje všechny prvky $A$, které nejsou prvky $B$. Z toho jasně vyplývá, že to není operace komutativní. Zápis:
+\begin{align}
+A \setminus B= \{ x: x \in A \land x \notin B \}
+\end{align}
+\item \emph{Symetrický rozdíl} (také \emph{symetrická diference}) je v rozdíl sjednocení a průniku 2 množin.  Značí se $A \triangle B$ (nebo $A \div B$ nebo $A \ominus B$ (v angličtině také $ A \oplus B$ pomocí symbolu pro XOR)) Platí:
+\begin{align}
+A \triangle B &= \{ x: x \in A \lxor x \in B \} \\
+A \triangle B &= (A \setminus B) \cup (B \setminus A)\\
+A \triangle B &= (A \cup B) \setminus (A \cap B)
+\end{align}
+\item \emph{Doplněk} (také \emph{komplement}) množiny $A$ v množině $U$, kde $A \subset U$ se značí:\\
+$A'$ nebo $A'_{U}$ podle staré normy v tabulkách\\
+$C_U A$ (přesněji $\complement_U A$ ) - doplněk množiny $A$ v množině $U$, podle nové normy ISO 31-11, podle tabulek\\
+$A^c$  (přesněji $A^\complement$ (další \TeX možnosti $A^c$ nebo $A^\mathsf{C}$ nebo $A^\mathsf{c}$)) značení podle wikipedie (i v ANJ verzi), ale česká uznává i značení $A'$
+Doplněk označuje všechny prvky, které nejsou v $A$, ale jsou v nějaké předem dané množině (tady $U$). Aby bylo možná doplněk určit je třeba znát množinu, vzhledem ke které se doplněk počítá. Je to množina, která doplňuje všechny prvky, které chybí množině $A$ k tomu, aby byla ekvivalentní s $B$ Je ekvivalentní s rozdílem.
+\begin{align}
+A^\complement &= U - A\\
+A'_U &= U \setminus A \\
+A' &= \{ x: x \in U \land x \notin A \}
+\end{align}
+Musí platit, že $A \subseteq U$. Potom $A'$ obsahuje všechny prvky, které obsahuje $U$ ale neobsahuje $A$. 
+\item \emph{de Morganovy vzorce}
+\begin{align}
+(A \cup B)' &= A' \cap B' \\
+(A \cap B)' &= A' \cup B'
+\end{align}
+Nějaké další vlastnosti doplňků:
+\begin{align*}
+A \cup A^\complement &= U && A \cap A^\complement &= \emptyset && (A^\complement)^\complement &= A  \\
+\emptyset^\complement &= U && U^\complement &= \emptyset && A^\complement \setminus B^\complement &= B \setminus A
+\end{align*}
+\begin{align*}
+A \subseteq B &\implies B^\complement \subseteq A^\complement
+\end{align*}
+
+\item \emph{Kartézský součin} se značí $A \times B$ a je to množina všech uspořádaných dvojic (tj. 2 prvky u kterých záleží na pořadí, tzn. $(a,b)$ je jiné než $(b, a)$ pro $a \neq b$), kde prvním členem je prvek množiny $A$ a druhým členem prvek množiny $B$. Viz:
+\begin{align}
+A \times B = \{ (a,b): a \in A \land b \in B \}
+\end{align}
+Je možné rozšířit definici na libovolné $n$ množin, kde výsledkem kartézského součinu je množina uspořádaných $n$-tic:
+\begin{align}
+ X_{1}\times X_{2}\times \dotsm \times X_{n}=\{(x_{1},x_{2},\dotsc ,x_{n}):x_{i}\in X_{i},1\leq i\leq n\}
+\end{align}
+\item \emph{$n$-tá Kartézská mocnina množiny} $A$ se značí $A^n$ a výsledkem je množina uspořádaných $n$-tic:
+\begin{equation}
+A^n = \{ \left(a_1, a_2, \dotsc, a_n \right): a_1 \in A \land a_2 \in A \land \dotso \land a_n \in A \}
+\end{equation}
+
+\end{itemize}
+\subsection{Grafické znázornění}
+Pomocí Vennových diagramů. Kruhy s průniky, nic extra na nich není.
+\subsection{Zobrazení}
+\emph{Zobrazení $F$ z množiny $A$ do množiny $B$} je předpis, který každému prvku $ x \in A$ přiřazuje nejvýše jeden prvek $y \in B$. Prvek s první množiny se nazývá \emph{vzor} a jemu přiřazen vždy nejvýše jeden \emph{obraz} z druhé množiny. (Mimo SŠ: je to typ binární relace, která splňuje podmínku existence a jednoznačnosti). Značení:
+\begin{align}
+y = f(x) && y = F(x) && f: x \mapsto y && f: x \to y
+\end{align}
+\begin{itemize}
+\item $y$ je \emph{obraz} prvku $x$ při zobrazení $F$, označení $y =F(x)$
+\item $x$ je \emph{vzor} prvku $y$ při zobrazení $F$
+\item $D_F$ je \emph{definiční obor} zobrazení $F$, tj. množina vzorů všech prvků $ y \in B$
+\item $H_F$ je \emph{obor hodnot} zobrazení $F$, tj. množina obrazů všech prvků $ x \in A$ 
+\end{itemize}
+\subsubsection{Speciální případy}
+\begin{itemize}
+\item \emph{Zobrazení z $A$ do $B$}. Nastává když $D_F \subset A \land H_F \subset B$
+\item \emph{Zobrazení $A$ do $B$}. Nastává když $D_F = A \land H_F \subset B$
+\item \emph{Zobrazení z $A$ na $B$}. Nastává když $D_F \subset A \land H_F = B$. Také se nazývá \emph{surjektivní}.
+\item \emph{Zobrazení $A$ na $B$}. Nastává když $D_F = A \land H_F = B$
+\item \emph{Zobrazení v množině} je takové zobrazení, kde $A =B$, tedy výchozí a cílová množina jsou totožné.
+\item \emph{Prosté zobrazení} (také \emph{injektivní}) je typ, kdy každé dva různé prvky z $A$ mají různé obrazy v $B$
+\begin{align}
+(\forall x_1 \in A)(\forall x_2 \in A \land x_2 \neq x_1): F(x_1) \neq F(x_2)
+\end{align}
+\item \emph{Vzájemně jednoznačné zobrazení} (také \emph{bijektivní}) je prosté zobrazení $A$ na $B$. Tzn. nastane právě tehdy, když mají množiny stejně prvků a každý vzor má právě 1 obraz (tj. každé 2 vzory mají různý obraz = prosté zobrazení). Z toho vyplývá, že každému obrazu náleží právě jeden vzor.
+\end{itemize}
+\subsubsection{Inverzní zobrazení}
+\emph{Inverzní zobrazení} k prostému zobrazení $F$ z množiny $A$ do množiny $B$ je zobrazení $F^{-1}$ z množiny $B$ do množiny $A$, pro které platí:
+\begin{align}
+D_{F^{-1}} &= H_F\\
+H_{F^{-1}} &= D_F\\
+F^{-1}(d) = c &\iff F(c) =d
+\end{align}
+\subsubsection{Složené zobrazení}
+Máme: Zobrazení $F$ z množiny $A$ do množiny $B$ a zobrazení $G$ z množiny $B$ do množiny $C$. \emph{Složené zobrazení} ze zobrazení $F, G$ (v tomto pořadí) je zobrazení $H$ z množiny $A$ do množiny $C$, pro které platí:
+\begin{itemize}
+\item $D_H$ je množina všech  $x \in D_F$, pro která $F(x) \in D_G$
+\item $\forall x \in D_H: H(x) = G(F(x)) $
+\end{itemize}
+Značí se:
+\begin{equation}
+H = G \circ F
+\end{equation}
+\subsubsection{Funkce}
+\emph{Funkce} je speciálním případem zobrazení. Funkce reálné či komplexní proměnné je zobrazení v množině reálných či komplexních čísel. Pro standardní $y = f(x) $ se proměnná $x$ nazývá \emph{argument funkce (nezávisle proměnná)} a proměnná $y$ se označuje jako\emph{funkční hodnota (závisle proměnná)}.\\
+Má definiční obor a obor hodnot definované v podstatě stejně jako zobrazení. O prvcích zobrazované množiny, které nejsou v definičním oboru, říkáme, že pro ně funkce \emph{není definována}.
+\subsection{Meta}
+Možná si pak dodělám obrázky Vennových diagramů, jen tak protože můžu.
+\subsubsection{Zdroje}
+\begin{itemize}
+\item Tabulky
+\item \url{https://cs.wikipedia.org/wiki/Mno\%C5\%BEina}
+\item \url{https://matematika.cz/mnoziny}
+\item \url{https://cs.wikipedia.org/wiki/Teorie_mno\%C5\%BEin}
+\item \url{https://www.karlin.mff.cuni.cz/~portal/logika/?page=inkl}
+\item \url{https://cs.wikipedia.org/wiki/Princip_inkluze_a_exkluze}
+\item \url{https://cs.wikipedia.org/wiki/Symetrick\%C3\%A1_diference}
+\item \url{https://en.wikipedia.org/wiki/Symmetric_difference}
+\item \url{https://cs.wikipedia.org/wiki/Dopln\%C4\%9Bk_mno\%C5\%BEiny}
+\item \url{https://en.wikipedia.org/wiki/Complement_(set_theory)}
+\item \url{https://cs.wikipedia.org/wiki/Zobrazen\%C3\%AD_(matematika)}
+\item \url{https://cs.wikipedia.org/wiki/Funkce_(matematika)}	
+\end{itemize}
+\subsubsection{Zadání/Pojmy}
+Pojem množiny, způsob zadání množiny, podmnožina, vztahy mezi množinami, rovnost množin, inkluze množin, operace s množinami a jejich vlastnosti, sjednocení, průnik, rozdíl, doplněk, disjunktní množiny, grafické znázornění množin, uspořádaná dvojice, kartézský součin, zobrazení, typy zobrazení, funkce, složené zobrazení.
+\section{Číselné obory}
+3
+
+\section{Algebraické rovnice, nerovnice a jejich soustavy}
+4
+
+\section{Vlastnosti algebraických funkcí a posloupností}
+5
+
+\section{Grafy elementárních algebraických funkcí}
+6
+
+\section{Limita a spojitost funkce}
+7
+
+\section{Nealgebraické funkce}
+8
+
+\section{Goniometrie a trigonometrie}
+9
+
+\section{Nealgebraické rovnice, nerovnice a jejich soustavy}
+10
+
+\section{Kombinatorika}
+\subsection{Faktoriály}
+Zapisuje se jako $n!$ (čte se jako \emph{n faktoriál} a je definován jen pro celá nezáporná čísla $n \in \mathbb{N}_0$ a je definován jako:
+\begin{align}
+n! = n \cdot (n-1) \cdot (n-2) \cdot \dots \cdot 2 \cdot 1 && n \in \mathbb{N}\\
+0! = 1 && n=0
+\end{align}
+\subsection{Kombinační čísla}
+Čte se jako \emph{n nad k}. Platí pro celá kladná čísla, kde $n$ je větší nebo rovno $k$. Definováno jako
+\begin{align}
+n,k \in \mathbb{N}_0 \land k \leq n && \\
+\binom{n}{k} = \frac{n \cdot (n-1) \cdot (n-2) \cdot \dotso  \cdot (n-k+1)}{k!} &= \frac{n!}{k! \cdot (n-k)!}
+\end{align}
+\paragraph{Pár zajímavých vlastností}
+\begin{align*}
+\binom{0}{0} &= 1 & \binom{n}{0} &=1\\
+\binom{n}{n} &= 1 & \binom{n}{1} &=1\\
+\binom{n}{n-k} &= \binom{n}{k} & \binom{n}{k} + \binom{n}{k+1} &= \binom{n+1}{k+1}\\
+\end{align*}
+\begin{align*}
+\sum^n_{k=0} \binom{n}{k} &= \binom{n}{0} + \binom{n}{1} + \cdots + \binom{n}{n} = 2^n
+\end{align*}
+Kombinační čísla lze uspořádat do \emph{Pascalova trojúhelníku}, tak že $n$ se zvětšuje s řádkem a $k$ jsou jednotlivé sloupce. Viz tabulky.
+\subsubsection{Binomická věta}
+\label{sec:binom_veta}
+Kombinační čísla $\binom{n}{k}$ se někdy nazývají jako \emph{binomické koeficienty}, např. v \LaTeX u se kombinatorická čísla vytváří pomocí příkazu \emph{binom}.
+\begin{align}
+&a,b \in \mathbb{R} \land n \in \mathbb{N}&\\
+\left( a+ b \right)^n  &= \sum^{n}_{k=0} \binom{n}{k}a^{n-k}b^{k} =\\
+&= \binom{n}{0}a^n  b^0 +  \binom{n}{1}a^{n-1}b^{1} +  \binom{n}{2}a^{n-2}b^{2} + \dotsb +  \binom{n}{n-1}a^{1}b^{n-1} +  \binom{n}{n}a^{0}b^{n}
+\end{align}
+\subsection{Množinový pohled}
+Kombinatorika řeší, jak vybrat $k$-tici z $n$-prvkové množiny. Nebo vybírání $k$-prvkovou podmnožinu $n$-prvkové množiny. Laciky řečeno vybíráme $k$ z $n$ věcí.\\
+Můžeme je dále dělit podle toho, jestli záleží na pořadí vybraných prvků (tj. je to \emph{uspořádaná} k-tice) nebo ne (tj.\emph{neuspořádaná}). Nebo podle toho, jestli se prvky mohou vybrat vícekrát, respektive pouze jednou (tj. \emph{s opakováním}, respektive \emph{bez opakování}).\\
+Základním pojmem je pojem ($k$-prvková) \emph{skupina}, nazývaná je také \emph{$k$-tice}.
+
+\subsection{Variace}
+Uspořádaná $k$-tice sestavená z $n$-prvků.
+\subsubsection{Variace bez opakování}
+Uspořádaná $k$-tice sestavená z $n$-prvků tak, že každý se v ní vyskytuje nejvýše jednou. Platí-li $k,n \in \mathbb{N} \land k \leq n$ je počet těchto variací:
+\begin{equation}
+V(k,n) = n (n-1)(n-2) \dotsm (n-k+1) = \frac{n!}{\left( n-k \right)!}
+\end{equation}
+\subsubsection{Variace s opakováním}
+Uspořádaná $k$-tice sestavená z $n$-prvků tak, že každý se v ní vyskytuje nejvýše $k$-krát. Platí-li $k,n \in \mathbb{N}$ je počet těchto variací:
+\begin{equation}
+V'(k,n) = n^k
+\end{equation}
+
+\subsection{Permutace}
+U permutací, je vždy využit každý prvek z $n$-prvkové množiny.
+\subsubsection{Permutace bez opakování}
+Uspořádaná $n$-tice sestavená z $n$-prvků tak, že každý se v ní vyskytuje právě jednou. (To znamená, že je to vlastně speciální případ variace bez opakování, kde $k=n$). Platí-li $n \in \mathbb{N}$ je počet těchto permutací:
+\begin{equation}
+P(n) = n!
+\end{equation}
+\subsubsection{Permutace s opakováním}
+Uspořádaná $k$-tice sestavená z $n$-prvků tak, že každý se v ní alespoň jednou. To znamená, že $k >n$.
+Vyskytuje-li se tam $i$-tý prvek $k_i$-krát a platí-li: $k_1, k_2, \dotsc, k_n \in \mathbb{N} \land k_1 + k_2 + k_3 + \dotsb + k_n = k \land n \in \mathbb{N}$, poté je počet permutací s opakováním:
+\begin{equation}
+P'\left(k_1,k_2, \dotsc, k_n \right) = \frac{\left( k_1 + k_2 + \dotsb + k_n \right)!}{k_1! \cdot k_2 ! \cdot \dotso \cdot k_n!}
+\end{equation}
+
+\subsection{Kombinace}
+Neuspořádaná $k$-tice sestavená z $n$-prvků.
+\subsubsection{Kombinace bez opakování}
+\label{sec:kombinace-bez}
+Neuspořádaná $k$-tice sestavená z $n$-prvků tak, že každý se v ní vyskytuje nejvýše jednou. (tj. $k$-prvková podmnožina $n$-prvkové množiny). Platí-li $k,n \in \mathbb{N} \land k \leq n$ je počet těchto kombinací:
+\begin{equation}
+K\left(k,n\right) = \binom{n}{k}
+\end{equation} 
+\subsubsection{Kombinace s opakováním}
+Neuspořádaná $k$-tice sestavená z $n$-prvků tak, že každý se v ní vyskytuje nejvýše $k$-krát. Platí-li $k,n \in \mathbb{N}$ je počet těchto kombinací:
+\begin{equation}
+K' \left(k,n\right) = \binom{n+k-1}{k}
+\end{equation}
+
+\subsection{Pravidla}
+\subsubsection{Součtu}
+Říká, že máme-li $a$ způsobů, jak něco udělat. A $b$ způsobů, jak udělat něco jiného. A není možné provést $a$ i $b$, takže je nutné si jeden z nich vybrat. Poté je počet možných věcí, které můžeme provést roven $a+b$.  
+\paragraph{Příklad: }Chceme-li vybrat 1 míček z množiny 5 červených míčků máme 5 možností. Chceme-li vybrat jeden míček z množiny 7 modrých míčků máme 7 možností. Spojíme-li tyto množiny je počet možností, jak vybrat jeden míček $12=5+7$.
+\subsubsection{Součinu}
+\label{sec:pravidlo_soucinu}
+Existují-li 2 nezávislé jevy (př. hod mincí a hod kostkou). Každý má nějaký počet možných výsledků. Můžeme provést oba děje. Pak počet možných výsledků (tj. kombinací 2 původních) je roven počtu možností prvního jevu krát počet možností druhého jevu.
+\paragraph{Příklad 1:} Máme-li například červenou a modrou kostku a vrhneme je. Je počet možností, které mohou padnout, roven počtu možností na jedné kostce krát počtu možností na druhé kostce. Je to proto, že ke každé možnosti na modré kostce můžeme přiřadit každou možnost na druhé kostce. Je-li jedna kostka 6-stěnná a druhá 20-stěnná je počet možných kombinací $120 = 6 \cdot 20$
+\paragraph{Příklad 2:} Vybíráme 1 muže ze skupiny 8 mužů. Vybíráme 1 ženu ze skupiny 4 žen. Nyní chceme zjistit počet možných dvojic muž žena. Každému muži můžeme jakoby přiřadit každou dívku, výsledek je tedy: $32 = 8 \cdot 4$
+
+\subsection{Meta}
+\subsubsection{Zdroje}
+\begin{itemize}
+\item Tabulky!
+\item \url{https://cs.wikipedia.org/wiki/Kombinatorika}
+\item \url{https://cs.wikipedia.org/wiki/Variace_(kombinatorika)}
+\item \url{https://cs.wikipedia.org/wiki/Kombinace}
+\item \url{https://matematika.cz/kombinatorika}
+\item \url{http://www.gymklob.info/matematika/kombinatorika/uvod.htm}
+\item \url{https://cs.wikipedia.org/wiki/Pravidlo_sou\%C4\%8Dtu}
+\end{itemize}
+\subsubsection{Zadání/ pojmy}
+Základní kombinatorická pravidla (součtu a součinu), pojem faktoriálu čísla, skupiny v kombinatorice, variace, permutace, variace s opakováním, kombinace, kombinační čísla a jejich vlastnosti, binomická věta.
+\section{Pravděpodobnost}
+Pravděpodobnost nějakého jevu je číslo, které je mírou (poměrem) očekávatelnosti výskytu tohoto jevu. Tj. jako moc můžeme daný jev očekávat.
+\begin{scriptsize}
+V průběhu budu, ke znázornění využívat příklad 6-stěnné kostky, ve které je každá stěna označena různým číslem od 1 do 6. A která vždy spadne na nějakou stěnu.
+\end{scriptsize}
+\subsection{Náhodné pokusy}
+\emph{Náhodný pokus} je pokus, který může mít za stejných podmínek různé výsledky ovlivněné náhodou.\\
+\paragraph{Množina všech možných výsledků pokusu} označuje se $\Omega$, tyto výsledky se navzájem vylučují a jeden z nich vždy nastane. Př.: padne číslo od 1 do 6
+\paragraph{Počet možných výsledků pokusu} se značí $m$. Př.: počet stěn kostky, tedy 6.
+\paragraph{Jednotlivé výsledky pokusu} se značí $\omega_i$, kde $\omega_i \in \Omega$ a $\Omega = \{ \omega_1, \omega_2, \dotsc, \omega_m \}$\\ Př.: Padne 5, nebo padne 3.
+\paragraph{Pravděpodobnost výsledku} se pro $\omega_i$ značí $p(\omega_i)$. Platí:
+\begin{align}
+0 \leq p(\omega_i) \leq 1\\
+\sum^m_{i=1}p(\omega_i) = 1
+\end{align}
+$p(\omega_i)$ se často zapisuje ve tvaru procenta. Jsou-li pravděpodobnosti všech výsledků stejné, pak platí:
+\begin{align}
+p\left(\omega_i\right) = \frac{1}{m}\\
+i = 1,2, \dotsc, m
+\end{align}
+Př.: V případě necinknuté kostky předpokládáme stejné pravděpodobnosti, tedy pravděpodobnost, že padne 5 je $\frac{1}{6}$ a pravděpodobnost, že padne 4 je taktéž $\frac{1}{6}$ .\\ Kdyby byla kostka cinknutá, aby padala 6 více platí např: $p(6) = \frac{1}{4}$.
+
+\subsection{Jevy a jejich pravděpodobnost}
+\paragraph{Jev} - značí se $A,B \dotso$ je to nějaké podmnožina množina $\Omega$. Př.: padne 6, nebo také jev padne číslo sudé, nebo jev padne číslo menší než 4...
+\paragraph{Výsledek příznivý jevu} - značí se $\omega \in A$ (čte se výsledek $\omega$ příznivý jevu $A$). Př.: pro jev padne sudé číslo jsou příznivými výsledky padne 2, padne 4 nebo padne 6.
+\paragraph{Počet výsledků příznivých jev} - značí se $m(A)$. Př.: pro jev padne liché číslo je počet výsledků příznivých jevu 3.
+\paragraph{Pravděpodobnost jevu} - značí se $P(A)$ pro jev $A$. Je to součet pravděpodobností všech výsledků příznivých jevu $A$. Platí, že $0 \leq P(A) \leq 1$. Jsou-li všechny výsledky pokusu stejně pravděpodobné, pak:
+\begin{equation}
+P(A) = \frac{m(A)}{m}
+\end{equation}
+Př.: pravděpodobnost, že padne sudé číslo na necinknuté kostce je $\frac{1}{2}$, protože:
+\begin{align*}
+P(sude) = \frac{m(sude)}{m} = \frac{3}{6}
+\end{align*}
+\paragraph{Nemožný jev} - značí se $\emptyset$ a platí $P(\emptyset) = 0$. Př.: jev, že padne 7.
+\paragraph{Jistý jev} - značí se $\Omega$ a platí $P(\Omega) =1$. Př.: jev, že padne kladné celé číslo.
+\paragraph{Podjev} značí se $B \subset A$ a říká, že jev $B$ je podjevem jevu $A$. Platí $P(B) \leq P(A)$. Př.: jev padne číslo větší než 4, je podjevem jevu padne číslo větší než 2.
+\paragraph{Opačný jev} $A'$ je opačný k jevu $A$. Př.: jev padne sudé číslo je opačný k jevu padne liché číslo (platí i obráceně).
+\begin{align}
+A' = \Omega \setminus A\\
+P(A') = 1 - P(A)
+\end{align}
+\paragraph{Průnik jevů} - značí se $A\cap B$ a označuje množinu jevů, které jsou podmnožinou jak množiny $A$, tak množiny $B$. O pravděpodobnostech platí:
+\begin{align*}
+P(A\cap B) \leq P(A) \land P(A\cap B) \leq P(B)
+\end{align*}
+Př.: jev $A$ padne číslo větší než 3, jev $B$ padne sudé číslo. $C= A \cap B$, pak jev $C$ obsahuje možné výsledky 4 a 6.
+\paragraph{Navzájem se vylučující jevy} taktéž \emph{Neslučitelné jevy}. Platí pro ně $A \cap B = \emptyset$. Př.: padne číslo menší než 2 a padne číslo sudé.
+\paragraph{Sjednocení jevů} se značí $A \cup B$. O pravděpodobnosti platí:
+\begin{equation}
+P(A \cup B) = P(A) + P(B) - P(A \cap B)
+\end{equation}
+Jsou-i jevy $A,B$ navzájem nezávislé, pak (vyplývá z definice vylučujících se jevů):
+\begin{equation}
+P(A \cup B) = P(A) + P(B)
+\end{equation}
+Př.: padne sudé číslo a jev padne číslo větší než 2.  Máme 3 sudá čísla a 4 čísla větší než 2. Čísla 4 a 6 se tam  ale vyskytují dvakrát (protože jsou v průniku jevů).\\
+Př. vylučující se: Padne číslo větší než 5 a padne číslo menší než 3.
+\paragraph{Nezávislé jevy} jsou jevy, které se vzájemně neovlivňují. (Je to obdobné pravidlu součinu v kombinatorice, viz \ref{sec:pravidlo_soucinu})
+\begin{equation}
+P(A \cap B) = P(A) \cdot P(B)
+\end{equation}
+Př.: Jev $A$: hodím v prvním hodu na kostce 5. Jev $B$: hodím v druhém sudé číslo. To, co hodím na první hod, nemá vliv na hod druhý, takže celková pravděpodobnost, že nastane obojí je: $\frac{1}{6} \cdot \frac{3}{6} = \frac{1}{12}$. 
+\subsection{Opakování náhodného pokusu}
+Náhodný pokus je $n$-krát zopakován, jednotlivá opakování jsou na sobě nezávislá. Pravděpodobnost, že přitom $k$-krát nastane jev $A$, který má pravděpodobnost $P(A) =p$ zjistíme vzorcem (pro nezáporné celé $k$, menší než $n$:  $k =0,1,2, \dotsc, n$)
+\begin{equation}
+\label{eq:binom_rozdeleni}
+\binom{n}{k} \cdot p^k \cdot \left( 1-p \right)^{n-k}
+\end{equation}
+Vyplývá z definice nezávislých jevů a z kombinace nezávislých jevů (viz \ref{sec:kombinace-bez}). Nebo přímo z binomické věty (viz \ref{sec:binom_veta})
+\subsubsection{Bernoulliho schéma}
+Nazývané také \emph{binomické rozdělení}. Popisuje četnost výskytu náhodného jevu v  pokusech, ve kterých má vždy stejnou pravděpodobnost. Značení, kde $n$ je počet pokusů a $p$ je pravděpodobnost jevu:
+\begin{align}
+B(n,p) && Bi(n,p) 
+\end{align}
+Rovnice pro výpočet pravděpodobnosti, že jev s pravděpodobností $p$ nastane $k$-krát v $n$ pokusech \eqref{eq:binom_rozdeleni}
+\subsection{Meta}
+\subsubsection{Zdroje}
+\begin{itemize}
+\item Tabulky!!
+\item \url{https://cs.wikipedia.org/wiki/Pravd\%C4\%9Bpodobnost}
+\item \url{https://matematika.cz/pravdepodobnost}
+\item \url{https://cs.wikipedia.org/wiki/N\%C3\%A1hodn\%C3\%BD_jev}
+\item \url{https://sk.wikipedia.org/wiki/Bernoulliho_sch\%C3\%A9ma} %lol sk
+\end{itemize}
+\subsubsection{Pojmy/ zadání}
+Náhodné pokusy, množina všech možných výsledků pokusu, jevy v množinovém pojetí a operace s jevy, jistý jev, nemožný jev, klasická definice pravděpodobnosti, základní vlastnosti pravděpodobnosti jevů, pravděpodobnost opačných jevů, pravděpodobnost sjednocení jevů pro jevy neslučitelné i slučitelné, nezávislé jevy, pravděpodobnost průniku nezávislých jevů, opakované nezávislé pokusy, binomické rozdělení (Bernoulliovo schéma ) a jeho užití.
+
+\section{Statistika}
+\begin{itemize}
+\item \emph{Statistický soubor} - konečná neprázdná množina objektů nazývaných \emph{statistické jednotky}
+\item \emph{Statistická jednotka} = prvek statistického souboru. Předpokládáme očíslování $1,2 \dotsc, n $
+\item \emph{Rozsah souboru} - počet statistických jednotek ve statistickém souboru, označení $n$
+\item \emph{Znak} - vyšetřovaná vlastnost statistických jednotek, značení $x$,např.: pohlaví, měsíční plat \dots
+\item \emph{Hodnota znaku} - znak $x$ nabývá hodnot: $\overset{*}{x}_1,\overset{*}{x}_2, \dots , \overset{*}{x}_r$, kde $r \leq n$\\
+ - tyto hodnoty jsou navzájem neslučitelné a pro každou statistickou jednotku musí jedna z těchto hodnot  nastat, např.: muž/žena, 20~000Kč~\dots \\Označení hodnoty znaku $x$ pro statistickou jednotku $i$: $x_i$
+ \item \emph{Kvantitativní znak} - jeho hodnoty se liší velikostí, např.: výška v cm, nebo měsíční plat zaměstnance \dots 
+ \item \emph{Kvalitativní znak} - jeho hodnoty se liší kvalitou, např.: pohlaví, barva vlasů \dots
+ \item \emph{Četnost hodnoty znaku $\overset{*}{x}_j$} - počet statistických jednotek pro, které znak $x$ nabývá hodnoty $\overset{*}{x}_j$ se značí $n_j$. Specifikuje se také jako absolutní. Platí:
+ \begin{equation}
+ \sum^r_{j=1} n_j = n
+\end{equation}
+ \item \emph{Relativní četnost znaku $\overset{*}{x}_j$} - může se udávat jako desetinné číslo, nebo častěji v procentuálním tvaru. Udává podíl četnosti tohoto znaku a rozsah souboru (tj. součet četností všech hodnot znaku(tj. počet všech prvků = rozsah souboru)). Značí se pomocí $\nu$ (v češtině se čte jako 'ný') s indexem odpovídajícím indexu absolutní četnosti.
+ \begin{align}
+ \nu_j = \frac{n_j}{n} && \sum^t_{j=1} \nu_j = 1
+ \end{align}
+\item \emph{Kumulativní četnost} - jen tak pro zajímavost. Může být relativní nebo absolutní. Seřadíme nějak hodnoty znaku, a při výpisu do tabulky, vždy sečteme s předchozími, tak aby u posledního vyšlo 1 pro relativní respektive $n$ pro absolutní.
+\end{itemize}
+
+\subsection{Rozdělení četnosti}
+Také nazývané jako \emph{rozložení četnosti}. Zobrazujeme ve formě tabulky nebo grafu.  Například známky žáků ve škole. Příklad viz tabulku \ref{table:zaci}.
+\begin{table}[h!]
+\begin{tabular}{|l|l|}
+\hline
+Známka & Počet žáků \\ \hline
+1      & 5          \\ \hline
+2      & 10         \\ \hline
+3      & 5          \\ \hline
+4      & 4          \\ \hline
+5      & 1          \\ \hline
+\end{tabular}
+\caption{Tabulka známek žáků}
+\label{table:zaci}
+\end{table}
+\subsubsection{Skupinové rozložení četností}
+Rozdělíme soubor na nějaké podskupiny na základě jiného znaku. Například na kluky a dívky nebo podle ročníků, podle předmětů \dots Příklad viz tabulku \ref{table:zaci_pohlavi}.
+\begin{table}[H]
+\begin{tabular}{|l|l|l|}
+\hline
+Známka & chlapci & dívky \\ \hline
+1      & 4       & 1     \\ \hline
+2      & 3       & 7     \\ \hline
+3      & 2       & 3     \\ \hline
+4      & 2       & 2     \\ \hline
+5      & 1       & 0     \\ \hline
+\end{tabular}
+\caption{Tabulka známek chlapců a dívek}
+\label{table:zaci_pohlavi}
+\end{table}
+\subsection{Grafické znázornění četností}
+\subsubsection{Tabulka}
+V prvním řádku jsou hodnoty znaku $x$ a v druhém odpovídající četnosti. Příklady tabulek \ref{table:zaci} a \ref{table:zaci_pohlavi}. (U nich je to ale položené obráceně, místo řádků jsou to sloupce, tj. první sloupec je hodnota znaku a druhý je jeho četnost.)
+\subsubsection{Spojnicový diagram}
+Nazýván také \emph{polygon četností}. Je to lomená čára spojující body, jejichž první souřadnice jsou jsou hodnoty znaku $x$ a druhé souřadnice jsou odpovídající četnosti. Pouze pro kvantitativní znaky. Viz obrázek \ref{fig:spojnicovy_graf}
+\begin{figure}[H]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    title={Závislost průměru známek na ročníku},
+    xlabel={Ročník},
+    ylabel={Průměr známek},
+    xmin=0, xmax=8,
+    ymin=0, ymax=5,
+    xtick={1,2,3,4,5,6,7,8},
+    ytick={1,2,3,4,5},    
+    legend pos=north west,
+    ymajorgrids=true,
+    grid style=dashed,
+]
+
+\addplot[
+    color=blue,
+    mark=square,
+    ]
+    coordinates {
+    (1,1.21)(2,1.33)(3,1.54)(4,1.7)(5,2.04)(6,1.9)(7,2.102)(8,1.85)
+    };
+    \legend{legenda}
+\end{axis}
+\end{tikzpicture}
+\caption{Příklad spojnicového grafu}
+\label{fig:spojnicovy_graf}
+\end{figure}
+
+\subsubsection{Sloupkový diagram}
+Nazývaný také \emph{histogram}. Základny sloupků znázorňují jednotlivé hodnoty znaku $x$ a (u kvantitativního znaku popř. intervaly, do nichž jsou tyto hodnoty sdruženy), výšky sloupců znázorňují četnosti odpovídající danému znaku. (zejména pro kvantitativní znaky). Viz obrázek \ref{fig:sloupkovy_graf} (využívá hodnoty z předchozích tabulek \ref{table:zaci} a \ref{table:zaci_pohlavi}).
+\begin{figure}[h!]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    ymin=0, ymax=10,
+	ylabel= {Počet známek},
+	legend style={at={(0.5,-0.1)},
+	anchor=north},
+	ybar interval=0.5,
+]
+\addplot 
+	coordinates {(1,4) (2,3)
+		 (3,2) (4,2) (5,3)(6,0)};
+\addplot 
+	coordinates {(1,1) (2,7)(3,3) (4,2) (5,0)};
+
+\legend{Chlapci,Dívky}
+\end{axis}
+\end{tikzpicture}
+
+\caption{Příklad sloupkového diagramu}
+\label{fig:sloupkovy_graf}
+\end{figure}
+\subsubsection{Kruhový diagram}
+Jednotlivé hodnoty znaku $x$ jsou znázorněny kruhovými výsečemi, jejichž obsahy (středové úhly) jsou přímo úměrné odpovídajícím četnostem. (Zejména pro kvalitativní znaky) Viz obrázek \ref{fig:pie_diagram} (využívá hodnoty z předchozích tabulek \ref{table:zaci} a \ref{table:zaci_pohlavi}).
+\begin{figure}[h!]
+\begin{tikzpicture}
+\pie{20/1, 40/2, 20/3, 16/4, 4/5},
+\end{tikzpicture}
+\begin{tikzpicture}
+\pie{52/Dívky, 48/Chlapci}
+\end{tikzpicture}
+\caption{Kruhový diagram}
+\label{fig:pie_diagram}
+\end{figure}
+\subsection{Charakteristiky polohy kvantitativního znaku}
+\begin{itemize}
+\item \emph{Aritmetický průměr} značí se $\bar{x}$ (v \TeX u druhá možnost  $\overline{x}$) nebo také $p_a$. Sečteme všechny naměřené hodnoty a vydělíme jejich počtem.
+\begin{equation}
+\overline{x} = \frac{1}{n} \sum^n_{i=1} x_i =  \frac{1}{n} \sum^r_{j=1} \overset{*}{x}_j n_j
+\end{equation}
+\item \emph{Vážený aritmetický průměr} - jednoduchá obdoba aritmetického průměru, kdy mají různé prvky různou váhu. Hodnotu znaku prvně vynásobíme váhou a poté všechny sečteme a vydělíme celkovou váhou. Př.: Počítání průměru známek, kde mají různé písemky (/ testy / zkoušení) různou váhu.
+\item \emph{Geometrický průměr} - všechny hodnoty znaku vynásobíme a poté odmocníme počtem prvků souboru. Je vždy menší nebo roven aritmetickému průměru Značí se $p_g$ nebo $\overline{x}_G$ nebo:
+\begin{equation}
+G(x_1, x_2, \dotsc,x_n) = \sqrt[n]{x_1 \cdot x_2 \dotsm x_n} = \left( \prod_{i=1}^n x_i \right)^{\frac{1}{n}}
+\end{equation}
+\item \emph{Harmonický průměr} - je definován jako podíl počtu (rozsah souboru) a součtu jejich převrácených hodnot. To znamená totéž, co převrácená hodnota aritmetického průměru převrácených hodnot. Je vždy menší nebo roven geometrickému průměru. Zapisuje $\overline{x}_H$:
+\begin{equation}
+\overline{x}_H =  \frac{n}{\sum^n_{i=1} \frac{1}{x_i}}
+\end{equation}
+\item \emph{Kvadratický průměr} - je to odmocnina aritmetického průměru druhých mocnin. Asi mimo SŠ, ale využívá se např. při výpočtu rozptylu viz rovnice \eqref{eq:rozptyl}.
+\begin{equation}
+K = \sqrt{\overline{x^2}} = \sqrt{\frac{1}{n} \sum^n_{i=1}x_i^2} = \sqrt{\frac{x_1^2 + x_2^2 + \dotsb + x_n^2}{n}}
+\end{equation}
+\item \emph{Modus} - hodnota znaku s nejvyšší četností, značí se $Mod(x)$
+\item \emph{Medián} - značí se $Med(x)$ prostřední z hodnot $x_1, x_2, \dotsc, x_n$ znaku $x$ uspořádaných podle velikosti (pro liché $n$)\\
+ - pro sudé $n$ je to aritmetický průměr dvou prostřeních hodnot (znaku $x$ uspořádaných podle velikosti)
+\item \emph{První kvartil} - značí se $Q_1$, medián první poloviny hodnot (pro liché $n$ je poslední hodnotou $Med(x)$) seřazených dle velikosti
+\item \emph{Třetí kvartil} - značí se $Q_2$, medián druhé poloviny hodnot (pro liché $n$ je první hodnotou $Med(x)$) seřazených dle velikosti
+\end{itemize}
+\subsubsection{Vztahy mezi průměry}
+Označíme-li si $A$ jako aritmetický, $G$ jako geometrický, $H$ jako harmonický a $K$ jako kvadratický, pak platí (pokud jsou to průměry stejného souboru):
+\begin{equation}
+K \geq A \geq G \geq H
+\end{equation}
+Rovnost nastává právě tehdy, když jsou všechna průměrovaná čísla stejná. Nejdůležitější je \emph{AG nerovnost} mezi aritmetickým a geometrickým průměrem.
+\subsection{Charakteristiky variability kvantitativního znaku}
+\begin{itemize}
+\item \emph{Rozptyl} - také nazýván \emph{střední kvadratická odchylka} a \emph{variace}. Pro všechny naměřené hodnoty se spočítá jejich vzdálenost od aritmetického průměru. Ta se stane stranou čtverce. Variace je průměrem obsahu těchto čtverců. Čím větší je rozptyl naměřených hodnot, tím je hodnota variace větší. Značí se $\sigma^2$, $s_x^2$ nebo $var(x)$.
+\begin{align}
+\label{eq:rozptyl}
+s_x^2 &= \frac{1}{n} \sum^n_{i=1}\left(x_i - \overline{x} \right)^2 &=& \frac{1}{n} \sum^r_{j=1}\left(\overset{*}{x}_j - \overline{x} \right)^2 \cdot n_j=\\
+&= \left( \frac{1}{n} \sum^n_{i=1}\left(x_i \right)^2 \right) - \overline{x}^2 &=&  \left( \frac{1}{n} \sum^r_{j=1} \accentset{\scriptstyle *}{x}_j^2 n_j \right) - \overline{x}^2
+\end{align}
+\item \emph{Směrodatná odchylka} - značí se $s_x$ nebo $\sigma$
+\begin{equation}
+s_x = \sqrt{s_x^2}
+\end{equation}
+\item \emph{Variační koeficient} - má smysl jen tehdy jsou li všechny hodnoty znaku nezáporné.	
+\begin{equation}
+v_x = \frac{s_x}{\overline{x}} \cdot 100\% 
+\end{equation}
+\item \emph{Mezikvartilová odchylka}
+\begin{equation}
+Q(x) = \frac{1}{2}\left(Q_3 - Q_1 \right)
+\end{equation}
+\end{itemize}
+\subsection{Korelace}
+Ve statistickém souboru vyšetřujeme uspořádanou dvojici kvantitativních znaků $(x,y)$. Koeficient korelace $r_{xy}$ se potom vypočítá:
+\begin{align}
+\text{Výsledek šetření: 	} (x_1,y_1),(x_2,y_2) \dotsc, (x_n, y_n)\\
+r_{xy} = \frac{\frac{1}{n} \sum\limits^n_{i=1}\left(x_i - \overline{x}\right) \left(y_i - \overline{y}\right)}{s_x \cdot s_y} = \frac{\left( \frac{1}{n} \sum\limits^n_{i=1}x_i y_i \right)-\overline{x}\cdot\overline{y}}{s_x \cdot s_y}
+\end{align}
+Koeficient korelace je vždy číslo z intervalu $\langle -1, 1 \rangle$. Mezní hodnoty $r_{xy} = 1$ (respektive $r_{xy} = -1$) nabývá tehdy, když s rostoucí hodnotou znaku $x$ roste (respektive klesá) hodnota znaku $y$. A to podle vzorce $y_i = a + b x_i$, kde $a,b \in \mathbb{R}$ a $b >0$ (respektive $b<0$). 
+\subsection{Meta}
+\subsubsection{Zdroje}
+\begin{itemize}
+\item Tabulky!!
+\item \url{https://matematika.cz/rozlozeni-cetnosti}
+\item \url{https://matematika.cz/zaklady-statistiky}
+\item \url{https://cs.wikipedia.org/wiki/Sm\%C4\%9Brodatn\%C3\%A1_odchylka}
+\item \url{https://cs.wikipedia.org/wiki/Geometrick\%C3\%BD_pr\%C5\%AFm\%C4\%9Br}
+\item \url{https://cs.wikipedia.org/wiki/Harmonick\%C3\%BD_pr\%C5\%AFm\%C4\%9Br}
+\item \url{https://cs.wikipedia.org/wiki/Kvadratick\%C3\%BD_pr\%C5\%AFm\%C4\%9Br}
+\item \url{https://cs.wikipedia.org/wiki/Nerovnosti_mezi_pr\%C5\%AFm\%C4\%9Bry}
+\end{itemize}
+\subsubsection{Pojmy/ zadání}
+Statistický soubor, statistické jednotky, statistické znaky, četnost a relativní četnost, rozdělení četností a skupinové rozdělení četností, grafické znázornění rozdělení četností ( spojnicový diagram, histogram, kruhový diagram ). Charakteristiky znaku statistického souboru. Charakteristiky polohy, aritmetický průměr, vážený aritmetický průměr, geometrický průměr, harmonický průměr, modus, medián. Charakteristiky variability, rozptyl, směrodatná odchylka, variační koeficient.
+
+\section{Posloupnosti a řady}
+\subsection{Posloupnosti}
+Posloupnost je konečná nebo nekonečná řada objektů, které se mohou opakovat. Záleží v ní na pořadí, takže na konečnou posloupnost lze nahlížet jako na uspořádanou k-tici. Můžeme se setkat s následujícími značeními, v případě, že nemůže dojít k záměně s něčím jiným, může se značit i pouze jako $a_n$. Čteme je jako 'posloupnost á en pro $n$ jdoucí od jedné do nekonečna':
+\begin{align}
+\left( a_n \right)_{n=1}^{\infty} && \left[ a_n \right]_{n=1}^{\infty} && \left( a_n \right)
+\end{align}
+Posloupnost je funkce, která má jako definiční obor množinu přirozených čísel $\mathbb{N}$ (nebo podmnožinu přirozených čísel, pokud je posloupnost konečná). Oborem hodnot je libovolná množina (v SŠ předpokládejme reálná čísla $\mathbb{R}$)
+\paragraph{Nekonečná posloupnost} je zobrazením $\mathbb{N}$ do $\mathbb{R}$. Značí se:
+\begin{align}
+\left( a_n \right)_{n=1}^{\infty} && a_1,a_2, \dotsc, a_k
+\end{align}
+\paragraph{Konečná posloupnost} - zobrazení  množiny $\{ n,k \in \mathbb{N}; n \leq k \} = \{1,2, \dotsc, k \}$ do $\mathbb{R}$. Zapisuje se:
+\begin{align}
+\left( a_n \right)_{n=1}^k && a_1, a_2, \dotsc, a_k
+\end{align}
+Obraz čísla $n \in \mathbb{N}$ se značí $a_n$ (respektive $b_n, c_n, \dotsc$). \emph{N-tý člen posloupnosti} se značí $a_n$.
+\subsubsection{Určení posloupnosti}
+\paragraph{Vzorcem pro n-tý člen} - Dosazením $n$ získáme hodnotu členu posloupnosti
+\begin{equation}
+a_n = -2n
+\end{equation}
+\paragraph{Rekurentně} - člen je určen podle předchozího (popřípadě předchozích) členů.
+\begin{align}
+b_{n+1} = b_n + 10 && d_{n+2} = d_{n} + d_{n+1}
+\end{align}
+\paragraph{Výčtem} - napíšeme všechny členy (nejsem si jistej, jaká přesně je konvence)
+\begin{align}
+ (c_k) = \left( 2,4,6,8, \dotsc, 2048\right) && (c_n) = \left( 3,6,9,12, \dotsc \right)
+\end{align}
+\subsubsection{Vlastnosti posloupností}
+Posloupnost $\left( a_n \right)_{n=1}^{\infty}$ je
+\begin{itemize}
+\item \emph{Rostoucí} právě tehdy, když:
+\begin{equation}
+r,s \in \mathbb{R}, r<s \Rightarrow a_r < a_s
+\end{equation}
+\item \emph{Klesající} právě tehdy, když:
+\begin{equation}
+r,s \in \mathbb{R}, r<s \Rightarrow a_r > a_s
+\end{equation}
+\item \emph{Neklesající} právě tehdy, když:
+\begin{equation}
+r,s \in \mathbb{R}, r<s \Rightarrow a_r \leq a_s
+\end{equation}
+\item \emph{Nerostoucí} právě tehdy, když:
+\begin{equation}
+r,s \in \mathbb{R}, r<s \Rightarrow a_r \geq a_s
+\end{equation}
+\item \emph{Monotónní} právě tehdy, když je neklesající nebo nerostoucí
+\item \emph{Zdola omezená} existuje-li $d \in \mathbb{R}$ tak, že pro každé $ n \in \mathbb{N}$ platí $a_n \geq d$. Matematický zápis:
+\begin{equation}
+\exists \, d \in \mathbb{R}; \; \left( \forall n \in \mathbb{N}; \; a_n \geq d \right)
+\end{equation}
+\item \emph{Shora omezená} existuje-li $c \in \mathbb{R}$ tak, že pro každé $ n \in \mathbb{N}$ platí $a_n \leq c$. Matematický zápis:
+\begin{equation}
+\exists \, c \in \mathbb{R} | \left( \forall \, n \in \mathbb{N} | a_n \leq c \right)
+\end{equation}
+\item \emph{Omezená} právě tehdy, když je zároveň omezená ze shora i ze zdola.
+\end{itemize}
+\paragraph{Graf} je nespojitý, protože definiční obor jsou jen přirozená čísla. Je to množina bodů, kde souřadnice $x$ je rovna $n$ a souřadnice $y$ je rovna příslušnému $a_n$.
+\subsubsection{Aritmetická posloupnost}
+Je jednoduchá posloupnost, kde je mezí 2 následujícími členy vždy stejný rozdíl. Ten se nazývá \emph{diference} aritmetické posloupnosti a značí se $d$. Posloupnost $ \left( a_n \right)_{n=1}^{\infty}$ je \emph{aritmetická}, když:
+\begin{equation}
+\left( \exists \, d \in \mathbb{R} \right) \left( \forall \, n \in \mathbb{N} \right) \left( a_{n+1} = a_n + d \right)
+\end{equation}
+Pro aritmetickou posloupnost platí, že každý člen kromě prvního je aritmetickým průměrem obou sousedních členů. Vzorec pro $n$-tý člen:
+\begin{equation}
+a_n = a_1 + (n-1) \cdot d = \frac{a_{n-1} + a_{n+1}}{2}
+\end{equation}
+Součet prvních $n$ členů:
+\begin{equation}
+s_n = \frac{n}{2} \cdot \left( a_1 + a_n \right)
+\end{equation}
+Vztah mezi dvěma členy:
+\begin{align}
+a_s = a_r + (s-r)\cdot d &&r,s \in \mathbb{N}
+\end{align}
+
+\subsubsection{Geometrická posloupnost}
+Člen je vždy nalezen vynásobením předchozího stále stejným číslem $q$, které se nazývá \emph{kvocient} geometrické posloupnosti. Posloupnost $ \left( a_n \right)_{n=1}^{\infty}$ je \emph{geometrická}, když:
+\begin{align}
+\left( \exists \, q \in \mathbb{R} \right) \left(  \forall \, n \in \mathbb{N} \right) \left( a_{n+1} = a_n \cdot q \right)
+\end{align}
+Vzorec pro $n$-tý člen:
+\begin{align}
+a_n = a_1 \cdot q^{n-1}  && |a_n| = \sqrt{a_{n-1} \cdot a_{n+1}}
+\end{align}
+Součet prvních $n$ členů:
+\begin{align}
+s_n = \left\{
+    \begin{array}{ll}
+        a_1 \cdot \frac{1 - q^n}{1-q}  & \Leftarrow q \neq 1\\
+       	n \cdot a_1 &  \Leftarrow q = 1
+    \end{array}
+\right.
+\end{align}
+Vztah mezi dvěma členy:
+\begin{equation}
+\left( \forall \, r,s \in \mathbb{N} \right) \left( a_s = a_r \cdot q^{s-r} \right)
+\end{equation}
+\subsubsection{Vztah aritmetické a geometrické posloupnosti}
+Je-li $a_n$ aritmetická posloupnost, tak je posloupnost $b^{a_n}$ posloupnost geometrická, platí pro libovolný základ $b \geq 0$.\\
+Je-li $g_n$ geometrická posloupnost s kladnými členy, tak je posloupnost $\log_b g_n $aritmetická, platí pro libovolný základ $b>0, b \neq 1$.
+\subsubsection{Využití aritmetické a geometrické posloupnosti}
+%TODO
+\subsubsection{Limita posloupnosti (vlastní)}
+\label{sec:posl_limita}
+Číslo $a \in \mathbb{R}$  se nazývá \emph{limita} (popř. \emph{vlastní limita}) posloupnosti $( a_n )_{n=1}^{\infty}$, jestliže ke každému reálnému číslu $\varepsilon > 0$ existuje $n_0 \in \mathbb{N}$ tak, že pro všechna přirozená čísla $n \geq n_0$ platí $|a_n - a| < \varepsilon$. To jest, když (matematicky):
+\begin{align}
+( \forall \, \varepsilon \in \mathbb{R} \land \varepsilon >0)(\exists \, n_0 \in \mathbb{N}) ( \forall \, n \in \mathbb{N} \land n \geq n_0)( \forall \, |a_n -a| < \varepsilon)
+\end{align}
+Lidskými slovy: limita posloupnosti představuje číslo, ke kterému se daná posloupnost v nekonečnu přibližuje.
+Zápis limity (čteme: 'limita $a_n$ pro $n$ jdoucí k nekonečnu je $a$'):
+\begin{equation}
+\lim_{n \to \infty} a_n = a
+\end{equation}
+\begin{itemize}
+\item \emph{Konvergentní posloupnost} je posloupnost, která má vlastní limitu.
+\item \emph{Divergentní posloupnost} je posloupnost, která nemá vlastní limitu.
+\end{itemize}
+Příklady limit:
+\begin{align}
+\forall \, q \in (-1, 1); \; \lim_{n \to \infty} q^n = 0\\
+\lim_{n \to \infty} \left( 1 + \frac{1}{n} \right)^n = e \doteq  2,718282 && \text{(Eulerovo číslo)}
+\end{align}
+\subsubsection{Nevlastní limita posloupnosti}
+\label{sec:posl_limita_nev}
+Říkáme, že posloupnost $(a_n)_{n=1}^{\infty}$ má \emph{nevlastní limitu plus nekonečno} (tj. $\lim\limits_{n \to \infty} a_n = +\infty$), jestliže ke každému $K \in \mathbb{R}$ existuje $n_0 \in \mathbb{N}$ tak, že pro všechna přirozená čísla $n \geq n_0$ platí $a_n > K$.
+\begin{align}
+( \forall \, K \in \mathbb{R})( \exists \, n_0 \in \mathbb{N})( \forall \, n \in \mathbb{N}\land n \geq n_0)( \forall \, a_n >K) \left(\lim_{n \to \infty} a_n = + \infty\right)
+\end{align}
+Říkáme, že posloupnost $(a_n)_{n=1}^{\infty}$ má \emph{nevlastní limitu minus nekonečno} (tj. $\lim\limits_{n \to \infty} a_n = -\infty$), jestliže ke každému $L \in \mathbb{R}$ existuje $n_0 \in \mathbb{N}$ tak, že pro všechna přirozená čísla $n \geq n_0$ platí $a_n <L$.
+\begin{align}
+( \forall \, L \in \mathbb{R})( \exists \, n_0 \in \mathbb{N})(\forall \, n \in \mathbb{N} \land n \geq n_0)( \forall \, a_n <L) \left(\lim_{n \to \infty} a_n = - \infty\right)
+\end{align}
+\subsubsection{Věty o limitách posloupností}
+\begin{enumerate}
+\item Každá posloupnost má nejvýše jednu limitu.
+\item Každá konvergentní posloupnost je omezená.
+\item Každá omezená monotónní posloupnost je konvergentní.\\
+Každá shora omezená neklesající posloupnost je konvergentní.\\
+Každá zdola omezená nerostoucí posloupnost je konvergentní.
+\item 
+\begin{align}
+\lim_{n \to \infty} \frac{1}{n} = 0\\
+\left( \forall \, r>0 \right) \left( \lim_{n \to \infty} \frac{1}{n^r} = 0 \right)
+\end{align}
+\item Nechť $(a_n)$ a $(b_n)$ jsou konvergentní posloupnosti, jejichž limity jsou $ \lim a_n = A$, respektive $ \lim b_n = B$ a $c \in \mathbb{R}$ je reálné číslo. Potom jsou konvergentní i posloupnosti: $(a_n + b_n), (a_n - b_n), (a_n \cdot b_n), (c \cdot a_n )$  (a navíc pro nenulová $B$ a $b_n$ je konvergentní i posloupnost $\left( \small \frac{ a_n}{b_n} \right)$) a platí o nich:
+\begin{align}
+\lim_{n \to \infty} (a_n + b_n) &= \lim_{n \to \infty}a_n + \lim_{n \to \infty} b_n &&= A + B\\
+\lim_{n \to \infty} (a_n - b_n) &= \lim_{n \to \infty}a_n - \lim_{n \to \infty} b_n &&= A - B\\
+\lim_{n \to \infty} (a_n \cdot b_n) &= \lim_{n \to \infty}a_n \cdot \lim_{n \to \infty} b_n &&= A \cdot B\\
+\lim_{n \to \infty} (c \cdot a_n ) &= c \cdot \lim_{n \to \infty}a_n &&= c \cdot A\\
+\lim_{n \to \infty} \left(\frac{a_n}{b_n} \right) &= \frac{\lim\limits_{n \to \infty} a_n}{\lim\limits_{n \to \infty} b_n} &&=\frac{A}{B}
+\end{align}
+\end{enumerate}
+
+\subsection{Nekonečné řady}
+\begin{itemize}
+\item \emph{Nekonečná řada} - je součet členů nějaké posloupnosti, například pro posloupnost $(a_n)_{n=1}^{\infty}$ by byla řada:
+\begin{align}
+\sum_{n=1}^{\infty} a_n && a_1 + a_2 + \dotsb + a_n + \dotsb
+\end{align}
+\item \emph{$n$-tý člen řady} se značí $a_n$
+\item \emph{$n$-tý částečný součet} se vypočítá:
+\begin{equation}
+s_n = \sum_{k=1}^n a_k = a_1 + a_2 + \dotsb + a_n
+\end{equation}
+\item \emph{Součet řady} se vypočítá přes limitu, pokud existuje:
+\begin{align}
+s = \lim_{n \to \infty} s_n
+\end{align}
+Má-li řada $\sum\limits_{n=1}^{\infty} a_n $ součet $s$, píšeme:
+\begin{equation}
+s = \sum\limits_{n=1}^{\infty} a_n
+\end{equation}
+\item \emph{Konvergentní řada} je řada, která má konečný součet. Název vyplývá z toho, že posloupnost musí být konvergentní, aby toto platilo.
+\item \emph{Divergentní řada}  je řada, která nemá konečný součet. Název vyplývá z toho, že posloupnost musí být divergentní, aby toto platilo.
+\end{itemize}
+\subsubsection{Geometrická řada}
+Nekonečná řada $\sum\limits_{n=1}^{\infty} a_n $ je geometrická, jestliže posloupnost $(a_n)_{n=1}^{\infty}$ je geometrická. Řada vypadá následovně, označíme-li si \emph{kvocient} geometrické řady $q$:
+\begin{align}
+\sum\limits_{n=1}^{\infty} a_1 \cdot q^{n-1} && ,kde a_1, q \in \mathbb{R}
+\end{align}
+Geometrická řada (s $a \neq 0$) je konvergentní právě tehdy, když $|q| <1$. Její součet potom vypočítáme:
+\begin{equation}
+s = \frac{a_1}{1-q}
+\end{equation}
+\paragraph{Uplatnění} najde vzorec v převodu periodického desetinného rozvoje do tvaru zlomku. Příklad:
+\begin{align*}
+0,278\overline{175} = \frac{278}{1000} + \frac{175}{1000~000} + \frac{175}{100~000~000} + \dotsb\\
+x = 0,275\\
+a_1 =  \frac{175}{1000~000}\\
+q =  \frac{1}{1000}\\
+s =  \frac{a_1}{1-q} = \frac{ \frac{175}{1000~000}}{\frac{999}{1000}} =  \frac{ \frac{175}{1000}}{999} =  \frac{175}{999~000}\\
+0,278\overline{175} = x + s
+\end{align*}
+\paragraph{Ambryho kompletní systém součtu nekonečné geometrické řady}
+\begin{align}
+\left(\forall a_1,q \in \mathbb{R} \right) 
+\begin{cases}
+   (\forall a_1 = 0)(s =0)\\
+   (\forall a_1 \neq 0) \begin{cases}
+   ( \forall |q| < 1) ( s = \frac{a_1}{1-q})\\
+   ( \forall q < -1) (\text{nekonverguje (osciluje)})\\
+   ( \forall q \geq 1)\begin{cases}
+   	(\forall a_1 > 0) (s =+ \infty)\\
+   	(\forall a_1 < 0) (s =- \infty)
+   	\end{cases}
+   \end{cases}
+\end{cases}
+\end{align}
+\paragraph{Ambryho kompletní systém součtu nekonečné aritmetické řady} jen tak pro test těch závorek, je to asi trochu mimo.
+\begin{align}
+( \forall a_1, d \in \mathbb{R}) \begin{cases}
+( \forall d>0) (s = + \infty)\\
+( \forall d<0) (s = - \infty)\\
+( \forall d=0)\begin{cases}
+( \forall a_1>0) (s = + \infty)\\
+( \forall a_1<0) (s = - \infty)\\
+( \forall a_1=0) (s = 0)
+\end{cases}
+\end{cases}
+\end{align}
+\subsection{Finanční matematika}
+\begin{itemize}
+\item $K_0$ je \emph{počáteční kapitál} také \emph{vklad, úvěr}
+\item $n$ je počet let
+\item $K_n$ označuje \emph{kapitál po $n$ letech} (po připsání úroku za $n$-tý rok)
+\item $U_n$ je \emph{úrok za $n$ let}
+\item $i$ je \emph{úroková míra} (roční) vyjádřená desetinným číslem, jestliže je úroková míra $p\%$, potom $i = \frac{p}{100}$
+\item $k$ je \emph{zdaňovací koeficient}, jestliže \emph{daň z úroku} je $d\%$, potom $k = 1 - \frac{d}{100}$
+\end{itemize}
+\subsubsection{Jednoduché úročení}
+Z vloženého kapitálu získáváme pravidelně určitý výnos, tj. roční úrok. Tyto peníze už ale nejsou dále úročeny.
+\begin{align}
+K_n = K_0 \cdot (1+ nki) && U_n = nki \cdot K_0
+\end{align}
+Kapitál $K$ a úrok $U$ po $t$ dnech (úročí se v den splatnosti):
+\begin{align}
+K_n = K_0 \cdot (1+ \frac{t}{360} \cdot ki) && U_n = \frac{t}{360} \cdot ki \cdot K_0
+\end{align}
+\subsubsection{Složené úročení}
+Úročí se i kapitál získaný z úroků. Pro úrokovací období jeden rok:
+\begin{align}
+K_n = K_0 \cdot (1+ki)^n && U_n = K_0 \left[ (1+ki)^2 -1  \right]
+\end{align}
+Úrokovací období $t$ dní. Kapitál $K_m$ a úrok $U_m$ po $m$ úrokovacích obdobích (po připsání úroku za $m$-té období):
+\begin{align}
+K_m = K_0 \cdot \left( 1 + \frac{t}{360} \cdot ki \right)^m && K_m = K_0 \cdot  \left[ \left( 1 + \frac{t}{360} \cdot ki \right)^m - 1 \right]
+\end{align}
+\subsubsection{Pravidelné spoření při složeném úročením}
+\begin{itemize}
+\item $S_m$ značí \emph{naspořený kapitál} po $m$ úrokovacích obdobích (po připsání úroku za $m$-té období)
+\end{itemize}
+Úrokovací období $t$ dní. Při pravidelném ukládání částky $a$ na začátku každého úrokovacího období:
+\begin{align}
+S_m = a \cdot q \cdot \frac{q^m-1}{q-1} && \text{, kde		} q = 1 + \frac{t}{360} \cdot ki
+\end{align}
+Úrokovací období $t$ dní. Při pravidelném ukládání vždy stejné částky. První částka je uložena na začátku prvního úrokovacího období a časový interval mezi dvěma po sobě jdoucími vklady je $\frac{1}{j}$ délky úrokovacího období, kde $j \in \mathbb{N}$:
+\begin{align}
+S_m = K \cdot \frac{q^m - 1}{q-1} && \text{, kde	} q = 1 + \frac{t}{360} \cdot ki
+\end{align}
+A $K$ je naspořený kapitál po připsání úroku za první úrokovací období.
+\subsubsection{Pravidelné splácení dluhu}
+Když je úrokovací období $t$ dní.
+\begin{itemize}
+\item $D$ je počáteční výše \emph{dluhu}
+\item $s$ je výše \emph{splátky} placené vždy na konci úrokovacího období
+\item $m$ je počet splátek
+\end{itemize}
+\begin{align}
+s = D \cdot q^m \cdot \frac{q-1}{q^m -1} &&  \text{, kde	} q = 1 + \frac{t}{360} \cdot i
+\end{align}
+\subsection{Meta}
+Matematický zápis omezenosti posloupností jsem stvořil sám, ale Jonáš mi to schválil, tak snad dobré.
+\subsubsection{Zdroje}
+\begin{itemize}
+\item Tabulky!
+\item \url{https://cs.wikipedia.org/wiki/Posloupnost}
+\item  \url{https://matematika.cz/posloupnosti}
+\item Z tohoto jdou možná pochopit limity \url{http://kdm.karlin.mff.cuni.cz/diplomky/posloupnosti/limita/limita.htm}
+\item \url{https://matematika.cz/limita-posloupnosti}
+\item \url{https://cs.wikipedia.org/wiki/Aritmetick\%C3\%A1_posloupnost}
+\item \url{https://cs.wikipedia.org/wiki/Geometrick\%C3\%A1_posloupnost}
+\end{itemize}
+\subsubsection{Pojmy/ zadání}
+Pojem posloupnosti, způsoby zadání (určení) posloupností, vzorec pro n-tý člen, rekurentní zadání, graf posloupnosti, vlastnosti posloupností, monotónnost, omezenost. Aritmetická a geometrická posloupnost, důležité věty pro aritmetickou a geometrickou posloupnost, praktické užití aritmetické a geometrické posloupnosti. Limita posloupnosti, konvergentní a divergentní posloupnosti, věty o limitách posloupností, výpočty limit. Nekonečná řada, součet nekonečné řady, nekonečná geometrická řada a její součet, převod daného racionálního čísla daného periodickým desetinným rozvojem na tvar zlomku, úlohy na aplikace vzorce pro součet konvergentní nekonečné řady.
+
+\section{Základy planimetrie a konstrukční úlohy}
+\subsection{Základní pojmy a definice}
+\subsubsection{Bod}
+\paragraph{Ambryho definice} Dále nadělitelný, minimální (nebo nulová) výška, šířka a plocha.\\
+Je tzv. \emph{bezrozměrný}. Bod může určen například průnikem 2 různoběžných přímek nebo $n$ souřadnicemi v $n$-rozměrném prostoru. Zapisují jako velká písmena, začínající od A.
+\subsubsection{Přímka}
+\paragraph{Ambryho definice} Množina bodů pro něž platí, že mezi každými 2 body ($A$,$B$) je nekonečně mnoho bodů $C$, které leží na jejich spojnici. Zároveň platí, že pro každé body $A$ a $C$ je možné najít nekonečné množství bodů $B$, které můžou být v libovolné vzdálenosti (až nekonečné).\\
+Přímka je určena 2 body. Nemá počátek a konec. Zapisují se malými písmeny, jako $p$ nebo $q$...
+\subsubsection{Rovina}
+Určená 3 body neležícími v 1 přímce, nebo přímkou a bodem jí nenáležící. Rovina je nekonečné ve všech směrech. Většinou se k jejímu označení používají řecké písmena, standardně začínající $\rho$.
+\subsubsection{Polorovina}
+Určena přímkou, která dělí rovinu na 2 poloviny, a bodem, který jednu z nich určuje. Značí se jako rovina.
+\subsubsection{Polopřímka}
+Má \emph{počátek} (tj. bod), ale nemá konce. Určená dvěma body a informací, který z nich je počátkem a druhý je \emph{pomocným bodem}. Nebo přímkou a jedním jejím bodem, který ji rozdělí a stane se počátkem. 2 takhle vzniklé polopřímky jsou \emph{opačné}. Značí se jako přímka.
+\subsubsection{Úsečka}
+Nejkratší možná spojnice 2 bodů. Je podmnožinou přímky. Označuje se 2 body v  "absolutní hodnotě" (značení pro vzdálenost): $|AB|$
+\subsubsection{Obrazce}
+Část roviny ohraničená spojitou čárou. Patří jsem mnohoúhelníky (jako čtverec, trojúhelník, kosodélník ...), kružnice, elipsy ale i mnoho dalších.
+\subsection{Úhly}
+V rovině může být definován, pomocí 2 polopřímek se stejným počátkem. Nebo ekvivalentně pomocí přímek a bodů.
+\begin{table}[]
+\begin{tabular}{ll}
+název                                                                         & úhel               \\
+nulový                                                                        & $\alpha=0°$        \\
+ostrý                                                                         & $\alpha<90°$       \\
+pravý                                                                         & $\alpha=90°$       \\
+tupý                                                                          & $90°<\alpha<180°$  \\
+dutý                                                                          & $\alpha<180°$      \\
+konvexní                                                                      & $\alpha\leq180°$   \\
+přímý                                                                         & $\alpha=180°$      \\
+\begin{tabular}[c]{@{}l@{}}konkávní\\ (=vypuklý,\\  =nekonvexní)\end{tabular} & $180°<\alpha<360°$ \\
+plný                                                                          & $\alpha=360°$     
+\end{tabular}
+\end{table}
+\subsubsection{Pravidla pro dvojice úhlů}
+Dvě různoběžné přímky se protnou v bodě $V$, úhly které takto vzniknou mají dohromady 360°.\\
+ - Úhly které jsou naproti sobě (tj. nemají společnou ani jednu polopřímku) mají se nazývají \emph{vrcholové} a mají stejnou velikost.\\
+ - Úhly, které mají společné právě jednu polopřímku se nazývají \emph{vedlejší} a společně mají 180°.\\
+ - \emph{Souhlasné} úhly jsou stejně veliké. Označují dvojici, kde jeden označuje úhel, který svírají dvě přímky ($p$,$q$), a druhý označuje úhel mezi $p$ a nějakou rovnoběžku $q$ (nebo $q$ a rovnoběžkou $p$).\\
+ - \emph{Střídavé} úhly jsou stejně veliké. Pravidlo je jen kombinací pravidle o souhlasných a vrcholových úhlech.
+\subsection{Mnohoúhelníky}
+Mnohoúhelník (nebo také \emph{polygon}) je část roviny vymezená úsečkami, které spojují $n$ bodů (kde $n\geq3$) a žádné 4 body neleží na jedné přímce.
+\begin{itemize}
+\item Body určující mnohoúhelník se nazývají \emph{vrcholy}
+\item úsečky spojující sousední vrcholy se nazývají \emph{strany}
+\item \emph{úhlopříčky} - úsečky spojující nesousední vrcholy
+\item \emph{vnitřní úhly} - jsou svírány sousedními stranami
+\item \emph{vnější úhly} - doplňkový úhel do 180° k vnitřnímu úhlu
+\item počet vrcholů, stran a vnitřních úhlů je stejný, označíme-li ho $n$, tak se podle něj vytváří název $n$-úhelník (trojúhelník, čtyřúhelník, pětiúhelník....)
+\end{itemize}
+Zapisuje se pomocí velkých písmen označujících body za sebou bez mezer, před něj se vloží symbol pro tento útvar. Vlastnosti
+\begin{itemize}
+\item \emph{Obvod} je součet délek všech stran.
+\item součet vnitřních úhlů je roven $\pi \left(n-2\right) rad$ 
+\item počet úhlopříček je roven $\frac{1}{2}n(n-3)$
+\item Jestliže existuje kružnice na které leží všechny vrcholy, říkáme, že je \emph{opsaná} mnohoúhelníku. Mnohoúhelník, kterému jde kružnice opsat je \emph{tětivový} (jeho strany jsou tětivami opsané kružnice)
+\item $n$-úhelník jde vždy rozdělit na $n-2$ trojúhelníků
+\end{itemize}
+Dají různě dělit na druhy. Jednoduché vs \emph{degenerované} - alespoň 2 strany se protínají. \emph{Konvexní} (vnitřní úhly jsou menší než 180°) a \emph{nekonvexní} (minimálně jeden vnitřní úhel větší než 180°). \emph{Pravoúhelníky} (všechny vnitřní úhly jsou 90° nebo 270°) a nepravoúhelníky. \emph{Pravidelné} (všechny strany a vnitřní úhly jsou shodné) a nepravidelné.\\
+\subsubsection{Pravidelné mnohoúhelníky}
+\begin{align}
+\alpha = \left(1- \frac{2}{n}\right)\cdot180° && \alpha = \frac{n-2}{n}\pi rad
+\end{align}
+Označíme vnitřní úhel $\alpha$, tak je jeho velikost podle vzorce nahoře, kde $n$ je počet vrcholů. součet všech vnitřních úhlů je potom logicky $(n-2)\cdot180°$.\\
+\begin{equation}
+\label{eq:nuhelnik_vnejsi}
+\beta = \frac{2\pi}{n} rad
+\end{equation}
+Velikost středového úhlu (popřípadě  vnějšího) je podle \ref{eq:nuhelnik_vnejsi}.\\
+\begin{scriptsize}
+\emph{Eukleidovská konstrukce} je možná jsou-li liché dělitele $n$ různá Fermatova čísla. Lol tak to je info jak brno.\\
+\end{scriptsize}
+Obsah se počítá rozdělením na vhodné nepřekrývající se trojúhelníky a obdélníky a sečtením jednotlivých obsahů.\\
+Pravidelné mnohoúhelníky jsou symetrické. Počet os souměrnosti je roven počtu vrcholů. Je-li počet vrcholů sudý má i střed souměrnosti.\\ 
+Má kružnici opsanou (o polměru $r$) i kružnici vepsanou (o polměru $\rho$).  Jejich středy jsou ve stejném bodě. Vzorce pro jejich výpočet $n$-úhelníku s délkou strany $s$:
+\begin{align}
+r = \frac{s}{2\sin\left(\frac{180}{n} \right)} &&r = \frac{s}{2\tan \left(\frac{180}{n} \right)}
+\end{align}
+
+\subsection{Trojúhelníky}
+\label{sec:troj}
+Značí se $\bigtriangleup ABC$. Kde velká tiskací písmena mohou být nahrazena jinými, pokud jsou to body určující vrchol trojúhelníku. Úhly u vrcholů se zpravidla označují $\alpha$, $\beta$ a $\gamma$ nebo jiným řeckým písmenem. Strany se označují malými písmeny, podle protilehlého vrcholu. Vlastnosti:
+\begin{itemize}
+\item Nemá úhlopříčky
+\item Součet délek dvou stran je vždy větší než zbylá strana.
+\item Součet vnitřních úhlů je 180°
+\end{itemize}
+Zavedeme-li veličinu $s = \frac{1}{2}(a+b+c)$, pak můžeme vypočítat úhly následovně:
+\begin{align}
+\sin\left(\frac{\alpha}{2}\right) = \sqrt{\frac{(s-b)(s-c)}{bc}} = \sqrt{\frac{s(s-a)}{bc}}\\
+\sin\left(\frac{\beta}{2}\right) = \sqrt{\frac{(s-a)(s-c)}{ac}} = \sqrt{\frac{s(s-b)}{ac}}\\
+\sin\left(\frac{\gamma}{2}\right) = \sqrt{\frac{(s-b)(s-a)}{ba}} = \sqrt{\frac{s(s-c)}{ba}}
+\end{align}
+\subsubsection{Konstrukce}
+\label{sec:troj-shodnost}
+Trojúhelník je jednoznačně určen:
+\begin{itemize}
+\item \emph{(sss)} - délkou všech 3 stran
+\item \emph{(sus)} - délkou 2 stran a úhlem, který svírají
+\item \emph{(usu)} - délkou jedné strany a velikostí úhlů, které k ní přiléhají
+\item \emph{(Ssu)} - délkou 2 stran a úhlu proti větší z nich
+\end{itemize}
+\subsubsection{Druhy}
+Podle stran:
+\begin{itemize}
+\item \emph{obecný} - žádné 2 strany nejsou shodné
+\item \emph{Rovnoramenný} - 2 strany jsou shodné, ale ne s třetí stranou
+\item \emph{Rovnostranný} - všechny strany jsou shodné (->  všechny úhly shodné -> 60°) 
+\end{itemize}
+\begin{scriptsize}
+Tak to je divná definice z wiki, já bych to dělal tak, že obecné $\ni$ rovnoramenné $\ni$ rovnostranné.\\
+\end{scriptsize}
+Podle úhlů:
+\begin{itemize}
+\item \emph{ostroúhlý} - všechny úhly ostré
+\item \emph{Pravoúhlý} - jeden úhel pravý, zbylé ostré
+\item \emph{Tupoúhlý} - jeden tupý úhel, zbylé ostré
+\end{itemize}
+\subsubsection{cool Věci}
+\paragraph{Výška} je úsečka kolmá na stranu a protínající protilehlý vrchol. Průnik všech 3 výšek se nazývá \emph{ortocentrum} (pro ostroúhlý uvnitř trojúhelníku, pro pravoúhlý ve vrcholu a pro tupoúhlý vně). Bod, kde protíná stranu se nazývá \emph{pata výšky}
+\paragraph{Těžnice} je úsečka spojující střed strany a protilehlý vrchol, označuje se $t_a$, $t_b$ a $t_c$ (nebo jinak podle stran/vrcholů). Všechny 3 se protínají v jednom bodě, který se nazývá \emph{těžiště}. To rozděluje každou těžnici v poměru 2:1. Každá těžnice rozděluje trojúhelník na dva se stejným obsahem.
+\begin{equation}
+t_a = \frac{1}{2}\sqrt{2\left(b^2+c^2\right)-a^2}
+\end{equation}
+V analytické geometrii se dá určit těžiště trojúhelníku v rovině výpočtem $T = \frac{1}{3}(A + B+ C)$
+\begin{align}
+t_x = \frac{1}{3}\left( a_x + b_x + c_x \right) \\
+t_y = \frac{1}{3}\left( a_y + b_y + c_y \right)
+\end{align}
+\paragraph{Střední příčka} je spojnice středů stran (tj. \emph{pat těžnic}). Je rovnoběžná s protilehlou stranou a má poloviční délku. Rozděluje trojúhelník na 4 shodné - \emph{příčkový} \begin{scriptsize}
+(těžiště má ve stejném bodě jako původní trojúhelník)
+\end{scriptsize}
+a 3 při vrcholech.
+\paragraph{Osy úhlů} dělí úhel na polovinu a protilehlou stranu v poměru délek přilehlých stran. Jejich průsečík je středem \emph{kružnice vepsané}, která se dotýká všech stran zevnitř.
+\begin{equation}
+\rho = \frac{1}{2}(a+b+c) \tan\left( \frac{\alpha}{2} \right) \tan\left( \frac{\beta}{2} \right) \tan\left( \frac{\gamma}{2} \right) = \frac{S}{s}
+\end{equation}
+\paragraph{Osy stran} jsou kolmice vedené ze středů stran. Jejich průsečík je středem \emph{kružnice opsané}, která prochází všemi vrcholy.
+\begin{equation}
+r = \frac{a}{2\sin \alpha} = \frac{b}{2\sin \beta} = \frac{c}{2\sin \gamma}
+\end{equation}
+\begin{scriptsize}
+\paragraph{Kružnice připsaná} - dotýká se jedné strany a 2 přímek, které jsou prodloužením zbylých stran.
+\paragraph{Eulerova přímka} - prochází těžištěm,  ortocentrem, středem kružnice opsané. To je náhodička, co? Plus na ní leží střed \emph{kružnice devíti bodů}, což vypadá taky jako shoda náhod.
+\end{scriptsize}
+\subsubsection{Obvod a obsah}
+Obvod:
+\begin{equation}
+o = a +b+c
+\end{equation}
+Obsah:
+\begin{align}
+S &= \frac{av_a}{2} = \frac{bv_b}{2} = \frac{cv_c}{2}\\
+S &= \sqrt{s(s-a)(s-b)(s-c)} && s =o/2\\
+S &= \frac{1}{2}ab\sin\gamma = \frac{1}{2}ac\sin\beta = \frac{1}{2}bc\sin\alpha
+\end{align}
+\subsubsection{Věty}
+\label{sec:troj-vety}
+\paragraph{Sinová věta}
+\begin{align}
+\frac{a}{\sin\alpha} =\frac{b}{\sin\beta} = \frac{c}{\sin\gamma}
+\end{align}
+\paragraph{tangentová věta} - vypadá divně, asi nedůležitá, už se mi to nechce přepisovat....
+\paragraph{Cosinová věta} - platí ve všech podobách po \emph{cyklické zaměně}
+\begin{equation}
+a^2 = b^2 + c^2 - 2bc \cdot \cos \alpha
+\end{equation}
+\subparagraph{Pythagorova věta} - je zjednodušením kosinové věty pro pravoúhlý trojúhelník
+\begin{equation}
+c^2 = a^2 + b^2
+\end{equation}
+\paragraph{Euklidova věta o výšce} - obsah čtverce sestrojeného na odvěsnou pravoúhlého trojúhelníku je roven obsahu obdélníku sestrojeného z obou úseků přepony.
+\begin{equation}
+v_c^2 = c_a \cdot c_b
+\end{equation}
+\paragraph{Euklidova věta o odvěsně} - Obsah čtverce sestrojeného nad odvěsnou pravoúhlého trojúhelníku je roven obsahu obdélníku sestrojeného z přepony a úseku přepony k této odvěsně přilehlé.
+\begin{align}
+a^2 = c \cdot c_a && b^2 = c \cdot c_b 
+\end{align}
+\paragraph{Podobnost trojúhelníků} - když mají 2 úhly shodně jsou trojúhelníky podobné (věta uu). Zapisujeme $\bigtriangleup ABC \sim \bigtriangleup DEF$. Nebo když jsou poměry délek všech odpovídajících si stran stejné (věta sss), nebo když poměry dvou odpovídajících si stran jsou stejné a shodují se v úhlu jimi sevřeném (věta sus). Nebo poměr 2 stran a shodný úhel, proti větší z nich (věta Ssu).
+\subsubsection{Rovnoramenný}
+Osově souměrné podél osy procházející kolmo středem \emph{základny} (tj. strana, jíž jsou přilehlé strany, které jsou shodné) a \emph{hlavním vrcholem} (tj. vrchol protilehlý základně). Tato osa je zároveň výškou a těžnicí základny. Z toho vyplývají další vlastnosti: \emph{Ramena} (tj. stejně dlouhé strany) mají shodné těžnice, výšky.
+\begin{align}
+S = \frac{a^2}{2} \cdot \sin \gamma && \text{kde } a=b\\
+S = \frac{a^2}{2} \cdot \sin 2\alpha && \text{kde } a=b
+\end{align}
+\subsubsection{Rovnostranný}
+Speciální případ rovnoramenného trojúhelníka. Je osově souměrný podle 3 os. Shodné výšky a těžnice. Výšky a těžnice jedné strany jsou totožné. Všechny vnitřní úhly 60°. Střed kružnice opsané, kružnice vepsané,  těžiště a ortocentrum v jednom bodě.
+
+
+\subsection{Čtyřúhelníky}
+Součet velikostí vnitřních úhlů je 360°.
+\subsubsection{Obvod a obsah}
+Obvod je roven součtu všech stran. Obsah $S$ se dá vypočítat pomocí délek úhlopříček $e$, $f$ a úhlu $\theta$, který svírají (libovolný).
+\begin{equation}
+S = \frac{1}{2} ef\sin \theta
+\end{equation}
+Ve vzorcích se také používá $s$, které je polovinou obvodu.
+\begin{equation}
+o =a+b+c+d = 2s
+\end{equation}
+Alternativní výpočty obsahu pro konvexní čtyřúhelník, Bretschneiderův vzorec (asi mimo SŠ):
+\begin{align}
+S = \sqrt{(s-a)(s-b)(s-c)(s-d) - abcd \cos^2\left( \frac{\alpha + \gamma}{2} \right)}
+\end{align}
+Přes rozdělení na 2 trojúhelníky:
+\begin{equation}
+S = \frac{1}{2} \left( ab\sin\alpha cd\sin\gamma \right)
+\end{equation}
+\subsubsection{Rozdělení}
+Základní dělení je na nekonvexní konvexní. Konvexní se dále dělí:
+\paragraph{Různoběžník} - žádné protilehlé strany nejsou rovnoběžné, nijak zajímavý.
+\paragraph{Deltoid} - dvě dvojice vzájemně přilehlých stran mají stejnou velikost. $S = \frac{1}{2}ef$. Tvar létajícího draka. Je osově souměrný podle právě jedné úhlopříčky, která se nazývá \emph{hlavní} (ta druhá je nečekaně \emph{vedlejší}). Úhlopříčky jsou na sebe kolmé a vedlejší je půlena hlavní. Je to různoběžník. Je vždy tečnový. Když je úhel vrcholů u vedlejší úhlopříčky pravý, tak je tětivový.
+\paragraph{Dvojstředový čtyřúhelník} - lze mu opsat i vepsat kružnici. Je zároveň tětivový i tečnový. Z Brahmaguptova vzorce: $S = \sqrt{abcd}$. Může to být čtverec, lichoběžník nebo deltoid.
+\subparagraph{Tečnový} - lze mu opsat tečnu. $S= \rho s$, kde $\rho$ je poloměr vepsané kružnice. Je jím každý čtverec, kosočtverec a deltoid.
+\subparagraph{Tětivový} - lze mu opsat kružnici. Ptolemaiova věta: $ef = ac +bd$. Brahmaguptův vzorec:  $S=\sqrt{(s-a)(s-b)(s-c)(s-d)}$. Např.: čtverec, obdélník a rovnoramenný lichoběžník.
+\paragraph{Lichoběžník}
+Má právě jednu dvojici rovnoběžných stran - nazývají se \emph{základny}, jejich spojnice jsou potom \emph{ramena}. Úhlopříčky se  (u obecného) vzájemně nepůlí a neprotínají se na střední příčce. Velikost střední příčky $m$, která je spojnicí středů ramen je aritmetický průměr základen $m=\frac{a+c}{2}$. Obsah je $S = m\cdot v = \frac{(a+c)\cdot v}{2}$. Výška se dá vypočítat prapodivným vzorcem, který je asi mimo SŠ.
+\begin{equation}
+v = \frac{2}{|a-c|}\sqrt{(s-a)(s-c)(s-b-c)(s-d-c)}
+\end{equation}
+Kromě \emph{obecného} ještě existuje \emph{pravoúhlý lichoběžník} (tj. jedno rameno svírá pravý úhel se základnami) nebo \emph{rovnoramenný} (tj. ramena mají stejné délky), který má kružnici opsanou a je tak tětivovým trojúhelníkem.
+\paragraph{Rovnoběžník (kosodélník)} - má obě dvojice protilehlých stran rovnoběžné. Z toho plyne, že protilehlé strany mají stejnou délku. Z toho plyne, že protilehlé úhly mají stejnou velikost.
+\begin{equation}
+S = ah_a = bh_b = ab \sin\alpha
+\end{equation}
+Kde $h_a$ je výška ke straně $a$ a $\alpha$ je úhel přilehlých stran. Úhlopříčky se vzájemně půlí, jejich délka se spočítá podle kosinové věty:
+\begin{equation}
+e = |AC| = \sqrt{a^2 + d^2 +2ad\cos\alpha} = \sqrt{\left( a+h_a\cot\alpha \right)^2 + h_a^2}
+\end{equation}
+\subparagraph{Kosočtverec} - typ kosodélníku, který má všechny strany stejně dlouhé. Úhlopříčky jsou na sebe kolmé. má 2 osy souměrnosti a jeden střed souměrnosti = průsečík úhlopříček. Lze mu vepsat kružnici, která má střed v průsečíku úhlopříček.
+\begin{align}
+S = \frac{u_1 u_2}{2} = a v_a = a^2 \cdot \sin \alpha && o = 4a = 2\sqrt{u_1^2 + u_2^2}
+\end{align}
+\subparagraph{obdélník} - typ rovnoběžníku, který má všechny vnitřní úhly 90°. Úhlopříčky obdélníka jsou stejně dlouhé a dělí se na půl. Má kružnici opsanou s poloměrem rovným polovině délky úhlopříčky. Osově souměrný podle 2 os - rovnoběžky se stranami procházející průsečíkem úhlopříček. Středově souměrný podle průsečíku úhlopříček.
+\begin{align}
+S = ab\\
+u = \sqrt{a^2 + b^2}\\
+r = \frac{u}{2} && \text{$r$ je poloměr kružnice opsané}\\
+o = 2a + 2b
+\end{align}
+\subparagraph{Čtverec} - typ rovnoběžníku, který má vnitřní úhly 90° a zároveň má všechny strany stejně dlouhé. Dědí vlastnosti obdélníku a kosočtverce: Úhlopříčky jsou shodné, na sebe kolmé a v průsečíku se půlí. Průsečík je středem souměrnosti, kružnice opsané i vepsané. Ze všech obdélníků s daným obvodem má největší obsah a ze všech obdélníků s daným obsahem má nejmenší obvod.
+\begin{align}
+o = 4a\\
+S = a^2\\
+u = a\sqrt{2}\\
+r_1 =\frac{u}{2} && \text{poloměr kružnice opsané}\\
+r_2 =\frac{a}{2} && \text{poloměr kružnice vepsané}\\
+\end{align}
+
+
+
+\subsection{Kruh a kružnice}
+Kružnice (viz \ref{sec:kuz_kruznice}) je množina bodů stejně vzdálená od středu. Plocha kružnicí vymezená je kruh.
+\begin{align}
+o = 2\pi r && S = \pi r^2
+\end{align}
+Pokud chceme místo poloměru $r$ použít průměr $d$?
+\begin{align}
+o = \pi d && S = \pi \frac{d^2}{4}
+\end{align}
+\subsubsection{Vzájemná poloha 2 kružnic}
+Pokud mají střed ve stejném bodě nazývají se \emph{soustředné} a plocha vymezená těmito kružnicemi je \emph{mezikruží}. Nebo se mohou protínat (tj. 2 společné body). Mohou mít dotyk (tj. 1 společný bod) a to buď vnější nebo vnitřní. Nemají li společný bod kružnice buď leží vně, nebo menší leží uvnitř větší.
+\subsubsection{Vzájemná poloha s přímkou}
+Žádný společný bod značí vnější přímku, neboli \emph{nesečnu}. 1 bod dotyku je \emph{tečna} - ta je vždy kolmá na poloměr ze středu do bodu dotyku. 2 body, průsečíky ->\emph{sečna}. Úsečka, která spojuje průsečíky sečny a kružnice se nazývá \emph{tětiva} (podle toho tětivové mnohoúhelníky/čtyřúhelníky).
+\subsubsection{Vyjádření pomocí rovnic}
+\begin{align}
+(x-x_0)^2 + (y - y_0)^2 = r^2 && \text{Středová rovnice}\\
+y^2 = 2rx- x^2 && \text{Vrcholová rovnice}\\
+x = x_0 + r \cos\phi &&\text{parametrické vyjádření}\\
+y =y_0 r\sin\phi
+\end{align}
+\subsubsection{Úhly v kružnici}
+\paragraph{Středový úhel} - jeho vrcholem je střed kružnice $S$ a ramena procházejí body $A$, $B$ na kružnici. Platí, že středový úhel je dvojnásobkem obvodového. (zároveň je taky dvojnásobkem úsekového)
+\paragraph{Obvodový úhel} - ramena prochází body $A$, $B$ a vrchol leží na jejich oblouku této kružnice.
+\paragraph{Úsekový úhel} - úhel svíraný tětivou a s tečnou v bodě $A$.
+\subsubsection{Kruhová výseč}
+Část kruhu, která je "vyseknut" jako dort/pizza. Je určena kružnicí a úhlem. Obvod je  roven součtu délky kruhového oblouku a dvojnásobku poloměru. Středový úhel je $\alpha$ nebo $\theta$.
+\begin{align}
+S = \frac{\theta r^2}{2} && \text{je-li $\theta$ v radiánech}
+S = \frac{\pi r^2}{360} \cdot \alpha  && \text{$\alpha$ ve stupních}
+o = (\theta +2)r  && \text{je-li $\theta$ v radiánech}
+\end{align}
+\paragraph{Kružnicový oblouk}
+Délka části kružnice vymezené úhlem $\alpha$ nebo $\theta$.
+\begin{align}
+l = \frac{2 \pi r}{360} \cdot \alpha && \text{$\alpha$ ve stupních}
+l = r \cdot \theta && \text{je-li $\theta$ v radiánech}
+\end{align}
+
+\subsubsection{Kruhová výseč}
+\begin{align}
+S = \frac{1}{2}r^2(\theta-\sin\theta) && \text{je-li $\theta$ v radiánech}
+\end{align}
+Obvod se spočítá jako součet kružnicového oblouku a tětivy.
+\subsubsection{Mezikruží}
+Obsah je rovna rozdílu obsahů jednotlivých kružnic. Obvod je roven součtu obvodů jednotlivých kruhů.
+\subsubsection{Thaletova kružnice/věta}
+"Všechny obvodové úhly nad průměrem kružnice jsou pravé." Vyplývá to ze znalostí o středovém a obvodovém úhlu.
+\subsection{Obvody a obsahy ostatních rovinných útvarů}
+Musíme si je vhodně rozložit na útvar (nebo jejich  části), u kterých to zvládneme vypočítat. A pak správně sečíst.
+\subsection{Konstrukce}
+ Vyplývá z vlastností obrazců.
+
+\subsection{Meta}
+U trojúhelníků platí cyklická záměna! Někde jsem ji dokonce napsal, někde ale ne...\\
+Chybí konstrukce čtyřúhelníků, tak se to nějak odvodí podle vlastností.\\
+Konstrukce - je to geometrie.. asi na to kašlu.
+\subsubsection{Zdroje}
+\begin{itemize}
+\item moje hlava se špatnou pamětí, tak opatrně s důvěrou
+\item tabulky
+\item \url{https://cs.wikipedia.org/wiki/Obrazec}
+\item \url{https://cs.wikipedia.org/wiki/Bod}
+\item \url{https://cs.wikipedia.org/wiki/Polop\%C5\%99\%C3\%ADmka}
+\item \url{https://cs.wikipedia.org/wiki/\%C3\%9Ahel}
+\item \url{https://cs.wikipedia.org/wiki/Mnoho\%C3\%BAheln\%C3\%ADk}
+\item \url{https://cs.wikipedia.org/wiki/Troj\%C3\%BAheln\%C3\%ADk}
+\item další wiki, tady v tom je docela obsáhlá
+\end{itemize}
+\subsubsection{Pojmy/Zadání}
+Základní planimetrické pojmy a vztahy mezi nimi: bod, přímka, rovina, polopřímka, polorovina, úsečka, úhel. Dvojice úhlů vrcholových, vedlejších, střídavých, souhlasných. Trojúhelník, shodnost trojúhelníků, konstrukce trojúhelníků. Čtyřúhelník, lichoběžník, rovnoběžník, strany, úhly a úhlopříčky ve čtyřúhelníku, tečnový a tětivový čtyřúhelník, konstrukce čtyřúhelníků. Mnohoúhelník, konvexní a nekonvexní n-úhelník, pravidelný n-úhelník, strany, úhly, úhlopříčky, obsahy a obvody. Kružnice, úhly v kružnici, obvodový, středový a úsekový úhel, Thaletova kružnice, vzájemná poloha přímky a kružnice, vzájemná poloha kružnic, konstrukce kružnice, konstrukce tečny ke kružnici, délka kružnice, délka kružnicového oblouku, kruh, kruhová výseč, úseč, obvod a obsah kruhu, kruhové výseče a úseče. Obvody a obsahy dalších rovinných útvarů. Pojem konstrukční úlohy, základní geometrické konstrukce, konstrukce na základě výpočtu, konstrukce na základě geometrických míst bodů.
+
+
+\section{Zobrazení v rovině}
+Zobrazení přiřazuje každému bodu $A$ útvaru $U$ právě jeden bod $A'$ útvaru $U'$. Bod $A$ je označován jako \emph{vzor} a bod $A'$ jako \emph{obraz}.
+\paragraph{Samodružnost} - bod je samodržný (nebo také \emph{invariantní}) zobrazí-li se sám do sebe (tj. $A =A'$). Samodružný ( /invariantní) útvar je takový útvar, který se zobrazí sám do sebe, tj. platí $U=U'$.
+\subsection{Afinní zobrazení}
+Asi mimo SŠ(, ikdyž v tabulkách je pravoúhlá afinita *emotikona-pokrceni-ramen*). Zachovává rovnoběžnost přímek. Každé 3 body na přímce se zobrazí buď do jednoho bodu nebo do 3 bodů se stejným dělícím poměrem. Příklad zkosení.
+\subsection{Podobná zobrazení}
+Útvary jsou si podobné je-li jeden získán z druhého pomocí zvětšení (/zmenšení), posunutí, rotace a zrcadlení. Podobnost zachovává velikost úhlů a poměr délek. Zachovává tvar. Je speciálním případem afinního zobrazení. Existuje takové kladné číslo $k$ (\emph{poměr podobnosti}), že platí $|XZ| = |X'Y'|$.
+\paragraph{Stejnolehlost (homotetie)} - má jediný samodružný bod (\emph{střed stejnolehlosti}). Všechny přímky spojující vzorový bod a jeho obraz procházejí středem souměrnosti $S$. Koeficient $\kappa$. Všechna podobná zobrazení se dají složit ze stejnolehlosti a shodnosti.
+\begin{align}
+\frac{|SX'|}{|SX|} = |\kappa| && |X'Y'| = |\kappa|\cdot|XZ|
+\end{align} 
+\subsection{Shodné zobrazení}
+Speciálním případem podobnosti. Zachovává velikost i tvar. Patří sem \emph{posunutí} (\emph{translace}),  \emph{otočení} (\emph{rotace}) a \emph{zrcadlení}. Patří sem taktéž osová (tj. zrcadlení) a středová (tj. rotace o 180°) souměrnost.
+\paragraph{Nepřímá shodnost} - obraz lze získat posunutím, rotací a zrcadlením vzoru.
+\paragraph{Přímá shodnost} - obraz lze získat pouze posunutím a rotací vzoru.
+\paragraph{Identita} - typ přímé shodnosti, kdy je obrazem každého bodu $X$ sám bod $X$.
+\subsection{Využití v konstrukčních úlohách}
+Podobnost (\ref{sec:troj-vety}) a shodnost (\ref{sec:troj-shodnost}) trojúhelníků, Pythagorova a Euklidovy věty (\ref{sec:troj-vety}) jsou v kapitole o trojúhelnících \ref{sec:troj}. O kružnicích: Každé 2 existující kružnice v rovině jsou si nejen podobné, ale jsou i stejnolehlé a pokud nejsou soustředné nebo stejně velké nebo stejně velké, tak právě 2 způsoby.
+\subsection{Meta}
+\subsubsection{Zdroje}
+\begin{itemize}
+\item Tabulky ftw
+\item \url{https://www.karlin.mff.cuni.cz/~portal/geom_zobr/?page=vz4}
+\item \url{https://cs.wikipedia.org/wiki/Geometrick\%C3\%A9_zobrazen\%C3\%AD}
+\item \url{https://cs.wikipedia.org/wiki/Stejnolehlost}
+\item \url{https://cs.wikipedia.org/wiki/St\%C5\%99edov\%C3\%A1_soum\%C4\%9Brnost}
+\item \url{https://cs.wikipedia.org/wiki/Podobnost_(geometrie)}
+\item \url{https://cs.wikipedia.org/wiki/Shodn\%C3\%A9_zobrazen\%C3\%AD}
+\end{itemize}
+
+\subsubsection{Pojmy/Zadání}
+Shodná zobrazení v rovině, vzor, obraz, samodružný útvar, samodružný bod, identita, osová souměrnost, středová souměrnost, otočení, posunutí. Řešení konstrukčních úloh s využitím shodných zobrazení. Podobnost a stejnolehlost, podobnost trojúhelníků, Pythagorova věta, Euklidovy věty, stejnolehlost kružnic, řešení konstrukčních úloh pomocí stejnolehlosti.
+
+\section{Tělesa}
+Tělesa jsou typem geometrického útvaru v (minimálně 3-dimenzionálního) prostoru. Mají nějaký objem a povrch. Je to omezená část prostoru ohraničená plochami. \emph{Konvexní} v geometrii znamená, že obsahuje-li útvar (2D nebo 3D či N-rozměrný) 2 body, musí obsahovat i všechny body ležící na přímce je spojující. \emph{Nekonvexní} jednoduše znamená opak: existují aspoň dva body, které když spojíme přímkou, tak část přímky leží mimo těleso.\\
+\emph{Stěnová úhlopříčka} je normálně úhlopříčka daného mnohoúhelníku, tj. spojuje nesousední vrcholy. \footnote{Pomocí úhlopříček lze určit konvexita mnohoúhelníku. Náleží li všechny úhlopříčky mnohoúhelníku, je konvexní.}\\
+\emph{Tělesová úhlopříčka} spojuje nesousední vrcholy mnohostěnu a zároveň prochází vnitřkem tělesa. Některé tělesa je nemají např. jehlany a tetraedr.
+\subsection{Cavalieriův princip}
+Říká, že tělesa mají stejný objem, jestliže existuje roviny, pro všechny roviny jí rovnoběžné platí, že jejich průnik s tělesy má stejnou plochu.
+\subsection{Mnohostěny}
+Jeho povrch se skládá z konečně mnoha stěn, které jsou mnohoúhelníky. Pro konvexní mnohostěny platí \emph{Eulerova věta}:
+\begin{equation}
+v - h + s = 2
+\end{equation}
+Kde $v$ je počet vrcholů, $h$ je počet hran a $s$ je počet stěn.\\
+Mezi mnohostěny patří mnoho různých typů, některé z nich jsou pravidelné a mají speciální jména - jehlany, hranoly (pro ně speciální případ kvádr (a pro něj speciální případ krychle)). Obvykle se pojmenovávají podle počtu stěn.\\
+\subsubsection{Platónská tělesa}
+Byly objeveny už v antice. Je to skupina pravidelných konvexních mnohostěnů. Z každého vrcholu vychází stejný počet hran a všechny stěny tvoří shodné pravidelné mnohoúhelníky. V trojrozměrném prostoru existuje 5 takových těles.
+\begin{table}[]
+\begin{tabular}{llllll}
+název               &           & stěn                                              & vrcholů                    & hran                      & typ stěny   \\
+čtyřstěn (trojboký jehlan)         & tetraedr  & \cellcolor[HTML]{9698ED}4                         & \cellcolor[HTML]{9698ED}4  & 6                         & trojúhelník \\
+šestistěn (krychle) & hexaedr   & \cellcolor[HTML]{FFFE65}6                         & \cellcolor[HTML]{FD6864}8  & 12                        & čtverec     \\
+osmistěn            & oktaedr   & \cellcolor[HTML]{FD6864}8                         & \cellcolor[HTML]{FFFE65}6  & {\color[HTML]{000000} 12} & trojúhelník \\
+dvanáctistěn        & dodekaedr & \cellcolor[HTML]{96FFFB}{\color[HTML]{000000} 12} & \cellcolor[HTML]{67FD9A}20 & 30                        & pětiúhelník \\
+dvacetistěn         & ikosaedr  & \cellcolor[HTML]{67FD9A}20                        & \cellcolor[HTML]{96FFFB}12 & 30                        & trojúhelník
+\end{tabular}
+\end{table}
+\paragraph{Dualita}
+Když se podíváme na tabulku, všimneme si, že barevně vyznačené mají stejné čísla, jako k nim duální těleso, akorát prohozené vrcholy a stěny. A to je asi princip duality [fakt nevíím].
+\subsection{Hranoly}
+\begin{align}
+S = 2S_p + S_{pl} &&V = S_p v
+\end{align}
+Je to typ mnohostěnů, který má 2 podstavy tvaru stejných mnohoúhelníků (jejichž strany jsou rovnoběžné) o obsahu $S_p$ leží v rovnoběžných rovinách vzdálených $v$. $S_{pl}$ je obsah pláště. Jestli je hranol \emph{kolmý} nebo \emph{kosý}, nemá vliv na objem, pokud je výška stejná. \emph{Pravidelný n-boký} označuje hranol, jehož podstavou jsou pravidelné mnohostěny. 
+\subsubsection{Kvádr}
+Kolmý hranol, jehož podstavami jsou pravoúhelníky.
+\begin{align}
+S = 2(ab +ac +bc) && V = abc && u_t =\sqrt{a^2 + b^2 + c^2}
+\end{align}
+Kde $a$, $b$,$c$ jsou hranami kvádru. $u_t$ je tělesová úhlopříčka.
+\subsubsection{Krychle}
+Speciální případ kvádru, jehož stěny jsou shodné čtverce. $a$ je  délka hrany krychle.
+\begin{align}
+S = 6a^2 && V = a^3 && u_t = a\sqrt{3}
+\end{align}
+
+\subsection{Jehlany}
+\begin{align}
+S = S_p + S_{pl} && V = \frac{1}{3}S_p v
+\end{align}
+Vznikne spojením vrcholů podstavy a \emph{hlavního vrcholu}. Výška $v$ je vzdálenost hlavního vrcholu od podstavy.
+\subsubsection{Komolé jehlany}
+Je to jehlan, kterému byla "useknutá" špička rovinou rovnoběžnou s rovinou podstavy.
+\begin{align}
+S = S_{p1} + S_{p2} + S_{pl} && V = \frac{1}{3}\left( S_{p1} + \sqrt{ S_{p1} S_{p2}} +  S_{p2} \right)
+\end{align}
+\subsection{Rotační tělesa}
+\subsubsection{Rotační válec}
+Vznikne například rotací obdélníku kolem své strany.
+\begin{align}
+S &= 2S_p + S_{pl} && V = S_p v\\
+S &= 2\pi r(r+v) && V = \pi r^2 v
+\end{align}
+\subsubsection{Rotační kužel}
+\begin{align}
+S = S_p + S_{pl} && V = \frac{1}{3}S_p v\\
+S = \pi r \left( r+s \right) && V = \frac{1}{3}\pi r^2 v
+\end{align}
+Kde délka strany $s = \sqrt{r^2 + v^2}$.
+\subsubsection{Komolý rotační kužel}
+\begin{align}
+S = \pi  \left( r_1^2 + r_2^2\right) + \pi s  \left( r_1 + r_2\right)  && V = \frac{1}{3}\pi v \left( r_1^2 + r_1 r_2 + r_2^2\right)
+\end{align}
+Kde strana $s = \sqrt{(r_1-r_2)^2 + v^2}$. Podstavy jsou rovnoběžné.
+\subsubsection{Koule}
+\begin{align}
+V =\frac{4}{3} \pi r^3 && S = 4 \pi r^2
+\end{align}
+Povrch koule $S$ se také nazývá obsah kulové plochy.
+\subsubsection{Kulová úseč a kulový vrchlík}
+\emph{Kulová úseč} je průnik koule a poloprostoru hraničícího s rovinou, která je od $S_0$ středu koule vzdálená méně než poloměr $r$. To jest část koule "odsekneme".\\
+\emph{Kulový vrchlík} je  průnik kulové plochy a poloprostoru. Takže podstava (To jest plocha získaná "odseknutím") se tam nepočítá.
+\begin{align}
+V = \frac{1}{6} \pi v \left(3r_1^2 + v^2\right) && \text{, kde $r_1$ je poloměr podstavy}\\
+S = 2 \pi rv
+\end{align}
+\subsubsection{Kulová vrstva a kulový pás}
+\emph{Kulová vrstva} průnik koule a vrstvy, jejíž poloroviny mají s koulí nějaký průnik (jejich vzdálenost od středu je menší než poloměr $r$)
+\emph{Kulový pás} průnik kulové plochy a vrstvy, jako výše. Takže opět podstavy se nezapočítávají.
+\begin{align}
+V = \frac{1}{6} \pi v \left(3r_1^2 +3r_2^2 + v^2\right) && \text{, kde $r_1$ a$r_2$ jsou poloměry podstav}\\
+S = 2 \pi rv
+\end{align}
+
+\subsection{Meta}
+\st{dualita je jen v ANJ, tak nevím terminologii.}\\
+\st{Konvexnost nemá nikde dobrou definici}\\
+\subsubsection{Zdroje}
+Tabulky a wikipedie	
+\subsubsection{Zadání/pojmy}
+Pojem tělesa, konvexní a nekonvexní tělesa, mnohostěny, hranol, kvádr, krychle, vrcholy, hrany, stěny, stěnové úhlopříčky, tělesové úhlopříčky. Jehlan, komolý jehlan. Pravidelné mnohostěny ( tzv. platónská tělesa ) princip duality, Eulerova věta o mnohostěnech. Rotační tělesa, válec, kužel, komolý kužel, koule, kulová plocha. Polokoule, kulová úseč, kulový vrchlík ( plášť kulové úseče ), kulová výseč. Povrchy a objemy těles. Cavalieriho princip.
+
+\section{Polohové a metrické úlohy ve stereometrii}
+\label{sec:18}
+\subsection{Vzájemná poloha bodů, přímek a rovin v prostoru}
+\label{sec:stereo_polohy}
+\subsubsection{Bod a}
+\label{sec:stereo_polohy-bod}
+Bod je v $n$-rozměrném prostoru určen $n$ souřadnicemi v jednotlivých osách.
+\paragraph{Bod} - Pokud mají všechny hodnoty souřadnic stejná jedná se o jeden bod, v opačném případě se jedná o dva různé body $A$, $B$ se vzdáleností určenou vzorcem (podobný těžnici kvádru):
+\begin{equation}
+\label{eq:vzdalenost_bodu}
+|AB| = \sqrt{(A_x-B_x)^2 + (A_y-B_y)^2 + (A_z-B_z)^2}
+\end{equation}
+\paragraph{Přímka} - Bod buď leží na přímce nebo na ní neleží. Dosadíme souřadnice bodu do rovnice přímky, a pokud dojdeme ke sporu, tak bod není součástí přímky. Vzdálenost bodu a přímky je úsečka, která je částí \emph{kolmice} na přímku procházející bodem v úseku od \emph{paty kolmice} po bod. Vzdálenost bodu $M$ a přímky $p: X = A + t \vec{u}$
+\begin{equation}
+|Mp| = \frac{|(M-A)\times \vec{u}|}{|\vec{u}|}
+\end{equation}
+\paragraph{Rovina} - Dosadíme, li souřadnice bodu do rovnice roviny a dostaneme se do sporu, pak bod neleží v rovině. Vzdálenost bodu a přímky se vypočítá jako délka úsečky kolmé na rovinu a končící v bodě. Vzdálenost bodu $M = [m_x, m_y, m_z]$ a roviny $\rho: ax +by +cz +d =0$
+\begin{equation}
+|M\rho| = \frac{|am_x + bm_y + cm_z + d|}{\sqrt{a^2 + b^2 + c^2}}
+\end{equation}
+\subsubsection{Přímka a}
+\label{sec:stereo_polohy-primka}
+Přímka mlže být vyjádřena pomocí parametrických rovnic:
+\begin{align}
+x = x_0 + tu_x\\
+y = y_0 + tu_y\\
+z = z_0 +tu_z
+\end{align}
+Kde bod $A = [x_0,y_0,z_0]$ je nějaký bod, kterým přímka prochází. Konstanty $u_x, u_y, u_z$ určují \emph{směrnici} (tj. směrový vektor $\vec{u} = (u_x, u_y, u_z)$) přímky. Parametr přímky je označen $t$.\\
+Přímka je určena bodem $A$ a směrovým vektorem $\vec{u}$, dá se také zapsat jako:
+\begin{equation}
+X = A +t \vec{u}
+\end{equation}
+\paragraph{Přímka} Jejich vzájemná poloha lze zjistit vytvořením soustavy rovnic obou předpisů. Případně porovnáním směrnic k odlišení mimoběžek a rovnoběžek.
+\begin{itemize}
+\item  Mohou být \emph{rovnoběžné}, to znamená, že každý bod $A$ je součástí přímky $p$ má stejnou vzdálenost od přímky $q$, tato vzdálenost je vzdáleností přímek. Vypočítáme jí jako vzdálenost bodu, který je součástí první přímky od přímky (druhé).\\
+Speciálním případem rovnoběžnosti je, když jsou přímky identické (tj. jejich vzdálenost je nulová). Jedna vznikla posunutím druhé, z toho vyplývá, že mají stejnou směrnici. Odchylka je nulová.
+\item \emph{Různoběžné} to znamená, že mají právě jeden společný bod. Jeho souřadnice zjistíme vyřešíme soustavy rovnic pro obě přímky. \emph{Odchylka} je úhel, který mezi sebou přímky svírají. Pokud je úhel pravý, tak se jedná \emph{kolmost} přímek.
+\item \emph{Mimoběžnost} je možná jen ve  3D (a více rozměrech), tj. přímky nejdou umístit do jedné roviny. Přímky nemají žádný společný bod, ale nejsou rovnoběžné. Přímka protínající obě mimoběžky se nazývá \emph{příčka mimoběžek}.\\
+Příčka kolmá na obě mimoběžky se nazývá \emph{osa mimoběžek}. Vzdálenost mimoběžek je úsečka, která je součástí osy mimoběžek a je ohraničena průniky s přímkami. Odchylka mimoběžek je odchylkou dvou různoběžek, které jsou rovnoběžkami původních přímek.
+\end{itemize}
+Odchylka 2 přímek je $\omega$. $\vec{u}$ a $\vec{v}$ jsou směrové vektory přímek $p$ a $q$. Poté platí:
+\begin{equation}
+\cos\omega= \frac{|\vec{u}\cdot\vec{v}|}{|\vec{u}|\cdot |\vec{v}|} = \frac{|u_x v_x + u_y v_y + u_z v_z|}{\sqrt{u_x^2 + u_y^2 + u_z^2} \cdot \sqrt{v_x^2 + v_y^2 + v_z^2}}
+\end{equation}
+Z toho vyplývá podmínka rovnoběžnosti: $\vec{u} = k \vec{v}$ (kde $k \neq 0$)\\
+A podmínka kolmosti: $\vec{u} \cdot \vec{v} = 0$\\
+Asi mimo SŠ, ale přeci jen jsem to našel:\\
+Vzdálenost $|pq|$ dvou mimoběžných přímek.
+\begin{align}
+p: X_p = A_p + t_p \vec{u_p}\\
+q: X_q = A_q + t_q \vec{u_q}\\
+|pq| = \left| \frac{\vec{u_p} \times \vec{u_q}}{| \vec{u_p} \times \vec{u_q}|} \cdot (A_q - A_p) \right|
+\end{align}
+Je vidět, že tato rovnice nefunguje, když $| \vec{u_p} \times \vec{u_q}| = 0$. To je případ, kdy jsou přímky rovnoběžné.
+\paragraph{Rovina}
+\begin{itemize}
+\item \emph{Rovnoběžné} - nemají společný žádný bod. Jejich vzdálenost je úsečka kolmá na přímku i rovinu, která začíná a končí v průsečících s nimi. Vypočítáme jako vzdálenost bodu od přímky, nebo jako vzdálenost bodu od roviny, přičemž bod je součástí druhého útvaru.
+\item \emph{Přímka leží v rovině.} Mají společné všechny body přímky.
+\item \emph{Různoběžné} - mají společný právě 1 bod. Mají (nenulovou) odchylku. Ta je 90° pokud jsou kolmé, jinak je rovna odchylce přímky a jejího pravoúhlého průmětu do roviny. (Tj. vytvořím další rovinu, která je kolmá na původní rovinu a ve které leží přímka. Pak spočítám odchylku přímky a průniku (tj. průsečnice) rovin.)
+\end{itemize}
+Odchylka $\omega$ přímky $p$ se směrovým vektorem $\vec{u}$ a roviny $\rho$ s normálovým vektorem $\vec{n}$:
+\begin{equation}
+\sin \omega = \frac{|\vec{u}\cdot\vec{v}|}{|\vec{v}|\cdot|\vec{v}|}
+\end{equation}
+Z toho vyplývá podmínka rovnoběžnosti :$\vec{u} \cdot \vec{n} = 0$\\
+A podmínka kolmosti:  $\vec{u} = k \vec{n}$ (kde $k \neq 0$)
+\subsubsection{Rovina}
+Parametrické vyjádření roviny:
+\begin{align}
+x = x_0 + tu_x + sv_x\\
+y = y_0 + tu_y + sv_y\\
+z = z_0 + tu_z + sv_z\\
+\end{align}
+Kde $[x_0,y_0,z_0]$ je nějaký bod $A$ ležící v rovině a vektory $\vec{u} = (u_x , u_y , u_z)$ a $\vec{v} = (v_x , v_y , v_z)$ jsou lineárně nezávislé. Parametry $t$ a $s$ jsou reálná čísla. \\
+Rovinu lze taktéž vyjádřit pomocí obecné rovnice:
+\begin{align}
+ax +by +cz +d = 0\\
+\vec{n} = (a,b,c) \neq \vec{o}
+\end{align}
+Kde \emph{normálový} vektor je nenulový a kolmý na rovinu.
+\paragraph{Rovina}
+\begin{itemize}
+\item Rovnoběžné - tj. vzdálenost všech bodů jedné roviny k druhé rovině je stejná. Vypočítáme jako vzdálenost bodu (náležícímu první rovině) od roviny (druhé).
+\item Různoběžné - mají vždy průnik v podobě přímky nazývané \emph{průsečnice}. Její směrnice (směrový vektor) je určen vektorovým součinem \emph{normálových vektorů} rovin. Parametrický předpis této přímky je možné také zjistit řešením soustavy rovnic obou rovin. Odchylka dvou rovin je odchylka jejich průsečnic s rovinou, která je k oběma rovinám kolmá. Odchylku rovin $\rho$ a $\sigma$ píšeme: $| \measuredangle  \rho \sigma|$ .
+\end{itemize}
+Odchylka $\omega$ roviny $\rho_1$ s normálovým vektorem $\vec{n_1}$ a roviny $\rho_2$ s normálovým vektorem $\vec{n_2}$:
+\begin{equation}
+\cos \omega = \frac{|\vec{n_1}\cdot\vec{n_2}|}{|\vec{n_1}|\cdot|\vec{n_2}|}
+\end{equation}
+Z toho vyplývá podmínka rovnoběžnosti: $\vec{n_2} = k \vec{n_1}$ (kde $k \neq 0$)\\
+A podmínka kolmosti: $\vec{n_1} \cdot \vec{n_2} = 0$
+\subsection{Průnik přímky tělesem}
+\subsection{Řez tělesa rovinou}
+Strategie prodlužování přímek, o kterých víme, že jsou součástí roviny do rovin některé stěny/strany tělesa. Pak spojit tento bod, který je jejich průnikem, s nějakým dalším ve stejné rovině.
+\subsection{Meta}
+\subsubsection{Zdroje}
+\begin{itemize}
+\item moje hlava, tabulky, wiki...	
+\item \url{http://kdm.karlin.mff.cuni.cz/diplomky/ludmila_kadlecova/bezcabri/dveprimky.php}
+\item \url{https://www.karlin.mff.cuni.cz/~portal/analyticka_geometrie/prostor.php?kapitola=parametrickeVyjadreniPrimky}
+\item \url{http://ucebnice.krynicky.cz/Matematika/05_Stereometrie/2_Metricke_vlastnosti/5201_Odchylka_primek_I.pdf}
+\item \url{https://forum.matematika.cz/viewtopic.php?id=33717}
+\item \url{http://www.realisticky.cz/kapitola.php?id=131}
+\item \url{https://en.wikipedia.org/wiki/Skew_lines}
+\end{itemize}
+\subsubsection{Pojmy/Zadání}
+Vzájemná poloha bodů, přímek a rovin v prostoru. Kritéria rovnoběžnosti přímek a rovin. Průsečík přímky a roviny, průsečnice dvou rovin. Řez tělesa rovinou, průnik přímky s tělesem. Odchylka přímek, kolmost přímek, kolmost rovin, odchylka přímky a roviny, odchylka dvou rovin. Vzdálenost dvou bodů, bodu od přímky, bodu od roviny, vzdálenost dvou přímek, vzdálenost dvou rovin.
+
+\section{Vektorová algebra}
+\subsection{Vzdálenost bodů a střed úsečky}
+Vzdálenost bodů je triviální, viz \ref{sec:stereo_polohy-bod} Střed úsečky je aritmetickým průměrem souřadnic bodů v jednotlivých osách zvlášť viz \ref{sec:stred-usecky}.
+\subsection{Soustavy souřadnic}
+Osy souřadnic jsou na sebe navzájem kolmé, jednotky délky na osách jsou stejné. Body se značí často stylem $A[a_1, a_2, a_3]$, kde hodnoty odpovídají vzdálenosti v dané souřadnicové ose. 
+
+\subsection{Orientované úsečky}
+\emph{Orientovaná úsečka} je $\overrightarrow{AB}$ uspořádaná dvojice bodů, kde $A$ je počáteční bod a $B$ je bod koncový. její velikost značíme $|AB|$. \emph{Souhlasně rovnoběžné nenulové orientované úsečky} $AB \uparrow \uparrow CD$. Jsou rovnoběžné a souhlasně orientované - tj. posunutím jsme schopni je dát na polopřímku se stejným počátkem a směrem.\\
+\emph{Nulová orientovaná úsečka} má nulovou velikost (tj. délku), tzn. body $A$ a $B$ jsou jedním bodem. V opačném případě se jedná o \emph{nenulovou orientovanou úsečku}.
+
+\subsection{Definice vektoru přes orientované úsečky}
+\emph{Nulový vektor} je množina všech  nulových orientovaných úseček, značí se $\vec{o}$. Naproti tomu \emph{Nenulový vektor} $\vec{u}$ je množina všech nenulových orientovaných úseček, které mají stejnou velikost a jsou souhlasně rovnoběžné. Možnosti zápisu:
+\begin{align}
+\overrightarrow{AB} \in \vec{u} && \text{$\overrightarrow{AB}$ určuje vektor $\vec{u}$}\\
+\vec{u} = B - A &&\text{$\overrightarrow{AB}$ je umístěním vektoru  $\vec{u}$ (do bodu $A$)}\\
+\vec{u} = \overrightarrow{AB} && \text{$\overrightarrow{AB}$ je reprezentantem vektoru $\vec{u}$}
+\end{align}
+\emph{Opačný vektor} k vektoru $\vec{u} = B - A $ je $- \vec{u} = A-B$
+\subsection{Souřadnice vektoru}
+Souřadnice vektoru $\vec{u} = B-A$ v jednotlivých osách:
+\begin{align}
+u_1 = b_1 -a_1 && u_2 = b_2 - a_2 && u_3 = b_3 - a_3
+\end{align}
+Zápis:
+\begin{align}
+\vec{u} &= \left(u_1, u_2 \right) && \text{ V rovině}\\
+\vec{u} &= \left(u_1, u_2, u_3 \right) && \text{ V prostoru}
+\end{align}
+\subsection{Sčítání vektorů a násobení reálnými čísly}
+Vede-li $\vec{u}$ z bodu $A$ do bodu $B$ a vektor $\vec{v}$ z bodu $B$ do bodu $C$. Pak vektor, který je jejich součet odpovídá orientované úsečce $AC$. Pokud je číslo $k \in \mathbb{R}$  menší než nula, tak se orientace vektoru otočí.
+\begin{align}
+\text{V rovině} && \text{V prostoru}\\
+\vec{u} + \vec{v} = \left( u_1 + v_1, u_2 +v_2\right) && \vec{u} + \vec{v} = \left( u_1 + v_1, u_2 +v_2, u_3 + v_3 \right)\\
+k \vec{u} = (ku_1, ku_2) && k \vec{u} = (ku_1, ku_2, ku_3)
+\end{align}
+\subsection{Lineární kombinace a závislost}
+\paragraph{Lineární kombinace} vektorů je rovna $k_1 \vec{u_1} + \dotsb + k_n \vec{u_n}$ pro $k_1, \dotsc, k_n \in \mathbb{R}$
+\paragraph{Lineárně závislé} jsou vektory, kde je nějaký vektor lineární kombinací ostatních.\\
+V rovině:
+\begin{itemize}
+\item 2 vektory, které lze umístit na jednu přímku
+\item Každá skupina o 3 a více vektorech
+\end{itemize}
+V prostoru:
+\begin{itemize}
+\item 2 vektory, které lze umístit do jedné přímky
+\item 3 vektory, které lze umístit do jedné roviny
+\item Každá skupina o 4 a více vektorech
+\end{itemize}
+\paragraph{Lineárně nezávislé} jsou takové vektory, kde žádný vektor není lineární kombinací ostatních
+\subsection{Velikost}
+Velikost se značí $|\vec{u}|$ a její hodnoty se získají následovně:
+\begin{align}
+|\vec{u}| = \sqrt{u_1^2 + u_2^2 } && \text{V rovině}\\
+|\vec{u}| = \sqrt{u_1^2 + u_2^2 + u_3^2 }&& \text{V prostoru}
+\end{align}
+\subsubsection{Jednotkový vektor}
+\emph{Jednotkový vektor} je takový vektor, jehož norma (tj. délka) je rovna jedné.
+\paragraph{Norma} je funkce, která přiřazuje každému vektoru kladné reálné číslo (tzv. délka nebo velikost). Nulový vektor má jako jediný délku 0. 
+\subsection{Skalární součin}
+Za podmínek $\vec{u} \neq \vec{o} \land \vec{v} \neq \vec{o}$ (v jiných případech platí $ \vec{u} \cdot \vec{v} = 0$) platí následující rovnice:
+\begin{equation}
+\vec{u} \cdot \vec{v} = | \vec{u}| \cdot |\vec{v}| \cdot \cos \varphi
+\end{equation}
+A to je v prostoru a v rovině následující:
+\begin{align}
+\vec{u} \cdot \vec{v} = u_1 v_1 + u_2 v_2 && \text{V rovině}\\
+\vec{u} \cdot \vec{v} = u_1 v_1 + u_2 v_2 + u_3 v_3 && \text{V prostoru}
+\end{align}
+\subsection{Úhel vektorů}
+Také nazýván jako \emph{odchylka}. Označíme si ho $\varphi$ a poté platí:
+\begin{equation}
+\cos \varphi = \frac{\vec{u} \cdot \vec{v}}{ |\vec{u}| \cdot |\vec{v}|}
+\end{equation}
+\paragraph{Rovnoběžnost} $\vec{u} \| \vec{v}$, musí platit, že jsou oba vektory nenulové a úhel vektorů je $0$ nebo $\pi$
+\begin{equation}
+\vec{u} \| \vec{v}  \iff  \vec{u} = k \vec{v} \land \left( \vec{u} \neq \vec{o} \land \vec{v} \neq \vec{o} \land k \in \mathbb{R} \setminus \{ 0 \} \right)
+\end{equation}
+\paragraph{Kolmost} $\vec{u} \perp \vec{v}$ nastane, když jsou oba vektory nenulové a úhel mezi nimi je $\frac{1}{2}\pi$
+\begin{equation}
+\vec{u} \perp \vec{v} \iff \vec{u} \cdot \vec{v} = 0 \land \left( \vec{u} \neq \vec{o} \land \vec{v} \neq \vec{o} \right)
+\end{equation}
+
+\subsection{Vektorový součin v prostoru}
+Definice $\vec{w}$ jako vektorového součinu $\vec{u}$ a $\vec{v}$ :
+\begin{equation}
+\vec{w} = \vec{u} \times \vec{v}
+\end{equation}
+\paragraph{Lineárně závislé} Pokud jsou vektory $\vec{u}$ a $\vec{v}$ lineárně závislé platí $\vec{w} = \vec{o}$
+\paragraph{Lineárně nezávislé} - vektor $\vec{w}$ je kolmý na původní vektory. Jeho velikost $|\vec{w}|$ je rovna obsahu rovnoběžníku určeného původními vektory. $\varphi$ je úhel mezí původními vektory. Uspořádaná trojice $\left(\vec{u}, \vec{v}, \vec{w} \right)$ je pravotočivá
+\begin{align}
+\vec{w} \perp \vec{u} \land  \vec{w} \perp \vec{v}\\
+|\vec{w}| = |\vec{u}| \cdot |\vec{v}| \cdot \sin \varphi
+\end{align}
+V pravotočivé kartézské soustavě souřadnic:
+\begin{equation}
+\vec{w} = \vec{u} \times \vec{v} = \left( u_2 v_3 - u_3 v_2 ,u_3 v_1 - u_1 v_3, u_1 v_2 -u_2 v_1 \right)
+\end{equation}
+V levotočivé kartézské soustavě souřadnic mají všechny souřadnice $\vec{w}$ opačná znaménka. Zapsáno:
+\begin{equation}
+\vec{w} = \vec{u} \times \vec{v} = \left( u_3 v_2 -u_2 v_3 , u_1 v_3 - u_3 v_1, u_2 v_1 - u_1 v_2  \right)
+\end{equation}
+\paragraph{Další vlastnosti} vyplývající z předchozího a platící pro libovolné vektory $\vec{u}$, $\vec{v}$ a $\vec{w}$ a číslo $k \in \mathbb{R}$
+\begin{itemize}
+\item $ \vec{v} \times = - (\vec{u} \times \vec{v})$
+\item $ \vec{u} \times (k\vec{v}) = (k\vec{u}) \times \vec{v} = k  (\vec{u} \times \vec{v})$
+\item ... viz tabulky!
+\end{itemize}
+
+\subsection{Pravotočivá a levotočivá báze}
+Máme-li dva vektory na sebe kolmé, tak existují 2 možnosti, jak umístit třetí vektor, tak aby byl kolmý na oba. Jednomu způsobu se říká pravotočivá a druhému levotočivá kartézská soustava souřadnic. Představme si, že položíme pravou ruku na dva vektory tak, aby prsty ruky značily směr otáčení od prvního vektoru k druhému. Potom palec pravé ruky směřuje ve směru třetího vektoru. V opačném případě se jedná o levotočivou bázi, kde když stejným způsobem přiložíme levou ruku bude palec směřovat ve směru třetího vektoru.
+\paragraph{Báze} je (v prostoru) uspořádaná trojice vektorů, které neleží v jedné rovině. Značí se $(a,b,c)$ a záleží na jejich pořadí.
+
+\subsection{Smíšený součin vektorů v prostoru}
+\emph{Smíšený součin} vektorů  $\vec{a}$, $\vec{b}$, $\vec{c}$ (v tomto pořadí) je reálné číslo: $\left(\vec{a} \times \vec{b} \right)\cdot \vec{c}$
+\paragraph{Lineárně závislé} vektory $\vec{a}$, $\vec{b}$, $\vec{c}$ $\iff \left(\vec{a} \times \vec{b} \right)\cdot \vec{c} =0$ dají jako výsledek smíšeného součinu vždy nulu.
+\paragraph{Lineárně nezávislé} vektory je absolutní hodnota smíšeného součinu rovna objemu rovnoběžnostěnu určeného těmito vektory.
+\begin{equation}
+\left| (\vec{a} \times \vec{b}) \cdot \vec{c}\right|
+\end{equation}
+
+\subsection{Meta}
+\subsubsection{Zdroje}
+\begin{itemize}
+\item Tabulky!!
+\item \url{http://www.ucebnice.krynicky.cz/Matematika/07_Analyticka_geometrie/2_Vektory/7211_Pravotociva_a_levotociva_baze.pdf}
+\item \url{https://cs.wikipedia.org/wiki/Jednotkov\%C3\%BD_vektor}
+\item \url{https://cs.wikipedia.org/wiki/Norma_(matematika)}
+\item \url{https://matematika.cz/vektory}
+\end{itemize}
+\subsubsection{Zadání/ pojmy}
+Soustava souřadnic na přímce, v rovině, v prostoru. Střed dvojice bodů, vzdálenost dvou bodů. Souřadnice vektoru, velikost vektoru, sčítání vektorů, násobení vektorů reálným číslem. Lineární kombinace vektorů, jednotkový vektor, skalární součin, odchylka vektorů. Pravotočivá a levotočivá báze. Vektorový součin, geometrická interpretace.
+
+\section{Analytická geometrie lineárních útvarů}
+viz \ref{sec:18} a \ref{sec:22}
+\subsection{Meta}
+wtf to už mám všechno v jiné otázce. 
+\subsubsection{Zdroje}
+\subsubsection{Zadání/ pojmy}
+Parametrické vyjádření přímky, polopřímky, úsečky, obecná rovnice přímky, směrové a normálové vektory, směrnicový a úsekový tvar rovnice přímky, směrnice přímky. Vzájemná poloha bodů a přímek v rovině, odchylka dvou přímek, vzdálenost bodů, bodu od přímky, vzdálenost dvou rovnoběžných přímek. Parametrické vyjádření přímky v prostoru, parametrické vyjádření roviny, obecná rovnice roviny, normálový vektor roviny.
+
+%TODO obecné rovnice kuželoseček
+\section{Analytická geometrie kuželoseček}
+\label{sec:kuzelosecky}
+Existují 3 typy: \emph{paraboly}, \emph{hyperboly} a \emph{elipsy} (a speciální případ je kružnice). Můžeme je vytvořit průnikem roviny a rotační kuželovou plochou. Typ kuželosečky záleží na úhlu mezi rovinou a kuželovou plochou.\\
+Rovina kolmo na osu symetrie rotační kuželové plochy nám dává kružnici.\\Pokud je rovina rovnoběžná na nějakou povrchovou rovnoběžku pláště (?to jest: svírá s osou symetrie úhel velikosti přesně poloviny vrcholového úhlu), tak nám vzniká parabola.\\
+Úhel, který je mezi těmito dvěma nám dává elipsu, která protíná všechny povrchové přímky a s žádnou tak není rovnoběžná.\\
+A úhel menší než polovina vrcholového úhlu, dává hyperbolu. Přičemž platí, že rovina hyperboly je rovnoběžná právě se 2 přímkami.
+\subsection{Degenerované kuželosečky}
+Nebo také nazývané jako \emph{nevlastní} či \emph{singulární}. Vznikají když rovina prochází vrcholem kuželové plochy. Takováto kuželosečka může být  (podle toho, jaký svírá úhel): bodem (z kružnice), přímkou (z paraboly) nebo 2 přímkami (z hyperboly).
+
+\subsection{Elipsa}
+Všechny body elipsy mají tu vlastnost, že součet vzdáleností od 2 bodů, nazývané \emph{ohniska}, je stejná. Má následující věci:
+\begin{itemize}
+\item \emph{Ohniska}
+\item \emph{Střed} - v přímce s ohnisky, ve stejné vzdálenosti od každého
+\item \emph{Hlavní osa} - někdy jako "průměr",  nejdelší průměr elipsy -> prochází oběma ohnisky
+\item \emph{Hlavní vrcholy} - průsečík elipsy s hlavní poloosou
+\item \emph{Hlavní poloosa} - spojuje střed a hlavní vrcholy
+\item \emph{Vedlejší osa} - nejkratší průměr, kolmá na hlavní osu
+\item \emph{Vedlejší poloosa, vrcholy} - ...
+\item \emph{Excentricita!!!} - výstřednost, vzdálenost ohniska a středu elipsy značí se $e$
+\end{itemize}
+\begin{equation}
+\label{eq:elips_kanon}
+\frac{(x-x_0)^2}{a^2} + \frac{(y-y_0)^2}{b^2} = 1
+\end{equation}
+V rovnici (\ref{eq:elips_kanon}) v kanonickém tvaru značí $x_0$ a $y_0$ střed elipsy, $a$ je hlavní poloosa a $b$ je vedlejší poloosa. Pro excentricitu potom platí $ e = \sqrt[2]{a^2-b^2}$.\\
+\begin{equation}
+\label{eq:elips_vrch}
+y^2 = 2px - \frac{p}{a}x^2
+\end{equation}
+Ve vrcholové rovnici (\ref{eq:elips_vrch})  je $p = \frac{b^2}{a}$ je tzv. \emph{parametr elipsy}
+\subsubsection{Kružnice}
+\label{sec:kuz_kruznice}
+Speciální případ elipsy. Všechny body kružnice mají stejnou vzdálenost od jednoho bodu a to středu kružnice.
+\begin{equation}
+(x-x_0)^2 + (y - y_0)^2 = r^2
+\end{equation}
+Kde $x_0$ (nebo $m$) a $y_0$ (nebo $n$) odpovídají souřadnicím středu.  Samozřejmě $r$ je poloměr.
+
+\subsubsection{Vztah s přímkou}
+Přímka může být buď mimoběžná, nebo může být tečnou (tj. 1 společný bod přímky a elipsy/kružnice) nebo sečnou (tj. 2 společné body). Počet společných bodů zjistíme vyřešením soustavy rovnic elipsy (/kružnice) a přímky. Rovnice pro tečny s bodem dotyku $T = \left[ t_x; t_y\right]$
+\paragraph{Tečna v bodě(elipsa)}
+\begin{equation}
+\frac{(t_x-m)(x-m)}{a^2} + \frac{(t_y-n)(y-n)}{b^2} = 1
+\end{equation}
+\paragraph{Tečna v bodě(kružnice)}
+\begin{equation}
+(t_x -m)(x-m) + (t_y -n)(y-n) = r^2
+\end{equation}
+
+
+\subsection{Parabola}
+\begin{align}
+(x-x_0)^2 = 2p(y-y_0) && (x-m)^2 = 2p(y-n) 
+\end{align}
+Rovnice pro paraboly s osou rovnoběžnou s osou $y$. Pro $p>0$ je parabola otevřená doprava, pro $p<0$ je otevřená doleva. Rovnice pro paraboly s osou rovnoběžnou s osou $x$ je v podstatě stejná jen se prohodí $x$ a $y$ (a taktéž $m$/$x_0$ a $n$/$y_0$). Je-li osa paraboly rovnoběžná s osou $x$ nebo osou $y$, tak je v tzv. \emph{normální poloze}. Parabola je také grafem kvadratické funkce.\\
+Parabola je množina bodů stejně vzdálených od \emph{ohniska} (neboli \emph{fokus}), značeno $F$, a od \emph{řídící přímky} (?taktéž nazývané \emph{direktix}?) označované $d$. Parabola je osově souměrná. Osa, označovaná $o$, prochází ohniskem a je kolmá na řídící přímku. Parametr $p$ je roven nejkratší vzdálenosti ohniska a řídící přímky. Z toho vyplývá:
+\begin{align}
+F &= \left[ x_0 + \frac{p}{2} ; y_0 \right] && d: x = x_0 - \frac{p}{2}
+\end{align}
+Vrchol je $ V = \left[ m,n \right]$
+\subsubsection{Vztah s přímkou}
+Přímka může být mimoběžná. Může být tečnou (tj. jeden společný bod). Může být sečnou - ta má 2 nebo 1 společný bod. Počet společných bodů zjistíme jednoduše vyřešením soustavy rovnic paraboly a dané přímky. Pokud chceme rozlišit tečnu od tzv. \emph{Asymptotické sečny}, která má taky 1 společný bod, je třeba se zjistit, jestli je přímka rovnoběžná s osou paraboly. Pokud ANO, tak je asymptotickou sečnou, pokud NE, tak je tečnou.\\
+Platí to proto, že parabola je kvadratickou funkcí a přímka je funkcí lineární. Kvadratická stoupá rychleji, takže jestli existuje jeden průnik, kde se přímka dostane nad parabolu, tak musí existovat i druhý průnik, když parabola přímku přeroste. To nenastane jen v případě, kdy je přímka kolmá na řídící přímku, a to znamená, že je rovnoběžná s osou paraboly.
+\paragraph{Tečna v bodě}
+Viz tabulky! Záleží na otočení paraboly:  Je-li kvadratická $y$ nebo $x$ část a hodnota $p$. Pozor ale na označení viz Meta \ref{sec:kuz_meta}.
+\begin{align}
+Parabola:&& Tecna~v~bode~t_x , t_y:\\
+(y-n)^2 = 2p(x-m) && (t_y -n)(y-n) = p (t_x-m) + p(x-m)\\
+(x-m)^2 = -2p(y-n) && (t_x - m)(x-m) = -p(t_y -n) - p(y-n)
+\end{align}
+
+\subsection{Hyperbola}
+\begin{align}
+\frac{(x-m)^2}{a^2} - \frac{(y-n)^2}{b^2} = 1 && \frac{(x-x_0)^2}{a^2} - \frac{(y-y_0)^2}{b^2} = 1
+\end{align}
+Nemyslíme-li nadsázku, je hyperbola množina bodů, pro které platí, že absolutní hodnota rozdílu vzdáleností od dvou pevně daných bodů (ohnisek) je vždy stejný. Věci:
+\begin{itemize}
+\item $S[m,n]$ - střed hyperboly os souřadnicích $m$, $n$. Na přímce s ohnisky, stejně vzdálený od obou.
+\item $F_1$, $F_2$ - ohniska
+\item $o_1$ - hlavní osa, přímka procházející oběma ohnisky
+\item $o_2$ - vedlejší osa, kolmá na hlavní
+\item $A$, $B$  - vrcholy - průsečíky hyperboly a hlavní osy
+\item $a$ - délka hlavní poloosy, $|AS| = |SB| = a$
+\item $e$ - excentricita, vzdálenost ohniska $F$ od středu $S$, platí $e =\sqrt{a^2 + b^2}$
+\item $b$ - délka vedlejší poloosy, z rovnice o excentricitě, vytvoříme pravoúhlý trojúhelník, s vrcholy v bodech $A$, $S$ a ?$D$?, tak bod $D$ leží na asymptotě. $b$ je tak rovno vzdálenosti vrcholu $A$ a bodu, který je průnikem asymptoty a kružnice se středem v $S$ a poloměrem $e$.
+\item $p_1$, $p_2$ asymptoty, viz \ref{sec:hyp_asymptoty}
+\end{itemize}
+
+\subsubsection{Asymptoty}
+\label{sec:hyp_asymptoty}
+%TODO
+Asymptota je přímka, které se graf funkce přibližuje, ale nikdy se k ní doopravdy nepřiblíží(?, nebo limitně já nevím?). Vzdálenost mezi přímkou a grafem funkce se zmenšuje s rostoucími hodnotami. Pro paraboly je bod přiblížení v nekonečnu. Rovnice asymptot (jsou právě 2) vypadá následovně:
+\begin{equation}
+y - n = \pm \frac{b}{a}(x-m)
+\end{equation}
+\subsection{Vztah s přímkou}
+Můžeme určit z toho na co vede soustava rovnic přímky a hyperboly.
+\begin{itemize}
+\item \emph{Tečna}: kvadratická rovnice s jedním reálným kořenem
+\item \emph{Sečna}: kvadratická rovnice se 2 reálnými kořeny
+\item \emph{Nesečna}(mimoběžka): kvadratická rovnice bez reálných kořenů
+\item \emph{Asymptotická sečna}: lineární rovnice ( =>1 řešení)
+\item \emph{Asymptota}: soustava rovnic vede na nepravdivé tvrzení
+\end{itemize}
+\paragraph{Tečna v bodě}
+viz tabulky! Ale pozor na značení! Více v Meta \ref{sec:kuz_meta}
+\begin{align}
+\frac{(t_x-m)(x-m)}{a^2} - \frac{(t_y - n)(y-n)}{b^2} = 1
+\end{align}
+
+\subsection{Obecná rovnice kuželoseček}
+\subsubsection{Kružnice}
+\begin{align}
+x^2 + y^2 - 2mx - 2ny + p = 0 && \text{, kde	} m^2 + n^2 - p &>0 \\
+S[m,n] && \sqrt{m^2 + n^2 -p} &= r
+\end{align}
+\subsubsection{Elipsy}
+\begin{align}
+px^2 + qy^2 +2rx+2sy +t =0  && \\
+\text{, kde:	} q > p>0 && qr^2 + ps^2 -pqt >0
+\end{align}
+\subsubsection{Hyperboly}
+\begin{align}
+px^2 + qy^2 +2rx+2sy +t =0 \\
+\text{, kde:	} pq <0 && qr^2 + ps^2 -pqt  \neq 0
+\end{align}
+\subsubsection{Paraboly}
+\begin{align}
+y^2 +2rx+2sy +t =0 && \text{, kde: } r \neq 0 \\
+x^2 +2rx+2sy +t =0 && \text{, kde: } s \neq 0
+\end{align}
+\subsection{Meta}
+\label{sec:kuz_meta}
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\\
+Někde používají $m$ a $n$, jinde $x_0$ a $y_0$. Původně jsem to chtěl psát v obou tvarech, ale vykašlal jsem se na to, takže to někde není. To neznamená, že se v tom případě nepoužívají oba zápisy!!\\
+Tak teď jsem zjistil, že v tabulkách používají $x_0$ a $y_0$ jako souřadnice označující bod dotyku v rovnici tečny.... Takže jsem je prostě převedl na $t_x$ a $t_y$, aby v tom nebyl bordel... Bacha na to při využívání tabulek!!!! nechápu, jak je to napadlo použít zrovna tadyto označení, když se všude jinde používá místo $m$ a $n$.... \\
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!\\
+\subsubsection{Zdroje}
+\begin{itemize}
+\item \url{https://matematika.cz/kuzelosecky}
+\item \url{https://cs.wikipedia.org/wiki/Ku\%C5\%BEelose\%C4\%8Dka}
+\item \url{http://www.bossof105.cz/soubory/poster_kuzelosecky.pdf}
+\item \url{http://www.bossof105.cz/soubory/AG_03-2.pdf}
+\item \url{https://matematika.cz/parabola}
+\end{itemize}
+\subsubsection{Pojmy/zadání}
+Definice a analytické vyjádření kružnice, elipsy, paraboly, hyperboly. Vzájemná poloha přímky a kuželosečky, rovnice tečny.
+
+\section{Polohové a metrické úlohy řešené metodou analytické geometrie}
+\label{sec:22}
+\subsection{Co je již jinde}
+Vzájemná poloha bodu, přímky a roviny ve 3D a jejich odchylky či vzdálenosti \ref{sec:stereo_polohy}, ale chybí tam polopřímka, úsečka a zjednodušení pro 2D.\\
+Vzájemná poloha přímky/bodu a kuželosečky, tečna kuželosečky v bodě je v \ref{sec:kuzelosecky}, ale chybí tečna rovnoběžná/kolmá s/na jinou přímku.
+\subsection{Polopřímka a úsečka v prostoru}
+\label{sec:polohy-poloprimka}
+Polopřímka $\overrightarrow{AB}$ je :
+\begin{align}
+X = A + t(B-A) && t \in \langle 0, + \inf)
+\end{align}
+Úsečka $|AB|$ je:
+\begin{align}
+X = A + t(B-A) && t\in \langle 0 , 1\rangle
+\end{align}
+Stejný zápis se používá i v rovině, akorát body nejsou určeny třemi souřadnicemi, ale dvěmi.
+\subsection{Střed a délka úsečky}
+\label{sec:stred-usecky}
+Délka úsečky je vzdálenost jejích krajních bodů, takže je již popsáno v \ref{sec:stereo_polohy-bod}, přesněji rovnice \ref{eq:vzdalenost_bodu}. Ta ale může být pro 2D zjednodušena:
+\begin{equation}
+|AB| = \sqrt{\left(B_x -A_x \right)^2 + \left(B_y-A_y\right)^2}
+\end{equation}
+Střed úsečky $S_{AB} = [S_x, S_y]$ (případně $S_{AB} = [S_x, S_y, S_z]$ ) zapíšeme jako aritmetický průměr souřadnic bodů:
+\begin{align}
+S_{AB} = \frac{A + B}{2}\\
+S_x = \frac{A_x + B_x}{2}\\
+S_y = \frac{A_y + B_y}{2}\\
+S_z = \frac{A_z + B_z}{2}
+\end{align}
+Takto to funguje obecně v n-rozměrném prostoru. Pokud pracujeme pouze na v rovině (nebo jen na přímce), tak vyšší rozměry zůstávají nezměněny, protože sečteme dvě stejná čísla a vydělíme je dvěma.
+\subsection{Přímka v rovině}
+\begin{itemize}
+\item \emph{Směrový vektor} je nenulový vektor, který lze umístit na přímku. $ \vec{o} \neq\vec{u} = (u_x, u_y)$
+\item \emph{normálový vektor} je kolmý na směrový vektor. $ \vec{n} \perp \vec{u}$. Zapisujeme $\vec{n} = (n_x, n_y)$
+\item \emph{Směrnice} je tangens úhlu, který svírá přímka s osou x. $k = \tan \phi$ (pouze když $\phi \neq \frac{1}{2} \pi$)
+\end{itemize}
+Směrový ani normálový vektor nejsou určeny jednoznačně, můžeme zvolit libovolný z rovnoběžných vektorů.
+\subsubsection{Vyjádření a rovnice}
+\paragraph{Parametrické vyjádření} je stejné jako \ref{sec:stereo_polohy-primka}, polopřímka a úsečka je pomocí nich jako v \ref{sec:polohy-poloprimka}.
+\paragraph{Obecná rovnice}
+\begin{align}
+ax +by +c = 0\\
+\vec{n} = (a,b) \neq \vec{o}
+\end{align}
+\paragraph{Směrnicový tvar} dokáže vyjádřit jen přímky, které nejsou rovnoběžné s osou y
+\begin{align}
+y = k x + q\\
+k = \tan \phi \text{ je směrnice}
+\end{align}
+Přímka zadaná bodem $A[A_x,A_y]$ a směrnicí $k$:
+\begin{equation}
+y - a_y = k(x -a_x)
+\end{equation}
+\paragraph{Normálový tvar} nic mi neříká, asi jsme ho nebrali.
+\begin{equation}
+x \cos \psi + y \sin \psi - n = 0
+\end{equation}
+Kde $n$ je délka normálového vektoru přímky, který končí v počátku. A úhel $\psi$ je mezi tímto normálovým vektorem a osou x.
+\paragraph{Úsekový tvar} který mi nic neříká. Navíc funguje, když přímka neprochází počátkem a není rovnoběžná ani s jednou osou.
+\begin{equation}
+\frac{x}{p} + \frac{y}{q}
+\end{equation}
+Průsečík s osou x je $[p,0]$ a s osou y $[0,q]$
+\subsubsection{Vzdálenost bodu}
+Máme bod $M[m_x,m_y]$ a přímku $p: ax + by +c =0$
+\begin{equation}
+|Mp| = \frac{\left| a m_x + b m_y + c\right|}{\sqrt{a^2 + b^2}}
+\end{equation}
+\subsubsection{Odchylka dvou přímek}
+\paragraph{Směrové vektory} $\vec{u}$ a $\vec{v}$ připadají přímkám $p,q$, které svírají úhle $\phi$
+\begin{equation}
+\cos \phi = \frac{|\vec{u} \cdot \vec{v}|}{|\vec{u}| \cdot |\vec{v}|} = \frac{\left|u_x v_x + u_y v_y \right|}{\sqrt{u_x^2 + v_x^2} \cdot \sqrt{u_y^2 + v_y^2}}
+\end{equation}
+Podmínka rovnoběžnosti: $\vec{u} = k \vec{v}$ (když $k \in \mathbb{R} \setminus \{ 0 \}$\\
+Podmínka kolmosti: $\vec{u} \cdot \vec{v} = 0$
+\paragraph{Směrnice} $k_1$ a $k_2$ přímek $p,q$ svírající úhel $\phi$
+\begin{align}
+\tan \phi = \left| \frac{k_1-k_2}{1+k_1 k_2}\right| && \text{jestliže }k_1 k_2 \neq -1 \\
+\phi = \frac{1}{2}\pi  && \text{jestliže }k_1 k_2 =  -1
+\end{align}
+Podmínka rovnoběžnosti: $k_1 =k_2$\\
+Podmínka kolmosti: $k_1 k_2 = -1$
+\subsection{Meta}
+Jak psát fí $\phi$ vs $\varphi$ ?
+\subsubsection{Zdroje}
+\subsubsection{Zadání/pojmy}
+Střed úsečky a délka úsečky, vzájemná poloha bodu a přímky, vzdálenost bodu od přímky, vzájemná poloha přímek, polopřímek a úseček v rovině, odchylka dvou přímek v rovině, vzájemná poloha bodu a roviny, vzájemná poloha dvou přímek v prostoru, vzájemná poloha přímky a roviny, vzájemná poloha kuželosečky a bodu, vzájemná poloha přímky a kuželosečky, tečna kuželosečky v bodě dotyku, rovnoběžná s danou přímkou, kolmá k dané přímce.
+
+\section{Diferenciální počet}
+Diferenciální počet zkoumá změnu funkčních hodnot v závislosti na proměnné. Derivace je poměr změny funkčních hodnot a změny argumentu (nebo i argumentů, ale to je mimo SŠ matematiku viz. \url{https://www.youtube.com/results?search_query=multivariable+calculus}). Ve fyzice se využívá k definici rychlosti (změna dráhy za čas) a zrychlení (změna rychlosti za čas).
+Vlastnosti:
+\begin{itemize}
+\item Každý bod funkce má buď právě jednu derivaci nebo žádnou. Nemůže nastat, že by měl jeden bod více derivací.
+\item Pokud pro bod existuje derivace potom platí, že je tam funkce spojitá.
+\item Derivace funkce v bodě je rovna \emph{směrnici tečny} tohoto grafu v tomto bodě. (Graf funkce musí být 2-rozměrný).
+\end{itemize}
+Směrnice tečny:
+\begin{itemize}
+\item Tečna má s křivkou společný právě jeden bod. 
+\item Směrnice přímky je tangens úhlu, který svírá daná přímka s osou x.
+\end{itemize}
+Platí to, protože poměr změny funkční hodnoty a změny argumentu odpovídá odvěsnám pravoúhlého trojúhelníku.
+\subsection{Zápis}
+\subsubsection{Leibnizova notace}
+\begin{align}
+\frac{\,dy}{\,dx}&&\frac{\,d}{\,dx}f(x) && \frac{\,df}{\,dx}
+\end{align}
+Aneb ta jediná, která je potřeba. Leibniz asi věděl, co dělá vzhledem k tomu, že nezávisle na Newtonovi vymyslel calculus. Přesně vyjadřuje, podle které proměnné se derivuje (jmenovatel). Umožňuje zápis pro n-té derivace i pro derivaci v bodě. Navíc v této notaci lze krásně vidět, proč platí \emph{řetízkové pravidlo}
+\begin{align}
+\frac{\,d^n y}{\,dx^n} && \frac{\,d^n(f(x))}{(dx)^n} && \frac{\,d^n}{\,dx^n}(f(x)) && \text{, protože: } \frac{\,d\left(\frac{\,d(\frac{\,d(\frac{\,dy}{\,dx})}{\,dx})}{\,dx}\right)}{\,dx}
+\end{align}
+\begin{align}
+\frac{\,dy}{\,dx}(a) && \text{hodnota derivace v bodě $a$}
+\end{align}
+
+\subsubsection{Lagrange}
+\begin{align}
+f^{\prime}(x) && f^{\prime\prime}(x) && f^{iv}(x)&=f^{(4)}(x)
+\end{align}
+\emph{Lagrangeova notace}, podle mě dost na nic. Navíc pro vyšší čísla než 3 se místo apostrofu má využít římská číslice (nebo arabská číslice v závorkách, aby se rozlišilo od mocniny). \textit{lol}
+\subsubsection{Euler}
+\begin{equation}
+D_x f
+\end{equation}
+Další je \emph{Eulerova notace}, kde případný dolní index $D$ určuje podle, které proměnné se derivuje. Případně horní index indikuje kolikátá to má být derivace. Vypadá funkčně, ale nikdy jsem neviděl.
+\subsubsection{Newton}
+\begin{align}
+\dot{y} &= \frac{\,dy}{\,dt} & \ddot{y} &= \frac{\,d^2y}{\,dt^2}
+\end{align}
+Tak toto to je peak fyzikální notace přinesená samotným Newtonem. Také nazývaná tečková notace. Proč asi? Potřebuji znázornit změnu dráhy podle času, tak tam prostě mrsknu tečku. Co když budu chtít zrychlení, bum! 2 tečky.  Absolutně nezobecnitelný. Proč by někdo mohl chtít využít stejnou zákonitost na něco jiného? ... To jsem ještě neviděl XD.
+
+\subsection{Definice}
+\begin{align}
+\frac{\Delta y}{\Delta x} && \frac{\,dy}{\,dx} && \frac{\partial y}{\partial x}
+\end{align}
+První zápis je v podstatě zápisem poměru změn (znak delta $\Delta$) funkční hodnoty a argumentu. Druhý naznačuje poměr dvou \emph{infinitezimálních hodnot}. Vnímán jako jeden symbol (v některých odvětvích matematiky i jako zlomek, ale to se opět SŠ netýká), který označuje derivování $y$ podle $x$. Poslední \st{se u nás nevyužívá, ale můžeme se s ním setkat v anglofonních zemích.} se využívá při parciálních derivacích (mimo SŠ).\\
+Představa jako podíl nekonečně malých hodnot se ukázala jako nepřesná, a tak byla nahrazena definicí pomocí limit:
+\begin{equation}
+f^{\prime}(a) = \lim_{h \to 0} \frac{f(a+h)-f(a)}{h} = \lim_{x \to a} \frac{f(x)-f(a)}{x-a}
+\end{equation}
+
+\subsection{Vzorce a pravidla}
+\subsubsection{Derivace součtu}
+\begin{equation}
+(f(x) + g(x))^\prime = f^{\prime}(x) + g^{\prime}(x)
+\end{equation}
+\subsubsection{Derivace součinu}
+\label{sec:der_soucin}
+\begin{align}
+(a \cdot f(x))^\prime &= a \cdot f^{\prime}(x) && \text{, kde $a$ je nějaká konstanta}\\
+(f(x) \cdot g(x))^\prime &= f^{\prime}(x) \cdot g(x) + f(x) \cdot g^{\prime}(x) 
+\end{align}
+\subsubsection{Derivace podílu}
+\begin{equation}
+\left(\frac{f}{g}\right)^{\prime} = \frac{f^{\prime}g-fg^{\prime}}{g^{2}}
+\end{equation}
+\subsubsection{Derivace složené funkce}
+\begin{align}
+\text{Pokud: }f(x) &= h(g(x)) && \text{,pak: }
+f^{\prime}(x) = h^{\prime}(g(x)) \cdot g^{\prime}(x)
+\end{align}
+Jedná se o takzvané \emph{řetízkové pravidlo} (angl. \emph{Chain rule}). Lepší pochopitelnost, ale získáme požitím Leibnizovy notace:
+\begin{align}
+\frac{\,df}{\,dx} &= \frac{\,df}{\,dg} \cdot \frac{\,dg}{\,dx}\\
+\frac{\,df}{\,dx}(x) &= \frac{\,df}{\,dg}(g(x)) \cdot \frac{\,dg}{\,dx}(x)\\
+\end{align}
+Příklad použití pro derivování $f(x) = (3x+1)^2$:
+\begin{align*}
+\frac{\,d((3x+1)^2)}{\,dx} = \frac{\,d((3x+1)^2)}{\,d(3x+1)} \cdot \frac{\,d(3x+1)}{\,dx} = 2(3x+1) \cdot 3
+\end{align*}
+\subsection{Derivace elementárních funkcí}
+\label{sec:der_vzorce}
+Viz tabulky... nebo \url{https://cs.wikipedia.org/wiki/Derivace_element\%C3\%A1rn\%C3\%ADch_funkc\%C3\%AD}
+\subsection{L'Hospitalovo pravidlo}
+\begin{equation}
+\lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}
+\end{equation}
+Říká, že limita podílu 2 funkcí je (za nějakých předpokladů) rovna limitě podílu derivací těchto 2 funkcí. Předpoklady (nějaké):
+\begin{itemize}
+\item Reálná čísla (definiční obory i funkční hodnoty)
+\item $g(x)$ a $g'(x)$ jsou nenulové ?na nějakém okolí čísla $a$
+\item Limity (blížící se stejnému číslu $a$ jako v podílu) jednotlivých funkcí musí být buď obě nulové nebo obě nekonečné (se stejným znaménkem)
+\item Existuje limita podílu derivací. (Tato podmínka je protože nemůžeme z neexistence limity podílu derivací funkcí vyvodit neexistenci limity podílu funkcí)
+\end{itemize}
+\subsubsection{Využití}
+Při hledání limit podílů výrazů s jednou proměnou může ušetřit namáhavé výpočty.
+\subsection{Využití derivací}
+\label{sec:vyuziti_derivaci}
+Určení chování funkce a extrémů - viz tabulka \ref{table:vlastnosti} 
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|l|l|}
+\hline
+$f'(x)$ & $f''(x)$ & Vlasnost        \\ \hline
++       &          & Rostoucí        \\ \hline
+-       &          & Klesající       \\ \hline
+0       &          & Stacionární bod \\ \hline
+0       & +        & Lokální maximum \\ \hline
+0       & -        & Lokální minimum \\ \hline
+        & +        & Konvexní        \\ \hline
+        & -       & Konkávní        \\ \hline
+        & 0        & Inflexní bod    \\ \hline
+\end{tabular}
+\caption{Vlastnosti zjistitelné derivací}
+\label{table:vlastnosti}
+\end{table}
+\subsection{Meta}
+\subsubsection{Zadání/pojmy}
+Derivace funkce v bodě, základní geometrická a fyzikální interpretace derivace funkce v bodě, derivace součtu, rozdílu, součinu, podílu funkcí, derivace složené funkce, derivace elementárních funkcí, odvození na základě definice, l'Hospitalovo pravidlo a jeho užití. Využití diferenciálního počtu při hledání extrémních hodnot funkcí jedné reálné proměnné.
+\subsubsection{Zdroje}
+\begin{itemize}
+%\itme \url{https://www.maths.tcd.ie/~dwilkins/LaTeXPrimer/Calculus.html}
+%\item \url{https://www.overleaf.com/learn/latex/Mathematical_expressions}
+\item \url {https://cs.wikipedia.org/wiki/Z\%C3\%A1pis_derivace}
+\item \url{https://cs.wikipedia.org/wiki/Diferenci\%C3\%A1ln\%C3\%AD_po\%C4\%8Det}
+\item \url {https://cs.wikipedia.org/wiki/Derivace}
+\item \url{https://matematika.cz/derivace}
+\item \url{https://cs.wikipedia.org/wiki/L\%27Hospitalovo_pravidlo}
+\item \url{https://en.wikipedia.org/wiki/Derivative}
+\item \url{https://en.wikipedia.org/wiki/Differential_calculus}
+\item \url{https://matematika.cz/derivace-vzorce}
+\item \url{https://cs.wikipedia.org/wiki/\%C5\%98et\%C3\%ADzkov\%C3\%A9_pravidlo}
+\item \url{http://tutorial.math.lamar.edu/problems/calci/chainrule.aspx}
+\item \url{https://www.maths.tcd.ie/~dwilkins/LaTeXPrimer/Calculus.html}
+\item \url{https://www.overleaf.com/learn/latex/Mathematical_expressions}
+\item \url{https://en.wikipedia.org/wiki/Multivariable_calculus}
+\end{itemize}
+A super série od 3Blue1Bown: \url{https://www.youtube.com/watch?v=WUvTyaaNkzM&list=PLZHQObOWTQDMsr9K-rj53DwVRMYO3t5Yr&index=1}
+
+\section{Integrální počet}
+Integrální počet tvoří společně s diferenciálním počtem  tzv. \emph{infinitezimální počet} (angl. \emph{Calculus}). Integrace je inverzní operace k derivaci. V procesu \emph{integrace} hledáme k integrované funkci tzv. \emph{Primitivní funkci}, jejíž derivací dosáhneme původní funkci, kterou chceme integrovat. Primitivní se často zapisuje jako velké $F$ (viz \ref{eq:primitiv}) pro funkci $f$. Množina primitivních funkcí se označuje jako neurčitý integrál. Jedná se o množinu, protože primitivních funkcí je nekonečně mnoho a liší se od sebe jen absolutním členem, z kterého je po derivaci vždy nula (viz \ref{eq:constant}). Tato konstanta se označuje $C$.
+\begin{equation}
+\label{eq:primitiv}
+F = \int f(x)\,d x
+\end{equation}
+\begin{equation}
+\label{eq:constant}
+\int 2x \, dx = x^{2}+ C
+\end{equation}
+
+Integrál odpovídá ploše pod grafem. Pojmeme \emph{určitý integrál} se rozumí obsah plochy pod křivkou grafu (a nad osou $x$), kde $x$ je mezi hodnotami $a$ a $b$. Viz (\ref{eq:plocha})
+\begin{equation}
+\label{eq:plocha}
+\int_a^b f(x)\,dx
+\end{equation}
+Vztah mezi určitým a neurčitým integrálem:
+\begin{equation}
+\int_{a}^{b} \! f(x)  \,dx = F(b) - F(a)
+\end{equation}
+\subsection{Vzorce}
+Viz tabulky nebo \url{https://www.math.muni.cz/~xschlesi/bakalarka/integraly/sec/1.html}\\ Platí inverzně k pravidlům o derivování (viz \ref{sec:der_vzorce}), takže si stačí v některých případech zapamatovat proces jen jedním směrem.
+\subsection{Metoda per partes}
+Založena na větě o derivaci součinu (viz \ref{sec:der_soucin}). Získáme tak vzorce:
+\begin{align}
+\int (uv)'\,dx &= \int(u'v)\,dx + \int(uv')\,dx
+uv &= \int(u'v)\,dx + \int(uv')\,dx
+\end{align}
+Upravením druhé rovnice získáme postup označovaný jako metoda per partes:
+\begin{equation}
+\int(uv')\,dx = uv - \int(u'v)\,dx
+\end{equation}
+
+\subsection{Využití}
+\label{sec:vyuziti_integralu}
+Integrál se dí využít k výpočtu plochy 2D obrazců. Stačí jen vhodně zapsat jednotlivé přímky jako funkce. K nim vypočítat určitý integrál. To pak sečíst a odečíst. Lze tuto metodu využít k výpočtu obecného vzorce pro obsah určitého typu 2D obrazců.
+\subsubsection{Objem rotačních těles}
+\begin{equation}
+V = \pi \int_a^b (f(x))^2 \,d x
+\end{equation}
+Funkce $f(x)$ musí být nezáporná. Potom objem tělesa, které vznikne rotací kolem osy x je dán tímto vzorcem.
+\subsubsection{Délka křivky funkce}
+Asi mimo SŠ. Funkce $f(x)$ a její derivace $f'(x)$ musí být na $<a, b>$ spojité. Pak je délka grafu $l$ podle vzorce:
+\begin{equation}
+l = \int_a^b \sqrt{1+(f'(x))^2}\,d x
+\end{equation}
+Další vzorce už nebudu do TeX přepisovat. Odakzuji na \url{https://cs.wikipedia.org/wiki/Per_partes}
+
+\subsection{Meta}
+\subsubsection{Zdroje}
+\begin{itemize}
+\item \url{https://cs.wikipedia.org/wiki/Integr\%C3\%A1l}
+\item \url{https://www.math.muni.cz/~xschlesi/bakalarka/integraly/index.html}
+\item \url{https://www.math.muni.cz/~xschlesi/dp/web/i21.html#textpart2.1}
+\item \url{https://cs.wikipedia.org/wiki/Per_partes}
+\end{itemize}
+\subsubsection{Zadání/Pojmy}
+Definice primitivní funkce k dané funkci, primitivní funkce k elementárním funkcím. Integrační metody, přímá integrace, metoda per partes, metoda substituční. Pojem určitého integrálu, vlastnosti určitých integrálů, substituce a metoda per partes v určitém integrálu. Výpočet obsahu rovinného obrazce a výpočet objemu rotačního tělesa užitím určitého integrálu.
+
+\section{Aplikace diferenciálního a integrálního počtu}
+Viz \ref{sec:vyuziti_derivaci} o derivace. Viz \ref{sec:vyuziti_integralu} pro integrály.
+%TODO Asymptota
+%TODO monotónost
+\subsection{Meta}
+\subsection{Zdroje}
+\begin{itemize}
+\item \url{https://cs.wikipedia.org/wiki/Asymptota}
+\end{itemize}
+\subsubsection{Zadání/pojmy}
+Vyšetřování průběhu analyticky zadané funkce, monotónnost a derivace, lokální extrémy funkce a derivace, funkce konvexní a konkávní, inflexní body, asymptoty. Slovní úlohy na extrémy. Výpočty obsahů rovinných útvarů, výpočet objemu rotačního tělesa.
+
+\tableofcontents
+\end{document}

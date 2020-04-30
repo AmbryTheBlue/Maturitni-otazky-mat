@@ -1,0 +1,342 @@
+\babel@toc {czech}{}
+\contentsline {subsection}{\numberline {0.1}Meta}{1}{subsection.0.1}%
+\contentsline {subsubsection}{\numberline {0.1.1}TODO-list}{2}{subsubsection.0.1.1}%
+\contentsline {subsubsection}{\numberline {0.1.2}Latex tipy}{3}{subsubsection.0.1.2}%
+\contentsline {section}{\numberline {1}Logická výstavba matematiky}{3}{section.1}%
+\contentsline {section}{\numberline {2}Množiny}{4}{section.2}%
+\contentsline {subsection}{\numberline {2.1}Definice a značení}{4}{subsection.2.1}%
+\contentsline {paragraph}{Rigorózní definice:\\}{4}{paragraph*.1}%
+\contentsline {subsection}{\numberline {2.2}Pojmy}{4}{subsection.2.2}%
+\contentsline {subsection}{\numberline {2.3}Grafické znázornění}{7}{subsection.2.3}%
+\contentsline {subsection}{\numberline {2.4}Zobrazení}{7}{subsection.2.4}%
+\contentsline {subsubsection}{\numberline {2.4.1}Speciální případy}{8}{subsubsection.2.4.1}%
+\contentsline {subsubsection}{\numberline {2.4.2}Inverzní zobrazení}{8}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.3}Složené zobrazení}{9}{subsubsection.2.4.3}%
+\contentsline {subsubsection}{\numberline {2.4.4}Funkce}{9}{subsubsection.2.4.4}%
+\contentsline {subsection}{\numberline {2.5}Meta}{9}{subsection.2.5}%
+\contentsline {subsubsection}{\numberline {2.5.1}Zdroje}{9}{subsubsection.2.5.1}%
+\contentsline {subsubsection}{\numberline {2.5.2}Zadání/Pojmy}{10}{subsubsection.2.5.2}%
+\contentsline {section}{\numberline {3}Číselné obory}{10}{section.3}%
+\contentsline {section}{\numberline {4}Algebraické rovnice, nerovnice a jejich soustavy}{10}{section.4}%
+\contentsline {section}{\numberline {5}Vlastnosti algebraických funkcí a posloupností}{10}{section.5}%
+\contentsline {section}{\numberline {6}Grafy elementárních algebraických funkcí}{10}{section.6}%
+\contentsline {section}{\numberline {7}Limita a spojitost funkce}{11}{section.7}%
+\contentsline {section}{\numberline {8}Nealgebraické funkce}{11}{section.8}%
+\contentsline {section}{\numberline {9}Goniometrie a trigonometrie}{11}{section.9}%
+\contentsline {section}{\numberline {10}Nealgebraické rovnice, nerovnice a jejich soustavy}{11}{section.10}%
+\contentsline {section}{\numberline {11}Kombinatorika}{11}{section.11}%
+\contentsline {subsection}{\numberline {11.1}Faktoriály}{11}{subsection.11.1}%
+\contentsline {subsection}{\numberline {11.2}Kombinační čísla}{11}{subsection.11.2}%
+\contentsline {paragraph}{Pár zajímavých vlastností}{12}{paragraph*.2}%
+\contentsline {subsubsection}{\numberline {11.2.1}Binomická věta}{12}{subsubsection.11.2.1}%
+\contentsline {subsection}{\numberline {11.3}Množinový pohled}{12}{subsection.11.3}%
+\contentsline {subsection}{\numberline {11.4}Variace}{13}{subsection.11.4}%
+\contentsline {subsubsection}{\numberline {11.4.1}Variace bez opakování}{13}{subsubsection.11.4.1}%
+\contentsline {subsubsection}{\numberline {11.4.2}Variace s opakováním}{13}{subsubsection.11.4.2}%
+\contentsline {subsection}{\numberline {11.5}Permutace}{13}{subsection.11.5}%
+\contentsline {subsubsection}{\numberline {11.5.1}Permutace bez opakování}{13}{subsubsection.11.5.1}%
+\contentsline {subsubsection}{\numberline {11.5.2}Permutace s opakováním}{13}{subsubsection.11.5.2}%
+\contentsline {subsection}{\numberline {11.6}Kombinace}{14}{subsection.11.6}%
+\contentsline {subsubsection}{\numberline {11.6.1}Kombinace bez opakování}{14}{subsubsection.11.6.1}%
+\contentsline {subsubsection}{\numberline {11.6.2}Kombinace s opakováním}{14}{subsubsection.11.6.2}%
+\contentsline {subsection}{\numberline {11.7}Pravidla}{14}{subsection.11.7}%
+\contentsline {subsubsection}{\numberline {11.7.1}Součtu}{14}{subsubsection.11.7.1}%
+\contentsline {paragraph}{Příklad: }{14}{paragraph*.3}%
+\contentsline {subsubsection}{\numberline {11.7.2}Součinu}{14}{subsubsection.11.7.2}%
+\contentsline {paragraph}{Příklad 1:}{15}{paragraph*.4}%
+\contentsline {paragraph}{Příklad 2:}{15}{paragraph*.5}%
+\contentsline {subsection}{\numberline {11.8}Meta}{15}{subsection.11.8}%
+\contentsline {subsubsection}{\numberline {11.8.1}Zdroje}{15}{subsubsection.11.8.1}%
+\contentsline {subsubsection}{\numberline {11.8.2}Zadání/ pojmy}{15}{subsubsection.11.8.2}%
+\contentsline {section}{\numberline {12}Pravděpodobnost}{15}{section.12}%
+\contentsline {subsection}{\numberline {12.1}Náhodné pokusy}{16}{subsection.12.1}%
+\contentsline {paragraph}{Množina všech možných výsledků pokusu}{16}{paragraph*.6}%
+\contentsline {paragraph}{Počet možných výsledků pokusu}{16}{paragraph*.7}%
+\contentsline {paragraph}{Jednotlivé výsledky pokusu}{16}{paragraph*.8}%
+\contentsline {paragraph}{Pravděpodobnost výsledku}{16}{paragraph*.9}%
+\contentsline {subsection}{\numberline {12.2}Jevy a jejich pravděpodobnost}{16}{subsection.12.2}%
+\contentsline {paragraph}{Jev}{16}{paragraph*.10}%
+\contentsline {paragraph}{Výsledek příznivý jevu}{17}{paragraph*.11}%
+\contentsline {paragraph}{Počet výsledků příznivých jev}{17}{paragraph*.12}%
+\contentsline {paragraph}{Pravděpodobnost jevu}{17}{paragraph*.13}%
+\contentsline {paragraph}{Nemožný jev}{17}{paragraph*.14}%
+\contentsline {paragraph}{Jistý jev}{17}{paragraph*.15}%
+\contentsline {paragraph}{Podjev}{17}{paragraph*.16}%
+\contentsline {paragraph}{Opačný jev}{17}{paragraph*.17}%
+\contentsline {paragraph}{Průnik jevů}{17}{paragraph*.18}%
+\contentsline {paragraph}{Navzájem se vylučující jevy}{18}{paragraph*.19}%
+\contentsline {paragraph}{Sjednocení jevů}{18}{paragraph*.20}%
+\contentsline {paragraph}{Nezávislé jevy}{18}{paragraph*.21}%
+\contentsline {subsection}{\numberline {12.3}Opakování náhodného pokusu}{18}{subsection.12.3}%
+\contentsline {subsubsection}{\numberline {12.3.1}Bernoulliho schéma}{19}{subsubsection.12.3.1}%
+\contentsline {subsection}{\numberline {12.4}Meta}{19}{subsection.12.4}%
+\contentsline {subsubsection}{\numberline {12.4.1}Zdroje}{19}{subsubsection.12.4.1}%
+\contentsline {subsubsection}{\numberline {12.4.2}Pojmy/ zadání}{19}{subsubsection.12.4.2}%
+\contentsline {section}{\numberline {13}Statistika}{19}{section.13}%
+\contentsline {subsection}{\numberline {13.1}Rozdělení četnosti}{21}{subsection.13.1}%
+\contentsline {subsubsection}{\numberline {13.1.1}Skupinové rozložení četností}{21}{subsubsection.13.1.1}%
+\contentsline {subsection}{\numberline {13.2}Grafické znázornění četností}{21}{subsection.13.2}%
+\contentsline {subsubsection}{\numberline {13.2.1}Tabulka}{21}{subsubsection.13.2.1}%
+\contentsline {subsubsection}{\numberline {13.2.2}Spojnicový diagram}{22}{subsubsection.13.2.2}%
+\contentsline {subsubsection}{\numberline {13.2.3}Sloupkový diagram}{22}{subsubsection.13.2.3}%
+\contentsline {subsubsection}{\numberline {13.2.4}Kruhový diagram}{22}{subsubsection.13.2.4}%
+\contentsline {subsection}{\numberline {13.3}Charakteristiky polohy kvantitativního znaku}{24}{subsection.13.3}%
+\contentsline {subsubsection}{\numberline {13.3.1}Vztahy mezi průměry}{25}{subsubsection.13.3.1}%
+\contentsline {subsection}{\numberline {13.4}Charakteristiky variability kvantitativního znaku}{25}{subsection.13.4}%
+\contentsline {subsection}{\numberline {13.5}Korelace}{26}{subsection.13.5}%
+\contentsline {subsection}{\numberline {13.6}Meta}{26}{subsection.13.6}%
+\contentsline {subsubsection}{\numberline {13.6.1}Zdroje}{26}{subsubsection.13.6.1}%
+\contentsline {subsubsection}{\numberline {13.6.2}Pojmy/ zadání}{27}{subsubsection.13.6.2}%
+\contentsline {section}{\numberline {14}Posloupnosti a řady}{27}{section.14}%
+\contentsline {subsection}{\numberline {14.1}Posloupnosti}{27}{subsection.14.1}%
+\contentsline {paragraph}{Nekonečná posloupnost}{27}{paragraph*.22}%
+\contentsline {paragraph}{Konečná posloupnost}{28}{paragraph*.23}%
+\contentsline {subsubsection}{\numberline {14.1.1}Určení posloupnosti}{28}{subsubsection.14.1.1}%
+\contentsline {paragraph}{Vzorcem pro n-tý člen}{28}{paragraph*.24}%
+\contentsline {paragraph}{Rekurentně}{28}{paragraph*.25}%
+\contentsline {paragraph}{Výčtem}{28}{paragraph*.26}%
+\contentsline {subsubsection}{\numberline {14.1.2}Vlastnosti posloupností}{28}{subsubsection.14.1.2}%
+\contentsline {paragraph}{Graf}{29}{paragraph*.27}%
+\contentsline {subsubsection}{\numberline {14.1.3}Aritmetická posloupnost}{29}{subsubsection.14.1.3}%
+\contentsline {subsubsection}{\numberline {14.1.4}Geometrická posloupnost}{30}{subsubsection.14.1.4}%
+\contentsline {subsubsection}{\numberline {14.1.5}Vztah aritmetické a geometrické posloupnosti}{30}{subsubsection.14.1.5}%
+\contentsline {subsubsection}{\numberline {14.1.6}Využití aritmetické a geometrické posloupnosti}{30}{subsubsection.14.1.6}%
+\contentsline {subsubsection}{\numberline {14.1.7}Limita posloupnosti (vlastní)}{30}{subsubsection.14.1.7}%
+\contentsline {subsubsection}{\numberline {14.1.8}Nevlastní limita posloupnosti}{31}{subsubsection.14.1.8}%
+\contentsline {subsubsection}{\numberline {14.1.9}Věty o limitách posloupností}{31}{subsubsection.14.1.9}%
+\contentsline {subsection}{\numberline {14.2}Nekonečné řady}{32}{subsection.14.2}%
+\contentsline {subsubsection}{\numberline {14.2.1}Geometrická řada}{33}{subsubsection.14.2.1}%
+\contentsline {paragraph}{Uplatnění}{33}{paragraph*.28}%
+\contentsline {paragraph}{Ambryho kompletní systém součtu nekonečné geometrické řady}{34}{paragraph*.29}%
+\contentsline {paragraph}{Ambryho kompletní systém součtu nekonečné aritmetické řady}{34}{paragraph*.30}%
+\contentsline {subsection}{\numberline {14.3}Finanční matematika}{34}{subsection.14.3}%
+\contentsline {subsubsection}{\numberline {14.3.1}Jednoduché úročení}{34}{subsubsection.14.3.1}%
+\contentsline {subsubsection}{\numberline {14.3.2}Složené úročení}{35}{subsubsection.14.3.2}%
+\contentsline {subsubsection}{\numberline {14.3.3}Pravidelné spoření při složeném úročením}{35}{subsubsection.14.3.3}%
+\contentsline {subsubsection}{\numberline {14.3.4}Pravidelné splácení dluhu}{36}{subsubsection.14.3.4}%
+\contentsline {subsection}{\numberline {14.4}Meta}{36}{subsection.14.4}%
+\contentsline {subsubsection}{\numberline {14.4.1}Zdroje}{36}{subsubsection.14.4.1}%
+\contentsline {subsubsection}{\numberline {14.4.2}Pojmy/ zadání}{36}{subsubsection.14.4.2}%
+\contentsline {section}{\numberline {15}Základy planimetrie a konstrukční úlohy}{37}{section.15}%
+\contentsline {subsection}{\numberline {15.1}Základní pojmy a definice}{37}{subsection.15.1}%
+\contentsline {subsubsection}{\numberline {15.1.1}Bod}{37}{subsubsection.15.1.1}%
+\contentsline {paragraph}{Ambryho definice}{37}{paragraph*.31}%
+\contentsline {subsubsection}{\numberline {15.1.2}Přímka}{37}{subsubsection.15.1.2}%
+\contentsline {paragraph}{Ambryho definice}{37}{paragraph*.32}%
+\contentsline {subsubsection}{\numberline {15.1.3}Rovina}{37}{subsubsection.15.1.3}%
+\contentsline {subsubsection}{\numberline {15.1.4}Polorovina}{37}{subsubsection.15.1.4}%
+\contentsline {subsubsection}{\numberline {15.1.5}Polopřímka}{38}{subsubsection.15.1.5}%
+\contentsline {subsubsection}{\numberline {15.1.6}Úsečka}{38}{subsubsection.15.1.6}%
+\contentsline {subsubsection}{\numberline {15.1.7}Obrazce}{38}{subsubsection.15.1.7}%
+\contentsline {subsection}{\numberline {15.2}Úhly}{38}{subsection.15.2}%
+\contentsline {subsubsection}{\numberline {15.2.1}Pravidla pro dvojice úhlů}{38}{subsubsection.15.2.1}%
+\contentsline {subsection}{\numberline {15.3}Mnohoúhelníky}{39}{subsection.15.3}%
+\contentsline {subsubsection}{\numberline {15.3.1}Pravidelné mnohoúhelníky}{40}{subsubsection.15.3.1}%
+\contentsline {subsection}{\numberline {15.4}Trojúhelníky}{40}{subsection.15.4}%
+\contentsline {subsubsection}{\numberline {15.4.1}Konstrukce}{41}{subsubsection.15.4.1}%
+\contentsline {subsubsection}{\numberline {15.4.2}Druhy}{41}{subsubsection.15.4.2}%
+\contentsline {subsubsection}{\numberline {15.4.3}cool Věci}{42}{subsubsection.15.4.3}%
+\contentsline {paragraph}{Výška}{42}{paragraph*.33}%
+\contentsline {paragraph}{Těžnice}{42}{paragraph*.34}%
+\contentsline {paragraph}{Střední příčka}{42}{paragraph*.35}%
+\contentsline {paragraph}{Osy úhlů}{42}{paragraph*.36}%
+\contentsline {paragraph}{Osy stran}{42}{paragraph*.37}%
+\contentsline {paragraph}{Kružnice připsaná}{43}{paragraph*.38}%
+\contentsline {paragraph}{Eulerova přímka}{43}{paragraph*.39}%
+\contentsline {subsubsection}{\numberline {15.4.4}Obvod a obsah}{43}{subsubsection.15.4.4}%
+\contentsline {subsubsection}{\numberline {15.4.5}Věty}{43}{subsubsection.15.4.5}%
+\contentsline {paragraph}{Sinová věta}{43}{paragraph*.40}%
+\contentsline {paragraph}{tangentová věta}{43}{paragraph*.41}%
+\contentsline {paragraph}{Cosinová věta}{43}{paragraph*.42}%
+\contentsline {subparagraph}{Pythagorova věta}{43}{subparagraph*.43}%
+\contentsline {paragraph}{Euklidova věta o výšce}{43}{paragraph*.44}%
+\contentsline {paragraph}{Euklidova věta o odvěsně}{44}{paragraph*.45}%
+\contentsline {paragraph}{Podobnost trojúhelníků}{44}{paragraph*.46}%
+\contentsline {subsubsection}{\numberline {15.4.6}Rovnoramenný}{44}{subsubsection.15.4.6}%
+\contentsline {subsubsection}{\numberline {15.4.7}Rovnostranný}{44}{subsubsection.15.4.7}%
+\contentsline {subsection}{\numberline {15.5}Čtyřúhelníky}{44}{subsection.15.5}%
+\contentsline {subsubsection}{\numberline {15.5.1}Obvod a obsah}{45}{subsubsection.15.5.1}%
+\contentsline {subsubsection}{\numberline {15.5.2}Rozdělení}{45}{subsubsection.15.5.2}%
+\contentsline {paragraph}{Různoběžník}{45}{paragraph*.47}%
+\contentsline {paragraph}{Deltoid}{45}{paragraph*.48}%
+\contentsline {paragraph}{Dvojstředový čtyřúhelník}{45}{paragraph*.49}%
+\contentsline {subparagraph}{Tečnový}{45}{subparagraph*.50}%
+\contentsline {subparagraph}{Tětivový}{46}{subparagraph*.51}%
+\contentsline {paragraph}{Lichoběžník}{46}{paragraph*.52}%
+\contentsline {paragraph}{Rovnoběžník (kosodélník)}{46}{paragraph*.53}%
+\contentsline {subparagraph}{Kosočtverec}{46}{subparagraph*.54}%
+\contentsline {subparagraph}{obdélník}{47}{subparagraph*.55}%
+\contentsline {subparagraph}{Čtverec}{47}{subparagraph*.56}%
+\contentsline {subsection}{\numberline {15.6}Kruh a kružnice}{47}{subsection.15.6}%
+\contentsline {subsubsection}{\numberline {15.6.1}Vzájemná poloha 2 kružnic}{48}{subsubsection.15.6.1}%
+\contentsline {subsubsection}{\numberline {15.6.2}Vzájemná poloha s přímkou}{48}{subsubsection.15.6.2}%
+\contentsline {subsubsection}{\numberline {15.6.3}Vyjádření pomocí rovnic}{48}{subsubsection.15.6.3}%
+\contentsline {subsubsection}{\numberline {15.6.4}Úhly v kružnici}{48}{subsubsection.15.6.4}%
+\contentsline {paragraph}{Středový úhel}{48}{paragraph*.57}%
+\contentsline {paragraph}{Obvodový úhel}{48}{paragraph*.58}%
+\contentsline {paragraph}{Úsekový úhel}{48}{paragraph*.59}%
+\contentsline {subsubsection}{\numberline {15.6.5}Kruhová výseč}{48}{subsubsection.15.6.5}%
+\contentsline {paragraph}{Kružnicový oblouk}{49}{paragraph*.60}%
+\contentsline {subsubsection}{\numberline {15.6.6}Kruhová výseč}{49}{subsubsection.15.6.6}%
+\contentsline {subsubsection}{\numberline {15.6.7}Mezikruží}{49}{subsubsection.15.6.7}%
+\contentsline {subsubsection}{\numberline {15.6.8}Thaletova kružnice/věta}{49}{subsubsection.15.6.8}%
+\contentsline {subsection}{\numberline {15.7}Obvody a obsahy ostatních rovinných útvarů}{49}{subsection.15.7}%
+\contentsline {subsection}{\numberline {15.8}Konstrukce}{49}{subsection.15.8}%
+\contentsline {subsection}{\numberline {15.9}Meta}{50}{subsection.15.9}%
+\contentsline {subsubsection}{\numberline {15.9.1}Zdroje}{50}{subsubsection.15.9.1}%
+\contentsline {subsubsection}{\numberline {15.9.2}Pojmy/Zadání}{50}{subsubsection.15.9.2}%
+\contentsline {section}{\numberline {16}Zobrazení v rovině}{51}{section.16}%
+\contentsline {paragraph}{Samodružnost}{51}{paragraph*.61}%
+\contentsline {subsection}{\numberline {16.1}Afinní zobrazení}{51}{subsection.16.1}%
+\contentsline {subsection}{\numberline {16.2}Podobná zobrazení}{51}{subsection.16.2}%
+\contentsline {paragraph}{Stejnolehlost (homotetie)}{51}{paragraph*.62}%
+\contentsline {subsection}{\numberline {16.3}Shodné zobrazení}{52}{subsection.16.3}%
+\contentsline {paragraph}{Nepřímá shodnost}{52}{paragraph*.63}%
+\contentsline {paragraph}{Přímá shodnost}{52}{paragraph*.64}%
+\contentsline {paragraph}{Identita}{52}{paragraph*.65}%
+\contentsline {subsection}{\numberline {16.4}Využití v konstrukčních úlohách}{52}{subsection.16.4}%
+\contentsline {subsection}{\numberline {16.5}Meta}{52}{subsection.16.5}%
+\contentsline {subsubsection}{\numberline {16.5.1}Zdroje}{52}{subsubsection.16.5.1}%
+\contentsline {subsubsection}{\numberline {16.5.2}Pojmy/Zadání}{53}{subsubsection.16.5.2}%
+\contentsline {section}{\numberline {17}Tělesa}{53}{section.17}%
+\contentsline {subsection}{\numberline {17.1}Cavalieriův princip}{53}{subsection.17.1}%
+\contentsline {subsection}{\numberline {17.2}Mnohostěny}{53}{subsection.17.2}%
+\contentsline {subsubsection}{\numberline {17.2.1}Platónská tělesa}{54}{subsubsection.17.2.1}%
+\contentsline {paragraph}{Dualita}{54}{paragraph*.66}%
+\contentsline {subsection}{\numberline {17.3}Hranoly}{54}{subsection.17.3}%
+\contentsline {subsubsection}{\numberline {17.3.1}Kvádr}{54}{subsubsection.17.3.1}%
+\contentsline {subsubsection}{\numberline {17.3.2}Krychle}{55}{subsubsection.17.3.2}%
+\contentsline {subsection}{\numberline {17.4}Jehlany}{55}{subsection.17.4}%
+\contentsline {subsubsection}{\numberline {17.4.1}Komolé jehlany}{55}{subsubsection.17.4.1}%
+\contentsline {subsection}{\numberline {17.5}Rotační tělesa}{55}{subsection.17.5}%
+\contentsline {subsubsection}{\numberline {17.5.1}Rotační válec}{55}{subsubsection.17.5.1}%
+\contentsline {subsubsection}{\numberline {17.5.2}Rotační kužel}{55}{subsubsection.17.5.2}%
+\contentsline {subsubsection}{\numberline {17.5.3}Komolý rotační kužel}{56}{subsubsection.17.5.3}%
+\contentsline {subsubsection}{\numberline {17.5.4}Koule}{56}{subsubsection.17.5.4}%
+\contentsline {subsubsection}{\numberline {17.5.5}Kulová úseč a kulový vrchlík}{56}{subsubsection.17.5.5}%
+\contentsline {subsubsection}{\numberline {17.5.6}Kulová vrstva a kulový pás}{56}{subsubsection.17.5.6}%
+\contentsline {subsection}{\numberline {17.6}Meta}{56}{subsection.17.6}%
+\contentsline {subsubsection}{\numberline {17.6.1}Zdroje}{57}{subsubsection.17.6.1}%
+\contentsline {subsubsection}{\numberline {17.6.2}Zadání/pojmy}{57}{subsubsection.17.6.2}%
+\contentsline {section}{\numberline {18}Polohové a metrické úlohy ve stereometrii}{57}{section.18}%
+\contentsline {subsection}{\numberline {18.1}Vzájemná poloha bodů, přímek a rovin v prostoru}{57}{subsection.18.1}%
+\contentsline {subsubsection}{\numberline {18.1.1}Bod a}{57}{subsubsection.18.1.1}%
+\contentsline {paragraph}{Bod}{57}{paragraph*.67}%
+\contentsline {paragraph}{Přímka}{57}{paragraph*.68}%
+\contentsline {paragraph}{Rovina}{58}{paragraph*.69}%
+\contentsline {subsubsection}{\numberline {18.1.2}Přímka a}{58}{subsubsection.18.1.2}%
+\contentsline {paragraph}{Přímka}{58}{paragraph*.70}%
+\contentsline {paragraph}{Rovina}{59}{paragraph*.71}%
+\contentsline {subsubsection}{\numberline {18.1.3}Rovina}{60}{subsubsection.18.1.3}%
+\contentsline {paragraph}{Rovina}{60}{paragraph*.72}%
+\contentsline {subsection}{\numberline {18.2}Průnik přímky tělesem}{61}{subsection.18.2}%
+\contentsline {subsection}{\numberline {18.3}Řez tělesa rovinou}{61}{subsection.18.3}%
+\contentsline {subsection}{\numberline {18.4}Meta}{61}{subsection.18.4}%
+\contentsline {subsubsection}{\numberline {18.4.1}Zdroje}{61}{subsubsection.18.4.1}%
+\contentsline {subsubsection}{\numberline {18.4.2}Pojmy/Zadání}{62}{subsubsection.18.4.2}%
+\contentsline {section}{\numberline {19}Vektorová algebra}{62}{section.19}%
+\contentsline {subsection}{\numberline {19.1}Vzdálenost bodů a střed úsečky}{62}{subsection.19.1}%
+\contentsline {subsection}{\numberline {19.2}Soustavy souřadnic}{62}{subsection.19.2}%
+\contentsline {subsection}{\numberline {19.3}Orientované úsečky}{62}{subsection.19.3}%
+\contentsline {subsection}{\numberline {19.4}Definice vektoru přes orientované úsečky}{62}{subsection.19.4}%
+\contentsline {subsection}{\numberline {19.5}Souřadnice vektoru}{63}{subsection.19.5}%
+\contentsline {subsection}{\numberline {19.6}Sčítání vektorů a násobení reálnými čísly}{63}{subsection.19.6}%
+\contentsline {subsection}{\numberline {19.7}Lineární kombinace a závislost}{63}{subsection.19.7}%
+\contentsline {paragraph}{Lineární kombinace}{63}{paragraph*.73}%
+\contentsline {paragraph}{Lineárně závislé}{63}{paragraph*.74}%
+\contentsline {paragraph}{Lineárně nezávislé}{64}{paragraph*.75}%
+\contentsline {subsection}{\numberline {19.8}Velikost}{64}{subsection.19.8}%
+\contentsline {subsubsection}{\numberline {19.8.1}Jednotkový vektor}{64}{subsubsection.19.8.1}%
+\contentsline {paragraph}{Norma}{64}{paragraph*.76}%
+\contentsline {subsection}{\numberline {19.9}Skalární součin}{64}{subsection.19.9}%
+\contentsline {subsection}{\numberline {19.10}Úhel vektorů}{65}{subsection.19.10}%
+\contentsline {paragraph}{Rovnoběžnost}{65}{paragraph*.77}%
+\contentsline {paragraph}{Kolmost}{65}{paragraph*.78}%
+\contentsline {subsection}{\numberline {19.11}Vektorový součin v prostoru}{65}{subsection.19.11}%
+\contentsline {paragraph}{Lineárně závislé}{65}{paragraph*.79}%
+\contentsline {paragraph}{Lineárně nezávislé}{65}{paragraph*.80}%
+\contentsline {paragraph}{Další vlastnosti}{66}{paragraph*.81}%
+\contentsline {subsection}{\numberline {19.12}Pravotočivá a levotočivá báze}{66}{subsection.19.12}%
+\contentsline {paragraph}{Báze}{66}{paragraph*.82}%
+\contentsline {subsection}{\numberline {19.13}Smíšený součin vektorů v prostoru}{66}{subsection.19.13}%
+\contentsline {paragraph}{Lineárně závislé}{66}{paragraph*.83}%
+\contentsline {paragraph}{Lineárně nezávislé}{66}{paragraph*.84}%
+\contentsline {subsection}{\numberline {19.14}Meta}{67}{subsection.19.14}%
+\contentsline {subsubsection}{\numberline {19.14.1}Zdroje}{67}{subsubsection.19.14.1}%
+\contentsline {subsubsection}{\numberline {19.14.2}Zadání/ pojmy}{67}{subsubsection.19.14.2}%
+\contentsline {section}{\numberline {20}Analytická geometrie lineárních útvarů}{67}{section.20}%
+\contentsline {subsection}{\numberline {20.1}Meta}{67}{subsection.20.1}%
+\contentsline {subsubsection}{\numberline {20.1.1}Zdroje}{67}{subsubsection.20.1.1}%
+\contentsline {subsubsection}{\numberline {20.1.2}Zadání/ pojmy}{67}{subsubsection.20.1.2}%
+\contentsline {section}{\numberline {21}Analytická geometrie kuželoseček}{68}{section.21}%
+\contentsline {subsection}{\numberline {21.1}Degenerované kuželosečky}{68}{subsection.21.1}%
+\contentsline {subsection}{\numberline {21.2}Elipsa}{68}{subsection.21.2}%
+\contentsline {subsubsection}{\numberline {21.2.1}Kružnice}{69}{subsubsection.21.2.1}%
+\contentsline {subsubsection}{\numberline {21.2.2}Vztah s přímkou}{69}{subsubsection.21.2.2}%
+\contentsline {paragraph}{Tečna v bodě(elipsa)}{69}{paragraph*.85}%
+\contentsline {paragraph}{Tečna v bodě(kružnice)}{69}{paragraph*.86}%
+\contentsline {subsection}{\numberline {21.3}Parabola}{70}{subsection.21.3}%
+\contentsline {subsubsection}{\numberline {21.3.1}Vztah s přímkou}{70}{subsubsection.21.3.1}%
+\contentsline {paragraph}{Tečna v bodě}{70}{paragraph*.87}%
+\contentsline {subsection}{\numberline {21.4}Hyperbola}{71}{subsection.21.4}%
+\contentsline {subsubsection}{\numberline {21.4.1}Asymptoty}{71}{subsubsection.21.4.1}%
+\contentsline {subsection}{\numberline {21.5}Vztah s přímkou}{72}{subsection.21.5}%
+\contentsline {paragraph}{Tečna v bodě}{72}{paragraph*.88}%
+\contentsline {subsection}{\numberline {21.6}Obecná rovnice kuželoseček}{72}{subsection.21.6}%
+\contentsline {subsubsection}{\numberline {21.6.1}Kružnice}{72}{subsubsection.21.6.1}%
+\contentsline {subsubsection}{\numberline {21.6.2}Elipsy}{72}{subsubsection.21.6.2}%
+\contentsline {subsubsection}{\numberline {21.6.3}Hyperboly}{72}{subsubsection.21.6.3}%
+\contentsline {subsubsection}{\numberline {21.6.4}Paraboly}{73}{subsubsection.21.6.4}%
+\contentsline {subsection}{\numberline {21.7}Meta}{73}{subsection.21.7}%
+\contentsline {subsubsection}{\numberline {21.7.1}Zdroje}{73}{subsubsection.21.7.1}%
+\contentsline {subsubsection}{\numberline {21.7.2}Pojmy/zadání}{73}{subsubsection.21.7.2}%
+\contentsline {section}{\numberline {22}Polohové a metrické úlohy řešené metodou analytické geometrie}{74}{section.22}%
+\contentsline {subsection}{\numberline {22.1}Co je již jinde}{74}{subsection.22.1}%
+\contentsline {subsection}{\numberline {22.2}Polopřímka a úsečka v prostoru}{74}{subsection.22.2}%
+\contentsline {subsection}{\numberline {22.3}Střed a délka úsečky}{74}{subsection.22.3}%
+\contentsline {subsection}{\numberline {22.4}Přímka v rovině}{75}{subsection.22.4}%
+\contentsline {subsubsection}{\numberline {22.4.1}Vyjádření a rovnice}{75}{subsubsection.22.4.1}%
+\contentsline {paragraph}{Parametrické vyjádření}{75}{paragraph*.89}%
+\contentsline {paragraph}{Obecná rovnice}{75}{paragraph*.90}%
+\contentsline {paragraph}{Směrnicový tvar}{75}{paragraph*.91}%
+\contentsline {paragraph}{Normálový tvar}{76}{paragraph*.92}%
+\contentsline {paragraph}{Úsekový tvar}{76}{paragraph*.93}%
+\contentsline {subsubsection}{\numberline {22.4.2}Vzdálenost bodu}{76}{subsubsection.22.4.2}%
+\contentsline {subsubsection}{\numberline {22.4.3}Odchylka dvou přímek}{76}{subsubsection.22.4.3}%
+\contentsline {paragraph}{Směrové vektory}{76}{paragraph*.94}%
+\contentsline {paragraph}{Směrnice}{76}{paragraph*.95}%
+\contentsline {subsection}{\numberline {22.5}Meta}{77}{subsection.22.5}%
+\contentsline {subsubsection}{\numberline {22.5.1}Zdroje}{77}{subsubsection.22.5.1}%
+\contentsline {subsubsection}{\numberline {22.5.2}Zadání/pojmy}{77}{subsubsection.22.5.2}%
+\contentsline {section}{\numberline {23}Diferenciální počet}{77}{section.23}%
+\contentsline {subsection}{\numberline {23.1}Zápis}{78}{subsection.23.1}%
+\contentsline {subsubsection}{\numberline {23.1.1}Leibnizova notace}{78}{subsubsection.23.1.1}%
+\contentsline {subsubsection}{\numberline {23.1.2}Lagrange}{78}{subsubsection.23.1.2}%
+\contentsline {subsubsection}{\numberline {23.1.3}Euler}{78}{subsubsection.23.1.3}%
+\contentsline {subsubsection}{\numberline {23.1.4}Newton}{79}{subsubsection.23.1.4}%
+\contentsline {subsection}{\numberline {23.2}Definice}{79}{subsection.23.2}%
+\contentsline {subsection}{\numberline {23.3}Vzorce a pravidla}{79}{subsection.23.3}%
+\contentsline {subsubsection}{\numberline {23.3.1}Derivace součtu}{79}{subsubsection.23.3.1}%
+\contentsline {subsubsection}{\numberline {23.3.2}Derivace součinu}{79}{subsubsection.23.3.2}%
+\contentsline {subsubsection}{\numberline {23.3.3}Derivace podílu}{80}{subsubsection.23.3.3}%
+\contentsline {subsubsection}{\numberline {23.3.4}Derivace složené funkce}{80}{subsubsection.23.3.4}%
+\contentsline {subsection}{\numberline {23.4}Derivace elementárních funkcí}{80}{subsection.23.4}%
+\contentsline {subsection}{\numberline {23.5}L'Hospitalovo pravidlo}{80}{subsection.23.5}%
+\contentsline {subsubsection}{\numberline {23.5.1}Využití}{81}{subsubsection.23.5.1}%
+\contentsline {subsection}{\numberline {23.6}Využití derivací}{81}{subsection.23.6}%
+\contentsline {subsection}{\numberline {23.7}Meta}{81}{subsection.23.7}%
+\contentsline {subsubsection}{\numberline {23.7.1}Zadání/pojmy}{81}{subsubsection.23.7.1}%
+\contentsline {subsubsection}{\numberline {23.7.2}Zdroje}{82}{subsubsection.23.7.2}%
+\contentsline {section}{\numberline {24}Integrální počet}{82}{section.24}%
+\contentsline {subsection}{\numberline {24.1}Vzorce}{83}{subsection.24.1}%
+\contentsline {subsection}{\numberline {24.2}Metoda per partes}{83}{subsection.24.2}%
+\contentsline {subsection}{\numberline {24.3}Využití}{84}{subsection.24.3}%
+\contentsline {subsubsection}{\numberline {24.3.1}Objem rotačních těles}{84}{subsubsection.24.3.1}%
+\contentsline {subsubsection}{\numberline {24.3.2}Délka křivky funkce}{84}{subsubsection.24.3.2}%
+\contentsline {subsection}{\numberline {24.4}Meta}{84}{subsection.24.4}%
+\contentsline {subsubsection}{\numberline {24.4.1}Zdroje}{84}{subsubsection.24.4.1}%
+\contentsline {subsubsection}{\numberline {24.4.2}Zadání/Pojmy}{85}{subsubsection.24.4.2}%
+\contentsline {section}{\numberline {25}Aplikace diferenciálního a integrálního počtu}{85}{section.25}%
+\contentsline {subsection}{\numberline {25.1}Meta}{85}{subsection.25.1}%
+\contentsline {subsection}{\numberline {25.2}Zdroje}{85}{subsection.25.2}%
+\contentsline {subsubsection}{\numberline {25.2.1}Zadání/pojmy}{85}{subsubsection.25.2.1}%
