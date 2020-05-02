@@ -22,13 +22,22 @@
 
 %Moje komandy
 \providecommand{\lxor}{\veebar}
+\providecommand{\abs}[1]{\lvert#1\rvert}
+\newcommand{\absb}[1]{\lvert#1\rvert}
+
+\newcommand{\euler}{\mathrm{e}} % euler's number
+\newcommand{\iu}{\mathrm{i}} %imaginary unit
+\newcommand{\nR}{\mathbb{R}} %numbers Real
+\newcommand{\nN}{\mathbb{N}} %Numbers Natural
+\newcommand{\nZ}{\mathbb{Z}} %Numbers Natural
+
 \begin{document}
 \rightline{\today}
 \rightline{Jakub Ambroz 8.E}
 
 %\thechapter{Maturitní otázky z Matematiky}
 \subsection{Meta}
-\paragraph*{Deníček:\\}
+\subsubsection{Deníček}
 Tak jdeme na to! 24.03.20\\
 25.03.20 dopsáno 23,24,25 ale ještě tam chce něco dopilovat\\
 29.03.20 - dodělal jsem kuželosečky (21)\\
@@ -65,7 +74,11 @@ Finální porovnání možností: $A^c$ nebo $A^C$ nebo $A^\mathsf{C}$ nebo $A^\
 Jak na zobrazit zobrazení (a pěkné šipky):  $y = f(x) $ nebo $ y = F(x) $ nebo $ f: x \mapsto y $ nebo $ f: x \to y $ nebo $ f: x \rightarrow y$ \\
 Jak udělat kolečko $ (h ∘ g)$ vs $ (h \circ g)$, 18:46 no nic množiny (2) asi done, měl bych dělat EuropuSecuru \dots, ale moc se mi nechce\\
 25.04.20 - obecná rovnice kuželoseček (21) a finanční matematika (14-posloupnosti a řady) dodělány, sakra měl bych dělat EuropuSecuru \dots \\
-01.05.20 - test buildu na nb, pokus 2
+01.05.20 - test buildu na nb, pokus 2. Funguje. 10:43 Jdu na MO-3. Notace $\mathbb{N}$ vs $N$ má jasného vítěze na krásu. Problém je spíš, že různí autoři využívají různé způsoby zápisu, zda-li tam patří nula. Jinak lepší způsob, jak psát \href{https://www.latex-tutorial.com/tutorials/hyperlinks/}{linky}.\\
+Vypadá to že standardem pro komplexní čísla je $a +ib$ (lepší než $a +bi$), žádné speciální fonty nebo příkazy asi nejsou. Moment co $a +\imath b$ ? \uv{( v \LaTeX existuje speciální symbol $\imath$ , ale ?asi není moc konsensus, jak to psát?)} Jonáš potvrdil neexistenci konsensu.\\
+Nový command $\abs{a}$ vs $\absb{a}$. Funguje mělo by být ekvivalentní $\lvert a \rvert$ . Další možnosti: $ \vert a \vert$ nebo $|a|$, ale rozdílné $ \mid a \mid$.\\
+Jak na Eulerovo číslo? $e$ vs $\mathrm{e}$ vs $\mathsf{e}$ vs ? 	->vytvořil jsem si command aby to bylo konzistentní $\euler$ až se rozhodnu \dots Udělám asi to samé pro $\iu$ (zatím jsem se u obojího rozhodl pro mathrm)\\
+Pauza, ale komplexní čísla done. Nevím co se myslí uzavřeností v pojmech, jako u intervalů? -> TODO-list. Jinak mě as nenapadá, co dál. Teoreticky bych mohl opsat víc vzorečků z tabulek, ale ony většinou tak nějak vyplývají z předchozích a obecně mi to přijde zbytečný, takže na to už asi kašlu. MO-3 done
 
 
 
@@ -80,12 +93,16 @@ Jak udělat kolečko $ (h ∘ g)$ vs $ (h \circ g)$, 18:46 no nic množiny (2) a
 \item "\textbf{Prakitcké}" využití aritmetické a geometrické posloupnosti
 \item \st{Finanční matematika (spadá pod 14 -posloupnosti a řady)} done, podle tabulek
 \item 2 (Množiny) nakreslit Vennovy diagramy
-
+\item Nakreslit Gaussovu rovinu (obrázek obdobný tomu z tabulek)
+\item Sub a subsubsectiony a paragraohy pořešit u komplexních čísel
+\item MO-3 pojem uzavřenost , možná přidat další příklady základních operací, ale je to asi jasný a nuda takže radši nic
 \end{itemize}
 \subsubsection{Latex tipy}
 \begin{itemize}
 \item jak na tři tečky, kdy jaké používat \url{https://tex.stackexchange.com/questions/122491/difference-of-the-dots}
 \item jak udělat jednostrannou složenou závorku \url{https://tex.stackexchange.com/questions/47170/how-to-write-conditional-equations-with-one-sided-curly-brackets}
+\item Lepší způsob, jak psát \href{https://www.latex-tutorial.com/tutorials/hyperlinks/}{linky}
+\item Jak dělat \href{https://tex.stackexchange.com/questions/498/mid-vertical-bar-vert-lvert-rvert-divides}{vertikální čáru}
 \end{itemize}
 
 \begin{align*}
@@ -100,8 +117,13 @@ Jak udělat kolečko $ (h ∘ g)$ vs $ (h \circ g)$, 18:46 no nic množiny (2) a
  {^{\scaleto{\text{červená}}{9pt}}_{\scaleto{\text{zelená}}{9pt}}}\scaleto{ \}}{30pt}
 _{\scaleto{a+b}{9pt}}^{\scaleto{a+d?}{9pt}} \mspace{-40mu} \text{chloroplast vznik primární endosymbiózou}
 \end{align*} %well tak druhý pokus nefunguje
+
+\subsubsection{Informace pro čtenáře}
+\begin{enumerate}
+\item Norma ČSN ISO 31-11 není závazná a má pouze charakter doporučení. TO by vysvětlovalo, proč jsem některý věci vůbec neviděl, protože prostě vypadají blbě a nikdo je nechce používat xD. Některý věci mi zase třeba přijdou v pohodě a asi se uchytí, bo kopírují zahraniční styly zápisu.
+\end{enumerate}
 \section{Logická výstavba matematiky}
-1
+
 \subsection{Meta}
 \subsubsection{Zdroje}
 \subsubsection{Zadání/Pojmy}
@@ -279,9 +301,204 @@ Možná si pak dodělám obrázky Vennových diagramů, jen tak protože můžu.
 \subsubsection{Zadání/Pojmy}
 Pojem množiny, způsob zadání množiny, podmnožina, vztahy mezi množinami, rovnost množin, inkluze množin, operace s množinami a jejich vlastnosti, sjednocení, průnik, rozdíl, doplněk, disjunktní množiny, grafické znázornění množin, uspořádaná dvojice, kartézský součin, zobrazení, typy zobrazení, funkce, složené zobrazení.
 \section{Číselné obory}
-3
+\subsection{Množiny čísel}
+Máme několik množin čísel. Formální definice jsou náročnější, ale na ty asi kašlem.
+\begin{itemize}
+\item \emph{Přirozená čísla} - kladná celá čísla nebo nezáporná celá čísla -> problém zda-li patří nula nebo ne -> existují různé způsoby značení, takže sranda, protože každý autor píše jinak. Vždy se ale značí $N$ nebo $\mathbb{N}$. Aby se předešlo záměnám přidávají se indexy v podobě plus a nuly, které to mají jasněji určit:\\
+\emph{Nezáporná celá čísla} (tj. včetně nuly)	: $N_0$, $N^0$, $\mathbb{N}_0$ nebo $\mathbb{N}^0 $ (taktéž je to ekvivalentní se zápisem pomocí celých čísel: $Z_0^+$ nebo $\mathbb{Z}_0^+$), (podle tabulek by to od normy ISO 31-11 mělo být jen $\mathbb{N}$, ale v celých tabulkách se to používá pro kladná celá čísla \dots)\\
+\emph{Kladná celá čísla} (tj. bez nuly): $\mathbb{N}^+$ (pomocí celých čísel $\mathbb{Z}^+$) (podle tabulek normy ISO 31-11 by to mělo být $\mathbb{N}^*$ , ale to jsem v životě neviděl, takže asi tak) 
+\item \emph{Celá čísla} - značí se $\mathbb{Z}$. Přirozená čísla jsou speciální podmnožinou celých čísel. Vzájemným sčítáním, odečítáním a násobením celých čísel vždy získáme opět jen celé číslo. Výjimku tvoří dělení. 
+\item \emph{Racionální čísla} se značí $\mathbb{Q}$. Jsou to čísla která jde vyjádřit jako zlomek dvou celých čísel $\frac{a}{b},\; a,b \in Z$. Celá čísla jsou jejich speciální podmnožinou, kde \emph{základní tvar} zlomku má jako dělitele 1.
+\item \emph{Reální čísla} značí se $\mathbb{R}$. Jsou všechna čísla i ta která nejdou vyjádřit zlomkem, ale jdou vyjádřit nějakým (i nekonečným) desetinným rozvojem. Lze si je představit jako množinu vzdáleností bodů přímky od jednoho konkrétního bodu přímky, který si označíme 0.
+\item \emph{Iracionální čísla} jsou všechna desetinná čísla, která se nedají vyjádřit pomocí zlomku (např. $\pi, \sqrt{2}, \dotsc$). Je to tedy množina $\mathbb{R} \setminus \mathbb{Q}$
+\item \emph{Komplexní čísla} se značí $\mathbb{C}$. Zavedeny byly kvůli řešení rovnic styl $x^2 + 1 = 0$. Byla zavedena $	\iu$ imaginární jednotka $\iu^2 = -1$ (respektive $\imath^2 = -1$  nebo $i^2 = -1$).
+\end{itemize}
+\begin{align}
+\mathbb{N} \subset \mathbb{Z} \subset \mathbb{Q} \subset \mathbb{R} \subset \mathbb{C}
+\end{align}
+Pro $\mathbb{N}, \mathbb{Z}, \mathbb{Q}, \mathbb{R}$ můžeme ještě vytvořit kladné (respektive záporné) podmnožiny pomocí plus (resp. mínus) v horním indexu a rozlišit přítomnost nuly pomocí dolního indexu s nulou, je-li součástí.
+\subsection{Číselná osa}
+Reálná čísla můžeme znázornit na číselné ose (nekonečná přímka, která má bod, který označujeme jako 0). To se může hodit třeba ke znázornění intervalů. Nebo k pochopení \emph{absolutní hodnoty} jako vzdálenosti od nuly.
+\subsubsection{Absolutní hodnota}
+\begin{align}
+ \abs{a} = \left\{\begin{array}{lr}
+       a & \text{pro } a \geq 0\\
+       -a  & \text{pro } a < 0
+        \end{array} \right. 
+\end{align}
+Absolutní hodnota rozdílu reálných čísel je rovna vzdálenosti těchto čísel na číselné ose. Pak jsou v tabulkách nějaké zajímavé příklady, ale mě moc zajímavé nepřijdou.
+\subsection{Operace s reálnými čísly a jejich vlastnosti}
+\subsubsection{Neutrální prvky}
+Je takový prvek množiny (pro nás reálná čísla), pro který platí, že výsledkem operace neutrálního prvku a libovolného jiného prvku $x$ z dané množiny je opět $x$. Pro násobení (a dělení) je neutrálním prvkem tzv. \emph{jednotkový prvek} - je roven 1. Pro sčítání (a odečítání) je to tzv. \emph{nulový prvek} -  je roven 0. Občas se pro neutrální prvek používá označení \emph{identita}.
+\subsubsection{Porovnávání}
+\begin{itemize}
+\item $>$ a $<$
+\item $\geq$ a $\leq$
+\item $\gg$ a $\ll$ je \emph{mnohem (řádově) větší} (resp. \emph{menší) než} 
+\end{itemize}
+\subsubsection{Základní operace}
+Můžeme sčítat, odečítat, násobit a dělit. To je novinka :/
+\subsubsection{Vlastnosti sčítání a násobení}
+\paragraph{Komutativnost} říká že nezáleží na pořadí prvků:
+\begin{align}
+a+b &= b+a & a \cdot b &= b \cdot a
+\end{align}
+\paragraph{Asociativita} říká, že nezáleží na pořadí v jakém provedeme operace (na upřednostnění se používají závorky):
+\begin{align}
+a + ( b+c) &= (a +b) +c & a \cdot ( b \cdot c) &= ( a \cdot b) \cdot c
+\end{align}
+\paragraph{Distributivnost} říká, že můžeme jednu operaci distribuovat přes jinou. Pro nás násobení a sčítání.
+\begin{align}
+a \cdot (b +c) = a \cdot b + a \cdot c
+\end{align}
+\subsubsection{Součet a součin většího množství čísel}
+\subsubsection{Mocniny a odmocniny}
+Zápis $a^k$ kde $a$ se označuje jako \emph{základ} a $k$ jako \emph{exponent}.
+\begin{align}
+& & \text{Platí pro}\\
+a^0 &= 1 & a \neq 0\\
+a^n &= \underbrace{a \cdot \dotsb \cdot a}_{n \text{ činitelů}} &  a \in \nR, n \in \nN \\
+a^{-n} &= \frac{1}{a^n} & a \neq 0,\,  n \in \nN \\
+\sqrt[n]{a} =b &\iff (b^n = a \land b \geq 0) & a\geq 0,\, n \in \nN,\, n \geq 2\\
+\sqrt[2]{a} = \sqrt{a}, &  \; \; \sqrt{a^2} = \abs{a} \\
+a^{\frac{1}{n}} &= \sqrt[n]{a} &  a \neq 0,\,  n \in \nN, \, n \geq 2\\
+a^{\frac{m}{n}} &= \sqrt[n]{a^m} &  a \neq 0,\,  m,n \in \nN, \, n \geq 2\\
+\end{align}
+Definuje se i mocnina kladného celého čísla s iracionálním exponentem, ale mimo SŠ.
+\paragraph{Operace s mocninami a odmocninami}
+\begin{align}
+a^m \cdot a^n &= a^{m+n} \\
+a^m : a^n &= a^{m-n} &\\
+(a \cdot b)^n &=a^n \cdot b^n & \sqrt[n]{a} \cdot \sqrt[n]{a} &= \sqrt[n]{a \cdot b} \\
+\left(  \frac{a}{b}\right)^n &= \frac{a^n}{b^n} & \frac{\sqrt[n]{a}}{\sqrt[n]{b}} &= \sqrt[n]{\frac{a}{b}}\\
+(a^m)^n &= a^{m \cdot n} & \sqrt[m]{\sqrt[n]{a}} &= \sqrt[m \cdot n]{a}\\
+\left( \sqrt[n]{a} \right)^m &= \sqrt[n]{a^m} &= \sqrt[k\cdot n]{a^{k\cdot m}}
+\end{align}
+\subsection{Komplexní čísla}
+\subsubsection{Zápis}
+\paragraph{Algebraický tvar}
+\begin{align}
+a = a_1 + a_2 \iu && a_1,a_2 \in R && \iu^2 = -1
+\end{align}
+\begin{itemize}
+\item $a_1$ - \emph{reálná část}
+\item $a_2$ - \emph{imaginární část}
+\item $\iu$  \emph{imaginární jednotka} (také možné značení $i$ nebo $\imath$ v \LaTeX)
+\end{itemize}
+\paragraph{Goniometrický tvar}
+\begin{align}
+a = \abs{a} \cdot \left( \cos \alpha + \iu \sin \alpha \right)
+\end{align}
+\begin{itemize}
+\item $\abs{a}$ - \emph{absolutní hodnota} - tj. vzdálenost od středu $0 + \iu 0$
+\item $\alpha$ - \emph{argument} je velikost orientovaného úhlu
+\end{itemize}
+\paragraph{Exponenciální tvar} je asi mimo látku SŠ.
+\begin{align}
+a = \abs{a} \cdot \euler ^{\iu \alpha} && \text{, kde:	} \euler^{\iu \alpha} = \cos \alpha + \iu \sin \alpha
+\end{align}
+\paragraph{Gaussova rovina}
+Je rovina komplexních čísel, kde je osa $x$ osa reálných čísel (tj. \emph{reálná osa}) a osa $y$ je osa ryze imaginárních čísel (tj. \emph{imaginární osa}).
+\paragraph{Vlastnosti:}
+\begin{align}
+\abs{a} = \sqrt{a_1^2 + a_2^2} && \cos \alpha = \frac{a_1}{\abs{a}} && \sin \alpha = \frac{a_2}{\abs{a}}
+\end{align}
+\begin{align}
+\iu^2 = -1 && \iu^3 = -\iu && \iu^4 = 1 && \iu^{4k+m} = \iu^m && \text{, kde:	} (k,m \in \mathbb{N}_0)
+\end{align}
+\subsection{Zvláštní případy komplexních čísel}
+\begin{itemize}
+\item číslo \emph{reálné}: $a_1 \in \nR \land a_2 = 0$
+\item číslo \emph{imaginární}: $a_1 \in \nR \land a_2 \neq 0$
+\item číslo \emph{ryze imaginární}: $a_1 = 0 \land a_2 \neq 0$
+\item \emph{komplexní jednotka}: $\abs{a} = 1$  (v goniometrickém tvaru $a = \cos \alpha + \iu \sin \alpha$, v exponenciálním tvaru $a = \euler^{\iu \alpha}$). Obrazy komplexních čísel leží na kružnici s poloměrem 1 a středem v počátku. Je to komplexní číslo, jehož absolutní hodnota je rovna 1.
+\item \emph{komplexní čísla sdružená} se zapisují $a, \overline{a}$ (nebo také $a^*$). Komplexní číslo sdružené má stejnou reálnou část a opačné znaménko u imaginární části. Geometricky se na to můžeme dívat, jako číslo osově souměrné podle reálné osy.
+\begin{align}
+a = a_1 + a_2 \iu && \overline{a}=a^*=a_1 - a_2 \iu
+\end{align}
+Nějaké random zajímavé vlastnosti:
+\begin{align*}
+\overline{(\overline{a})} &= a & \overline{z + w} &= \overline{z} + \overline{w} \\
+\overline{z \cdot w} &= \overline{z} \cdot \overline{w} & \abs{\overline{a}} &= \abs{a}
+\end{align*}
+\item \emph{Komplexní čísla opačná} se značí $a, -a$. Opačné hodnoty reálné i imaginární části. (?Geometricky je to číslo, které je středově  souměrné přes střed Gaussovy roviny?).
+\begin{align}
+a &= a_1 + a_2 \iu & -a &= -a_1 -a_2 \iu
+\end{align}
+\end{itemize}
+\subsection{Operace s komplexními čísly}
+\begin{align}
+a = a_1 + a_2 \iu = \abs{a}(\cos \alpha + \iu \sin \alpha) = \abs{a} \euler^{\iu \alpha}\\
+b = b_1 + b_2 \iu = \abs{b}(\cos \beta + \iu \sin \beta) = \abs{b} \euler^{\iu \beta}
+\end{align}
+\subsubsection{Rovnost}
+\begin{align}
+a=b \iff \left( a_1 = b_1 \land a_2 = b_2 \right)
+\end{align}
+\subsubsection{Součet a rozdíl}
+\begin{align}
+a \pm b = (a_1 \pm b_1) + (a_2 \pm b_2)\iu
+\end{align}
+\paragraph{Součet a rozdíl čísel sdružených}
+\begin{align}
+a + \overline{a} &= 2 a_1 & a - \overline{a} &= 2 a_2 \iu
+\end{align}
+\subsubsection{Součin}
+\begin{align}
+a &= (a_1 b_1 - a_2 b_2) + (a_1 b_2 + a_2 b_1) \iu =\\
+ &= \abs{a} \cdot \abs{b} \cdot \left[ \cos \left( \alpha + \beta \right) + \iu \sin \left(\alpha + \beta \right) \right] =\\
+ &= \abs{a} \cdot \abs{b} \cdot \euler^{\iu ( \alpha + \beta )}
+\end{align}
+\paragraph{Součin čísel sdružených}
+\begin{equation}
+a \cdot \overline{a} = a_1^2 + a_2^2 = \abs{a}^2
+\end{equation}
+\subsubsection{Podíl}
+Pokud platí $b \neq 0$
+\begin{align}
+\frac{a}{b} = \frac{a \cdot \overline{b}}{b \cdot \overline{b}} &= \frac{\left( a_1 b_1 + a_2 b_2 \right) + \left( a_2 b_1 - a_1 b_2 \right) \iu}{b_1^2 + b_2^2} = \\
+&= \frac{\abs{a}}{\abs{b}} \cdot \left[ \cos (\alpha - \beta ) + \iu \sin (\alpha - \beta ) \right] =\\
+ &= \frac{\abs{a}}{\abs{b}} \cdot \euler^{\iu ( \alpha - \beta )}
+\end{align}
+\paragraph{Podíl podíl sdružených čísel} jsem spočítal sám tak opatrně s tím. Platí $a \neq 0$. Ze vzorců pro obecný podíl logicky vyplývá že podíl čísel sdružených bude mít vždy velikost \emph{komplexní jednotky}.
+\begin{align}
+\frac{a}{\overline{a}} &= \frac{a \cdot \overline{(\overline{a})}}{\overline{a} \cdot \overline{(\overline{a})}} = \frac{(a_1^2 - a_2^2) + 2 a_1 a_2 \iu }{a_1^2 + a_2^2} \\
+&= \frac{\abs{a}}{\abs{\overline{a}}} \cdot [ \cos (\alpha + \alpha) + \iu \sin ( \alpha + \alpha )] = 	1 \cdot [ \cos (2 \alpha) + \iu \sin ( 2\alpha )] =\\
+ &= \frac{\abs{a}}{\abs{\overline{a}}} \cdot \euler^{\iu ( \alpha + \alpha )} = 1 \cdot \euler^{\iu 2 \alpha}
+\end{align}
+\subsection{Mocnina komplexního čísla}
+Platí $n \in \nN$
+\begin{align}
+a^n = \left[ \abs{a}(\cos \alpha + \iu \sin \alpha ) \right]^n = \abs{a}^n \left( \cos (n \alpha ) + \iu \sin ( n \alpha ) \right)
+\end{align}
+\subsubsection{Moivreova věta}
+\begin{align}
+ \left( \cos \alpha + \iu \sin \alpha \right)^n = \cos (n \alpha ) + \iu \sin (n \alpha ) && n \in \nN
+\end{align}
+Tato Moivreova věta platí dokonce i pro $ n \in  \nZ$
+\subsection{\uv{Odmocnina} komplexního čísla}
+Máme rovnici:
+\begin{align}
+x^n = \abs{a} (\cos \alpha + \iu \sin \alpha ) && \abs{a} \neq 0
+\end{align}
+Ta má v oboru komplexních čísel právě $n$ různých kořenů:
+\begin{align}
+x_k &= \sqrt[n]{\abs{a}} \left( \cos \frac{\alpha + 2k\pi}{n} + \iu \sin \frac{\alpha + 2k\pi}{n} \right) \\
+k &= 0,1,2, \dotsc, n-1
+\end{align}
+Obrazy čísel $x_k$ jsou vrcholy pravidelného $n$-úhelníku vepsaného do kružnice se středem v počátku a s poloměrem $\sqrt[n]{\abs{a}}$
 \subsection{Meta}
+Můžu pro všechny obory čísel psát $X$ nebo $\mathbb{X}$ ale jsem línej, takže budu používat jen to druhé, bo je to víc sexy.
 \subsubsection{Zdroje}
+\begin{itemize}
+\item Tabulky
+\item \href{https://cs.wikipedia.org/wiki/P\%C5\%99irozen\%C3\%A9_\%C4\%8D\%C3\%ADslo}{wiki: Přirozená čísla}
+\item \href{https://cs.wikipedia.org/wiki/Cel\%C3\%A9_\%C4\%8D\%C3\%ADslo}{wiki: Celá čísla}
+\item \href{https://cs.wikipedia.org/wiki/Racion\%C3\%A1ln\%C3\%AD_\%C4\%8D\%C3\%ADslo}{wiki: Racionální čísla}
+\item \href{https://cs.wikipedia.org/wiki/Iracion\%C3\%A1ln\%C3\%AD_\%C4\%8D\%C3\%ADslo}{wiki: Iracionální čísla}
+\item \href{https://cs.wikipedia.org/wiki/Komplexn\%C4\%9B_sdru\%C5\%BEen\%C3\%A9_\%C4\%8D\%C3\%ADslo}{wiki: komplexně sdružené číslo}
+\item \href{https://cs.wikipedia.org/wiki/Neutr\%C3\%A1ln\%C3\%AD_prvek}{wiki: Neutrální prvky}
+\end{itemize}
 \subsubsection{Zadání/Pojmy}
 Obor čísel přirozených, celých, racionálních, reálných, čísla iracionální, znázornění čísel na číselné ose, základní operace v číselných oborech a jejich vlastnosti, uzavřenost, asociativnost, neutrální prvky, komutativnost, distributivnost, mocniny, odmocniny a operace s nimi, vztahy mezi reálnými čísly, absolutní hodnota reálného čísla, její geometrická interpretace, zavedení komplexních čísel, množina uspořádaných dvojic reálných čísel, operace sčítání, odčítání, násobení a dělení komplexních čísel, vztah rovnosti, imaginární jednotka, čísla komplexně sdružená, absolutní hodnota a její geometrický význam, Gaussova rovina, algebraický a goniometrický tvar, Moivreova věta, násobení, dělení, umocňování a odmocňování komplexních čísel v goniometrickém tvaru.
 
@@ -634,7 +851,7 @@ G(x_1, x_2, \dotsc,x_n) = \sqrt[n]{x_1 \cdot x_2 \dotsm x_n} = \left( \prod_{i=1
 \end{equation}
 \item \emph{Harmonický průměr} - je definován jako podíl počtu (rozsah souboru) a součtu jejich převrácených hodnot. To znamená totéž, co převrácená hodnota aritmetického průměru převrácených hodnot. Je vždy menší nebo roven geometrickému průměru. Zapisuje $\overline{x}_H$:
 \begin{equation}
-\overline{x}_H =  \frac{n}{\sum^n_{i=1} \frac{1}{x_i}}
+\overline{x}_H =  \frac{n}{\sum\limits^n_{i=1} \frac{1}{x_i}}
 \end{equation}
 \item \emph{Kvadratický průměr} - je to odmocnina aritmetického průměru druhých mocnin. Asi mimo SŠ, ale využívá se např. při výpočtu rozptylu viz rovnice \eqref{eq:rozptyl}.
 \begin{equation}
@@ -818,7 +1035,7 @@ Zápis limity (čteme: 'limita $a_n$ pro $n$ jdoucí k nekonečnu je $a$'):
 Příklady limit:
 \begin{align}
 \forall \, q \in (-1, 1); \; \lim_{n \to \infty} q^n = 0\\
-\lim_{n \to \infty} \left( 1 + \frac{1}{n} \right)^n = e \doteq  2,718282 && \text{(Eulerovo číslo)}
+\lim_{n \to \infty} \left( 1 + \frac{1}{n} \right)^n = \euler \doteq  2,718282 && \text{(Eulerovo číslo)}
 \end{align}
 \subsubsection{Nevlastní limita posloupnosti}
 \label{sec:posl_limita_nev}
@@ -2134,7 +2351,7 @@ Viz \ref{sec:vyuziti_derivaci} o derivace. Viz \ref{sec:vyuziti_integralu} pro i
 %TODO Asymptota
 %TODO monotónost
 \subsection{Meta}
-\subsection{Zdroje}
+\subsubsection{Zdroje}
 \begin{itemize}
 \item \url{https://cs.wikipedia.org/wiki/Asymptota}
 \end{itemize}
