@@ -78,7 +78,8 @@ Jak udělat kolečko $ (h ∘ g)$ vs $ (h \circ g)$, 18:46 no nic množiny (2) a
 Vypadá to že standardem pro komplexní čísla je $a +ib$ (lepší než $a +bi$), žádné speciální fonty nebo příkazy asi nejsou. Moment co $a +\imath b$ ? \uv{( v \LaTeX existuje speciální symbol $\imath$ , ale ?asi není moc konsensus, jak to psát?)} Jonáš potvrdil neexistenci konsensu.\\
 Nový command $\abs{a}$ vs $\absb{a}$. Funguje mělo by být ekvivalentní $\lvert a \rvert$ . Další možnosti: $ \vert a \vert$ nebo $|a|$, ale rozdílné $ \mid a \mid$.\\
 Jak na Eulerovo číslo? $e$ vs $\mathrm{e}$ vs $\mathsf{e}$ vs ? 	->vytvořil jsem si command aby to bylo konzistentní $\euler$ až se rozhodnu \dots Udělám asi to samé pro $\iu$ (zatím jsem se u obojího rozhodl pro mathrm)\\
-Pauza, ale komplexní čísla done. Nevím co se myslí uzavřeností v pojmech, jako u intervalů? -> TODO-list. Jinak mě as nenapadá, co dál. Teoreticky bych mohl opsat víc vzorečků z tabulek, ale ony většinou tak nějak vyplývají z předchozích a obecně mi to přijde zbytečný, takže na to už asi kašlu. MO-3 done
+Pauza, ale komplexní čísla done. Nevím co se myslí uzavřeností v pojmech, jako u intervalů? -> TODO-list. Jinak mě as nenapadá, co dál. Teoreticky bych mohl opsat víc vzorečků z tabulek, ale ony většinou tak nějak vyplývají z předchozích a obecně mi to přijde zbytečný, takže na to už asi kašlu. MO-3 done\\
+05.05.2020 - MO-1 začal jsem \dots	done je 21:45 a dělám na tom cca od 11:00, wtf \dots  Vždyť to ani nebyla tak dlouhá otázka. Ale zase mi nepřišlo, že jsem to dělal tak dlouho. Všiml jsem si, že čas uběhl vždycky až když jsem dostal hlad, takže až po několika hodinách. Možná jsem  se moc soustředil na Ted(x) Talky, co běžely na pozadí.
 
 
 
@@ -96,6 +97,7 @@ Pauza, ale komplexní čísla done. Nevím co se myslí uzavřeností v pojmech,
 \item Nakreslit Gaussovu rovinu (obrázek obdobný tomu z tabulek)
 \item Sub a subsubsectiony a paragraohy pořešit u komplexních čísel
 \item MO-3 pojem uzavřenost , možná přidat další příklady základních operací, ale je to asi jasný a nuda takže radši nic
+\item MO-1 důkazové úlohy o dělitelnosti, nevím jestli něco nepřidat
 \end{itemize}
 \subsubsection{Latex tipy}
 \begin{itemize}
@@ -122,10 +124,194 @@ _{\scaleto{a+b}{9pt}}^{\scaleto{a+d?}{9pt}} \mspace{-40mu} \text{chloroplast vzn
 \begin{enumerate}
 \item Norma ČSN ISO 31-11 není závazná a má pouze charakter doporučení. TO by vysvětlovalo, proč jsem některý věci vůbec neviděl, protože prostě vypadají blbě a nikdo je nechce používat xD. Některý věci mi zase třeba přijdou v pohodě a asi se uchytí, bo kopírují zahraniční styly zápisu.
 \end{enumerate}
-\section{Logická výstavba matematiky}
 
+
+\section{Logická výstavba matematiky}
+\subsubsection{Výrok}
+\emph{Výrok} je nějaké sdělení, oznamovací věta nebo tak něco. Má smysl pokládat otázku je-li to pravda nebo ne. Můžeme výrokům přiřadit \emph{pravdivostní hodnotu} 1 (pro \emph{pravdivé výroky}) nebo 0 (pro \emph{nepravdivé výroky}). Výroky se značí malými písmeny $a,b, \dotsc, u,v, \dotsc$ (Na wiki se používají i velká písmena)
+\subsection{Logické operace}
+Pomocí logických operací vznikají z jednodušších výroků \emph{výroky složené}.
+\subsubsection{Negace}
+Negace výroku $a$ se značí $\neg a$ a říká nám, že není pravda, že $a$. Má pravdivostní hodnotu 1, má-li původní výrok hodnotu 0. Hodnoty 0 nabývá negace pokud je výrok pravdivý (tj. 1). Můžeme se setkat i s dalšími notacemi: $a'$ nebo $\sim a$ nebo $-a$ nebo $!a$ nebo $\bar{a}$ (nebo $\overline{a}$).
+\subsubsection{Konjunkce}
+\emph{Konjunkce} (neboli také \emph{logické a}) výroků $a,b$ se značí $a \land b$ a říká, $a$ a zároveň $b$. Má pravdivostní hodnotu 1, je-li $a$ 1 a zároveň $b$ je 1.
+\subsubsection{Disjunkce}
+\emph{Disjunkce} (neboli také \emph{logické nebo}) se značí $a \lor b$ a čte se $a$ nebo $b$. Má pravdivostní hodnotu 1, je-li alespoň jeden z výroků pravdivý.
+\subsubsection{Úplná disjunkce}
+\emph{Úplná disjunkce} (neboli také \emph{logické exkluzivní (/ vylučovací) nebo}) se značí $a \lxor b$ (nebo $a \oplus b$) a čte se jen $a$ nebo jen $b$. A má pravdivostní hodnotu 1, je-li právě jeden z výroků pravdivý.
+\subsubsection{Implikace}
+Značí se $ a \implies b$ (nebo $a \Rightarrow b$ (také se na setkáme s $a \rightarrow b$ nebo $a \longrightarrow b $) a samozřejmě může být šipka otočená i druhým směrem, ale to pak znázorňuje obrácenou implikaci (viz sekce \ref{sec:logika-dalsi_pojmy})) a říká, že jestliže platí $a$ pak platí $b$ (to znamená, že nám $a$ neříká nic o $b$, pokud je $a$ 0). Terminologie:
+\begin{itemize}
+\item $a$ je \emph{postačující podmínka} pro $b$
+\item $b$ je \emph{nutná podmínka} pro $a$
+\item $a$ - \emph{předpoklad} implikace
+\item $b$ - \emph{závěr} implikace
+\end{itemize}
+\subsubsection{Ekvivalence}
+\emph{Ekvivalence} se značí $a \iff b$ (nebo $a \Leftrightarrow b$ (také $a \leftrightarrow b$ a $a \longleftrightarrow b$)) a říká, že $a$ platí právě tehdy, když $b$. Terminologie:
+\begin{itemize}
+\item $a$ je ekvivalentní s $b$
+\item $a$ platí právě tehdy, když platí $b$ (anglicky "If and only if"). Tj. $b$ platí vždy, když platí $a$ a pouze, když platí $a$.
+\item $a$ je \emph{nutná a postačující} podmínka pro $b$
+\end{itemize}
+Ekvivalence je ekvivalentní s $(a \implies b) \land (b \implies a)$.
+\subsubsection{Tabulky pravdivostních hodnot}
+Tabulka \ref{table:logika-slozene} obsahuje základní složené výroky a jejich pravdivostní hodnoty. Tabulka \ref{table:logika-negace} obsahuje negace složených výroků.
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|c|c|c|}
+\hline
+\multicolumn{1}{|l|}{$a$} & \multicolumn{1}{l|}{$b$} & \multicolumn{1}{l|}{$\neg a$} & \multicolumn{1}{l|}{$\neg b$} & \multicolumn{1}{l|}{$a \land b$} & \multicolumn{1}{l|}{$a \lor b$} & \multicolumn{1}{l|}{$a \lxor b$} & \multicolumn{1}{l|}{$ a \implies b$} & \multicolumn{1}{l|}{$a \iff b$} & \multicolumn{1}{l|}{$a\Longleftarrow  b$} \\ \hline
+1                         & 1                        & 0                             & 0                             & 1                                & 1                               & 0                                & 1                                    & 1                               & 1                                         \\ \hline
+1                         & 0                        & 0                             & 1                             & 0                                & 1                               & 1                                & 0                                    & 0                               & 1                                         \\ \hline
+0                         & 1                        & 1                             & 0                             & 0                                & 1                               & 1                                & 1                                    & 0                               & 0                                         \\ \hline
+0                         & 0                        & 1                             & 1                             & 0                                & 0                               & 0                                & 1                                    & 1                               & 1                                         \\ \hline
+\end{tabular}
+\caption{Tabulka pravdivostních hodnot}
+\label{table:logika-slozene}
+\end{table}
+
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|c|c|c|c|c|}
+\hline
+výrok       & $\neg a$ & $a \land b$          & $a \lor b$            & $a \lxor b$ & $a \implies b$   & $a \iff b$  \\ \hline
+jeho negace & a        & $\neq a \lor \neg b$ & $\neg a \land \neg b$ & $a \iff b$  & $a \land \neg b$ & $a \lxor b$ \\ \hline
+\end{tabular}
+\caption{Tabulka negací složených výroků}
+\label{table:logika-negace}
+\end{table}
+\subsubsection{Další pojmy}
+\label{sec:logika-dalsi_pojmy}
+\begin{itemize}
+\item \emph{Obrácená implikace} k implikaci $ a \implies b$ je implikace $b\implies a$ (Tyto implikace nejsou ekvivalentní)
+\item \emph{Obměněná implikace} k implikaci $ a \implies b$ je implikace $\neg b \implies \neg a$. (Ty to implikace jsou ekvivalentní).
+\item \emph{Tautologie} je složený výrok, který je vždycky pravdivý. Nezáleží na pravdivostních hodnotách výroků ze kterých je složen. Např.: \\ $( a \implies b) \iff ( \neg a \lor b)$ nebo $a \lor \neg a$.
+\end{itemize}
+\subsubsection{Kvantifikované výroky}
+\paragraph{Obecný kvantifikátor} se značí $\forall$ ,čte se \uv{pro všechna}.
+\paragraph{Existenční kvantifikátor} se na $\exists$, čte se \uv{existuje (alespoň jednom)}
+\paragraph{Existenční kvantifikátor s jednoznačností} se značí $\exists!$, čte se \uv{existuje \emph{právě jedno}}
+\paragraph{Negace kvantifikovaných výroků, tabulka \ref{table:logika-kvantifikatory}}
+\begin{table}[h!]
+\centering
+\begin{tabular}{|c|c|}
+\hline
+Výrok                                                     & Jeho negace                                                   \\ \hline
+$\forall x \in \mathbb{M}; \; V(x)$                       & $\exists x \in \mathbb{M}; \; \neg V(x)$                      \\ \hline
+\multicolumn{1}{|l|}{$\exists x \in \mathbb{M}; \; V(x)$} & \multicolumn{1}{l|}{$\forall x \in \mathbb{M}; \; \neg V(x)$} \\ \hline
+\end{tabular}
+\caption{Tabulka negací kvantifikovaných výroků}
+\label{table:logika-kvantifikatory}
+\end{table}
+\subsection{Základní pojmy}
+\subsubsection{Matematické výrazy}
+\emph{Výraz} je konečná kombinace symbolů, které tvoří korektně vytvořenou formuli. \emph{Matematické symboly} mohou být čísla, proměnné, operace, funkce, závorky \dots
+\subsubsection{Výroková forma}
+\emph{Výroková forma} je výraz obsahující proměnné, za které když dosadíme, tak se z něho stane výrok.
+\subsubsection{Axiom a soustava axiomů}
+\emph{Axiom} je tvrzení, které se předem pokládá za platné, takže se nedokazuje. Základem logické výstavby matematiky je \emph{soustava axiomů}. Ta musí být:
+\begin{itemize}
+\item \emph{Bezesporná} - není možné z ní vyvodit tvrzení a zároveň jeho negaci
+\item \emph{Nezávislá} - jeden axiom není možné vyvodit z ostatních axiomů
+\item \emph{Úplná} - lze z ní vyvodit pravdivost nebo nepravdivost dalších matematických tvrzení
+\end{itemize}
+\subsubsection{Definice}
+Definice nám slouží k \emph{definování} pojmu. Definice definice je tedy (pokud možno) jednoznačné určení významu nějakého pojmu. Je to tvrzení, které nám říká význam slova. V matematice: Je definice vymezení pojmu pomocí základních pojmů nebo pojmů, které byly definovány předtím.
+\subsubsection{Matematická věta}
+\emph{Matematická věta} je tvrzení, jehož pravdivost musí být dokázána. Při důkazu se vychází z axiomů či již dokázaných vět.
+\subsubsection{Důkaz}
+\emph{Důkaz} je úvaha, která zdůvodňuje platnost matematické věty.
+\paragraph{Přímý důkaz} se používá k dokázaní matematických vět tvaru implikace, tj. \uv{jestliže platí $a$, pak platí $b$}. Spočívá v tom, že se postupnými implikacemi z vlastností výroku $a$ dá odvodit výrok $b$. Důkaz spočívá v nalezení takové řady výroků, aby platilo:
+\begin{equation}
+ (a\implies x_{1})\land (x_{1}\implies x_{2})\land \dotso \land (x_{n-1}\implies x_{n})\land (x_{n}\implies b)
+\end{equation}
+\paragraph{Důkaz sporem} je založen na vlastnosti implikací: platí-li $a \implies b$ a neplatí-li výrok $b$, neplatí ani výrok $a$. Používá se tak, že prokážeme, že dojdeme ke sporu, platí-li předpoklad.
+\paragraph{Důkaz nepřímý} spočívá na tom, že implikace $ a \implies b$ je ekvivalentní s $\neg b \implies \neg a$. Zdůvodnění: Platí-li $a$ musí platit $b$, v opačném případě by platilo $\neg b$. To znamená, že když platí $\neg b$, tak musí platit $\neg a$. Lze ho převést na důkaz sporem.
+\paragraph{Matematickou indukce} je způsob dokazování matematických vět a tvrzení, které se používá, když chceme dokázat, že platí pro všechna přirozená čísla (případně jinou, předem danou nekonečnou posloupnost). Chceme-li dokázat, že věta platí pro všechna $n$, tak dokážeme, že platí pro nejmenší číslo, tedy $n=1$ (někdy $n=0$).A poté dokážeme že platí-li to pro $m$ pak to platí i pro $m+1$ -  to se nazývá \emph{indukční krok}. Ukázka:
+\begin{align*}
+1 + 2 +3 + \dotsb + n &= \frac{n(n+1)}{2}\\
+1 + 2 +3 + \dotsb + m &= \frac{m(m+1)}{2} && \text{Přičteme $m+1$ a upravíme:}\\
+\frac{m(m+1)}{2} + \frac{2(m+1)}{2} &= \frac{(m+1)(m+2)}{2} && \text{Dále upravíme:}\\
+1 +2 + \dotsb + (m+1) &= \frac{(m+1)((m+1)+1)}{2} && \text{to je stejné tvrzení jako pro  $n =m+1$}
+\end{align*}
+Tím jsme dokázali, že tvrzení pro $n = m+1$ je pravdivé, pokud je pravdivé tvrzení pro $n=m$.
+\paragraph{Důkazové úlohy o dělitelnosti} - důležité pravidlo: Součin $n$ po sobě jdoucích čísel je vždy dělitelný číslem $n$.\\
+\begin{scriptsize}
+\emph{Ambryho znalost z olympiád:} máme 2 čísla u nichž víme zbytek po dělení $x$, tak jejich součet bude mít zbytek po dělení $x$ rovný zbytku po dělení součtu zbytků po dělení $x$ daných 2 čísel.
+\end{scriptsize}
+\subsection{Čísla}
+\emph{Číslo} je abstraktní entita využívaná pro vyjádření množství nebo pořadí.
+\subsubsection{Číslice}
+\emph{Číslice} (neboli \emph{cifra}) je grafický znak používaný k reprezentaci čísel. My používáme arabské číslice.
+\subsubsection{Číselná soustava}
+Je způsob reprezentace čísla.
+\paragraph{Poziční číselná soustava} má nějakou \emph{bázi} (neboli \emph{základ}), což je většinou kladné celé číslo definující počet číslic, které jsou v soustavě k dispozici. Všechny možná čísla můžeme získat jako bázi umocněnou na pozici číslice a vynásobením příslušnou číslicí a sečtením. My používáme běžně \emph{desítkovou} (neboli \emph{dekadickou}) soustavu. Ale soustava může být libovolného základu, př. z populárních: 12 (je kůl, dřív populárnější viz tucet a veletucet), 2, 8, 16 (IVT).\\
+Můžeme zapsat i desetinná čísla, pomocí části za desetinnou čárkou (respektive tečkou v zahraničí) a pro ně jsou mocniny základu záporné. Příklad:
+\begin{align}
+345,789 &= 3 \cdot 10^{2} + 4 \cdot 10^{1} + 5 \cdot 10^{0} + 7 \cdot 10^{-1} + 8 \cdot 10^{-2} + 9 \cdot 10^{-3}\\
+\frac{758}{999} &= 0,\overline{758}
+\end{align}
+\paragraph{Nepoziční číselné soustavy} - např. \emph{Římské číslice}, ale dnes se žádné běžně nepoužívají.
+\subsection{Dělitelnost}
+\subsubsection{Prvočíslo}
+\emph{Prvočíslo} je přirozené číslo, které má právě 2 dělitele. Jeden z nich je 1 a druhý je číslo samotné. Tzn. nepatří tam 1, protože ta má jen jednoho dělitele a to sama sebe.
+\subsubsection{Čísla složená}
+Jsou taková čísla, která mají alespoň 3 různé dělitele (tzn. sebe sama, jedničku a ještě jedno jiné číslo). Každé přirozené číslo větší než 1 (to není ani složené číslo ani prvočíslo) je buď prvočíslo nebo číslo složené. Každé  složené číslo lze zapsat jako násobek 2 menších čísel. Z zoho vyplývá \emph{Základní věta aritmetiky} viz \ref{sec:zakladni_veta_aritmetiky}.
+\subsubsection{Základní věta aritmetiky}
+\label{sec:zakladni_veta_aritmetiky}
+Říká, že každé přirozené číslo větší než 1 lze jednoznačně rozložit na součin prvočísel - tzn. \emph{kanonický rozklad čísla na prvočinitele}. Každé prvočíslo se rovná první mocnině sama sebe a každé složené číslo se dá zapsat jako násobek 2 menších čísel (a ty jsou buď prvočísla, nebo se čísla složená dále rozloží).
+\subsubsection{Kritéria dělitelnosti}
+Číslo $p$ je dělitelné celým nenulovým číslem $q$ (tj. číslo $q$ dělí $p$) právě tehdy, když $p$ je celočíselným násobkem $q$, jestliže existuje takové celé číslo $k$, pro které platí: $p = kq$. Jiná definice je, že zbytek po dělení je roven 0.
+\begin{align}
+( \exists k \in \mathbb{Z}: \, p = kq) \iff ( q \mid p)
+\end{align}
+Zápis $a \mid b$ čteme jako $a$ dělí $b$. Číslo $a$ se nazývá \emph{dělitel} a $b$ \emph{dělenec}
+\\BTW samozřejmá znalost: čísla dělitelná 2 se nazývají \emph{sudá} a ostatní se nazývají \emph{lichá}.
+\subsubsection{Nejmenší společný násobek}
+\paragraph{Násobek} čísla $a$ je číslo, které je produktem násobení čísla $a$ a nějakého celého čísla $k \in \mathbb{Z}$.\\
+\emph{Nejmenší společný násobek} je nejmenší kladné celé číslo, které je celočíselným násobkem  všech daných čísel. \emph{Společný násobek} několika čísel je takové číslo, které je násobkem každého z nich. A nejmenší z nich je \emph{nsn}.\\
+Využívá se např. při sčítání zlomků s různým jmenovatelem. \begin{scriptsize} Ale není to nutné \end{scriptsize}
+\subsubsection{Největší společný dělitel}
+\paragraph{Společný dělitel} 2 čísel je takové číslo, kterým jsou obě čísla beze zbytku dělitelná.\\
+\emph{Největší společný dělitel} se značí také \emph{NSD} nebo \emph{D}. Je to největší číslo, kterým jsou obě (nebo všechna) čísla beze zbytku dělitelná.
+\begin{equation}
+\operatorname {NSD} (a,b)=\max\{n\in \mathbb {N} :n\mid a\wedge n\mid b\}
+\end{equation}
+Zajímavá vlastnost: 
+\begin{equation}
+ \operatorname {NSD} (a,b) \cdot \operatorname {nsn} (a,b)=ab
+\end{equation}
+\subsubsection{Soudelěná a nesoudělná čísla}
+\emph{Nesoudělná čísla} jsou v matematice taková celá čísla, která mají pouze jednoho společného dělitele. Oproti tomu \emph{čísla soudělná} mají více než jednoho společného dělitele.
 \subsection{Meta}
 \subsubsection{Zdroje}
+\begin{itemize}
+\item Tabulky
+%\item \url{https://oeis.org/wiki/List_of_LaTeX_mathematical_symbols}
+\item \url{https://www.karlin.mff.cuni.cz/~portal/logika}
+\item \url{https://en.wikipedia.org/wiki/List_of_logic_symbols}
+\item \url{https://cs.wikipedia.org/wiki/Matematick\%C3\%BD_v\%C3\%BDraz}
+\item \url{https://pohodovamatematika.sk/vyrokove-formy-kvantifikovane-vyroky.html}
+\item \url{https://cs.wikipedia.org/wiki/Axiom}
+\item \url{https://cs.wikipedia.org/wiki/Definice}
+\item \url{https://vyuka.odbskmb.cz/v\%C3\%BDroky_soubory/Page1205.htm}
+\item \url{https://www.gymelg.cz/sites/default/files/matematika/Sp/definice_vety_dukazy.pdf}
+\item \href{https://cs.wikipedia.org/wiki/P\%C5\%99\%C3\%ADm\%C3\%BD_d\%C5\%AFkaz}{wiki: důkaz přímý}
+\item \href{https://cs.wikipedia.org/wiki/D\%C5\%AFkaz_sporem}{wiki: důkaz sporem}
+\item \href{https://cs.wikipedia.org/wiki/Nep\%C5\%99\%C3\%ADm\%C3\%BD_d\%C5\%AFkaz}{wiki: nepřímý důkaz}
+\item \href{https://cs.wikipedia.org/wiki/Matematick\%C3\%A1_indukce}{wiki: matematická indukce}
+\item \url{http://www.realisticky.cz/ucebnice/01\%20Matematika\%20S\%C5\%A0/01\%20Z\%C3\%A1kladn\%C3\%AD\%20poznatky/05\%20D\%C4\%9Blitelnost/05\%20D\%C5\%AFkazy\%20d\%C4\%9Blitelnosti\%20I.pdf}
+\item \href{https://cs.wikipedia.org/wiki/\%C4\%8C\%C3\%ADslo}{wiki: číslo}
+\item \href{https://cs.wikipedia.org/wiki/\%C4\%8C\%C3\%ADseln\%C3\%A1_soustava}{wiki: číselná soustava}
+\item \href{https://cs.wikipedia.org/wiki/Slo\%C5\%BEen\%C3\%A9_\%C4\%8D\%C3\%ADslo}{wiki: složené číslo}
+\item \href{https://cs.wikipedia.org/wiki/Z\%C3\%A1kladn\%C3\%AD_v\%C4\%9Bta_aritmetiky}{wiki: Základní věta aritmetiky}
+\item \href{https://cs.wikipedia.org/wiki/Nejmen\%C5\%A1\%C3\%AD_spole\%C4\%8Dn\%C3\%BD_n\%C3\%A1sobek}{wiki: Největší společná násobek}
+\item \href{https://cs.wikipedia.org/wiki/Nejv\%C4\%9Bt\%C5\%A1\%C3\%AD_spole\%C4\%8Dn\%C3\%BD_d\%C4\%9Blitel}{wiki: Největší společný dělitel}
+\item \href{https://en.wikipedia.org/wiki/Divisor}{wiki: divisor}
+\item \href{https://cs.wikipedia.org/wiki/D\%C4\%9Blitelnost}{wiki: dělitelnost}
+\item \href{https://cs.wikipedia.org/wiki/Nesoud\%C4\%9Bln\%C3\%A1_\%C4\%8D\%C3\%ADsla}{wiki: Nesoudělná čísla}
+\end{itemize}
 \subsubsection{Zadání/Pojmy}
 Pojem matematického výrazu, axiómy, definice, věty, výrok, pravdivostní hodnota výroku, negace, konjunkce, disjunkce, implikace, ekvivalence, kvantifikátory, negování složených výroků, výroková forma, číslo, číslice, číselné soustavy, dekadický poziční systém, prvočísla a čísla složená, základní věta aritmetiky, násobek, dělitel, nejmenší společný násobek a největší společný dělitel, čísla soudělná a nesoudělná, kriteria dělitelnosti, důkazy matematických vět, důkaz přímý, nepřímý, důkaz sporem, důkaz matematickou indukcí, důkazové úlohy o dělitelnosti.
 
@@ -739,6 +925,7 @@ Náhodné pokusy, množina všech možných výsledků pokusu, jevy v množinov�
 \subsection{Rozdělení četnosti}
 Také nazývané jako \emph{rozložení četnosti}. Zobrazujeme ve formě tabulky nebo grafu.  Například známky žáků ve škole. Příklad viz tabulku \ref{table:zaci}.
 \begin{table}[h!]
+\centering
 \begin{tabular}{|l|l|}
 \hline
 Známka & Počet žáků \\ \hline
@@ -754,6 +941,7 @@ Známka & Počet žáků \\ \hline
 \subsubsection{Skupinové rozložení četností}
 Rozdělíme soubor na nějaké podskupiny na základě jiného znaku. Například na kluky a dívky nebo podle ročníků, podle předmětů \dots Příklad viz tabulku \ref{table:zaci_pohlavi}.
 \begin{table}[H]
+\centering
 \begin{tabular}{|l|l|l|}
 \hline
 Známka & chlapci & dívky \\ \hline
