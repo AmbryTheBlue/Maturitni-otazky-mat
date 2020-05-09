@@ -29,7 +29,7 @@
 \newcommand{\iu}{\mathrm{i}} %imaginary unit
 \newcommand{\nR}{\mathbb{R}} %numbers Real
 \newcommand{\nN}{\mathbb{N}} %Numbers Natural
-\newcommand{\nZ}{\mathbb{Z}} %Numbers Natural
+\newcommand{\nZ}{\mathbb{Z}} %Numbers tZelé
 
 \begin{document}
 \rightline{\today}
@@ -79,9 +79,10 @@ Vypadá to že standardem pro komplexní čísla je $a +ib$ (lepší než $a +bi
 Nový command $\abs{a}$ vs $\absb{a}$. Funguje mělo by být ekvivalentní $\lvert a \rvert$ . Další možnosti: $ \vert a \vert$ nebo $|a|$, ale rozdílné $ \mid a \mid$.\\
 Jak na Eulerovo číslo? $e$ vs $\mathrm{e}$ vs $\mathsf{e}$ vs ? 	->vytvořil jsem si command aby to bylo konzistentní $\euler$ až se rozhodnu \dots Udělám asi to samé pro $\iu$ (zatím jsem se u obojího rozhodl pro mathrm)\\
 Pauza, ale komplexní čísla done. Nevím co se myslí uzavřeností v pojmech, jako u intervalů? -> TODO-list. Jinak mě as nenapadá, co dál. Teoreticky bych mohl opsat víc vzorečků z tabulek, ale ony většinou tak nějak vyplývají z předchozích a obecně mi to přijde zbytečný, takže na to už asi kašlu. MO-3 done\\
-05.05.2020 - MO-1 začal jsem \dots	done je 21:45 a dělám na tom cca od 11:00, wtf \dots  Vždyť to ani nebyla tak dlouhá otázka. Ale zase mi nepřišlo, že jsem to dělal tak dlouho. Všiml jsem si, že čas uběhl vždycky až když jsem dostal hlad, takže až po několika hodinách. Možná jsem  se moc soustředil na Ted(x) Talky, co běžely na pozadí.
-
-
+05.05.2020 - MO-1 začal jsem \dots	done je 21:45 a dělám na tom cca od 11:00, wtf \dots  Vždyť to ani nebyla tak dlouhá otázka. Ale zase mi nepřišlo, že jsem to dělal tak dlouho. Všiml jsem si, že čas uběhl vždycky až když jsem dostal hlad, takže až po několika hodinách. Možná jsem  se moc soustředil na Ted(x) Talky, co běžely na pozadí.\\
+06.05.2020 20:44 zkusím začít MO-7, 0:00 tak trocha spojitosti u MP EU4\\
+08.05.2020 Trocha limitek po ránu, dělal jsem je i chvíli včera, ale to jsem toho moc neudělal.\\
+09.05.2020 MO-7 (limity a spojitost) done 19:53, dneska už asi další nedám \dots , měl bych možná zítra.
 
 \subsubsection{TODO-list}
 \begin{itemize}
@@ -698,12 +699,165 @@ Obor čísel přirozených, celých, racionálních, reálných, čísla iracion
 6
 
 \section{Limita a spojitost funkce}
-7
+\subsubsection{Okolí bodu}
+V matematice můžeme okolí bodu definovat pomocí intervalu na množině reálných čísel. Máme číslo $r\in \nR$, pak \emph{epsilon okolí} pro $\varepsilon \in \nR \land \varepsilon > 0$ je otevřeným intervalem $(r- \varepsilon; r + \varepsilon)$.\\
+Epsilon okolí bodu ($a$) se také někdy značí $U(a, \varepsilon)$\\
+V tabulkách uvidíme značení $U(a)$ a jednoduché vysvětlení přes interval $(a-\delta ;a +\delta )$, kde $\delta \in \nR^{+}$ 
+\paragraph{okolí} (také \emph{prstencové okolí} je stejné jen neobsahuje bod $r$:
+\begin{equation}
+ (r-\varepsilon; r) \cup (r; r + \varepsilon)
+\end{equation}
+Setkáme se značením $R(a, \varepsilon )$
+\paragraph{Jednostranné okolí bodu} je přesně to, co jméno napovídá \dots V tabulkách značí \emph{levé okolí} $U_L(a)$ a \emph{pravé okolí} $U_P(a)$.
+\subsubsection{Hromadný bod}
+\label{sec:hromadny_bod}
+Prvek $a \in \nR$ je \emph{hromadným bodem} nějaké množiny $M \subseteq \nR$, pokud platí, že v každém redukovaném okolí (!jakkoliv malém!) leží nějaký bod množiny $M$:
+\begin{align}
+\forall \varepsilon > 0: R(a, \varepsilon) \cap M \neq \emptyset
+\end{align}
+Každé reálné číslo je hromadným bodem množiny reálných čísel. Protože mezi každými 2 reálnými čísly je nekonečně mnoho reálných čísel. Takže můžeme vzít sebemenší epsilon a pořád najdeme nekonečně mnoho reálných čísel.
+\subsubsection{Přírůstek argumentu}
+\emph{Argument} je vstupní hodnota funkce, standardně $x$. O proměnné $y$ říkáme, že je \emph{funkcí argumentu $x$}. Přírůstek je změna. Když označíme počáteční hodnotu $x_0$ a konečnou hodnotu $x$, tak se \emph{přírůstek argumentu v bodě $x$} (Je-li funkce nadefinovaná na okolí bodu $x_0$ a je-li $x$ součástí tohoto okolí) označuje:
+\begin{equation}
+\triangle x = x - x_0
+\end{equation}
+\subsubsection{Přírůstek funkce}
+Také nazýván \emph{funkční hodnoty}
+\begin{equation}
+\triangle y = y - y_0 = f(x) - f(x_0)
+\end{equation}
+\subsection{Spojitost}
+V praxi zjišťujeme pomocí derivace. Je-li funkce v bodě derivovatelná je v daném bodě i spojitá.
+\subsubsection{Spojitost funkce v bodě}
+Intuitivně vidíme, že není nijak rozdělená. Formálně se definuje pomocí limity:
+\begin{equation}
+\lim_{x \to a} f(x) = f(a)
+\end{equation}
+Můžeme si i definovat spojitost zleva (respektive zprava):
+\begin{align}
+\lim_{x \to a^{-}} f(x) = f(a) && \lim_{x \to a^{+}} f(x) = f(a)
+\end{align}
+\paragraph{Definice ?přes okolí?} - můžeme napsat přímo. Říkáme, že funkce $f$ je spojitá v bodě $a$ právě tehdy, když platí:
+\begin{align}
+( \forall \varepsilon >0) ( \exists \delta >0) ( \forall x \in \nR) ( \abs{x-a} < \delta \implies \abs{f(x)-f(a)} < \varepsilon)
+\end{align}
+Tedy pro libovolně malé $\varepsilon$ existuje nějaké $\delta$ tak, že pro všechny body $x$ definičního oboru platí, že pokud leží v delta okolí bodu $a$ ($U{_\delta} (a)$) tak funkční hodnoty leží v epsilon okolí bodu $a$ ($u_{\varepsilon} (a)$).
+\subsubsection{Spojitá funkce}
+Pokud je funkce spojitá v bodě pro všechny body svého definičního oboru nazýváme funkci jako \emph{spojitou}.
+\subsubsection{Funkce spojitá na intervalu}
+Funkce je spojitá na intervalu, pokud je spojitá v každém bodě tohoto intervalu. \begin{scriptsize}
+(No shit scherlock)
+\end{scriptsize}
+Pozor na rozlišování otevřeného a uzavřeného intervalu. Je-li to uzavřený interval $\langle a;b \rangle$, tak je v krajních bodech spojitá jen zprava pro $a$,respektive zleva pro $b$.
+\subsection{Limita funkce}
+Limita popisuje chování funkce v okolí určitého bodu. Může pomoct chápání funkce i v nedefinovaných bodech. Tzv. \emph{nevlastní body} jsou $\pm \infty$. Využívá se často v diferenciálním a integrálním počtu. Řešení případů, kdy se v předpisu dělí nulou.
+\subsubsection{Vlastní limita ve vlastním bodě}
+Limitu nazýváme jako \emph{vlastní} (nebo \emph{konečnou}), když je $L$ rovno konečnému číslu.
+\begin{align}
+\lim_{x \to a} f(x) = L
+\end{align}
+\emph{Vlastním bodem} je myšleno libovolné reálné číslo. \emph{Nevlastním bodem} se myslí $\pm \infty$. Definice, kde $x_0$ je \emph{hromadný bod} (viz \ref{sec:hromadny_bod}). Potom je $L \in \nR$ limitou funkce $f$ v bodě $x_0$, jestliže:
+\begin{align}
+( \forall \varepsilon >0)( \exists \delta >0)( \forall x \in D(f))(0< \abs{x-x_0}<\delta \implies \abs{f(x)-L} < \varepsilon)
+\end{align}
+Převedení do normálního jazyka:\\ Pro libovolné (tj. sebemenší) $\varepsilon$ existuje alespoň jedno $\delta$, takové aby pro všechna $x$ (která jsou součástí definičního oboru ) platí:\\
+Že je-li absolutní hodnota rozdílu $x -x_0$ je někde mezi nulou a delta, pak musí být absolutní hodnota funkční hodnoty a limity menší než $\varepsilon$.\\
+Takže $\varepsilon$ určuje funkční hodnoty a $\delta$ určuje okolí argumentu funkce. Potom nám zápis říká, že pro jakkoliv malé okolí limity $L$ jsme schopni najít takové (dostatečně malé) $\delta$, aby pro všechny body tohoto okolí platilo, že když se vloží do funkce jako argument, tak funkční hodnota bude v okolí limity určeném $\varepsilon$.\\
+A to platí pro jakkoliv malé redukované okolí určené $\varepsilon$.
+\subsubsection{Nevlastní limita ve vlastním bodě}
+Je velmi obdobné předchozímu. Hledáme funkční hodnotu pro nějaký bod z definičního oboru, ale místo toho, aby limita byla rovna nějakému konečnému číslo, tak je rovna $\pm \infty$. Musíme tedy trochu upravit definici. Funkční hodnota v daném bodě musí přerůstat všechny možné hranice $K$, takže když zmenšíme okolí dostatečně musíme najít takové, kde jsou všechny funkční hodnoty větší (respektive menší) než $K$:
+\begin{align}
+( \forall K \in \nR) ( \exists \delta >0) ( \forall x \in D(f)) (0 < \abs{x-x_0} < \delta \implies f(x) > K)\\
+\text{, pak:	} \lim_{x \to x_0} f(x) = + \infty\\
+( \forall K \in \nR) ( \exists \delta >0) ( \forall x \in D(f)) (0 < \abs{x-x_0} < \delta \implies f(x) < K)\\
+\text{, pak:	} \lim_{x \to x_0} f(x) = - \infty\\
+\end{align}
+\subsubsection{Vlastní limita v nevlastním bodě}
+Protože \emph{nevlastní bod} znamená v podstatě $\pm \infty$, tak je jasné, že v tomto případě řešíme, jaké hodnotě se blíží funkce v těchto případech. A pokud je tato limita celé číslo, tak je to vlastní limita.\\
+Pokud je $L \in \nR$ limitou funkce
+\begin{align}
+( \forall \varepsilon >0)( \exists A \in \nR) (\forall x \in D(f)) (x>A \implies \abs{f(x)-L} < \varepsilon)\\
+\text{v bodě $+ \infty$}\\
+( \forall \varepsilon >0)( \exists A \in \nR) (\forall x \in D(f)) (x<A \implies \abs{f(x)-L} < \varepsilon)\\
+\text{v bodě $- \infty$}
+\end{align}
+To nám zjednodušeně říká, že pro jakkoliv malé epsilon okolí limity na množině funkčních hodnot lze najít najít bod $A$, od kterého až k nekonečnu (respektive mínus nekonečnu) platí pro všechny prvky množiny definičního oboru, že jim příslušící funkční hodnoty jsou v daném epsilon okolí limity.
+\subsubsection{Nevlastní limita v nevlastním bodě}
+V tomhle případě zjišťujeme, jestli se funkce v \emph{nevlastním bodě} (tj. $\pm \infty$) blíží $+ \infty$ nebo $-\infty$. Takže požíváme kombinaci principů, ze 2 předchozích případů.\\
+Možnosti, že limita je $+\infty$ a to v pořadí v bodech $+\infty$ a potom $-\infty$:
+\begin{align}
+( \forall K \in \nR )( \exists A \in \nR )( \forall x \in D(f)) (x >A \implies f(x) > K)\\
+( \forall K \in \nR )( \exists A \in \nR )( \forall x \in D(f)) (x < A \implies f(x) > K)
+\end{align}
+Možnost, že by limita byla $-\infty$:
+\begin{align}
+( \forall K \in \nR )( \exists A \in \nR )( \forall x \in D(f)) (x >A \implies f(x) < K)\\
+( \forall K \in \nR )( \exists A \in \nR )( \forall x \in D(f)) (x < A \implies f(x) < K)
+\end{align}
+Slovy to je cca: Máme libovolně velikou mez $K$ a musí platit, že existuje nějaký bod $A$ z definičního oboru. Od tohoto bodu až po $+ \infty$ (respektive $- \infty$) překonávají všechny odpovídající funkční hodnoty danou mez. Proto se říká, že funkce $f$ \emph{roste přes všechny meze} respektive \emph{klesá pod všechny meze}, je-li limitou $- \infty$.
+\subsubsection{Limity zprava a zleva}
+Některé funkce mohou mít různé limity bereme-li v potaz je pravé (levé) okolí bodu. Zapisuje se:
+\begin{align}
+\lim _{x\to a+}f(x)=A && \lim _{x\to a-}f(x)=A\\
+\lim _{x\to a^{+}}f(x)=A && \lim _{x\to a^{-}}f(x)=A
+\end{align}
+\subsubsection{Pravidla počítání s limitami}
+\begin{align}
+ \lim _{x\to a} f(x) = A &&  \lim _{x\to a} g(x) = B 
+\end{align}
+Máme-li 2 funkce jejichž limity jsou uvedeny výše, potom platí:
+\begin{align}
+ \lim _{x\to a}c \cdot f(x)=c \cdot A\\
+ \lim _{x\to a}[f(x)\pm g(x)]=A\pm B\\
+ \lim _{x\to a}\left( f(x) \cdot g(x) \right)=A \cdot B\\
+\lim _{x\to a}{\frac {f(x)}{g(x)}}={\frac {A}{B}} && \text{Pokud $B \neq 0$}
+\end{align}
+Poté platí \emph{l'Hospitalovo pravidlo} (viz \ref{sec:hospital_pravidlo}). Další zajímavé vlastnosti:
+\begin{itemize}
+\item Máme-li 2 funkce $f(x),g(x)$ pro něž v okolí bodu $a$ platí $f(x) \leq g(x)$. Pak platí (pokud mají obě funkce v bodě limitu:
+\begin{align}
+\lim _{x\to a}f(x)\leq \lim _{x\to a}g(x)
+\end{align}
+\item z předchozího vyplývá vlastnost pro 3 limity $ f(x)\leq g(x)\leq h(x)$, je to tzv. \emph{Věta o třech limitách}
+\begin{align}
+\left(  \lim _{x\to a}f(x)=A \land \lim _{x\to a}h(x)=A \right) \implies  \lim _{x\to a}g(x)=A 
+\end{align}
+\end{itemize}
+\subsubsection{Důležité limity}
+Platí-li $n \in \nN$ a $a \in (0,1)$:
+\begin{align}
+\lim_{x \to 0^-} \frac{1}{x} = - \infty && \lim_{x \to 0^+} \frac{1}{x} = + \infty \\
+\lim_{x \to 0^{-\infty}} \frac{1}{x} = - \infty && \lim_{x \to 0^{+ \infty}} \frac{1}{x} = + \infty \\
+\lim_{x \to 0^{+ \infty}} \frac{1}{x^n} = + \infty && \lim_{x \to 0} \frac{1}{x} = \nexists\\
+\end{align}
+Jako je to v tabulkách a takže opisovat nebudu.
+\subsubsection{Asymptota}
+\emph{Asymptota} (neboli \emph{asymptotická přímka}) náleží nějaké křivce.  Vzdálenost této přímky a křivky se limitně blíží k nule, když se jedna nebo obě souřadnice blíží nekonečnu. Pomocí limit můžeme určit rovnice asymptot funkce. \\
+\uv{Jak najdeme asymptoty bez směrnice pro funkce f?\\
+Stačí když najdeme body, kde má funkce nevlastní limity ve vlastním bodě (většinou body,
+kde není definována).}
+\paragraph{Asymptoty se směrnicí} - k těm se graf blíží, když se $x$ blíží $\pm \infty$.  Jsou svislé nebo šikmé (vždy je to graf lineární funkce $y =kx +q$).
+\begin{align}
+\lim \limits _{x\rightarrow \pm \infty }(f(x)-kx-q)=0
+\end{align}
+\paragraph{Asymptoty bez směrnice} - těm se graf funkce $f(x)$ blíží, když se $x$ blíží nějakému číslu $a$. Jsou vždy kolmé na osu $x$. S grafem funkce se nikdy neprotínají.
 \subsection{Meta}
 \subsubsection{Zdroje}
+\begin{itemize}
+\item \href{https://cs.wikipedia.org/wiki/Limita_funkce}{wiki: limita funkce}
+\item \href{https://matematika.cz/limita-funkce}{matematika.cz limita funkce}
+\item \href{http://www.realisticky.cz/hodina.php?id=1174}{realisticky: přírůstek argumentu}
+\item \href{https://matematika.cz/spojitost-funkce}{matematika.cz spojitost funkce}
+\item \href{https://matematika.cz/jednostranna-limita}{matematika.cz jednostranná limita}
+\item \href{http://www.realisticky.cz/ucebnice/01\%20Matematika\%20S\%C5\%A0/10\%20Diferenci\%C3\%A1ln\%C3\%AD\%20a\%20integr\%C3\%A1ln\%C3\%AD\%20po\%C4\%8Det/01\%20Spojitost,\%20limita/13\%20Asymptoty\%20grafu\%20funkce.pdf}{realisticky.cz asymptoty funkce}
+\item \href{https://cs.wikipedia.org/wiki/Asymptota}{wiki: Asymptota}
+\item \href{http://www.realisticky.cz/kapitola.php?id=104}{realisticky.cz limity, posloupnosti \dots prostě menu (dobrý to zdroj}
+\item \url{https://matematika.cz/vlastni-limita-nevlastni-bod}
+\item \url{https://matematika.cz/nevlastni-limita-nevlastni-bod}
+\url{https://maths.cz/clanky/212-limity-funkci}
+\end{itemize}
 \subsubsection{Zadání/Pojmy}
 Okolí bodu, přírůstek argumentu, přírůstek funkce, funkce spojitá v bodě, funkce spojitá v uzavřeném intervalu. Limita funkce, pravidla pro počítání limit, nevlastní limity a limity v nevlastních bodech, důležité limity. Asymptoty grafu funkce.
-
 \section{Nealgebraické funkce}
 8
 
@@ -1236,6 +1390,7 @@ Příklady limit:
 ( \forall \, L \in \mathbb{R})( \exists \, n_0 \in \mathbb{N})(\forall \, n \in \mathbb{N} \land n \geq n_0)( \forall \, a_n <L) \left(\lim_{n \to \infty} a_n = - \infty\right)
 \end{align}
 \subsubsection{Věty o limitách posloupností}
+
 \begin{enumerate}
 \item Každá posloupnost má nejvýše jednu limitu.
 \item Každá konvergentní posloupnost je omezená.
@@ -2420,6 +2575,7 @@ Příklad použití pro derivování $f(x) = (3x+1)^2$:
 \label{sec:der_vzorce}
 Viz tabulky... nebo \url{https://cs.wikipedia.org/wiki/Derivace_element\%C3\%A1rn\%C3\%ADch_funkc\%C3\%AD}
 \subsection{L'Hospitalovo pravidlo}
+\label{sec:hospital_pravidlo}
 \begin{equation}
 \lim_{x \to a} \frac{f(x)}{g(x)} = \lim_{x \to a} \frac{f'(x)}{g'(x)}
 \end{equation}
