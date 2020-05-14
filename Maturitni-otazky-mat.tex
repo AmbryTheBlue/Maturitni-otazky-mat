@@ -89,7 +89,10 @@ Pauza, ale komplexní čísla done. Nevím co se myslí uzavřeností v pojmech,
 \dfrac{-b \pm \sqrt{D}}{2a} = \frac{-b \pm \sqrt{D}}{2a} = \tfrac{-b \pm \sqrt{D}}{2a}
 \end{align*}
 Porovnej velikost písmen ve zlomku. Frac se mění podle toho je-li to v textu nebo v "display" modu. Podle toho zkratky tfrac a dfrac, asi. No něco jsem udělal, ale budu muset dodělat zítra\dots \\
-13.05.2020 MO-4 done 21:38, celý den to odkládám a pak to sfouknu za hoďku a kousek, no co se dá dělat. Jako nevím moc, co s tou MO-4, tam jsou většinou takový věci, který jsou prostě jasný od pohledu, takže ty tam psát nebudu.
+13.05.2020 MO-4 done 21:38, celý den to odkládám a pak to sfouknu za hoďku a kousek, no co se dá dělat. Jako nevím moc, co s tou MO-4, tam jsou většinou takový věci, který jsou prostě jasný od pohledu, takže ty tam psát nebudu.\\
+14.05.2020 Zkusím ještě jednu MO navíc, hmmm... $ \mathcal {H}_{f}$ (jsem našel na wiki) vs $H_f$, co u definičního oboru $\mathcal{D}_f$ vs $D_f$ ? \dots to vypadá relativně stylově, ale asi to měnit nebudu\\
+ - MO-5 done 12:23 ta je nějaká triviální (do 2h od začátku po zápis do deníčku), ještě jsem tam přidal monotonii, která by tam asi měla patřit a v otázce (ani žádné jiné) ji nevidím.\\
+
 \subsubsection{TODO-list}
 \begin{itemize}
 \item  \st{21 - Obecná rovnice u kuželoseček, dodělat} done (podle tabulek)
@@ -860,8 +863,126 @@ Takovouto soustavu lze vyjádřit pomocí matice a vektorů.
 Pojem algebraická rovnice (nerovnice), definiční obor rovnice (nerovnice), množina kořenů rovnice (nerovnice), úpravy rovnic (nerovnice), zkouška. Grafické řešení rovnic (nerovnic). Polynomy, funkce, rovnice, souvislosti. Lineární a kvadratická rovnice (nerovnice), lineární a kvadratické rovnice (nerovnice) s parametry, lineární a kvadratické rovnice (nerovnice) s neznámou v absolutní hodnotě, Vietovy vzorce, iracionální rovnice (nerovnice). Soustavy rovnic (nerovnic), jejich typy a způsob řešení. Řešení algebraických rovnic v oboru komplexních čísel, rozklad kvadratického trojčlenu na součin v C.
 
 \section{Vlastnosti algebraických funkcí a posloupností}
-5
+\subsection{Základní pojmy}
+\subsubsection{Funkce reálné proměnné}
+Funkce, kde je argumentem nějaká reálná proměnná (tradičně značená $x$). Funkční hodnoty se tradičně značí $y$:
+\begin{align}
+f(x) = ax^2 +bx +c && f: y=ax^2 +bx +c 
+\end{align}
+\subsubsection{Definiční obor}
+\emph{Definiční obor} (také \emph{doména}) je množina hodnot, jichž může nabývat argument funkce. Může to být libovolná podmnožina $n\nR$, ale tradičně celé $\nR$, ale musíme si dát pozor a odstranit z této množiny hodnoty, pro které nejsou operace ve funkci nadefinované (dělení nulou, logaritmus záporného čísla atd.)! Značí se třeba$D(f)$ nebo $D_f$.
+\subsubsection{Obor hodnot}
+Množina všech \emph{funkčních hodnot}, kterých funkce nabývá pro argumenty z definičního oboru. Značí se $ \mathcal {H}_{f}$ nebo $\mathcal {H}(f)$ (nebo normálně $H(f)$ a $H_f$).
+\subsubsection{Graf funkce}
+Je grafické znázornění funkce do roviny jako množinu bodů určených v soustavě souřadnic, kde $x$ je argument a $y$ je odpovídající funkční hodnota.
+\begin{equation}
+\left\{ X\left[x, f(x)\right]; \; x \in D_f \right\}
+\end{equation}
+\subsubsection{Prostá funkce}
+\emph{Prostá funkce} je taková funkce, že každé 2 argumenty z definičního oboru platí, že jim odpovídající funkční hodnoty jsou také různé. Tedy platí:
+\begin{align}
+(\forall x_1,x_2 \in D(f) \land x_1 \neq  x_2) \implies f(x_1) \neq f(x_2)
+\end{align}
+\subsubsection{Složená funkce}
+Funkce $h$ složená z funkcí $f,g$ (v tomto pořadí) se značí:
+\begin{equation}
+h = g \circ f
+\end{equation}
+A platí pro ní, že její definiční obor $D_h$ je množina všech $x \in D_f$, pro které platí $f(x) \in D_g$. Dále platí, že má předpis pro $\forall x \in D_h$:
+\begin{equation}
+h(x) = g(f(x))
+\end{equation}
+Z toho vyplývá, že záleží na pořadí v jakém pořadí v jakém funkce složíme, takže obecně $ g \circ f \neq f \circ g$.
+\subsection{Omezenost}
+\paragraph{Zdola omezená} funkce je taková, pro kterou existuje $d \in \nR$ pro které platí:
+\begin{align}
+( \exists d \in \nR)( \forall x \in D_f): f(x) \geq d
+\end{align}
+\paragraph{Shora omezená} funkce je taková, pro kterou existuje $c \in \nR$ pro které platí:
+\begin{align}
+( \exists c \in \nR)( \forall x \in D_f): f(x) \leq c
+\end{align} 
+\paragraph{Omezená funkce} je taková funkce, která je omezená zdola a zároveň shora omezená.
+\subsection{Sudá a lichá funkce}
+\paragraph{Sudá funkce} má graf, který je osově souměrný podle osy $y$. Matematicky zapíšeme:
+\begin{align}
+x \in D_f \implies \left( -x \in D_f \land f(-x) = f(x) \right)
+\end{align}
+\paragraph{Lichá funkce} má graf souměrný podle počátku (středu soustavy souřadnic). To nám říká, že pro každý argument $x$ s hodnotou $y$ má $-x$ hodnotu $-y$:
+\begin{align}
+x \in D_f \implies \left( -x \in D_f \land f(-x) = - f(x) \right)
+\end{align}
+\subsection{Maximum a minimum}
+Funkce $f$ má extrém v bodě $c \in \mathcal{D}_f$. Tak pokud je $f(c)$ maximum funkce $f$ pak platí:
+\begin{equation}
+x \in D_f \implies f(x) \leq f(c)
+\end{equation}
+A pokud je $f(c)$ minimum funkce, pak platí:
+\begin{equation}
+x \in D_f \implies f(x) \geq f(c)
+\end{equation}
+Ne každá funkce má maximum respektive minimum. Aby je měli musí být omezené shora (respektive zdola).
+\subsection{Monotónnost}
+\emph{Monotónnost} (nebo \emph{monotonie, monotonicita} zkoumá, zda-li je funkce (celá, na intervalu nebo v bodě) monotónní, tzn. rostoucí, klesající, konstantní, nerostoucí \dots \\
+Funkce $f$ je:
+\begin{itemize}
+\item \emph{rostoucí}
+\begin{equation}
+(x_1,x_2 \in D_f \land x_1 < x_2) \implies f(x_1) < f(x_2)
+\end{equation}
+\item \emph{klesající}
+\begin{equation}
+(x_1,x_2 \in D_f \land x_1 < x_2) \implies f(x_1) > f(x_2)
+\end{equation}
+\item \emph{konstantní}
+\begin{equation}
+(x_1,x_2 \in D_f \land x_1 \neq x_2) \implies f(x_1) = f(x_2)
+\end{equation}
+\item \emph{nerostoucí}, tzn. je klesající nebo konstantní
+\begin{equation}
+(x_1,x_2 \in D_f \land x_1 < x_2) \implies f(x_1) \geq f(x_2)
+\end{equation}
+\item \emph{neklesající}, tzn. je rostoucí nebo konstantní
+\begin{equation}
+(x_1,x_2 \in D_f \land x_1 < x_2) \implies f(x_1) \leq f(x_2)
+\end{equation}
+\item nějaká \emph{v intervalu $I$}, stejné jako předchozí, jen místo celého $D_f$ řešíme monotonii jen na nějakém intervalu. Zapisuje v podstatě stejně, příklad \emph{funkce rostoucí v intervalu $I$}:
+\begin{equation}
+(x_1,x_2 \in I \land x_1 < x_2) \implies f(x_1) < f(x_2)
+\end{equation}
+\item \emph{Ryze monotónní} označuje funkci (její interval), která je rostoucí nebo klesající (na intervalu).
+\end{itemize}
+Pozor v alternativní terminologii se občas používá \uv{rostoucí} pro neklesající a \uv{ryze rostoucí} pro rostoucí atd. Takže bacha, kontrolovat definice, kterou autor používá.
+\subsection{Periodická funkce}
+Periodická funkce má nějakou \emph{periodu} $p$. Říká nám to, že se funkční hodnoty po intervalu dlouhém $p$ začnou opakovat a to přesně v tom pořadí v jakém byli na tom intervalu. A vzdálené od sebe stejně. A po skončení tohoto intervalu, je další a další a další interval, kde platí to samé.
+\begin{align}
+p \in \nR^{+}, \; \forall k \in \nZ: \\
+x \in D_f \implies \left( x + kp \in D_f \land f(x+kp) = f(x) \right)
+\end{align}
+\subsection{Inverzní funkce}
+Inverzní funkce k prosté funkci $f$ se značí $f^{-1}$ a platí pro ni:
+\begin{align}
+D_{f^{-1}} &= H_f\\
+f^{-1}(d) = c &\iff f(c) = d
+\end{align}
+Zobrazí-li se jako grafy, tak jsou osově souměrné podle osy určené $f(x) =x$, tato funkce je inverzní sama k sobě. Vlastnost inverzních funkcí:
+\begin{equation}
+f(f^{-1}(x))=f^{-1}(f(x))=x
+\end{equation}
 
+\subsection{Meta}
+\subsubsection{Zdroje}
+\begin{itemize}
+\item moje hlava
+\item Tabulky
+\item \href{https://cs.wikipedia.org/wiki/Inverzn\%C3\%AD_zobrazen\%C3\%AD}{wiki: inverzní funkce}
+\item \href{https://cs.wikipedia.org/wiki/Defini\%C4\%8Dn\%C3\%AD_obor}{wiki: Definiční obor}
+\item \href{https://cs.wikipedia.org/wiki/Obor_hodnot}{wiki: obor hodnot}
+\item \href{https://www.karlin.mff.cuni.cz/~portal/funkce/?page=slozena}{mff: Složená funkce}
+\item \href{https://cs.wikipedia.org/wiki/Monot\%C3\%B3nn\%C3\%AD_funkce}{wiki: monotonie}
+\end{itemize}
+\subsubsection{Zadání/Pojmy}
+Pojem funkce reálné proměnné, definiční obor funkce, obor hodnot funkce, graf funkce, složená funkce, prostá funkce, omezenost funkce, sudá a lichá funkce, maximum a minimum funkce, periodická funkce, inverzní funkce, složená funkce
 \section{Grafy elementárních algebraických funkcí}
 6
 

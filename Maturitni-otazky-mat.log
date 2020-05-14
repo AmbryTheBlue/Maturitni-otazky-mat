@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7250 64-bit) (preloaded format=xelatex 2019.12.26)  14 MAY 2020 10:13
+This is XeTeX, Version 3.14159265-2.6-0.999991 (MiKTeX 2.9.7250 64-bit) (preloaded format=xelatex 2019.12.26)  14 MAY 2020 12:26
 entering extended mode
 **./Maturitni-otazky-mat.tex
 (Maturitni-otazky-mat.tex
@@ -1203,25 +1203,29 @@ Overfull \hbox (23.14803pt too wide) in paragraph at lines 42--88
 [1
 
 ] [2]
+Underfull \hbox (badness 10000) in paragraph at lines 90--95
+
+ []
+
+[3]
 Missing character: There is no ž in font ectt1000!
 Missing character: There is no č in font ectt1000!
 Missing character: There is no ž in font ectt1000!
 Missing character: There is no č in font ectt1000!
 Missing character: There is no ě in font ectt1000!
 Missing character: There is no ě in font ectt1000!
- [3]
 Missing character: There is no č in font ectt1000!
 Missing character: There is no č in font ectt1000!
 Missing character: There is no ř in font ectt1000!
 Missing character: There is no ř in font ectt1000!
 
-Overfull \hbox (17.23982pt too wide) in paragraph at lines 112--113
+Overfull \hbox (17.23982pt too wide) in paragraph at lines 115--116
 []\TU/lmr/m/n/12 jak udělat jednostrannou složenou závorku [][]$[][][][][] [] [
 ] [] [][][] [] [][][][][][][][][][][][][] []
  []
 
 
-Overfull \hbox (13.79956pt too wide) in paragraph at lines 112--113
+Overfull \hbox (13.79956pt too wide) in paragraph at lines 115--116
 [][][] [] [][][][][][][][][] [] [][][][][] [] [][][] [][] [][] [][] [][][][][] 
 [][] [][][][][][][][][][][] [][] [][][][][][][][][] [][] [][][][] [][]
  []
@@ -1229,96 +1233,92 @@ Overfull \hbox (13.79956pt too wide) in paragraph at lines 112--113
 [4]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 137.
+(hyperref)                than one, level fixed on input line 140.
 
-[5] [6]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[7] [8]
-Overfull \hbox (61.89336pt too wide) detected at line 244
+[5] [6] [7] [8] [9]
+Overfull \hbox (61.89336pt too wide) detected at line 247
 []
  []
 
-[9] [10] [11]
-Overfull \hbox (12.29956pt too wide) in paragraph at lines 302--303
+[10] [11] [12]
+Overfull \hbox (12.29956pt too wide) in paragraph at lines 305--306
 [][][]$[][][][][] [] [] [] [][][][][][][][][][][][][][][][][][] [] [][] [] [][]
 [][][][][][] [][] [][][][][] [][] [][][][][][][][][][][][][][] [][]
  []
 
 
-Overfull \hbox (41.69952pt too wide) in paragraph at lines 306--307
+Overfull \hbox (41.69952pt too wide) in paragraph at lines 309--310
 [][][]$[][][][][] [] [] [] [][][] [] [][][][][][] [] [][] [] [][][][][] [] [][]
 [][][][][] [] [][][][][] [] [][][][][][][][][][] [] [][] [] [][][][][][][][] []
 
  []
 
-[12]
-Overfull \hbox (16.97955pt too wide) in paragraph at lines 311--312
+
+Overfull \hbox (16.97955pt too wide) in paragraph at lines 314--315
 [][][]$[][][][] [] [] [] [][][] [] [][][][][][][][][][][] [] [][] [] [][][][][]
 [][][] [] [][] [] [][][][][][][][][][][][] [] [][][] [] [][] [] [][] []
  []
 
 
-Overfull \hbox (10.78757pt too wide) in paragraph at lines 311--312
+Overfull \hbox (10.78757pt too wide) in paragraph at lines 314--315
 [][] [] [][][] [] [][] [] [][][][][][][] [] [][] [] [][] [] [][][][][][][][][][
 ] [] [][] [] [][][] [] [][] [] [][][][][][][][][][][] [] [][] []
  []
 
-[13] [14]
-Overfull \hbox (181.22699pt too wide) detected at line 376
+[13] [14] [15]
+Overfull \hbox (181.22699pt too wide) detected at line 379
 []
  []
 
-[15] [16] [17] [18] [19] [20] [21] [22] [23] [24] [25] [26]
+[16] [17] [18] [19] [20] [21] [22] [23] [24] [25] [26] [27]
 
 Package hyperref Warning: Glyph not defined in PU encoding,
-(hyperref)                removing `\clqq' on input line 672.
+(hyperref)                removing `\clqq' on input line 675.
 
 
 Package hyperref Warning: Glyph not defined in PU encoding,
-(hyperref)                removing `\crqq' on input line 672.
+(hyperref)                removing `\crqq' on input line 675.
 
-[27] [28] [29] [30] [31]
-Overfull \hbox (36.1454pt too wide) detected at line 821
+[28] [29] [30] [31] [32]
+Overfull \hbox (36.1454pt too wide) detected at line 824
 []
  []
 
-[32] [33]
-Overfull \hbox (10.78757pt too wide) in paragraph at lines 853--854
+[33] [34]
+Overfull \hbox (10.78757pt too wide) in paragraph at lines 856--857
 [][][]$[][][][][] [] [] [] [][][][][] [] [][][][][][][] [] [][] [] [][][][][][]
 [][][][] [] [][] [] [][] [] [][][][][][][][][] [] [][][][][][][] []
  []
 
-[34]
+[35] [36] [37] [38] [39] [40]
 
 Package hyperref Warning: Difference (2) between bookmark levels is greater 
-(hyperref)                than one, level fixed on input line 869.
+(hyperref)                than one, level fixed on input line 990.
 
-[35] [36] [37] [38] [39] [40] [41]
-Overfull \hbox (2.54758pt too wide) in paragraph at lines 1023--1025
+[41] [42] [43] [44] [45] [46]
+Overfull \hbox (2.54758pt too wide) in paragraph at lines 1144--1146
 [][][]$[][][][][] [] [] [] [][][][][][][][][][] [] [][] [] [][][][][][][][][] [
 ][] [][][][][][] [][] [][][][][][][][][] [][] [][][]$[][] [][]$[][][][][] []
  []
 
 
-Overfull \hbox (1.23843pt too wide) in paragraph at lines 1027--1028
+Overfull \hbox (1.23843pt too wide) in paragraph at lines 1148--1149
 \TU/lmr/m/n/12 mit, nevlastní limity a limity v nevlastních bodech, důležité li
 mity. Asymptoty
  []
 
-[42] [43]
-Overfull \hbox (46.98212pt too wide) detected at line 1067
+[47] [48]
+Overfull \hbox (46.98212pt too wide) detected at line 1188
 []
  []
 
-[44] [45] [46]
-Underfull \hbox (badness 10000) in paragraph at lines 1143--1144
+[49] [50] [51]
+Underfull \hbox (badness 10000) in paragraph at lines 1264--1265
 
  []
 
-[47]
-Overfull \hbox (12.5258pt too wide) in paragraph at lines 1146--1147
+[52]
+Overfull \hbox (12.5258pt too wide) in paragraph at lines 1267--1268
 [] []\TU/lmr/bx/n/12 Jednotlivé výsledky pokusu[] \TU/lmr/m/n/12 se značí $\OML
 /cmm/m/it/12 ![]$\TU/lmr/m/n/12 , kde $\OML/cmm/m/it/12 ![] \OMS/cmsy/m/n/12 2 
 \OT1/cmr/m/n/12 
@@ -1326,18 +1326,14 @@ $ \TU/lmr/m/n/12 a $\OT1/cmr/m/n/12
  = \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 ![]; ![]; [] ; ![]\OMS/cmsy/m/n/12 g$ 
  []
 
-[48] [49] [50]
-Overfull \hbox (2.53181pt too wide) in paragraph at lines 1228--1229
+[53] [54] [55]
+Overfull \hbox (2.53181pt too wide) in paragraph at lines 1349--1350
 []\TU/lmr/m/it/12 Statistická jednotka \TU/lmr/m/n/12 = prvek statistického sou
 boru. Předpokládáme očís-
  []
 
-[51]
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[52] [53]
-Overfull \hbox (4.24535pt too wide) in paragraph at lines 1314--1338
+[56] [57] [58]
+Overfull \hbox (4.24535pt too wide) in paragraph at lines 1435--1459
 \TU/lmr/m/n/12 noty sdruženy), výšky sloupců znázorňují četnosti odpovídající d
 anému znaku.
  []
@@ -1401,38 +1397,38 @@ Missing character: There is no 0 in font nullfont!
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[54] [55] [56] [57]
-Overfull \hbox (4.60757pt too wide) in paragraph at lines 1415--1416
+[59] [60] [61] [62]
+Overfull \hbox (4.60757pt too wide) in paragraph at lines 1536--1537
 [][][]$[][][][][] [] [] [] [][] [] [][][][][][][][][] [] [][][] [] [][][][] [] 
 [][] [] [][] [] [][][][][][][][] [] [][] [] [][] [] [][][][][][][][]$[][] 
  []
 
 
-Overfull \hbox (10.79956pt too wide) in paragraph at lines 1416--1417
+Overfull \hbox (10.79956pt too wide) in paragraph at lines 1537--1538
 [][][]$[][][][][] [] [] [] [][] [] [][][][][][][][][] [] [][][] [] [][][][] [] 
 [][][][][][][][][][] [] [][] [] [][] [] [][] [] [][] [] [][][] [] [][] []
  []
 
 
-Overfull \hbox (4.61957pt too wide) in paragraph at lines 1417--1418
+Overfull \hbox (4.61957pt too wide) in paragraph at lines 1538--1539
 [][][]$[][][][][] [] [] [] [][] [] [][][][][][][][][] [] [][][] [] [][][][] [] 
 [][][][][][][][][] [] [][] [] [][] [] [][] [] [][] [] [][][] [] [][] []
  []
 
 
-Overfull \hbox (10.79956pt too wide) in paragraph at lines 1418--1419
+Overfull \hbox (10.79956pt too wide) in paragraph at lines 1539--1540
 [][][]$[][][][][] [] [] [] [][] [] [][][][][][][][][] [] [][][] [] [][][][] [] 
 [][][][][][][][][][] [] [][] [] [][] [] [][] [] [][] [] [][][] [] [][] []
  []
 
-[58]
-Overfull \hbox (4.61957pt too wide) in paragraph at lines 1419--1420
+[63]
+Overfull \hbox (4.61957pt too wide) in paragraph at lines 1540--1541
 [][][]$[][][][][] [] [] [] [][] [] [][][][][][][][][] [] [][][] [] [][][][] [] 
 [][][][][][][][][][] [] [][][][] [] [][] [] [][] [] [][][] [] [][] []
  []
 
 
-Overfull \hbox (15.69221pt too wide) in paragraph at lines 1435--1436
+Overfull \hbox (15.69221pt too wide) in paragraph at lines 1556--1557
 [] []\TU/lmr/bx/n/12 Konečná posloupnost[] \TU/lmr/m/n/12 - zobrazení množiny $
 \OMS/cmsy/m/n/12 f\OML/cmm/m/it/12 n; k \OMS/cmsy/m/n/12 2 \U/msb/m/n/12 N\OT1/
 cmr/m/n/12 ; \OML/cmm/m/it/12 n \OMS/cmsy/m/n/12 ^^T \OML/cmm/m/it/12 k\OMS/cms
@@ -1440,211 +1436,211 @@ y/m/n/12 g \OT1/cmr/m/n/12 = \OMS/cmsy/m/n/12 f\OT1/cmr/m/n/12 1\OML/cmm/m/it/1
 2 ; \OT1/cmr/m/n/12 2\OML/cmm/m/it/12 ; [] ; k\OMS/cmsy/m/n/12 g$
  []
 
-[59] [60] [61]
-Overfull \hbox (52.44508pt too wide) in paragraph at lines 1525--1527
+[64] [65] [66]
+Overfull \hbox (52.44508pt too wide) in paragraph at lines 1646--1648
 \TU/lmr/m/n/12 Je-li $\OML/cmm/m/it/12 g[]$ \TU/lmr/m/n/12 geometrická posloupn
 ost s kladnými členy, tak je posloupnost $[][] \OML/cmm/m/it/12 g[]$\TU/lmr/m/n
 /12 aritmetická,
  []
 
-[62]
+[67]
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 1572.
+LaTeX Font Warning: Command \small invalid in math mode on input line 1693.
 
-[63] [64] [65] [66] [67] [68] [69]
+[68] [69] [70] [71] [72] [73] [74]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 1734.
+               Default added (so using `tbp') on input line 1855.
 
-[70]
-Underfull \hbox (badness 10000) in paragraph at lines 1772--1773
+[75]
+Underfull \hbox (badness 10000) in paragraph at lines 1893--1894
 
  []
 
-[71] [72] [73] [74] [75] [76] [77] [78] [79]
-Overfull \hbox (59.1606pt too wide) detected at line 1996
+[76] [77] [78] [79] [80] [81] [82] [83] [84]
+Overfull \hbox (59.1606pt too wide) detected at line 2117
 []
  []
 
-[80] [81] [82] [83]
-Overfull \hbox (4.60757pt too wide) in paragraph at lines 2061--2062
+[85] [86] [87] [88]
+Overfull \hbox (4.60757pt too wide) in paragraph at lines 2182--2183
 [][][]$[][][][][] [] [] [] [][] [] [][][][][][][][][] [] [][][] [] [][][][] [] 
 [][][][][][][][][][] [] [][] [] [][] [] [][][][][][][][] [] [][] []
  []
 
 
-Overfull \hbox (35.48355pt too wide) in paragraph at lines 2063--2064
+Overfull \hbox (35.48355pt too wide) in paragraph at lines 2184--2185
 [][][]$[][][][][] [] [] [] [][] [] [][][][][][][][][] [] [][][] [] [][][][] [] 
 [][] [] [][] [] [][][][][][] [] [][] [] [][] [] [][][][] [] [][] [] [][][][][][
 ][]$[][] 
  []
 
-[84]
-Underfull \hbox (badness 10000) in paragraph at lines 2081--2084
+[89]
+Underfull \hbox (badness 10000) in paragraph at lines 2202--2205
 
  []
 
-[85]
+[90]
 
 LaTeX Warning: No positions in optional float specifier.
-               Default added (so using `tbp') on input line 2086.
+               Default added (so using `tbp') on input line 2207.
 
 
-Overfull \hbox (7.908pt too wide) in paragraph at lines 2087--2095
+Overfull \hbox (7.908pt too wide) in paragraph at lines 2208--2216
 [][] 
  []
 
-[86] [87]
-Underfull \hbox (badness 10000) in paragraph at lines 2164--2166
+[91] [92]
+Underfull \hbox (badness 10000) in paragraph at lines 2285--2287
 
  []
 
-[88]
-Overfull \hbox (9.59459pt too wide) in paragraph at lines 2169--2170
+[93]
+Overfull \hbox (9.59459pt too wide) in paragraph at lines 2290--2291
 \TU/lmr/m/n/12 Pojem tělesa, konvexní a nekonvexní tělesa, mnohostěny, hranol, 
 kvádr, krychle,
  []
 
-[89]
-Overfull \hbox (0.392pt too wide) in paragraph at lines 2204--2205
+[94]
+Overfull \hbox (0.392pt too wide) in paragraph at lines 2325--2326
 [] []\TU/lmr/bx/n/12 Přímka[] \TU/lmr/m/n/12 Jejich vzájemná poloha lze zjistit
  vytvořením soustavy rovnic obou
  []
 
-[90] [91] [92]
-Overfull \hbox (47.87952pt too wide) in paragraph at lines 2270--2271
+[95] [96] [97]
+Overfull \hbox (47.87952pt too wide) in paragraph at lines 2391--2392
 [][][]$[][][][] [] [] [] [][][] [] [][][][][][] [] [][][] [] [][][][] [] [][] [
 ] [][][][][][][][] [] [][][][][][][] [] [][][][][][][][][] [] [][][][][][][][] 
 []
  []
 
 
-Overfull \hbox (10.79956pt too wide) in paragraph at lines 2271--2272
+Overfull \hbox (10.79956pt too wide) in paragraph at lines 2392--2393
 [][][]$[][][][][] [] [] [] [][][] [] [][][][][][] [] [][][] [] [][][][] [] [][]
  [] [][][][][][][] [] [][][][][][][][][][] [] [][][][][][][][][] []
  []
 
 
-Overfull \hbox (47.87952pt too wide) in paragraph at lines 2272--2273
+Overfull \hbox (47.87952pt too wide) in paragraph at lines 2393--2394
 [][][]$[][][][] [] [] [] [][][][][][][][] [] [][][][][][][][] [] [][] [] [][][]
 [][][][][][][] [] [][] [] [][][][][][][][][][][][] [] [] [] [][][][][][][][] []
 
  []
 
-[93] [94] [95] [96] [97]
-Overfull \hbox (54.05951pt too wide) in paragraph at lines 2405--2406
+[98] [99] [100] [101] [102]
+Overfull \hbox (54.05951pt too wide) in paragraph at lines 2526--2527
 [][][]$[][][][] [] [] [] [][][] [] [][][][][][][][] [] [][][][][][][][] [] [][]
  [] [][][][][][][][][][] [] [][] [] [][][][][][][][][][] [] [][][][][][][][][] 
 []
  []
 
-[98] [99] [100] [101] [102] [103]
-Underfull \hbox (badness 10000) in paragraph at lines 2556--2560
+[103] [104] [105] [106] [107] [108]
+Underfull \hbox (badness 10000) in paragraph at lines 2677--2681
 
  []
 
-[104]
-Overfull \hbox (0.40707pt too wide) in paragraph at lines 2571--2571
+[109]
+Overfull \hbox (0.40707pt too wide) in paragraph at lines 2692--2692
 |[]\TU/lmr/bx/n/17.28 Polohové a metrické úlohy řešené metodou
  []
 
-[105] [106] [107] [108] [109] [110]
+[110] [111] [112] [113] [114] [115]
 Missing character: There is no ž in font ectt1000!
 Missing character: There is no ž in font ectt1000!
 Missing character: There is no ů in font ectt1000!
 Missing character: There is no ž in font ectt1000!
 Missing character: There is no ů in font ectt1000!
 Missing character: There is no ž in font ectt1000!
- [111] [112] [113]
-Overfull \hbox (10.79956pt too wide) in paragraph at lines 2786--2787
+ [116] [117] [118]
+Overfull \hbox (10.79956pt too wide) in paragraph at lines 2907--2908
 [][][]$[][][][][] [] [] [] [][] [] [][][][][][][][][] [] [][][] [] [][][][] [] 
 [][][][][][][][][] [] [][] [] [][][][] [] [][] [] [][] [] [][] [] [][] []
  []
 
 
-Overfull \hbox (29.31555pt too wide) in paragraph at lines 2793--2794
+Overfull \hbox (29.31555pt too wide) in paragraph at lines 2914--2915
 [][][]$[][][][][] [] [] [] [][] [] [][][][][][][][][] [] [][][] [] [][][][] [] 
 [][][] [] [][][][] [] [][] [] [][][][][][] [] [][] [] [][] [] [][][][][][][][]$
 [][] 
  []
 
 
-Overfull \hbox (10.79956pt too wide) in paragraph at lines 2794--2795
+Overfull \hbox (10.79956pt too wide) in paragraph at lines 2915--2916
 [][][]$[][][][] [] [] [] [][][][][][][][] [] [][][][] [] [][][][][] [] [][][] [
 ] [][][][][][][][] [] [][][][][] [] [][][][][][][][][] [] [][][][]$[][] 
  []
 
 
-Overfull \hbox (10.79956pt too wide) in paragraph at lines 2795--2796
+Overfull \hbox (10.79956pt too wide) in paragraph at lines 2916--2917
 [][][]$[][][][][] [] [] [] [][][] [] [][][][][] [] [][][] [] [][] [] [][][][][]
 [][][][] [] [][][][][][][][][][][] [] [][][][][][][][] [] [][][][]$[][] 
  []
 
 
-Overfull \hbox (16.97955pt too wide) in paragraph at lines 2796--2797
+Overfull \hbox (16.97955pt too wide) in paragraph at lines 2917--2918
 [][][]$[][][][][] [] [] [] [][][] [] [][][][][][][][] [] [][][] [] [][][][][] [
 ] [][][][][] [] [][][][][][][][][][][][] [] [][][][][][][][][][][]$[][] 
  []
 
 
-Overfull \hbox (34.4503pt too wide) in paragraph at lines 2799--2800
+Overfull \hbox (34.4503pt too wide) in paragraph at lines 2920--2921
 \TU/lmr/m/n/12 A super série od 3Blue1Bown: [][]$[][][][][] [] [] [] [][][] [] 
 [][][][][][][] [] [][][] [] [][][][][] [] [] [] [][][][][][][][][][][] []
  []
 
-[114]
-Overfull \hbox (38.67561pt too wide) in paragraph at lines 2822--2823
+[119]
+Overfull \hbox (38.67561pt too wide) in paragraph at lines 2943--2944
 \TU/lmr/m/n/12 Viz tabulky nebo [][]$[][][][][] [] [] [] [][][] [] [][][][] [] 
 [][][][] [] [][] [] [][][][][][][][][] [] [][][][][][][][][] [] [][][][][][][][
 ][] []
  []
 
-[115]
-Overfull \hbox (19.47038pt too wide) in paragraph at lines 2846--2848
+[120]
+Overfull \hbox (19.47038pt too wide) in paragraph at lines 2967--2969
 \TU/lmr/m/n/12 Další vzorce už nebudu do TeX přepisovat. Odakzuji na [][]$[][][
 ][][] [] [] [] [][] [] [][][][][][][][][] []
  []
 
 
-Overfull \hbox (16.97955pt too wide) in paragraph at lines 2853--2854
+Overfull \hbox (16.97955pt too wide) in paragraph at lines 2974--2975
 [][][]$[][][][][] [] [] [] [][][] [] [][][][] [] [][][][] [] [][] [] [][][][][]
 [][][][] [] [][][][][][][][][] [] [][][][][][][][][] [] [][][][][] []
  []
 
 
-Overfull \hbox (16.97955pt too wide) in paragraph at lines 2854--2855
+Overfull \hbox (16.97955pt too wide) in paragraph at lines 2975--2976
 [][][]$[][][][][] [] [] [] [][][] [] [][][][] [] [][][][] [] [][] [] [][][][][]
 [][][][] [] [][] [] [][][] [] [][][] [] [][][][] [] [][][][][][][][][] []
  []
 
-[116]
-Overfull \hbox (0.1997pt too wide) in paragraph at lines 2860--2860
+[121]
+Overfull \hbox (0.1997pt too wide) in paragraph at lines 2981--2981
 |[]\TU/lmr/bx/n/17.28 Aplikace diferenciálního a integrálního po-
  []
 
-(Maturitni-otazky-mat.toc [117] [118] [119] [120] [121] [122] [123] [124]
-[125] [126])
+(Maturitni-otazky-mat.toc [122] [123] [124] [125] [126] [127] [128] [129]
+[130] [131])
 \tf@toc=\write5
 \openout5 = `Maturitni-otazky-mat.toc'.
 
- [127]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2873.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 2873.
+ [132] [133]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 2994.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 2994.
  (Maturitni-otazky-mat.aux)
-Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2873.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2873.
+Package atveryend Info: Empty hook `AtVeryEndDocument' on input line 2994.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 2994.
 
 Package rerunfilecheck Info: File `Maturitni-otazky-mat.out' has not changed.
-(rerunfilecheck)             Checksum: 3E0D9E1F60519C42CB3C1C3AB09FA241;25831.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2873.
+(rerunfilecheck)             Checksum: 3EB16523ADBC498B9B8220F8D675B1D6;26966.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 2994.
  ) 
 Here is how much of TeX's memory you used:
- 44823 strings out of 427272
- 1002667 string characters out of 3146595
+ 44826 strings out of 427272
+ 1002710 string characters out of 3146595
  1279438 words of memory out of 3000000
- 48737 multiletter control sequences out of 15000+200000
+ 48740 multiletter control sequences out of 15000+200000
  545425 words of font info for 76 fonts, out of 3000000 for 9000
  1348 hyphenation exceptions out of 8191
  68i,28n,100p,998b,2250s stack positions out of 5000i,500n,10000p,200000b,50000s
 
-Output written on Maturitni-otazky-mat.pdf (127 pages).
+Output written on Maturitni-otazky-mat.pdf (133 pages).
