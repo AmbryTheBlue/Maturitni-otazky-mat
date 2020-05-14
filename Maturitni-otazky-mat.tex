@@ -30,6 +30,7 @@
 \newcommand{\nR}{\mathbb{R}} %numbers Real
 \newcommand{\nN}{\mathbb{N}} %Numbers Natural
 \newcommand{\nZ}{\mathbb{Z}} %Numbers tZelé
+\newcommand{\nC}{\mathbb{C}} %Nimbers Complex
 
 \begin{document}
 \rightline{\today}
@@ -82,8 +83,13 @@ Pauza, ale komplexní čísla done. Nevím co se myslí uzavřeností v pojmech,
 05.05.2020 - MO-1 začal jsem \dots	done je 21:45 a dělám na tom cca od 11:00, wtf \dots  Vždyť to ani nebyla tak dlouhá otázka. Ale zase mi nepřišlo, že jsem to dělal tak dlouho. Všiml jsem si, že čas uběhl vždycky až když jsem dostal hlad, takže až po několika hodinách. Možná jsem  se moc soustředil na Ted(x) Talky, co běžely na pozadí.\\
 06.05.2020 20:44 zkusím začít MO-7, 0:00 tak trocha spojitosti u MP EU4\\
 08.05.2020 Trocha limitek po ránu, dělal jsem je i chvíli včera, ale to jsem toho moc neudělal.\\
-09.05.2020 MO-7 (limity a spojitost) done 19:53, dneska už asi další nedám \dots , měl bych možná zítra.
-
+09.05.2020 MO-7 (limity a spojitost) done 19:53, dneska už asi další nedám \dots , měl bych možná zítra.\\
+12.05.2020 Začínám MO-4 a co jsem nezjistil: $\dfrac{-b \pm \sqrt{D}}{2a} = \frac{-b \pm \sqrt{D}}{2a} = \tfrac{-b \pm \sqrt{D}}{2a} $
+\begin{align*}
+\dfrac{-b \pm \sqrt{D}}{2a} = \frac{-b \pm \sqrt{D}}{2a} = \tfrac{-b \pm \sqrt{D}}{2a}
+\end{align*}
+Porovnej velikost písmen ve zlomku. Frac se mění podle toho je-li to v textu nebo v "display" modu. Podle toho zkratky tfrac a dfrac, asi. No něco jsem udělal, ale budu muset dodělat zítra\dots \\
+13.05.2020 MO-4 done 21:38, celý den to odkládám a pak to sfouknu za hoďku a kousek, no co se dá dělat. Jako nevím moc, co s tou MO-4, tam jsou většinou takový věci, který jsou prostě jasný od pohledu, takže ty tam psát nebudu.
 \subsubsection{TODO-list}
 \begin{itemize}
 \item  \st{21 - Obecná rovnice u kuželoseček, dodělat} done (podle tabulek)
@@ -690,7 +696,168 @@ Můžu pro všechny obory čísel psát $X$ nebo $\mathbb{X}$ ale jsem línej, t
 Obor čísel přirozených, celých, racionálních, reálných, čísla iracionální, znázornění čísel na číselné ose, základní operace v číselných oborech a jejich vlastnosti, uzavřenost, asociativnost, neutrální prvky, komutativnost, distributivnost, mocniny, odmocniny a operace s nimi, vztahy mezi reálnými čísly, absolutní hodnota reálného čísla, její geometrická interpretace, zavedení komplexních čísel, množina uspořádaných dvojic reálných čísel, operace sčítání, odčítání, násobení a dělení komplexních čísel, vztah rovnosti, imaginární jednotka, čísla komplexně sdružená, absolutní hodnota a její geometrický význam, Gaussova rovina, algebraický a goniometrický tvar, Moivreova věta, násobení, dělení, umocňování a odmocňování komplexních čísel v goniometrickém tvaru.
 
 \section{Algebraické rovnice, nerovnice a jejich soustavy}
-4
+\subsection{Povolené úpravy rovnic a nerovnic}
+Za \emph{ekvivalentní} se považují úpravy, kdy nepřijdeme o žádné řešení a ani nezískáme žádné další navíc. Přičtení (respektive odečtení) libovolného čísla (takže i proměnné, neznámé a parametry) k obou stranám rovnice.\\
+Násobení (respektive dělení, pokud to není nula) libovolným kladným číslem. Pokud násobíme (dělíme) zápornými čísly musíme otočit u nerovnic znaménko, vysvětlení:
+\begin{align*}
+L &< P && /-L-P\\
+L-L-P &< P- L -P\\
+-P &< -L\\
+-L &> -P && /\cdot(-1)\\
+L &< P
+\end{align*}
+Protože můžeme násobit libovolným číslem, můžeme také umocnit (i odmocnit), ale pozor na ztrátu řešení:
+\begin{align*}
+x^2 &= 1 &&x_1 = 1,\, x_2 = -1\\
+\sqrt{x^2} &= \sqrt{1}\\
+x &= 1 & \text{vs: }& \abs{x} = 1
+\end{align*}
+\subsubsection{Definiční obor rovnice}
+Tradičně celé $\nR$ ale můžeme chtít hledat řešení i v $\nC$. Z této množiny mohou být odebrána některá čísla (nebo podmnožiny), když jsou v rovnici operace, které nejsou pro tyto hodnoty nedefinovány. Jako například dělení nulou, nebo logaritmus ze záporného čísla. (V případě, že řešíme jen v $\nR$, tak i odmocnina ze záporného čísla)\\
+V algebraických rovnicích bychom se s něčím takovým neměli setkat.
+\subsubsection{Množina kořenů rovnice}
+Součástí množiny \emph{kořenů rovnice} jsou všechna čísla, která když dosadíme za neznámou, tak nám bude platit rovnost v zadání.
+\subsubsection{Zkouška}
+Dosazením nalezeného kořenu(kořenů) do původní rovnice a ověření, že se pravá strana rovná pravé.
+\subsection{Polynom}
+\emph{Mnohočlen} se také nazývá \emph{polynom}. A má takovýto tvar:
+\begin{align}
+p(x)=\sum _{i=0}^{n}{a_{i}x^{i}}=a_{0}+a_{1}x+a_{2}x^{2}+\cdots +a_{n}x^{n} && a_n \neq 0
+\end{align}
+Čísla $a$ se nazývají \emph{koeficienty polynomu} a pro ten nejvyšší ($a_n$) musí platit, že je nenulový. \emph{Stupeň polynomu} je roven nejvyššímu exponentu, který má nenulový koeficient. \emph{Kořen polynomu} je číslo (často značené $\alpha$), pro které platí, že když ho dosadíme za $x$, tak se polynom bude roven nule. Polynom můžeme rozložit na \emph{kořenové činitele} (speciální případ pro kvadratickou rovnici je \eqref{eq:korenove_cinitele})
+\begin{align}
+p(x)=a_{n}(x-\alpha _{1})(x-\alpha _{2})\cdots (x-\alpha _{n})
+\end{align}
+\subsubsection{Hornerovo schéma}
+Polynom můžeme zapsat ve tvaru:
+\begin{align}
+p(x)=(...((a_{n}x+a_{n-1})x+a_{n-2})x+...+a_{1})x+a_{0}
+\end{align}
+Pak můžeme vypočíst hodnotu polynomu pro nějaké $x$ pomocí tzv. \emph{Hornerova schéma}:
+\begin{align*}
+ c_{n}=a_{n}\\
+ c_{n-1}=c_{n}x+a_{n-1}\\
+ c_{n-2}=c_{n-1}x+a_{n-2}\\
+\dots \\
+ c_{0}=c_{1}x+a_{0}
+\end{align*}
+\subsection{Algebraická rovnice}
+Za algebraickou rovnici se označuje taková rovnice, kde na jedné straně je nějaký polynom $n$-tého stupně a na druhé straně je nula. Obdobně to platí pro nerovnici. Máme speciální případy algebraických rovnice.
+\subsubsection{Lineární rovnice}
+Je to polynom 1.stupně. Často se využívá značení:
+\begin{align}
+ax +b = 0 && a,b \in \nR\\
+\end{align}
+\begin{align}
+\begin{cases}
+a \neq 0 \implies \text{jedinný kořen: } x = - \frac{b}{a}\\
+a = 0 \begin{cases}
+b =0 &\implies \text{každé $x \in \nR$ je řešením}\\
+b \neq 0 &\implies \text{žádné řešení}
+\end{cases}
+\end{cases}
+\end{align}
+\subsubsection{Kvadratická rovnice}
+Polynom 2.stupně. Tato rovnice se obvykle řeší přes diskriminant $D$.
+\begin{align}
+ax^2 + bx +c = 0 && a,b,c \in \nR \land a \neq 0\\
+\text{\emph{Diskriminant}:} && D = b^2 - 4ac
+\end{align}
+\begin{align}
+\begin{cases}
+D>0 & \implies x_{1,2} = \dfrac{-b \pm \sqrt{D}}{2a}\\
+D=0 & \implies x = - \dfrac{b}{2a}\\
+D<0 & \implies \begin{cases}
+\text{žádné řešení pro $x\in \nR$}\\
+\text{pro $x \in \nC$ platí: } x_{1,2} = \dfrac{-b \pm \iu \sqrt{\abs{D}}}{2a}
+\end{cases}
+\end{cases}
+\end{align}
+Existují i zvláštní případy kvadratické rovnice, ale i ty se dají řešit obecným způsobem. Ale často je triviální způsob rychlejší a jednodušší (natolik, že to sem psát nebudu)
+\paragraph{Rovnice ryze kvadratická}
+\begin{align}
+x^2 + px +q = 0 && p,q \in \nR
+\end{align}
+\paragraph{Rovnice ryze kvadratická}
+\begin{align}
+ax^2 + c =0 && a\neq 0
+\end{align}
+\paragraph{Kvadratická rovnice bez absolutního členu}
+\begin{align}
+ax^2 + bx = 0 && a \neq 0
+\end{align}
+\paragraph{Rozklad kvadratického trojčlenu na součin kořenových činitelů} pro kořeny $x_1,x_2$ vypadá:
+\begin{align}
+\label{eq:korenove_cinitele}
+ax^2  +bx+c = a \cdot (x-x_1) \cdot (x-x_2)
+\end{align}
+Z Viètových vzorců (viz \ref{sec:vietovy_vzorce}) vyplývá následující vztah mezi kořeny a koeficienty:
+\begin{align}
+x_1 + x_2 = - \frac{b}{a} && x_1 \cdot x_2 = \frac{c}{a}
+\end{align}
+\paragraph{Bikvadratická rovnice} je řešená pomocí substituce za $x^2$ a tím se převede na klasickou kvadratickou rovnici:
+\begin{align}
+ax^4 + bx^2 + c =0 && a,b,c \in \nR \land a \neq 0
+\end{align}
+\paragraph{Kvadratická rovnice v komplexních číslech}
+Platí-li, že koeficienty jsou komplexní čísla, tak jsou kořeny kvadratické rovnice 2 komplexní čísla:
+\begin{align}
+x_{{1,2}}= \frac  {-b\pm {\sqrt  {D}}}{2a} && a,b,c \in \nC && D=b^{2}-4ac 
+\end{align}
+
+\subsubsection{Kubická a kvartická rovnice}
+Jsou názvy rovnic pro polynom třetího (respektive čtvrtého) stupně.
+\subsection{Viètovy vzorce}
+\label{sec:vietovy_vzorce}
+Někdy jen \emph{Vietovy vzorce} (bez obrácené francouzksé čárky, bo se blbě píše) jsou obecným návodem, jak řešit polynomy $n$-tého stupně. Podle \emph{základní věty algebry} má polynom $n$-tého stupně maximálně $n$ kořenů. Pro polynom obecně zapsaný:
+\begin{align}
+p(x)=a_{n}x^{n}+a_{n-1}x^{n-1}+\cdots +a_{1}x+a_{0}
+\end{align}
+Je možné vypočítat jednotlivé kořeny $x_1, x_2, \dotsc , x_n$ pomocí následujících rovnic
+\begin{align}
+\begin{cases}
+x_{1}+x_{2}+\dots +x_{n-1}+x_{n}={\tfrac {-a_{n-1}}{a_{n}}}\\(x_{1}x_{2}+x_{1}x_{3}+\cdots +x_{1}x_{n})+(x_{2}x_{3}+x_{2}x_{4}+\cdots +x_{2}x_{n})+\cdots +x_{n-1}x_{n}={\frac {a_{n-2}}{a_{n}}}\\
+{}\quad \vdots \\x_{1}x_{2}\dots x_{n}=(-1)^{n} \cdot{\tfrac {a_{0}}{a_{n}}}.\end{cases}
+\end{align}
+Poznámka: Viètovy vzorce jsou obecně platné nejen v $\nR$ ale také v $\nC$.
+\subsection{Rovnice s parametry}
+Prostě s parametrem počítáme, jako by tam bylo normálně číslo a neznámou vyjádříme v závislosti na parametru (parametrech). Tady není, co řešit
+\subsection{Iracionální rovnice}
+Mají neznámou pod odmocninou. Řeší se pomocí umocňování, které rovnici převede na algebraickou. Umocňování, ale není ekvivalentní úprava, takže je třeba provést \textbf{zkoušku!}
+\subsection{Rovnice s absolutní hodnotou}
+Najdeme pro jaké případy se hodnota polynomu v absolutní hodnotě rovná nula a pak rozdělíme rovnici na případ, kdy je hodnota v absolutní hodnotě záporná a kdy kladná. Pro zápornou \uv{otočíme} znaménka v polynomu. Pak jednotlivé rovnice řešíme jen v definičním oboru, kdy je polynom kladný respektive záporný. Nic extra.
+\subsection{Rovnice jako funkce a grafické řešení}
+Na pravou i levou funkci můžeme nahlížet jako na funkci, kde argumentem je neznámá. Tuto funkci můžeme graficky znázornit a podívat se, kdy platí rovnost (popřípadě nerovnost). Nevím co víc k tomu říct.
+\subsection{Soustavy}
+Mohou mít více proměnných (to teda můžou i normální rovnice) a kořeny řešení je taková kombinace čísel, které když dosadíme za proměnné, tak budou všechny rovnice (nerovnice) platné. Soustava můře mít více řešení.
+\subsubsection{Řešení}
+Každou rovnici můžeme upravovat standardně jako samostatnou rovnici. Více rovnic (a nerovnic) můžeme samozřejmě sčítat odečítat a z toho vyplývá, že je můžeme i násobit a dělit (tady opět pozor na nerovnice znaménka musí být shodně otočena a pozor na násobení/dělení záporným číslem, prostě se nad tím předtím zamyslet).
+\subsubsection{Soustavy lineárních rovnic}
+Soustavu $m$ lineárních rovnic s $n$ proměnnými můžeme zapsat:
+\begin{align}
+a_{11}x_1 + a_{12}x_2 + \dotsb + a_{1n}x_n &= b_1\\
+a_{21}x_1 + a_{22}x_2 + \dotsb + a_{2n}x_n &= b_2 \\
+\vdots \\
+a_{m1}x_1 + a_{m2}x_2 + \dotsb + a_{mn}x_n &= b_m
+\end{align}
+Kde $x_1, x_2, \dotsc , x_n$ jsou neznámé, $a_{ij}$ jsou koeficienty (kde $i$ určuje rovnici a $j$ proměnnou) a $b_i$ je tzv. \emph{absolutní člen}. V obecném případě mohou koeficienty i absolutní člen být komplexní čísla.\\
+Takovouto soustavu lze vyjádřit pomocí matice a vektorů.
+\begin{align}
+{\begin{pmatrix}a_{11}&a_{12}&\cdots &a_{1n}\\a_{21}&a_{22}&\cdots &a_{2n}\\\vdots &\vdots &\ddots &\vdots \\a_{m1}&a_{m2}&\cdots &a_{mn}\end{pmatrix}}{\begin{pmatrix}x_{1}\\x_{2}\\\vdots \\x_{n}\end{pmatrix}}={\begin{pmatrix}b_{1}\\b_{2}\\\vdots \\b_{m}\end{pmatrix}}
+\end{align}
+\subsection{Meta}
+\subsubsection{Zdroje}
+\begin{itemize}
+\item \href{https://cs.wikipedia.org/wiki/Vi\%C3\%A8tovy_vzorce}{wiki: Vietovy vzorce}
+\item \href{https://en.wikipedia.org/wiki/Vieta\%27s_formulas}{wiki-en: Vietas formulas}
+\item \url{https://vyuka.odbskmb.cz/algebraick\%C3\%A9\%20rovnice_soubory/Page331.htm}
+\item \href{https://cs.wikipedia.org/wiki/Polynom}{wiki: polynom}
+\item \href{https://cs.wikipedia.org/wiki/Kvadratick\%C3\%A1_rovnice}{wiki: Kvadratická rovnice}
+\item \href{https://cs.wikipedia.org/wiki/Rovnice}{wiki: rovnice}
+\item \href{https://cs.wikipedia.org/wiki/Soustava_rovnic}{wiki: Soustava rovnic}
+\end{itemize}
+\subsubsection{Pojmy/Zadání}
+Pojem algebraická rovnice (nerovnice), definiční obor rovnice (nerovnice), množina kořenů rovnice (nerovnice), úpravy rovnic (nerovnice), zkouška. Grafické řešení rovnic (nerovnic). Polynomy, funkce, rovnice, souvislosti. Lineární a kvadratická rovnice (nerovnice), lineární a kvadratické rovnice (nerovnice) s parametry, lineární a kvadratické rovnice (nerovnice) s neznámou v absolutní hodnotě, Vietovy vzorce, iracionální rovnice (nerovnice). Soustavy rovnic (nerovnic), jejich typy a způsob řešení. Řešení algebraických rovnic v oboru komplexních čísel, rozklad kvadratického trojčlenu na součin v C.
 
 \section{Vlastnosti algebraických funkcí a posloupností}
 5
