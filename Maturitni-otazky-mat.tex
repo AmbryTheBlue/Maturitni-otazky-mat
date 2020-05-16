@@ -92,7 +92,17 @@ Porovnej velikost písmen ve zlomku. Frac se mění podle toho je-li to v textu 
 13.05.2020 MO-4 done 21:38, celý den to odkládám a pak to sfouknu za hoďku a kousek, no co se dá dělat. Jako nevím moc, co s tou MO-4, tam jsou většinou takový věci, který jsou prostě jasný od pohledu, takže ty tam psát nebudu.\\
 14.05.2020 Zkusím ještě jednu MO navíc, hmmm... $ \mathcal {H}_{f}$ (jsem našel na wiki) vs $H_f$, co u definičního oboru $\mathcal{D}_f$ vs $D_f$ ? \dots to vypadá relativně stylově, ale asi to měnit nebudu\\
  - MO-5 done 12:23 ta je nějaká triviální (do 2h od začátku po zápis do deníčku), ještě jsem tam přidal monotonii, která by tam asi měla patřit a v otázce (ani žádné jiné) ji nevidím.\\
-
+15.05.20 - před odjezdem na trénink jsem začal MO-6, no a teď je 22:21 a jsem unavenej jak svině, takže cokoliv napíšu budu muset zítra zkontrolovat.\\
+ - 22:54 wtf já jsem to udělal. Tak je to kratší otázka a ani mě nenapadá, co k tomu, co tam je říct. Takže na to asi kašlu!\\
+16.05.2020 začal jsem MO-8 (exponenciála a logaritmy) musím zjistit, jestli je mezi těmito vzorci rozdíl:
+\begin{align*}
+\log_a (x \cdot y) &= \log_a x + \log_a y\\
+\log_a{(x \cdot y)} &= \log_a{x} + \log_a{y}\\
+\log_a{\left(x \cdot y \right)} &= \log_a{x} + \log_a{y}\\
+\log_a \left(x \cdot y \right) &= \log_a x + \log_a y
+\end{align*}
+Tak jen ten první má tu závorku trochu blíž logaritmu. Ale jinak vypadají stejně.\\
+ -10:30 MO-6 asi done. Jsem nějak unaven po včerejšku, nevím proč se budím tak brzo\dots
 \subsubsection{TODO-list}
 \begin{itemize}
 \item  \st{21 - Obecná rovnice u kuželoseček, dodělat} done (podle tabulek)
@@ -984,8 +994,65 @@ f(f^{-1}(x))=f^{-1}(f(x))=x
 \subsubsection{Zadání/Pojmy}
 Pojem funkce reálné proměnné, definiční obor funkce, obor hodnot funkce, graf funkce, složená funkce, prostá funkce, omezenost funkce, sudá a lichá funkce, maximum a minimum funkce, periodická funkce, inverzní funkce, složená funkce
 \section{Grafy elementárních algebraických funkcí}
-6
-
+\subsection{Lineární funkce}
+\begin{align}
+f: y = ax + b && a,b \in \nR
+\end{align}
+Vypadá jako přímka. Můžeme tím určit libovolnou přímku v rovině, kromě osy $y$. Pro $a>0$ je funkce rostoucí, pro $a<0$ je klesající a pro $a=0$ je konstantní.
+\subsection{Kvadratická funkce}
+\begin{align}
+f: y = ax^2 + bx +c && a,b,c \in \nR
+\end{align}
+Grafem je \emph{parabola}. Vrchol je určen:
+\begin{equation}
+V  = \left[ -\frac{b}{2a} , c- \frac{b^2}{4a} \right]
+\end{equation}
+Nebo můžeme extrém nalézt pomocí derivace. Ta musí být v extrému rovna nule.
+\begin{itemize}
+\item $a>0 \implies$ funkce $f$ je omezená. Bod který je vrcholem je minimum. Obor hodnot je od vrcholu do $+ \infty$.
+\item $a>0 \implies$ funkce $f$ je omezená. Bod který je vrcholem je maximum. Obor hodnot je od $- \infty$ do vrcholu.
+\item $a=0 \implies$  je to funkce lineární a ne kvadratická!
+\end{itemize}
+\subsection{Mocninné funkce}
+\begin{align}
+f: y = x^n && n \in \nN && D_f = R
+\end{align}
+\begin{itemize}
+\item $n$ je liché $\implies$ funkce je lichá, $H_f = R$
+\item $n$ je sudé $\implies$ funkce je sudá, $H_f = R_0^+$
+\end{itemize}
+Pro záporná čísla je graf úplně jiný.
+\begin{align}
+f: y = x^n && n \in \nZ^- && D_f = R \setminus \{ 0 \}
+\end{align}
+\begin{itemize}
+\item $n$ je liché $\implies$ funkce je lichá, $H_f = R  \setminus \{ 0 \}$
+\item $n$ je sudé $\implies$ funkce je sudá, $H_f = R^+$
+\end{itemize}
+\subsection{Lineární lomená funkce}
+\begin{align}
+f: y= \frac{ax+b}{cs+d} && q,b,c,d \in \nR
+\end{align}
+Musí platit podmínky $c \neq 0$ a $ad-bc \neq0$. Pro definiční obor platí $D_f = \nR \setminus \{- \frac{d}{c} \}$ a pro obor hodnot  $D_f = \nR \setminus \{ \frac{a}{c} \}$. Grafem této funkce je rovnoosá hyperbola s asymptotami:
+\begin{align}
+x = - \frac{d}{c} && y =\frac{a}{c}
+\end{align}
+\paragraph{Nepřímá úměrnost} je zvláštním případem lomené funkce. Je to lichá funkce s předpisem:
+\begin{align}
+y = \frac{b}{x} && b \neq 0
+\end{align}
+\subsection{Absolutní hodnota}
+Elementární funkce můžeme v absolutní hodnotě jednoduše zpátky do kladné části $y$. Je li funkce složitější a jen část je v absolutní hodnotě, tak  glhf. Nenapdá mě žádné obecné pravidlo.
+\subsection{Odmocninné grafy}
+Neboli grafy funkcí s exponentem $\frac{1}{n}$, kde $n \in \nN$. Pro sudá $n$ není definován pro záporná $x$. Je to funkce rostoucí bez omezenosti shora (zdola jsou omezeny jen sudá $n$).
+\subsection{Meta}
+Nevím moc, co k tomu dát za info. Je to nějaká kratší otázka. Grafy vyplývají z předpisu funkce.
+\subsubsection{Zdroje}
+\begin{itemize}
+\item moje hlava, tabulky, moje hlava po předkopné
+\end{itemize}
+\subsubsection{Pojmy/zadání}
+Lineární funkce ( rozdělení podle koeficientu a ), kvadratická funkce ( rozdělení podle koeficientu a), určení extrému kvadratické funkce (doplněním na čtverec i pomocí diferenciálního počtu ). Mocninné funkce s přirozeným mocnitelem, mocninné funkce se záporným celým mocnitelem a jejich vlastnosti v závislosti na mocniteli. Mocninné funkce s exponentem 1/n , kde .Nn Lineární lomená funkce. Grafy elementárních funkcí s absolutními hodnotami.
 \section{Limita a spojitost funkce}
 \subsubsection{Okolí bodu}
 V matematice můžeme okolí bodu definovat pomocí intervalu na množině reálných čísel. Máme číslo $r\in \nR$, pak \emph{epsilon okolí} pro $\varepsilon \in \nR \land \varepsilon > 0$ je otevřeným intervalem $(r- \varepsilon; r + \varepsilon)$.\\
@@ -995,7 +1062,7 @@ V tabulkách uvidíme značení $U(a)$ a jednoduché vysvětlení přes interval
 \begin{equation}
  (r-\varepsilon; r) \cup (r; r + \varepsilon)
 \end{equation}
-Setkáme se značením $R(a, \varepsilon )$
+Setkáme se značením $R(a, \varepsilon )$.
 \paragraph{Jednostranné okolí bodu} je přesně to, co jméno napovídá \dots V tabulkách značí \emph{levé okolí} $U_L(a)$ a \emph{pravé okolí} $U_P(a)$.
 \subsubsection{Hromadný bod}
 \label{sec:hromadny_bod}
@@ -1146,9 +1213,93 @@ kde není definována).}
 \end{itemize}
 \subsubsection{Zadání/Pojmy}
 Okolí bodu, přírůstek argumentu, přírůstek funkce, funkce spojitá v bodě, funkce spojitá v uzavřeném intervalu. Limita funkce, pravidla pro počítání limit, nevlastní limity a limity v nevlastních bodech, důležité limity. Asymptoty grafu funkce.
-\section{Nealgebraické funkce}
-8
 
+\section{Nealgebraické funkce}
+\subsection{Exponenciální funkce}
+\begin{equation}
+y =f(x) = a^x
+\end{equation}
+Základ $a$ je kladné číslo různé od nuly (pro nulu je grafem konstantní funkce $y=1$). Grafem exponenciální funkce je \emph{exponenciála} neboli \emph{exponenciální křivka}. $D_f \subseteq \nR$ (existuje i pro $D_f \subseteq \nC$).\\
+Derivací je exponenciály je:
+\begin{equation}
+(a^x)' = a^x \ln a
+\end{equation}
+A protože přirozený logaritmus z Eulerova čísla ($\euler$) je roven jedné často se využívá zápis exponencionály ve tvaru:
+\begin{align}
+a^x = e^{x \cdot \ln{a}} = \exp{(x \cdot \ln{a})}
+\end{align}
+\paragraph{Vlastnosti exponencionály:}
+\begin{itemize}
+\item je prostá
+\item je spojitá
+\item Vždy prochází body $[0,1], [1,a]$
+\item Pro $a>0$ je rostoucí a zdola omezená
+\item Pro $a \in (0;1)$ je klesající a shora omezená
+\item grafy funkcí $y=a^x$, $y= \left( \frac{1}{a} \right)^{x}$ jsou souměrně sdružené podle osy $y$
+\end{itemize}
+Pro záporná $a$ není definována, protože pro sudá $x$ by byla funkce kladná, pro lichá $n$ by byla záporná a pro jiná reálná čísla by to byl docela zmatek, protože odmocnina je definována jen pro kladná čísla (aspoň v tabulkách, kalkulačka některé jednodušší zvládá).
+\subsection{Logaritmus}
+Je to inverzní funkce k exponenciále ($y = a^x$). Logaritmická funkce se \emph{základem} $a$ je definována jen pro $x>0$ a značí se:
+\begin{align}
+f(x) =y = \log_a x && a \in \nR^+ \setminus \{ 1 \}
+\end{align}
+Můžeme číst $a$ na kolikátou se rovná $x$. Logaritmy s často používaným základem mají speciální značení:
+\begin{itemize}
+\item Základ 10, \emph{dekadická} logaritmická funkce
+\begin{equation}
+y = \log x = \log_10 x
+\end{equation}
+\item Základ je Eulerovo číslo $\euler$, nazývá se \emph{přirozená} logartmická funkce
+\begin{equation}
+y = \ln x = \log_{\euler} x
+\end{equation}
+\end{itemize}
+Grafem logaritmu je \emph{logaritmická křivka}, pro kterou platí, že:
+\begin{itemize}
+\item je funkce prostá
+\item Pro $a>1$ je funkce rostoucí
+\item Pro $0<a<1$ je funkce klesající
+\item prochází body $[1,0],[a,1]$
+\item osa $y$ je její asymptotou
+\item grafy funkcí $y = \log_a x$ a $y = \log_{\frac{1}{a}} x$ jsou souměrně sdružené podle osy $x$
+\end{itemize}
+\subsubsection{Počítání s logaritmy}
+\paragraph{Logaritmus základní pravidla} pro $a>0 \land a \neq 1 \land x>0$
+\begin{align}
+\log_a x = L &\iff  a^L = x\\
+a^{\log_a L} = L &\text{	čili	} \log_a a^L = L
+\end{align}
+\paragraph{Počítání s logaritmy}
+\begin{itemize}
+\item logaritmus součinu
+\begin{equation}
+\log_a \left( x \cdot y\right) = \log_a x + \log_a y
+\end{equation}
+\item logaritmus podílu 
+\begin{equation}
+\log_a{\frac{x}{y}} = \log_a{x} - \log_a{y}
+\end{equation}
+\item logaritmus mocniny
+\begin{equation}
+\log_a{x^n} = n \cdot \log_a{x}
+\end{equation}
+\end{itemize}
+\paragraph{Převody logaritmů s různými základy}
+\begin{align}
+\log_b x &= \log_b{a} \cdot\log_a{x}\\
+\log_b{a} &= \frac{1}{\log_a{b}}\\
+\log_b{x} &= \frac{\log_a{x}}{\log_a{b}}
+\end{align}
+\subsection{Meta}
+\subsubsection{Zdroje}
+\begin{itemize}
+\item \href{https://cs.wikipedia.org/wiki/Exponenci\%C3\%A1ln\%C3\%AD_funkce}{wiki: exponenciální funkce}
+\item \href{https://cs.wikipedia.org/wiki/Logaritmus}{wiki: logaritmus}
+\item tabulky
+\item moje hlava
+\end{itemize}
+\subsubsection{Pojmy/zadání}
+Exponenciální funkce, definiční obor, obor hodnot, graf a vlastnosti v závislosti na jejím základu a. Logaritmická funkce, definiční obor, obor hodnot, graf a vlastnosti v závislosti na jejím základu a. Funkce $y = \log x$	 a $y =\ln x$. Pojem logaritmus, vlastnosti logaritmů.
 \section{Goniometrie a trigonometrie}
 9
 

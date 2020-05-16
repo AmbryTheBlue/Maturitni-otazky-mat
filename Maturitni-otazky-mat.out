@@ -113,249 +113,264 @@
 \BOOKMARK [3][-]{subsubsection.5.8.1}{Zdroje}{subsection.5.8}% 113
 \BOOKMARK [3][-]{subsubsection.5.8.2}{Zadání/Pojmy}{subsection.5.8}% 114
 \BOOKMARK [1][-]{section.6}{Grafy elementárních algebraických funkcí}{}% 115
-\BOOKMARK [1][-]{section.7}{Limita\040a\040spojitost\040funkce}{}% 116
-\BOOKMARK [2][-]{subsubsection.7.0.1}{Okolí bodu}{section.7}% 117
-\BOOKMARK [3][-]{subsubsection.7.0.2}{Hromadný bod}{subsubsection.7.0.1}% 118
-\BOOKMARK [3][-]{subsubsection.7.0.3}{Přírůstek argumentu}{subsubsection.7.0.1}% 119
-\BOOKMARK [3][-]{subsubsection.7.0.4}{Přírůstek funkce}{subsubsection.7.0.1}% 120
-\BOOKMARK [2][-]{subsection.7.1}{Spojitost}{section.7}% 121
-\BOOKMARK [3][-]{subsubsection.7.1.1}{Spojitost funkce v bodě}{subsection.7.1}% 122
-\BOOKMARK [3][-]{subsubsection.7.1.2}{Spojitá funkce}{subsection.7.1}% 123
-\BOOKMARK [3][-]{subsubsection.7.1.3}{Funkce spojitá na intervalu}{subsection.7.1}% 124
-\BOOKMARK [2][-]{subsection.7.2}{Limita\040funkce}{section.7}% 125
-\BOOKMARK [3][-]{subsubsection.7.2.1}{Vlastní limita ve vlastním bodě}{subsection.7.2}% 126
-\BOOKMARK [3][-]{subsubsection.7.2.2}{Nevlastní limita ve vlastním bodě}{subsection.7.2}% 127
-\BOOKMARK [3][-]{subsubsection.7.2.3}{Vlastní limita v nevlastním bodě}{subsection.7.2}% 128
-\BOOKMARK [3][-]{subsubsection.7.2.4}{Nevlastní limita v nevlastním bodě}{subsection.7.2}% 129
-\BOOKMARK [3][-]{subsubsection.7.2.5}{Limity\040zprava\040a\040zleva}{subsection.7.2}% 130
-\BOOKMARK [3][-]{subsubsection.7.2.6}{Pravidla počítání s limitami}{subsection.7.2}% 131
-\BOOKMARK [3][-]{subsubsection.7.2.7}{Důležité limity}{subsection.7.2}% 132
-\BOOKMARK [3][-]{subsubsection.7.2.8}{Asymptota}{subsection.7.2}% 133
-\BOOKMARK [2][-]{subsection.7.3}{Meta}{section.7}% 134
-\BOOKMARK [3][-]{subsubsection.7.3.1}{Zdroje}{subsection.7.3}% 135
-\BOOKMARK [3][-]{subsubsection.7.3.2}{Zadání/Pojmy}{subsection.7.3}% 136
-\BOOKMARK [1][-]{section.8}{Nealgebraické funkce}{}% 137
-\BOOKMARK [1][-]{section.9}{Goniometrie\040a\040trigonometrie}{}% 138
-\BOOKMARK [1][-]{section.10}{Nealgebraické rovnice, nerovnice a jejich soustavy}{}% 139
-\BOOKMARK [1][-]{section.11}{Kombinatorika}{}% 140
-\BOOKMARK [2][-]{subsection.11.1}{Faktoriály}{section.11}% 141
-\BOOKMARK [2][-]{subsection.11.2}{Kombinační čísla}{section.11}% 142
-\BOOKMARK [3][-]{subsubsection.11.2.1}{Binomická věta}{subsection.11.2}% 143
-\BOOKMARK [2][-]{subsection.11.3}{Množinový pohled}{section.11}% 144
-\BOOKMARK [2][-]{subsection.11.4}{Variace}{section.11}% 145
-\BOOKMARK [3][-]{subsubsection.11.4.1}{Variace bez opakování}{subsection.11.4}% 146
-\BOOKMARK [3][-]{subsubsection.11.4.2}{Variace s opakováním}{subsection.11.4}% 147
-\BOOKMARK [2][-]{subsection.11.5}{Permutace}{section.11}% 148
-\BOOKMARK [3][-]{subsubsection.11.5.1}{Permutace bez opakování}{subsection.11.5}% 149
-\BOOKMARK [3][-]{subsubsection.11.5.2}{Permutace s opakováním}{subsection.11.5}% 150
-\BOOKMARK [2][-]{subsection.11.6}{Kombinace}{section.11}% 151
-\BOOKMARK [3][-]{subsubsection.11.6.1}{Kombinace bez opakování}{subsection.11.6}% 152
-\BOOKMARK [3][-]{subsubsection.11.6.2}{Kombinace s opakováním}{subsection.11.6}% 153
-\BOOKMARK [2][-]{subsection.11.7}{Pravidla}{section.11}% 154
-\BOOKMARK [3][-]{subsubsection.11.7.1}{Součtu}{subsection.11.7}% 155
-\BOOKMARK [3][-]{subsubsection.11.7.2}{Součinu}{subsection.11.7}% 156
-\BOOKMARK [2][-]{subsection.11.8}{Meta}{section.11}% 157
-\BOOKMARK [3][-]{subsubsection.11.8.1}{Zdroje}{subsection.11.8}% 158
-\BOOKMARK [3][-]{subsubsection.11.8.2}{Zadání/ pojmy}{subsection.11.8}% 159
-\BOOKMARK [1][-]{section.12}{Pravděpodobnost}{}% 160
-\BOOKMARK [2][-]{subsection.12.1}{Náhodné pokusy}{section.12}% 161
-\BOOKMARK [2][-]{subsection.12.2}{Jevy a jejich pravděpodobnost}{section.12}% 162
-\BOOKMARK [2][-]{subsection.12.3}{Opakování náhodného pokusu}{section.12}% 163
-\BOOKMARK [3][-]{subsubsection.12.3.1}{Bernoulliho schéma}{subsection.12.3}% 164
-\BOOKMARK [2][-]{subsection.12.4}{Meta}{section.12}% 165
-\BOOKMARK [3][-]{subsubsection.12.4.1}{Zdroje}{subsection.12.4}% 166
-\BOOKMARK [3][-]{subsubsection.12.4.2}{Pojmy/ zadání}{subsection.12.4}% 167
-\BOOKMARK [1][-]{section.13}{Statistika}{}% 168
-\BOOKMARK [2][-]{subsection.13.1}{Rozdělení četnosti}{section.13}% 169
-\BOOKMARK [3][-]{subsubsection.13.1.1}{Skupinové rozložení četností}{subsection.13.1}% 170
-\BOOKMARK [2][-]{subsection.13.2}{Grafické znázornění četností}{section.13}% 171
-\BOOKMARK [3][-]{subsubsection.13.2.1}{Tabulka}{subsection.13.2}% 172
-\BOOKMARK [3][-]{subsubsection.13.2.2}{Spojnicový diagram}{subsection.13.2}% 173
-\BOOKMARK [3][-]{subsubsection.13.2.3}{Sloupkový diagram}{subsection.13.2}% 174
-\BOOKMARK [3][-]{subsubsection.13.2.4}{Kruhový diagram}{subsection.13.2}% 175
-\BOOKMARK [2][-]{subsection.13.3}{Charakteristiky polohy kvantitativního znaku}{section.13}% 176
-\BOOKMARK [3][-]{subsubsection.13.3.1}{Vztahy mezi průměry}{subsection.13.3}% 177
-\BOOKMARK [2][-]{subsection.13.4}{Charakteristiky variability kvantitativního znaku}{section.13}% 178
-\BOOKMARK [2][-]{subsection.13.5}{Korelace}{section.13}% 179
-\BOOKMARK [2][-]{subsection.13.6}{Meta}{section.13}% 180
-\BOOKMARK [3][-]{subsubsection.13.6.1}{Zdroje}{subsection.13.6}% 181
-\BOOKMARK [3][-]{subsubsection.13.6.2}{Pojmy/ zadání}{subsection.13.6}% 182
-\BOOKMARK [1][-]{section.14}{Posloupnosti a řady}{}% 183
-\BOOKMARK [2][-]{subsection.14.1}{Posloupnosti}{section.14}% 184
-\BOOKMARK [3][-]{subsubsection.14.1.1}{Určení posloupnosti}{subsection.14.1}% 185
-\BOOKMARK [3][-]{subsubsection.14.1.2}{Vlastnosti posloupností}{subsection.14.1}% 186
-\BOOKMARK [3][-]{subsubsection.14.1.3}{Aritmetická posloupnost}{subsection.14.1}% 187
-\BOOKMARK [3][-]{subsubsection.14.1.4}{Geometrická posloupnost}{subsection.14.1}% 188
-\BOOKMARK [3][-]{subsubsection.14.1.5}{Vztah aritmetické a geometrické posloupnosti}{subsection.14.1}% 189
-\BOOKMARK [3][-]{subsubsection.14.1.6}{Využití aritmetické a geometrické posloupnosti}{subsection.14.1}% 190
-\BOOKMARK [3][-]{subsubsection.14.1.7}{Limita posloupnosti \(vlastní\)}{subsection.14.1}% 191
-\BOOKMARK [3][-]{subsubsection.14.1.8}{Nevlastní limita posloupnosti}{subsection.14.1}% 192
-\BOOKMARK [3][-]{subsubsection.14.1.9}{Věty o limitách posloupností}{subsection.14.1}% 193
-\BOOKMARK [2][-]{subsection.14.2}{Nekonečné řady}{section.14}% 194
-\BOOKMARK [3][-]{subsubsection.14.2.1}{Geometrická řada}{subsection.14.2}% 195
-\BOOKMARK [2][-]{subsection.14.3}{Finanční matematika}{section.14}% 196
-\BOOKMARK [3][-]{subsubsection.14.3.1}{Jednoduché úročení}{subsection.14.3}% 197
-\BOOKMARK [3][-]{subsubsection.14.3.2}{Složené úročení}{subsection.14.3}% 198
-\BOOKMARK [3][-]{subsubsection.14.3.3}{Pravidelné spoření při složeném úročením}{subsection.14.3}% 199
-\BOOKMARK [3][-]{subsubsection.14.3.4}{Pravidelné splácení dluhu}{subsection.14.3}% 200
-\BOOKMARK [2][-]{subsection.14.4}{Meta}{section.14}% 201
-\BOOKMARK [3][-]{subsubsection.14.4.1}{Zdroje}{subsection.14.4}% 202
-\BOOKMARK [3][-]{subsubsection.14.4.2}{Pojmy/ zadání}{subsection.14.4}% 203
-\BOOKMARK [1][-]{section.15}{Základy planimetrie a konstrukční úlohy}{}% 204
-\BOOKMARK [2][-]{subsection.15.1}{Základní pojmy a definice}{section.15}% 205
-\BOOKMARK [3][-]{subsubsection.15.1.1}{Bod}{subsection.15.1}% 206
-\BOOKMARK [3][-]{subsubsection.15.1.2}{Přímka}{subsection.15.1}% 207
-\BOOKMARK [3][-]{subsubsection.15.1.3}{Rovina}{subsection.15.1}% 208
-\BOOKMARK [3][-]{subsubsection.15.1.4}{Polorovina}{subsection.15.1}% 209
-\BOOKMARK [3][-]{subsubsection.15.1.5}{Polopřímka}{subsection.15.1}% 210
-\BOOKMARK [3][-]{subsubsection.15.1.6}{Úsečka}{subsection.15.1}% 211
-\BOOKMARK [3][-]{subsubsection.15.1.7}{Obrazce}{subsection.15.1}% 212
-\BOOKMARK [2][-]{subsection.15.2}{Úhly}{section.15}% 213
-\BOOKMARK [3][-]{subsubsection.15.2.1}{Pravidla pro dvojice úhlů}{subsection.15.2}% 214
-\BOOKMARK [2][-]{subsection.15.3}{Mnohoúhelníky}{section.15}% 215
-\BOOKMARK [3][-]{subsubsection.15.3.1}{Pravidelné mnohoúhelníky}{subsection.15.3}% 216
-\BOOKMARK [2][-]{subsection.15.4}{Trojúhelníky}{section.15}% 217
-\BOOKMARK [3][-]{subsubsection.15.4.1}{Konstrukce}{subsection.15.4}% 218
-\BOOKMARK [3][-]{subsubsection.15.4.2}{Druhy}{subsection.15.4}% 219
-\BOOKMARK [3][-]{subsubsection.15.4.3}{cool Věci}{subsection.15.4}% 220
-\BOOKMARK [3][-]{subsubsection.15.4.4}{Obvod\040a\040obsah}{subsection.15.4}% 221
-\BOOKMARK [3][-]{subsubsection.15.4.5}{Věty}{subsection.15.4}% 222
-\BOOKMARK [3][-]{subsubsection.15.4.6}{Rovnoramenný}{subsection.15.4}% 223
-\BOOKMARK [3][-]{subsubsection.15.4.7}{Rovnostranný}{subsection.15.4}% 224
-\BOOKMARK [2][-]{subsection.15.5}{Čtyřúhelníky}{section.15}% 225
-\BOOKMARK [3][-]{subsubsection.15.5.1}{Obvod\040a\040obsah}{subsection.15.5}% 226
-\BOOKMARK [3][-]{subsubsection.15.5.2}{Rozdělení}{subsection.15.5}% 227
-\BOOKMARK [2][-]{subsection.15.6}{Kruh a kružnice}{section.15}% 228
-\BOOKMARK [3][-]{subsubsection.15.6.1}{Vzájemná poloha 2 kružnic}{subsection.15.6}% 229
-\BOOKMARK [3][-]{subsubsection.15.6.2}{Vzájemná poloha s přímkou}{subsection.15.6}% 230
-\BOOKMARK [3][-]{subsubsection.15.6.3}{Vyjádření pomocí rovnic}{subsection.15.6}% 231
-\BOOKMARK [3][-]{subsubsection.15.6.4}{Úhly v kružnici}{subsection.15.6}% 232
-\BOOKMARK [3][-]{subsubsection.15.6.5}{Kruhová výseč}{subsection.15.6}% 233
-\BOOKMARK [3][-]{subsubsection.15.6.6}{Kruhová výseč}{subsection.15.6}% 234
-\BOOKMARK [3][-]{subsubsection.15.6.7}{Mezikruží}{subsection.15.6}% 235
-\BOOKMARK [3][-]{subsubsection.15.6.8}{Thaletova kružnice/věta}{subsection.15.6}% 236
-\BOOKMARK [2][-]{subsection.15.7}{Obvody a obsahy ostatních rovinných útvarů}{section.15}% 237
-\BOOKMARK [2][-]{subsection.15.8}{Konstrukce}{section.15}% 238
-\BOOKMARK [2][-]{subsection.15.9}{Meta}{section.15}% 239
-\BOOKMARK [3][-]{subsubsection.15.9.1}{Zdroje}{subsection.15.9}% 240
-\BOOKMARK [3][-]{subsubsection.15.9.2}{Pojmy/Zadání}{subsection.15.9}% 241
-\BOOKMARK [1][-]{section.16}{Zobrazení v rovině}{}% 242
-\BOOKMARK [2][-]{subsection.16.1}{Afinní zobrazení}{section.16}% 243
-\BOOKMARK [2][-]{subsection.16.2}{Podobná zobrazení}{section.16}% 244
-\BOOKMARK [2][-]{subsection.16.3}{Shodné zobrazení}{section.16}% 245
-\BOOKMARK [2][-]{subsection.16.4}{Využití v konstrukčních úlohách}{section.16}% 246
-\BOOKMARK [2][-]{subsection.16.5}{Meta}{section.16}% 247
-\BOOKMARK [3][-]{subsubsection.16.5.1}{Zdroje}{subsection.16.5}% 248
-\BOOKMARK [3][-]{subsubsection.16.5.2}{Pojmy/Zadání}{subsection.16.5}% 249
-\BOOKMARK [1][-]{section.17}{Tělesa}{}% 250
-\BOOKMARK [2][-]{subsection.17.1}{Cavalieriův princip}{section.17}% 251
-\BOOKMARK [2][-]{subsection.17.2}{Mnohostěny}{section.17}% 252
-\BOOKMARK [3][-]{subsubsection.17.2.1}{Platónská tělesa}{subsection.17.2}% 253
-\BOOKMARK [2][-]{subsection.17.3}{Hranoly}{section.17}% 254
-\BOOKMARK [3][-]{subsubsection.17.3.1}{Kvádr}{subsection.17.3}% 255
-\BOOKMARK [3][-]{subsubsection.17.3.2}{Krychle}{subsection.17.3}% 256
-\BOOKMARK [2][-]{subsection.17.4}{Jehlany}{section.17}% 257
-\BOOKMARK [3][-]{subsubsection.17.4.1}{Komolé jehlany}{subsection.17.4}% 258
-\BOOKMARK [2][-]{subsection.17.5}{Rotační tělesa}{section.17}% 259
-\BOOKMARK [3][-]{subsubsection.17.5.1}{Rotační válec}{subsection.17.5}% 260
-\BOOKMARK [3][-]{subsubsection.17.5.2}{Rotační kužel}{subsection.17.5}% 261
-\BOOKMARK [3][-]{subsubsection.17.5.3}{Komolý rotační kužel}{subsection.17.5}% 262
-\BOOKMARK [3][-]{subsubsection.17.5.4}{Koule}{subsection.17.5}% 263
-\BOOKMARK [3][-]{subsubsection.17.5.5}{Kulová úseč a kulový vrchlík}{subsection.17.5}% 264
-\BOOKMARK [3][-]{subsubsection.17.5.6}{Kulová vrstva a kulový pás}{subsection.17.5}% 265
-\BOOKMARK [2][-]{subsection.17.6}{Meta}{section.17}% 266
-\BOOKMARK [3][-]{subsubsection.17.6.1}{Zdroje}{subsection.17.6}% 267
-\BOOKMARK [3][-]{subsubsection.17.6.2}{Zadání/pojmy}{subsection.17.6}% 268
-\BOOKMARK [1][-]{section.18}{Polohové a metrické úlohy ve stereometrii}{}% 269
-\BOOKMARK [2][-]{subsection.18.1}{Vzájemná poloha bodů, přímek a rovin v prostoru}{section.18}% 270
-\BOOKMARK [3][-]{subsubsection.18.1.1}{Bod\040a}{subsection.18.1}% 271
-\BOOKMARK [3][-]{subsubsection.18.1.2}{Přímka a}{subsection.18.1}% 272
-\BOOKMARK [3][-]{subsubsection.18.1.3}{Rovina}{subsection.18.1}% 273
-\BOOKMARK [2][-]{subsection.18.2}{Průnik přímky tělesem}{section.18}% 274
-\BOOKMARK [2][-]{subsection.18.3}{Řez tělesa rovinou}{section.18}% 275
-\BOOKMARK [2][-]{subsection.18.4}{Meta}{section.18}% 276
-\BOOKMARK [3][-]{subsubsection.18.4.1}{Zdroje}{subsection.18.4}% 277
-\BOOKMARK [3][-]{subsubsection.18.4.2}{Pojmy/Zadání}{subsection.18.4}% 278
-\BOOKMARK [1][-]{section.19}{Vektorová algebra}{}% 279
-\BOOKMARK [2][-]{subsection.19.1}{Vzdálenost bodů a střed úsečky}{section.19}% 280
-\BOOKMARK [2][-]{subsection.19.2}{Soustavy souřadnic}{section.19}% 281
-\BOOKMARK [2][-]{subsection.19.3}{Orientované úsečky}{section.19}% 282
-\BOOKMARK [2][-]{subsection.19.4}{Definice vektoru přes orientované úsečky}{section.19}% 283
-\BOOKMARK [2][-]{subsection.19.5}{Souřadnice vektoru}{section.19}% 284
-\BOOKMARK [2][-]{subsection.19.6}{Sčítání vektorů a násobení reálnými čísly}{section.19}% 285
-\BOOKMARK [2][-]{subsection.19.7}{Lineární kombinace a závislost}{section.19}% 286
-\BOOKMARK [2][-]{subsection.19.8}{Velikost}{section.19}% 287
-\BOOKMARK [3][-]{subsubsection.19.8.1}{Jednotkový vektor}{subsection.19.8}% 288
-\BOOKMARK [2][-]{subsection.19.9}{Skalární součin}{section.19}% 289
-\BOOKMARK [2][-]{subsection.19.10}{Úhel vektorů}{section.19}% 290
-\BOOKMARK [2][-]{subsection.19.11}{Vektorový součin v prostoru}{section.19}% 291
-\BOOKMARK [2][-]{subsection.19.12}{Pravotočivá a levotočivá báze}{section.19}% 292
-\BOOKMARK [2][-]{subsection.19.13}{Smíšený součin vektorů v prostoru}{section.19}% 293
-\BOOKMARK [2][-]{subsection.19.14}{Meta}{section.19}% 294
-\BOOKMARK [3][-]{subsubsection.19.14.1}{Zdroje}{subsection.19.14}% 295
-\BOOKMARK [3][-]{subsubsection.19.14.2}{Zadání/ pojmy}{subsection.19.14}% 296
-\BOOKMARK [1][-]{section.20}{Analytická geometrie lineárních útvarů}{}% 297
-\BOOKMARK [2][-]{subsection.20.1}{Meta}{section.20}% 298
-\BOOKMARK [3][-]{subsubsection.20.1.1}{Zdroje}{subsection.20.1}% 299
-\BOOKMARK [3][-]{subsubsection.20.1.2}{Zadání/ pojmy}{subsection.20.1}% 300
-\BOOKMARK [1][-]{section.21}{Analytická geometrie kuželoseček}{}% 301
-\BOOKMARK [2][-]{subsection.21.1}{Degenerované kuželosečky}{section.21}% 302
-\BOOKMARK [2][-]{subsection.21.2}{Elipsa}{section.21}% 303
-\BOOKMARK [3][-]{subsubsection.21.2.1}{Kružnice}{subsection.21.2}% 304
-\BOOKMARK [3][-]{subsubsection.21.2.2}{Vztah s přímkou}{subsection.21.2}% 305
-\BOOKMARK [2][-]{subsection.21.3}{Parabola}{section.21}% 306
-\BOOKMARK [3][-]{subsubsection.21.3.1}{Vztah s přímkou}{subsection.21.3}% 307
-\BOOKMARK [2][-]{subsection.21.4}{Hyperbola}{section.21}% 308
-\BOOKMARK [3][-]{subsubsection.21.4.1}{Asymptoty}{subsection.21.4}% 309
-\BOOKMARK [2][-]{subsection.21.5}{Vztah s přímkou}{section.21}% 310
-\BOOKMARK [2][-]{subsection.21.6}{Obecná rovnice kuželoseček}{section.21}% 311
-\BOOKMARK [3][-]{subsubsection.21.6.1}{Kružnice}{subsection.21.6}% 312
-\BOOKMARK [3][-]{subsubsection.21.6.2}{Elipsy}{subsection.21.6}% 313
-\BOOKMARK [3][-]{subsubsection.21.6.3}{Hyperboly}{subsection.21.6}% 314
-\BOOKMARK [3][-]{subsubsection.21.6.4}{Paraboly}{subsection.21.6}% 315
-\BOOKMARK [2][-]{subsection.21.7}{Meta}{section.21}% 316
-\BOOKMARK [3][-]{subsubsection.21.7.1}{Zdroje}{subsection.21.7}% 317
-\BOOKMARK [3][-]{subsubsection.21.7.2}{Pojmy/zadání}{subsection.21.7}% 318
-\BOOKMARK [1][-]{section.22}{Polohové a metrické úlohy řešené metodou analytické geometrie}{}% 319
-\BOOKMARK [2][-]{subsection.22.1}{Co je již jinde}{section.22}% 320
-\BOOKMARK [2][-]{subsection.22.2}{Polopřímka a úsečka v prostoru}{section.22}% 321
-\BOOKMARK [2][-]{subsection.22.3}{Střed a délka úsečky}{section.22}% 322
-\BOOKMARK [2][-]{subsection.22.4}{Přímka v rovině}{section.22}% 323
-\BOOKMARK [3][-]{subsubsection.22.4.1}{Vyjádření a rovnice}{subsection.22.4}% 324
-\BOOKMARK [3][-]{subsubsection.22.4.2}{Vzdálenost bodu}{subsection.22.4}% 325
-\BOOKMARK [3][-]{subsubsection.22.4.3}{Odchylka dvou přímek}{subsection.22.4}% 326
-\BOOKMARK [2][-]{subsection.22.5}{Meta}{section.22}% 327
-\BOOKMARK [3][-]{subsubsection.22.5.1}{Zdroje}{subsection.22.5}% 328
-\BOOKMARK [3][-]{subsubsection.22.5.2}{Zadání/pojmy}{subsection.22.5}% 329
-\BOOKMARK [1][-]{section.23}{Diferenciální počet}{}% 330
-\BOOKMARK [2][-]{subsection.23.1}{Zápis}{section.23}% 331
-\BOOKMARK [3][-]{subsubsection.23.1.1}{Leibnizova\040notace}{subsection.23.1}% 332
-\BOOKMARK [3][-]{subsubsection.23.1.2}{Lagrange}{subsection.23.1}% 333
-\BOOKMARK [3][-]{subsubsection.23.1.3}{Euler}{subsection.23.1}% 334
-\BOOKMARK [3][-]{subsubsection.23.1.4}{Newton}{subsection.23.1}% 335
-\BOOKMARK [2][-]{subsection.23.2}{Definice}{section.23}% 336
-\BOOKMARK [2][-]{subsection.23.3}{Vzorce\040a\040pravidla}{section.23}% 337
-\BOOKMARK [3][-]{subsubsection.23.3.1}{Derivace součtu}{subsection.23.3}% 338
-\BOOKMARK [3][-]{subsubsection.23.3.2}{Derivace součinu}{subsection.23.3}% 339
-\BOOKMARK [3][-]{subsubsection.23.3.3}{Derivace podílu}{subsection.23.3}% 340
-\BOOKMARK [3][-]{subsubsection.23.3.4}{Derivace složené funkce}{subsection.23.3}% 341
-\BOOKMARK [2][-]{subsection.23.4}{Derivace elementárních funkcí}{section.23}% 342
-\BOOKMARK [2][-]{subsection.23.5}{L'Hospitalovo\040pravidlo}{section.23}% 343
-\BOOKMARK [3][-]{subsubsection.23.5.1}{Využití}{subsection.23.5}% 344
-\BOOKMARK [2][-]{subsection.23.6}{Využití derivací}{section.23}% 345
-\BOOKMARK [2][-]{subsection.23.7}{Meta}{section.23}% 346
-\BOOKMARK [3][-]{subsubsection.23.7.1}{Zadání/pojmy}{subsection.23.7}% 347
-\BOOKMARK [3][-]{subsubsection.23.7.2}{Zdroje}{subsection.23.7}% 348
-\BOOKMARK [1][-]{section.24}{Integrální počet}{}% 349
-\BOOKMARK [2][-]{subsection.24.1}{Vzorce}{section.24}% 350
-\BOOKMARK [2][-]{subsection.24.2}{Metoda\040per\040partes}{section.24}% 351
-\BOOKMARK [2][-]{subsection.24.3}{Využití}{section.24}% 352
-\BOOKMARK [3][-]{subsubsection.24.3.1}{Objem rotačních těles}{subsection.24.3}% 353
-\BOOKMARK [3][-]{subsubsection.24.3.2}{Délka křivky funkce}{subsection.24.3}% 354
-\BOOKMARK [2][-]{subsection.24.4}{Meta}{section.24}% 355
-\BOOKMARK [3][-]{subsubsection.24.4.1}{Zdroje}{subsection.24.4}% 356
-\BOOKMARK [3][-]{subsubsection.24.4.2}{Zadání/Pojmy}{subsection.24.4}% 357
-\BOOKMARK [1][-]{section.25}{Aplikace diferenciálního a integrálního počtu}{}% 358
-\BOOKMARK [2][-]{subsection.25.1}{Meta}{section.25}% 359
-\BOOKMARK [3][-]{subsubsection.25.1.1}{Zdroje}{subsection.25.1}% 360
-\BOOKMARK [3][-]{subsubsection.25.1.2}{Zadání/pojmy}{subsection.25.1}% 361
+\BOOKMARK [2][-]{subsection.6.1}{Lineární funkce}{section.6}% 116
+\BOOKMARK [2][-]{subsection.6.2}{Kvadratická funkce}{section.6}% 117
+\BOOKMARK [2][-]{subsection.6.3}{Mocninné funkce}{section.6}% 118
+\BOOKMARK [2][-]{subsection.6.4}{Lineární lomená funkce}{section.6}% 119
+\BOOKMARK [2][-]{subsection.6.5}{Absolutní hodnota}{section.6}% 120
+\BOOKMARK [2][-]{subsection.6.6}{Odmocninné grafy}{section.6}% 121
+\BOOKMARK [2][-]{subsection.6.7}{Meta}{section.6}% 122
+\BOOKMARK [3][-]{subsubsection.6.7.1}{Zdroje}{subsection.6.7}% 123
+\BOOKMARK [3][-]{subsubsection.6.7.2}{Pojmy/zadání}{subsection.6.7}% 124
+\BOOKMARK [1][-]{section.7}{Limita\040a\040spojitost\040funkce}{}% 125
+\BOOKMARK [2][-]{subsubsection.7.0.1}{Okolí bodu}{section.7}% 126
+\BOOKMARK [3][-]{subsubsection.7.0.2}{Hromadný bod}{subsubsection.7.0.1}% 127
+\BOOKMARK [3][-]{subsubsection.7.0.3}{Přírůstek argumentu}{subsubsection.7.0.1}% 128
+\BOOKMARK [3][-]{subsubsection.7.0.4}{Přírůstek funkce}{subsubsection.7.0.1}% 129
+\BOOKMARK [2][-]{subsection.7.1}{Spojitost}{section.7}% 130
+\BOOKMARK [3][-]{subsubsection.7.1.1}{Spojitost funkce v bodě}{subsection.7.1}% 131
+\BOOKMARK [3][-]{subsubsection.7.1.2}{Spojitá funkce}{subsection.7.1}% 132
+\BOOKMARK [3][-]{subsubsection.7.1.3}{Funkce spojitá na intervalu}{subsection.7.1}% 133
+\BOOKMARK [2][-]{subsection.7.2}{Limita\040funkce}{section.7}% 134
+\BOOKMARK [3][-]{subsubsection.7.2.1}{Vlastní limita ve vlastním bodě}{subsection.7.2}% 135
+\BOOKMARK [3][-]{subsubsection.7.2.2}{Nevlastní limita ve vlastním bodě}{subsection.7.2}% 136
+\BOOKMARK [3][-]{subsubsection.7.2.3}{Vlastní limita v nevlastním bodě}{subsection.7.2}% 137
+\BOOKMARK [3][-]{subsubsection.7.2.4}{Nevlastní limita v nevlastním bodě}{subsection.7.2}% 138
+\BOOKMARK [3][-]{subsubsection.7.2.5}{Limity\040zprava\040a\040zleva}{subsection.7.2}% 139
+\BOOKMARK [3][-]{subsubsection.7.2.6}{Pravidla počítání s limitami}{subsection.7.2}% 140
+\BOOKMARK [3][-]{subsubsection.7.2.7}{Důležité limity}{subsection.7.2}% 141
+\BOOKMARK [3][-]{subsubsection.7.2.8}{Asymptota}{subsection.7.2}% 142
+\BOOKMARK [2][-]{subsection.7.3}{Meta}{section.7}% 143
+\BOOKMARK [3][-]{subsubsection.7.3.1}{Zdroje}{subsection.7.3}% 144
+\BOOKMARK [3][-]{subsubsection.7.3.2}{Zadání/Pojmy}{subsection.7.3}% 145
+\BOOKMARK [1][-]{section.8}{Nealgebraické funkce}{}% 146
+\BOOKMARK [2][-]{subsection.8.1}{Exponenciální funkce}{section.8}% 147
+\BOOKMARK [2][-]{subsection.8.2}{Logaritmus}{section.8}% 148
+\BOOKMARK [3][-]{subsubsection.8.2.1}{Počítání s logaritmy}{subsection.8.2}% 149
+\BOOKMARK [2][-]{subsection.8.3}{Meta}{section.8}% 150
+\BOOKMARK [3][-]{subsubsection.8.3.1}{Zdroje}{subsection.8.3}% 151
+\BOOKMARK [3][-]{subsubsection.8.3.2}{Pojmy/zadání}{subsection.8.3}% 152
+\BOOKMARK [1][-]{section.9}{Goniometrie\040a\040trigonometrie}{}% 153
+\BOOKMARK [1][-]{section.10}{Nealgebraické rovnice, nerovnice a jejich soustavy}{}% 154
+\BOOKMARK [1][-]{section.11}{Kombinatorika}{}% 155
+\BOOKMARK [2][-]{subsection.11.1}{Faktoriály}{section.11}% 156
+\BOOKMARK [2][-]{subsection.11.2}{Kombinační čísla}{section.11}% 157
+\BOOKMARK [3][-]{subsubsection.11.2.1}{Binomická věta}{subsection.11.2}% 158
+\BOOKMARK [2][-]{subsection.11.3}{Množinový pohled}{section.11}% 159
+\BOOKMARK [2][-]{subsection.11.4}{Variace}{section.11}% 160
+\BOOKMARK [3][-]{subsubsection.11.4.1}{Variace bez opakování}{subsection.11.4}% 161
+\BOOKMARK [3][-]{subsubsection.11.4.2}{Variace s opakováním}{subsection.11.4}% 162
+\BOOKMARK [2][-]{subsection.11.5}{Permutace}{section.11}% 163
+\BOOKMARK [3][-]{subsubsection.11.5.1}{Permutace bez opakování}{subsection.11.5}% 164
+\BOOKMARK [3][-]{subsubsection.11.5.2}{Permutace s opakováním}{subsection.11.5}% 165
+\BOOKMARK [2][-]{subsection.11.6}{Kombinace}{section.11}% 166
+\BOOKMARK [3][-]{subsubsection.11.6.1}{Kombinace bez opakování}{subsection.11.6}% 167
+\BOOKMARK [3][-]{subsubsection.11.6.2}{Kombinace s opakováním}{subsection.11.6}% 168
+\BOOKMARK [2][-]{subsection.11.7}{Pravidla}{section.11}% 169
+\BOOKMARK [3][-]{subsubsection.11.7.1}{Součtu}{subsection.11.7}% 170
+\BOOKMARK [3][-]{subsubsection.11.7.2}{Součinu}{subsection.11.7}% 171
+\BOOKMARK [2][-]{subsection.11.8}{Meta}{section.11}% 172
+\BOOKMARK [3][-]{subsubsection.11.8.1}{Zdroje}{subsection.11.8}% 173
+\BOOKMARK [3][-]{subsubsection.11.8.2}{Zadání/ pojmy}{subsection.11.8}% 174
+\BOOKMARK [1][-]{section.12}{Pravděpodobnost}{}% 175
+\BOOKMARK [2][-]{subsection.12.1}{Náhodné pokusy}{section.12}% 176
+\BOOKMARK [2][-]{subsection.12.2}{Jevy a jejich pravděpodobnost}{section.12}% 177
+\BOOKMARK [2][-]{subsection.12.3}{Opakování náhodného pokusu}{section.12}% 178
+\BOOKMARK [3][-]{subsubsection.12.3.1}{Bernoulliho schéma}{subsection.12.3}% 179
+\BOOKMARK [2][-]{subsection.12.4}{Meta}{section.12}% 180
+\BOOKMARK [3][-]{subsubsection.12.4.1}{Zdroje}{subsection.12.4}% 181
+\BOOKMARK [3][-]{subsubsection.12.4.2}{Pojmy/ zadání}{subsection.12.4}% 182
+\BOOKMARK [1][-]{section.13}{Statistika}{}% 183
+\BOOKMARK [2][-]{subsection.13.1}{Rozdělení četnosti}{section.13}% 184
+\BOOKMARK [3][-]{subsubsection.13.1.1}{Skupinové rozložení četností}{subsection.13.1}% 185
+\BOOKMARK [2][-]{subsection.13.2}{Grafické znázornění četností}{section.13}% 186
+\BOOKMARK [3][-]{subsubsection.13.2.1}{Tabulka}{subsection.13.2}% 187
+\BOOKMARK [3][-]{subsubsection.13.2.2}{Spojnicový diagram}{subsection.13.2}% 188
+\BOOKMARK [3][-]{subsubsection.13.2.3}{Sloupkový diagram}{subsection.13.2}% 189
+\BOOKMARK [3][-]{subsubsection.13.2.4}{Kruhový diagram}{subsection.13.2}% 190
+\BOOKMARK [2][-]{subsection.13.3}{Charakteristiky polohy kvantitativního znaku}{section.13}% 191
+\BOOKMARK [3][-]{subsubsection.13.3.1}{Vztahy mezi průměry}{subsection.13.3}% 192
+\BOOKMARK [2][-]{subsection.13.4}{Charakteristiky variability kvantitativního znaku}{section.13}% 193
+\BOOKMARK [2][-]{subsection.13.5}{Korelace}{section.13}% 194
+\BOOKMARK [2][-]{subsection.13.6}{Meta}{section.13}% 195
+\BOOKMARK [3][-]{subsubsection.13.6.1}{Zdroje}{subsection.13.6}% 196
+\BOOKMARK [3][-]{subsubsection.13.6.2}{Pojmy/ zadání}{subsection.13.6}% 197
+\BOOKMARK [1][-]{section.14}{Posloupnosti a řady}{}% 198
+\BOOKMARK [2][-]{subsection.14.1}{Posloupnosti}{section.14}% 199
+\BOOKMARK [3][-]{subsubsection.14.1.1}{Určení posloupnosti}{subsection.14.1}% 200
+\BOOKMARK [3][-]{subsubsection.14.1.2}{Vlastnosti posloupností}{subsection.14.1}% 201
+\BOOKMARK [3][-]{subsubsection.14.1.3}{Aritmetická posloupnost}{subsection.14.1}% 202
+\BOOKMARK [3][-]{subsubsection.14.1.4}{Geometrická posloupnost}{subsection.14.1}% 203
+\BOOKMARK [3][-]{subsubsection.14.1.5}{Vztah aritmetické a geometrické posloupnosti}{subsection.14.1}% 204
+\BOOKMARK [3][-]{subsubsection.14.1.6}{Využití aritmetické a geometrické posloupnosti}{subsection.14.1}% 205
+\BOOKMARK [3][-]{subsubsection.14.1.7}{Limita posloupnosti \(vlastní\)}{subsection.14.1}% 206
+\BOOKMARK [3][-]{subsubsection.14.1.8}{Nevlastní limita posloupnosti}{subsection.14.1}% 207
+\BOOKMARK [3][-]{subsubsection.14.1.9}{Věty o limitách posloupností}{subsection.14.1}% 208
+\BOOKMARK [2][-]{subsection.14.2}{Nekonečné řady}{section.14}% 209
+\BOOKMARK [3][-]{subsubsection.14.2.1}{Geometrická řada}{subsection.14.2}% 210
+\BOOKMARK [2][-]{subsection.14.3}{Finanční matematika}{section.14}% 211
+\BOOKMARK [3][-]{subsubsection.14.3.1}{Jednoduché úročení}{subsection.14.3}% 212
+\BOOKMARK [3][-]{subsubsection.14.3.2}{Složené úročení}{subsection.14.3}% 213
+\BOOKMARK [3][-]{subsubsection.14.3.3}{Pravidelné spoření při složeném úročením}{subsection.14.3}% 214
+\BOOKMARK [3][-]{subsubsection.14.3.4}{Pravidelné splácení dluhu}{subsection.14.3}% 215
+\BOOKMARK [2][-]{subsection.14.4}{Meta}{section.14}% 216
+\BOOKMARK [3][-]{subsubsection.14.4.1}{Zdroje}{subsection.14.4}% 217
+\BOOKMARK [3][-]{subsubsection.14.4.2}{Pojmy/ zadání}{subsection.14.4}% 218
+\BOOKMARK [1][-]{section.15}{Základy planimetrie a konstrukční úlohy}{}% 219
+\BOOKMARK [2][-]{subsection.15.1}{Základní pojmy a definice}{section.15}% 220
+\BOOKMARK [3][-]{subsubsection.15.1.1}{Bod}{subsection.15.1}% 221
+\BOOKMARK [3][-]{subsubsection.15.1.2}{Přímka}{subsection.15.1}% 222
+\BOOKMARK [3][-]{subsubsection.15.1.3}{Rovina}{subsection.15.1}% 223
+\BOOKMARK [3][-]{subsubsection.15.1.4}{Polorovina}{subsection.15.1}% 224
+\BOOKMARK [3][-]{subsubsection.15.1.5}{Polopřímka}{subsection.15.1}% 225
+\BOOKMARK [3][-]{subsubsection.15.1.6}{Úsečka}{subsection.15.1}% 226
+\BOOKMARK [3][-]{subsubsection.15.1.7}{Obrazce}{subsection.15.1}% 227
+\BOOKMARK [2][-]{subsection.15.2}{Úhly}{section.15}% 228
+\BOOKMARK [3][-]{subsubsection.15.2.1}{Pravidla pro dvojice úhlů}{subsection.15.2}% 229
+\BOOKMARK [2][-]{subsection.15.3}{Mnohoúhelníky}{section.15}% 230
+\BOOKMARK [3][-]{subsubsection.15.3.1}{Pravidelné mnohoúhelníky}{subsection.15.3}% 231
+\BOOKMARK [2][-]{subsection.15.4}{Trojúhelníky}{section.15}% 232
+\BOOKMARK [3][-]{subsubsection.15.4.1}{Konstrukce}{subsection.15.4}% 233
+\BOOKMARK [3][-]{subsubsection.15.4.2}{Druhy}{subsection.15.4}% 234
+\BOOKMARK [3][-]{subsubsection.15.4.3}{cool Věci}{subsection.15.4}% 235
+\BOOKMARK [3][-]{subsubsection.15.4.4}{Obvod\040a\040obsah}{subsection.15.4}% 236
+\BOOKMARK [3][-]{subsubsection.15.4.5}{Věty}{subsection.15.4}% 237
+\BOOKMARK [3][-]{subsubsection.15.4.6}{Rovnoramenný}{subsection.15.4}% 238
+\BOOKMARK [3][-]{subsubsection.15.4.7}{Rovnostranný}{subsection.15.4}% 239
+\BOOKMARK [2][-]{subsection.15.5}{Čtyřúhelníky}{section.15}% 240
+\BOOKMARK [3][-]{subsubsection.15.5.1}{Obvod\040a\040obsah}{subsection.15.5}% 241
+\BOOKMARK [3][-]{subsubsection.15.5.2}{Rozdělení}{subsection.15.5}% 242
+\BOOKMARK [2][-]{subsection.15.6}{Kruh a kružnice}{section.15}% 243
+\BOOKMARK [3][-]{subsubsection.15.6.1}{Vzájemná poloha 2 kružnic}{subsection.15.6}% 244
+\BOOKMARK [3][-]{subsubsection.15.6.2}{Vzájemná poloha s přímkou}{subsection.15.6}% 245
+\BOOKMARK [3][-]{subsubsection.15.6.3}{Vyjádření pomocí rovnic}{subsection.15.6}% 246
+\BOOKMARK [3][-]{subsubsection.15.6.4}{Úhly v kružnici}{subsection.15.6}% 247
+\BOOKMARK [3][-]{subsubsection.15.6.5}{Kruhová výseč}{subsection.15.6}% 248
+\BOOKMARK [3][-]{subsubsection.15.6.6}{Kruhová výseč}{subsection.15.6}% 249
+\BOOKMARK [3][-]{subsubsection.15.6.7}{Mezikruží}{subsection.15.6}% 250
+\BOOKMARK [3][-]{subsubsection.15.6.8}{Thaletova kružnice/věta}{subsection.15.6}% 251
+\BOOKMARK [2][-]{subsection.15.7}{Obvody a obsahy ostatních rovinných útvarů}{section.15}% 252
+\BOOKMARK [2][-]{subsection.15.8}{Konstrukce}{section.15}% 253
+\BOOKMARK [2][-]{subsection.15.9}{Meta}{section.15}% 254
+\BOOKMARK [3][-]{subsubsection.15.9.1}{Zdroje}{subsection.15.9}% 255
+\BOOKMARK [3][-]{subsubsection.15.9.2}{Pojmy/Zadání}{subsection.15.9}% 256
+\BOOKMARK [1][-]{section.16}{Zobrazení v rovině}{}% 257
+\BOOKMARK [2][-]{subsection.16.1}{Afinní zobrazení}{section.16}% 258
+\BOOKMARK [2][-]{subsection.16.2}{Podobná zobrazení}{section.16}% 259
+\BOOKMARK [2][-]{subsection.16.3}{Shodné zobrazení}{section.16}% 260
+\BOOKMARK [2][-]{subsection.16.4}{Využití v konstrukčních úlohách}{section.16}% 261
+\BOOKMARK [2][-]{subsection.16.5}{Meta}{section.16}% 262
+\BOOKMARK [3][-]{subsubsection.16.5.1}{Zdroje}{subsection.16.5}% 263
+\BOOKMARK [3][-]{subsubsection.16.5.2}{Pojmy/Zadání}{subsection.16.5}% 264
+\BOOKMARK [1][-]{section.17}{Tělesa}{}% 265
+\BOOKMARK [2][-]{subsection.17.1}{Cavalieriův princip}{section.17}% 266
+\BOOKMARK [2][-]{subsection.17.2}{Mnohostěny}{section.17}% 267
+\BOOKMARK [3][-]{subsubsection.17.2.1}{Platónská tělesa}{subsection.17.2}% 268
+\BOOKMARK [2][-]{subsection.17.3}{Hranoly}{section.17}% 269
+\BOOKMARK [3][-]{subsubsection.17.3.1}{Kvádr}{subsection.17.3}% 270
+\BOOKMARK [3][-]{subsubsection.17.3.2}{Krychle}{subsection.17.3}% 271
+\BOOKMARK [2][-]{subsection.17.4}{Jehlany}{section.17}% 272
+\BOOKMARK [3][-]{subsubsection.17.4.1}{Komolé jehlany}{subsection.17.4}% 273
+\BOOKMARK [2][-]{subsection.17.5}{Rotační tělesa}{section.17}% 274
+\BOOKMARK [3][-]{subsubsection.17.5.1}{Rotační válec}{subsection.17.5}% 275
+\BOOKMARK [3][-]{subsubsection.17.5.2}{Rotační kužel}{subsection.17.5}% 276
+\BOOKMARK [3][-]{subsubsection.17.5.3}{Komolý rotační kužel}{subsection.17.5}% 277
+\BOOKMARK [3][-]{subsubsection.17.5.4}{Koule}{subsection.17.5}% 278
+\BOOKMARK [3][-]{subsubsection.17.5.5}{Kulová úseč a kulový vrchlík}{subsection.17.5}% 279
+\BOOKMARK [3][-]{subsubsection.17.5.6}{Kulová vrstva a kulový pás}{subsection.17.5}% 280
+\BOOKMARK [2][-]{subsection.17.6}{Meta}{section.17}% 281
+\BOOKMARK [3][-]{subsubsection.17.6.1}{Zdroje}{subsection.17.6}% 282
+\BOOKMARK [3][-]{subsubsection.17.6.2}{Zadání/pojmy}{subsection.17.6}% 283
+\BOOKMARK [1][-]{section.18}{Polohové a metrické úlohy ve stereometrii}{}% 284
+\BOOKMARK [2][-]{subsection.18.1}{Vzájemná poloha bodů, přímek a rovin v prostoru}{section.18}% 285
+\BOOKMARK [3][-]{subsubsection.18.1.1}{Bod\040a}{subsection.18.1}% 286
+\BOOKMARK [3][-]{subsubsection.18.1.2}{Přímka a}{subsection.18.1}% 287
+\BOOKMARK [3][-]{subsubsection.18.1.3}{Rovina}{subsection.18.1}% 288
+\BOOKMARK [2][-]{subsection.18.2}{Průnik přímky tělesem}{section.18}% 289
+\BOOKMARK [2][-]{subsection.18.3}{Řez tělesa rovinou}{section.18}% 290
+\BOOKMARK [2][-]{subsection.18.4}{Meta}{section.18}% 291
+\BOOKMARK [3][-]{subsubsection.18.4.1}{Zdroje}{subsection.18.4}% 292
+\BOOKMARK [3][-]{subsubsection.18.4.2}{Pojmy/Zadání}{subsection.18.4}% 293
+\BOOKMARK [1][-]{section.19}{Vektorová algebra}{}% 294
+\BOOKMARK [2][-]{subsection.19.1}{Vzdálenost bodů a střed úsečky}{section.19}% 295
+\BOOKMARK [2][-]{subsection.19.2}{Soustavy souřadnic}{section.19}% 296
+\BOOKMARK [2][-]{subsection.19.3}{Orientované úsečky}{section.19}% 297
+\BOOKMARK [2][-]{subsection.19.4}{Definice vektoru přes orientované úsečky}{section.19}% 298
+\BOOKMARK [2][-]{subsection.19.5}{Souřadnice vektoru}{section.19}% 299
+\BOOKMARK [2][-]{subsection.19.6}{Sčítání vektorů a násobení reálnými čísly}{section.19}% 300
+\BOOKMARK [2][-]{subsection.19.7}{Lineární kombinace a závislost}{section.19}% 301
+\BOOKMARK [2][-]{subsection.19.8}{Velikost}{section.19}% 302
+\BOOKMARK [3][-]{subsubsection.19.8.1}{Jednotkový vektor}{subsection.19.8}% 303
+\BOOKMARK [2][-]{subsection.19.9}{Skalární součin}{section.19}% 304
+\BOOKMARK [2][-]{subsection.19.10}{Úhel vektorů}{section.19}% 305
+\BOOKMARK [2][-]{subsection.19.11}{Vektorový součin v prostoru}{section.19}% 306
+\BOOKMARK [2][-]{subsection.19.12}{Pravotočivá a levotočivá báze}{section.19}% 307
+\BOOKMARK [2][-]{subsection.19.13}{Smíšený součin vektorů v prostoru}{section.19}% 308
+\BOOKMARK [2][-]{subsection.19.14}{Meta}{section.19}% 309
+\BOOKMARK [3][-]{subsubsection.19.14.1}{Zdroje}{subsection.19.14}% 310
+\BOOKMARK [3][-]{subsubsection.19.14.2}{Zadání/ pojmy}{subsection.19.14}% 311
+\BOOKMARK [1][-]{section.20}{Analytická geometrie lineárních útvarů}{}% 312
+\BOOKMARK [2][-]{subsection.20.1}{Meta}{section.20}% 313
+\BOOKMARK [3][-]{subsubsection.20.1.1}{Zdroje}{subsection.20.1}% 314
+\BOOKMARK [3][-]{subsubsection.20.1.2}{Zadání/ pojmy}{subsection.20.1}% 315
+\BOOKMARK [1][-]{section.21}{Analytická geometrie kuželoseček}{}% 316
+\BOOKMARK [2][-]{subsection.21.1}{Degenerované kuželosečky}{section.21}% 317
+\BOOKMARK [2][-]{subsection.21.2}{Elipsa}{section.21}% 318
+\BOOKMARK [3][-]{subsubsection.21.2.1}{Kružnice}{subsection.21.2}% 319
+\BOOKMARK [3][-]{subsubsection.21.2.2}{Vztah s přímkou}{subsection.21.2}% 320
+\BOOKMARK [2][-]{subsection.21.3}{Parabola}{section.21}% 321
+\BOOKMARK [3][-]{subsubsection.21.3.1}{Vztah s přímkou}{subsection.21.3}% 322
+\BOOKMARK [2][-]{subsection.21.4}{Hyperbola}{section.21}% 323
+\BOOKMARK [3][-]{subsubsection.21.4.1}{Asymptoty}{subsection.21.4}% 324
+\BOOKMARK [2][-]{subsection.21.5}{Vztah s přímkou}{section.21}% 325
+\BOOKMARK [2][-]{subsection.21.6}{Obecná rovnice kuželoseček}{section.21}% 326
+\BOOKMARK [3][-]{subsubsection.21.6.1}{Kružnice}{subsection.21.6}% 327
+\BOOKMARK [3][-]{subsubsection.21.6.2}{Elipsy}{subsection.21.6}% 328
+\BOOKMARK [3][-]{subsubsection.21.6.3}{Hyperboly}{subsection.21.6}% 329
+\BOOKMARK [3][-]{subsubsection.21.6.4}{Paraboly}{subsection.21.6}% 330
+\BOOKMARK [2][-]{subsection.21.7}{Meta}{section.21}% 331
+\BOOKMARK [3][-]{subsubsection.21.7.1}{Zdroje}{subsection.21.7}% 332
+\BOOKMARK [3][-]{subsubsection.21.7.2}{Pojmy/zadání}{subsection.21.7}% 333
+\BOOKMARK [1][-]{section.22}{Polohové a metrické úlohy řešené metodou analytické geometrie}{}% 334
+\BOOKMARK [2][-]{subsection.22.1}{Co je již jinde}{section.22}% 335
+\BOOKMARK [2][-]{subsection.22.2}{Polopřímka a úsečka v prostoru}{section.22}% 336
+\BOOKMARK [2][-]{subsection.22.3}{Střed a délka úsečky}{section.22}% 337
+\BOOKMARK [2][-]{subsection.22.4}{Přímka v rovině}{section.22}% 338
+\BOOKMARK [3][-]{subsubsection.22.4.1}{Vyjádření a rovnice}{subsection.22.4}% 339
+\BOOKMARK [3][-]{subsubsection.22.4.2}{Vzdálenost bodu}{subsection.22.4}% 340
+\BOOKMARK [3][-]{subsubsection.22.4.3}{Odchylka dvou přímek}{subsection.22.4}% 341
+\BOOKMARK [2][-]{subsection.22.5}{Meta}{section.22}% 342
+\BOOKMARK [3][-]{subsubsection.22.5.1}{Zdroje}{subsection.22.5}% 343
+\BOOKMARK [3][-]{subsubsection.22.5.2}{Zadání/pojmy}{subsection.22.5}% 344
+\BOOKMARK [1][-]{section.23}{Diferenciální počet}{}% 345
+\BOOKMARK [2][-]{subsection.23.1}{Zápis}{section.23}% 346
+\BOOKMARK [3][-]{subsubsection.23.1.1}{Leibnizova\040notace}{subsection.23.1}% 347
+\BOOKMARK [3][-]{subsubsection.23.1.2}{Lagrange}{subsection.23.1}% 348
+\BOOKMARK [3][-]{subsubsection.23.1.3}{Euler}{subsection.23.1}% 349
+\BOOKMARK [3][-]{subsubsection.23.1.4}{Newton}{subsection.23.1}% 350
+\BOOKMARK [2][-]{subsection.23.2}{Definice}{section.23}% 351
+\BOOKMARK [2][-]{subsection.23.3}{Vzorce\040a\040pravidla}{section.23}% 352
+\BOOKMARK [3][-]{subsubsection.23.3.1}{Derivace součtu}{subsection.23.3}% 353
+\BOOKMARK [3][-]{subsubsection.23.3.2}{Derivace součinu}{subsection.23.3}% 354
+\BOOKMARK [3][-]{subsubsection.23.3.3}{Derivace podílu}{subsection.23.3}% 355
+\BOOKMARK [3][-]{subsubsection.23.3.4}{Derivace složené funkce}{subsection.23.3}% 356
+\BOOKMARK [2][-]{subsection.23.4}{Derivace elementárních funkcí}{section.23}% 357
+\BOOKMARK [2][-]{subsection.23.5}{L'Hospitalovo\040pravidlo}{section.23}% 358
+\BOOKMARK [3][-]{subsubsection.23.5.1}{Využití}{subsection.23.5}% 359
+\BOOKMARK [2][-]{subsection.23.6}{Využití derivací}{section.23}% 360
+\BOOKMARK [2][-]{subsection.23.7}{Meta}{section.23}% 361
+\BOOKMARK [3][-]{subsubsection.23.7.1}{Zadání/pojmy}{subsection.23.7}% 362
+\BOOKMARK [3][-]{subsubsection.23.7.2}{Zdroje}{subsection.23.7}% 363
+\BOOKMARK [1][-]{section.24}{Integrální počet}{}% 364
+\BOOKMARK [2][-]{subsection.24.1}{Vzorce}{section.24}% 365
+\BOOKMARK [2][-]{subsection.24.2}{Metoda\040per\040partes}{section.24}% 366
+\BOOKMARK [2][-]{subsection.24.3}{Využití}{section.24}% 367
+\BOOKMARK [3][-]{subsubsection.24.3.1}{Objem rotačních těles}{subsection.24.3}% 368
+\BOOKMARK [3][-]{subsubsection.24.3.2}{Délka křivky funkce}{subsection.24.3}% 369
+\BOOKMARK [2][-]{subsection.24.4}{Meta}{section.24}% 370
+\BOOKMARK [3][-]{subsubsection.24.4.1}{Zdroje}{subsection.24.4}% 371
+\BOOKMARK [3][-]{subsubsection.24.4.2}{Zadání/Pojmy}{subsection.24.4}% 372
+\BOOKMARK [1][-]{section.25}{Aplikace diferenciálního a integrálního počtu}{}% 373
+\BOOKMARK [2][-]{subsection.25.1}{Meta}{section.25}% 374
+\BOOKMARK [3][-]{subsubsection.25.1.1}{Zdroje}{subsection.25.1}% 375
+\BOOKMARK [3][-]{subsubsection.25.1.2}{Zadání/pojmy}{subsection.25.1}% 376
