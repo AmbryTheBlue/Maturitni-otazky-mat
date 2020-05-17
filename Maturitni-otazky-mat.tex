@@ -32,6 +32,10 @@
 \newcommand{\nZ}{\mathbb{Z}} %Numbers tZelé
 \newcommand{\nC}{\mathbb{C}} %Nimbers Complex
 
+\DeclareMathOperator{\tg}{tg}
+\DeclareMathOperator{\cotg}{cotg}
+\DeclareMathOperator{\cotan}{cotan}
+
 \begin{document}
 \rightline{\today}
 \rightline{Jakub Ambroz 8.E}
@@ -102,7 +106,12 @@ Porovnej velikost písmen ve zlomku. Frac se mění podle toho je-li to v textu 
 \log_a \left(x \cdot y \right) &= \log_a x + \log_a y
 \end{align*}
 Tak jen ten první má tu závorku trochu blíž logaritmu. Ale jinak vypadají stejně.\\
- -10:30 MO-6 asi done. Jsem nějak unaven po včerejšku, nevím proč se budím tak brzo\dots
+ -10:30 MO-8 asi done. Jsem nějak unaven po včerejšku, nevím proč se budím tak brzo\dots\\
+17.05.2020 14:48 že bych dneska dodělal nějaký ty otázky? uvidíme.\\
+- 15:57 Tak jsem nějak dodělal MO-9 (goniometrie), ale nevím co tam udělat. Mohl bych opisovat vzorce z tabulek, ale to se mi úplně nechce, to mi přijde zbytečný. A MO-10 je to samý, co je v v otázkách MO-8 a MO-9.\\
+Zase jsem, ale zjistil, jak si  pomocí package \emph{amsmath} vytvořit vlastní "operátory", protože v češtině se píše krom $\tan$ tak $\tg$ nemluvě o kotangensu či arkus funkcích. Hmm.. ty bych mohl přidat.\\
+ - 16:24 Tak jo asi done.\\
+Tím je toto oficálně $\pm$ hotovo. Teď budu doplňovat, co chybí, když si budu číst zadání jednotlivých MO, co někam dávala Petrová. Na kreslení geometrie asi kašlu nemám na to nervy a čas xD. 
 \subsubsection{TODO-list}
 \begin{itemize}
 \item  \st{21 - Obecná rovnice u kuželoseček, dodělat} done (podle tabulek)
@@ -1301,11 +1310,67 @@ a^{\log_a L} = L &\text{	čili	} \log_a a^L = L
 \subsubsection{Pojmy/zadání}
 Exponenciální funkce, definiční obor, obor hodnot, graf a vlastnosti v závislosti na jejím základu a. Logaritmická funkce, definiční obor, obor hodnot, graf a vlastnosti v závislosti na jejím základu a. Funkce $y = \log x$	 a $y =\ln x$. Pojem logaritmus, vlastnosti logaritmů.
 \section{Goniometrie a trigonometrie}
-9
 
+\subsection{Goniometrické funkce}
+\subsubsection{Zavedení}
+\label{sec:zavedeni_gonio}
+K zavedení se často používá tzv. \emph{jednotková kružnice} (kružnice s poloměrem jedna), kde $\alpha$ je orientovaný úhel
+\paragraph{Sinus} je v pravoúhlém trojúhelníku poměr protilehlé odvěsny a přepony. V jednotkové kružnici je to $y$-ová souřadnice. Značí se $\sin(\alpha)$. Grafem je \emph{sinusoida}.
+\paragraph{Kosinus} je v pravoúhlém trojúhelníku poměr přilehlé odvěsny a přepony. V jednotkové kružnici je to $x$-ová souřadnice. Značí se $\cos(\alpha)$. Grafem je sinusoida.
+\paragraph{Tangens} je poměr sinu a kosinu úhlu. V pravoúhlém trojúhelníku tedy poměr protilehlé a přilehlé odvěsny. Značí se $\tan (\alpha)$ nebo také $\tg ( \alpha)$. Grafem je tzv. \emph{tangentoida}. Není definován pro $\alpha$ takové, kdy je kosinus roven nule.
+\begin{align}
+\tg \alpha = \frac{\sin \alpha}{\cos \alpha} && \cotg \alpha = \frac{\cos \alpha}{\sin \alpha}
+\end{align}
+\paragraph{Kotangens} je poměr kosinu a sinu úhlu. V pravoúhlém trojúhelníku tedy poměr přilehlé a protilehlé odvěsny. Značí se $\cot (\alpha)$ nebo $\cotg ( \alpha)$ nebo $ \cotan ( \alpha )$. Grafem je tzv. \emph{kotangentoida}. Není definován pro $\alpha$ takové, kdy je sinus roven nule.
+\paragraph{Sekans a kosekans} jsou taktéž goniometrické funkce, ale málo se používají, protože jsou to jen převrácené hodnoty již existujících.
+\begin{align}
+\sec( \alpha) = \frac{1}{\cos \alpha} && \csc = \frac{1}{\sin \alpha}
+\end{align}
+\subsubsection{Tabulka vlastností}
+To je asi líp v tabulkách, to bych jen opisoval. Tak na to kašlu \dots \\
+Všechny jsou periodické (tg a cotg s periodou $\pi$ vs sin/cosin $2\pi$). Sinus a kosinus jsou omezené $\langle -1, 1 \rangle$. Sinus začíná v nule a roste, kosinus začíná v 1 a klesá. Tangens pořád roste a prochází počátkem. Kotangens pořád klesá a počátkem prochází asymptota.\\
+Kosinus je sudý. Sinus, tangens, kotangens jsou funkce liché.
+\subsubsection{Nějaké vzorce}
+meh... jsou v tabulkách. To bych jen opisoval.\\
+Tady by asi měly být vztahy mezi goniometrickými funkcemi.
+\subsection{Řešení trojúhelníku}
+Je-li pravoúhlý můžeme využít pravidla uvedená výše (viz \ref{sec:zavedeni_gonio}). To se nazývá \emph{goniometrické funkce ostrého úhlu}, protože platí jen pro ostré úhly v daném pravoúhlém trojúhelníku. Pro obecný trojúhelník musíme využít složitější pravidla.
+\subsubsection{Sinová věta}
+Platí v každém trojúhelníku (ty strany nemusí být takhle označené, platí cyklická záměna). Úhel $\alpha$ leží proti straně $a$ a $\beta$ proti $b$:
+\begin{equation}
+\frac{a}{b} = \frac{\sin \alpha}{\sin \beta}
+\end{equation}
+\subsubsection{Kosinová věta}
+Je zobecněním Pythagorovy věty. Pozor při cyklické záměně, ať se nepoplete, která strana je která a které úhly které náleží, při zadávání do kalkulačky.
+\begin{equation}
+c^2 = a^2 + b^2 - 2ab\cos\gamma
+\end{equation} 
+\subsection{Goniometrické funkce složeného argumentu}
+Jestli se tím myslí $\sin (x + j)$ tak jednoduše se na funkci posuneme o $j$ doprava (tj. doleva pro záporné $j$). To relativně znamená, že funkce se posouvá doleva (prava pro $j<0$) o $j$.\\
+Jako fakt nevím, co k tomu říct \dots
+\subsection{Cyklometrické funkce}
+Jsou funkce inverzní ke goniometrickým funkcím. K různým goniometrickým funkcím se přiřazují pomocí předpony \emph{arkus} (nebo \emph{arcus}). Na kalkulačce se často využívá značení exponentem v $-1$, ale zápis může být trochu matoucí:
+\begin{equation}
+\arccos \alpha = \cos^{-1} \alpha \neq ( \cos \alpha )^{-1} = \frac{1}{\cos \alpha} = \sec \alpha
+\end{equation}
+Jsou definovány jen v určitých intervalech, kde je daná goniometrická funkce prostá. Požíváme je vždy, když k dané hodnotě goniometrické funkce hledáme neznámý argument.
+\subsection{Hyperbolické funkce}
+Značí se $\tanh$ a $\sinh$ a $\cosh$ a v SŠ se nepoužívají (aspoň já to nikdy neviděl), takže jen pro info, že existují.
+\subsection{Meta}
+\subsubsection{Zdroje}
+\begin{itemize}
+\item Tabulky, moje hlava
+\item wiki pro kontrolu alternativ zápisů tg a cotg
+\end{itemize}
+\subsubsection{Pojmy/Zadání}
+Goniometrické funkce sinus, kosinus, tangens, kotangens, definiční obory, obory hodnot, grafy, vlastnosti. Goniometrické funkce složeného argumentu. Vztahy mezi goniometrickými funkcemi, goniometrické funkce ostrého úhlu, řešení pravoúhlého trojúhelníku, sinová věta, kosinová věta, řešení obecného trojúhelníku.
 \section{Nealgebraické rovnice, nerovnice a jejich soustavy}
 10
-
+\subsection{Meta}
+Tady moc nevím, co k tomu. Je to asi v předchozích otázkách.
+\subsubsection{Zdroje}
+\subsubsection{Pojmy/Zadání}
+Exponenciální rovnice a nerovnice, logaritmické rovnice a nerovnice. Goniometrické rovnice a nerovnice.
 \section{Kombinatorika}
 \subsection{Faktoriály}
 Zapisuje se jako $n!$ (čte se jako \emph{n faktoriál} a je definován jen pro celá nezáporná čísla $n \in \mathbb{N}_0$ a je definován jako:
