@@ -55,9 +55,9 @@
 \contentsline {paragraph}{Rigorózní definice:\\}{15}{paragraph*.14}%
 \contentsline {subsection}{\numberline {2.2}Pojmy}{15}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Grafické znázornění}{18}{subsection.2.3}%
-\contentsline {subsection}{\numberline {2.4}Zobrazení}{18}{subsection.2.4}%
+\contentsline {subsection}{\numberline {2.4}Zobrazení}{19}{subsection.2.4}%
 \contentsline {subsubsection}{\numberline {2.4.1}Speciální případy}{19}{subsubsection.2.4.1}%
-\contentsline {subsubsection}{\numberline {2.4.2}Inverzní zobrazení}{19}{subsubsection.2.4.2}%
+\contentsline {subsubsection}{\numberline {2.4.2}Inverzní zobrazení}{20}{subsubsection.2.4.2}%
 \contentsline {subsubsection}{\numberline {2.4.3}Složené zobrazení}{20}{subsubsection.2.4.3}%
 \contentsline {subsubsection}{\numberline {2.4.4}Funkce}{20}{subsubsection.2.4.4}%
 \contentsline {subsection}{\numberline {2.5}Meta}{20}{subsection.2.5}%
@@ -66,7 +66,7 @@
 \contentsline {section}{\numberline {3}Číselné obory}{21}{section.3}%
 \contentsline {subsection}{\numberline {3.1}Množiny čísel}{21}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Číselná osa}{22}{subsection.3.2}%
-\contentsline {subsubsection}{\numberline {3.2.1}Absolutní hodnota}{22}{subsubsection.3.2.1}%
+\contentsline {subsubsection}{\numberline {3.2.1}Absolutní hodnota}{23}{subsubsection.3.2.1}%
 \contentsline {subsection}{\numberline {3.3}Operace s reálnými čísly a jejich vlastnosti}{23}{subsection.3.3}%
 \contentsline {subsubsection}{\numberline {3.3.1}Neutrální prvky}{23}{subsubsection.3.3.1}%
 \contentsline {subsubsection}{\numberline {3.3.2}Porovnávání}{23}{subsubsection.3.3.2}%
@@ -74,7 +74,7 @@
 \contentsline {subsubsection}{\numberline {3.3.4}Vlastnosti sčítání a násobení}{23}{subsubsection.3.3.4}%
 \contentsline {paragraph}{Komutativnost}{23}{paragraph*.15}%
 \contentsline {paragraph}{Asociativita}{23}{paragraph*.16}%
-\contentsline {paragraph}{Distributivnost}{23}{paragraph*.17}%
+\contentsline {paragraph}{Distributivnost}{24}{paragraph*.17}%
 \contentsline {subsubsection}{\numberline {3.3.5}Součet a součin většího množství čísel}{24}{subsubsection.3.3.5}%
 \contentsline {subsubsection}{\numberline {3.3.6}Mocniny a odmocniny}{24}{subsubsection.3.3.6}%
 \contentsline {paragraph}{Operace s mocninami a odmocninami}{24}{paragraph*.18}%
