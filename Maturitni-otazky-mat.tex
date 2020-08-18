@@ -7,7 +7,7 @@
 															% Odstranění „Kapitola“ z názvu kapitoly, děkuji Ambrymu
 
 %to pass udělá to, že to bude url rozdělovat i na pomlčce
-\PassOptionsToPackage{hyphens}{url}\usepackage[colorlinks = true]{hyperref}
+\PassOptionsToPackage{hyphens}{url}\usepackage[colorlinks = true, urlcolor  = blue]{hyperref}
 \usepackage{amsmath}
 \usepackage{soul}
 \usepackage[table,xcdraw]{xcolor}
@@ -37,124 +37,63 @@
 \DeclareMathOperator{\cotan}{cotan}
 
 \begin{document}
-\rightline{\today}
-\rightline{Jakub Ambroz 8.E}
+\begin{titlepage}
+   \begin{center}
+       \vspace*{1cm}
+		
+		\begin{Huge}
+		 \textbf{Zpracované otázky k maturitě z matematiky na Gymnáziu Jírovcova 8 pro rok 2020}\\
+		\end{Huge}
+		\begin{LARGE}
+		\textbf{\textcolor{red}{Verze 1.1}}
+		\end{LARGE}
 
-%\thechapter{Maturitní otázky z Matematiky}
-\subsection{Meta}
-\subsubsection{Deníček}
-Tak jdeme na to! 24.03.20\\
-25.03.20 dopsáno 23,24,25 ale ještě tam chce něco dopilovat\\
-29.03.20 - dodělal jsem kuželosečky (21)\\
-01.04.20 - jdu na tělesa (17), done\\
-04.04.20 - otázka 15\\
-05.04.20 - od rána (cca 9h) pokračuji na 15, už je skoro 12h a myslím, že bude hotová.\\
- - 18:50 tak jdu zkusit ještě jednu MO dneska,\\
- - 19:59 a 16 je asi dodělána, je nějaká EZ a část mám v 15\\
-11.04.20 Začal jsem dělat 18, \st{ještě trocha chybí z geometrie} done
--21:39 tak ještě jednu MO dneska, zkusím 22\\
-- 23:23 Ideální čas na zakončení otázky 22\\
-15.04.20 - otázka 19 začata, 20 hotovo(jsem jen odkázal na 18 a 22, protože tam je vše), 19 hotovo (zkusím dát ještě jednu), tak asi ne no\\
-16.04.20 - zkusím MO ještě, 11 +- done (\st{zpřehlednit pravidla} done a \st{zjistit, co je skupina v kombinatorice} je to $k$-tice) čas 13:27\\
-- 20:00 zkusím udělat ještě 12 (pravděpodobnost), uhlazena 11(kombinatorika), 12 asi done v 22:40\\
-20.04.20 - 10:06 jdu na 13(Statistika) a 14 (Posloupnosti a řady). No tak samozřejmě existuje znak $\overset{*}{x}$ \st{ akorát jsem nepřišel na to, jak tu hvězdičku vycentrovat, jako to mají v tabulkách.} aha $\overset{*}{x_r}$ vs $\overset{*}{x}_r$ pořád ale  nechápu, co tam má za $ \overset{hvezdicka}{vyznam}$\\
- - 10:50 To je způsobů, jak udělat 3 tečky \dots vs ... vs $ \dots vs \ldots vs \dotsc vs ...$ vs ($\dotsm vs \dotsb vs \dotso $)\\
- - 12:50 Debilní sloupcový graf on nezobrazuje poslední souřadnice, takže jsem pořád hledal chybu v nastavení os a pak zjistím, že tam stačí přidat další prázdný sloupec nakonec a ten nyní předposlední se zobrazí, to je pěkná blbost.\\
- - 13:10 kruhový diagram má vlastní package a je ez. umí ale zobrazovat jen přes procenta. Neřeším \dots\\
- - 14:50 a co třeba $\accentset{*}{x}^2$ vs $\accentset{*}{x^2}$ vs $\overset{*}{x^2}$ vs $\overset{*}{x}^2$ . To první teda vypadá dost sexy oproti ostatním, ale předtím jsem používal overset, takže musím porovnat, jestli oko rozená rozdíl mezi $\overset{*}{x}$ a $\accentset{*}{x}$ a $\accentset{\scriptstyle *}{x}$ Za mě accentset vyhrál jakožto estetičtější, ale ty rovnice co už mám napsaný kvůli tomu předělávat nebudu \dots \\
- - $\overset{\underline{tak\, to}\, je}{ \accentset{\overline{x}}{*}_{\bar{lol}}^{dost}}$ \\%tak to asi nevyjde :D
- -15:55 Tak statistika(13) asi komplet (ještě přidám navíc korelaci)\\ 
- -17:30 kolo opraveno,  hmm $ \sum^n_{i=1}x_i y_i$ vs $ \sum\limits^n_{i=1}x_i y_i$, no asi done\\
-21.04.20 - jedu 14 (posloupnosti a řady)\\
- - Jonáš schválil $\exists \, d \in \mathbb{R}; \; \left( \forall \, n \in \mathbb{N}; \; a_n \geq d \right)$ takže jsem asi pochopil matematicko-logický zápis věcí, nice\\
- Dále:  $\exists \, c \in \mathbb{R} | \left( \forall \, n \in \mathbb{N} | a_n \leq c \right) $ a $\left( \exists \, d \in \mathbb{R} \right) \left( \forall \, n \in \mathbb{N} \right) \left( a_{n+1} = a_n + d \right)$ jsou taky validní způsoby zápisu\\
- - 17:09 oh shit, ty zápisy jsou psycho viz limita posloupnosti (\ref{sec:posl_limita} a \ref{sec:posl_limita_nev}), řekl bych, že v nich mám asi chybu \dots \\
- - 18:49 Tak jsem řešil s Jonášem ještě jak to správně psát, on mi něco poradil a pak prozradil, že není žádná pořádná konvence \dots \\
-  - 20:43 celý den to dělám a ještě chybí finanční matematika, wtf\\
-24.04.20 - Množiny (2),  btw $| vs \mid$: $| a |b|$ vs $\mid a\mid b\mid$ -> Hmm mezera. $\mid | \mid \mid \mid |||$ asi začínám mít halucinace, mám pocit, že se mění, která z těch čar je šedivější \dots \\
-Prázdný se $\emptyset$ vs $\varnothing$ vs $\O$ vs $\not 0$ (to poslední jsem si vymyslel, předposlední nefunguje a to druhý vypadá divně, takže naštěstí jasná volba)\\
-Pokusy na doplňky $A'$ vs  jiný způsob:  $\complement$ vs $\mathsf{c}$ v praxi $A^\mathsf{c}$ vs $A^\complement$. A co velká písmena %$\Complement$ %neexisutje
-neexistuje vs $\mathsf{C}$\\
-Finální porovnání možností: $A^c$ nebo $A^C$ nebo $A^\mathsf{C}$ nebo $A^\mathsf{c}$ nebo $A^\complement$ nebo $A'$ nebo $\complement_U A$. Příkaz complement jasně vyhrává miss nejlepšího doplňku.\\
-Jak na zobrazit zobrazení (a pěkné šipky):  $y = f(x) $ nebo $ y = F(x) $ nebo $ f: x \mapsto y $ nebo $ f: x \to y $ nebo $ f: x \rightarrow y$ \\
-Jak udělat kolečko $ (h ∘ g)$ vs $ (h \circ g)$, 18:46 no nic množiny (2) asi done, měl bych dělat EuropuSecuru \dots, ale moc se mi nechce\\
-25.04.20 - obecná rovnice kuželoseček (21) a finanční matematika (14-posloupnosti a řady) dodělány, sakra měl bych dělat EuropuSecuru \dots \\
-01.05.20 - test buildu na nb, pokus 2. Funguje. 10:43 Jdu na MO-3. Notace $\mathbb{N}$ vs $N$ má jasného vítěze na krásu. Problém je spíš, že různí autoři využívají různé způsoby zápisu, zda-li tam patří nula. Jinak lepší způsob, jak psát \href{https://www.latex-tutorial.com/tutorials/hyperlinks/}{linky}.\\
-Vypadá to že standardem pro komplexní čísla je $a +ib$ (lepší než $a +bi$), žádné speciální fonty nebo příkazy asi nejsou. Moment co $a +\imath b$ ? \uv{( v \LaTeX existuje speciální symbol $\imath$ , ale ?asi není moc konsensus, jak to psát?)} Jonáš potvrdil neexistenci konsensu.\\
-Nový command $\abs{a}$ vs $\absb{a}$. Funguje mělo by být ekvivalentní $\lvert a \rvert$ . Další možnosti: $ \vert a \vert$ nebo $|a|$, ale rozdílné $ \mid a \mid$.\\
-Jak na Eulerovo číslo? $e$ vs $\mathrm{e}$ vs $\mathsf{e}$ vs ? 	->vytvořil jsem si command aby to bylo konzistentní $\euler$ až se rozhodnu \dots Udělám asi to samé pro $\iu$ (zatím jsem se u obojího rozhodl pro mathrm)\\
-Pauza, ale komplexní čísla done. Nevím co se myslí uzavřeností v pojmech, jako u intervalů? -> TODO-list. Jinak mě as nenapadá, co dál. Teoreticky bych mohl opsat víc vzorečků z tabulek, ale ony většinou tak nějak vyplývají z předchozích a obecně mi to přijde zbytečný, takže na to už asi kašlu. MO-3 done\\
-05.05.2020 - MO-1 začal jsem \dots	done je 21:45 a dělám na tom cca od 11:00, wtf \dots  Vždyť to ani nebyla tak dlouhá otázka. Ale zase mi nepřišlo, že jsem to dělal tak dlouho. Všiml jsem si, že čas uběhl vždycky až když jsem dostal hlad, takže až po několika hodinách. Možná jsem  se moc soustředil na Ted(x) Talky, co běžely na pozadí.\\
-06.05.2020 20:44 zkusím začít MO-7, 0:00 tak trocha spojitosti u MP EU4\\
-08.05.2020 Trocha limitek po ránu, dělal jsem je i chvíli včera, ale to jsem toho moc neudělal.\\
-09.05.2020 MO-7 (limity a spojitost) done 19:53, dneska už asi další nedám \dots , měl bych možná zítra.\\
-12.05.2020 Začínám MO-4 a co jsem nezjistil: $\dfrac{-b \pm \sqrt{D}}{2a} = \frac{-b \pm \sqrt{D}}{2a} = \tfrac{-b \pm \sqrt{D}}{2a} $
-\begin{align*}
-\dfrac{-b \pm \sqrt{D}}{2a} = \frac{-b \pm \sqrt{D}}{2a} = \tfrac{-b \pm \sqrt{D}}{2a}
-\end{align*}
-Porovnej velikost písmen ve zlomku. Frac se mění podle toho je-li to v textu nebo v "display" modu. Podle toho zkratky tfrac a dfrac, asi. No něco jsem udělal, ale budu muset dodělat zítra\dots \\
-13.05.2020 MO-4 done 21:38, celý den to odkládám a pak to sfouknu za hoďku a kousek, no co se dá dělat. Jako nevím moc, co s tou MO-4, tam jsou většinou takový věci, který jsou prostě jasný od pohledu, takže ty tam psát nebudu.\\
-14.05.2020 Zkusím ještě jednu MO navíc, hmmm... $ \mathcal {H}_{f}$ (jsem našel na wiki) vs $H_f$, co u definičního oboru $\mathcal{D}_f$ vs $D_f$ ? \dots to vypadá relativně stylově, ale asi to měnit nebudu\\
- - MO-5 done 12:23 ta je nějaká triviální (do 2h od začátku po zápis do deníčku), ještě jsem tam přidal monotonii, která by tam asi měla patřit a v otázce (ani žádné jiné) ji nevidím.\\
-15.05.20 - před odjezdem na trénink jsem začal MO-6, no a teď je 22:21 a jsem unavenej jak svině, takže cokoliv napíšu budu muset zítra zkontrolovat.\\
- - 22:54 wtf já jsem to udělal. Tak je to kratší otázka a ani mě nenapadá, co k tomu, co tam je říct. Takže na to asi kašlu!\\
-16.05.2020 začal jsem MO-8 (exponenciála a logaritmy) musím zjistit, jestli je mezi těmito vzorci rozdíl:
-\begin{align*}
-\log_a (x \cdot y) &= \log_a x + \log_a y\\
-\log_a{(x \cdot y)} &= \log_a{x} + \log_a{y}\\
-\log_a{\left(x \cdot y \right)} &= \log_a{x} + \log_a{y}\\
-\log_a \left(x \cdot y \right) &= \log_a x + \log_a y
-\end{align*}
-Tak jen ten první má tu závorku trochu blíž logaritmu. Ale jinak vypadají stejně.\\
- -10:30 MO-8 asi done. Jsem nějak unaven po včerejšku, nevím proč se budím tak brzo\dots\\
-17.05.2020 14:48 že bych dneska dodělal nějaký ty otázky? uvidíme.\\
-- 15:57 Tak jsem nějak dodělal MO-9 (goniometrie), ale nevím co tam udělat. Mohl bych opisovat vzorce z tabulek, ale to se mi úplně nechce, to mi přijde zbytečný. A MO-10 je to samý, co je v v otázkách MO-8 a MO-9.\\
-Zase jsem, ale zjistil, jak si  pomocí package \emph{amsmath} vytvořit vlastní "operátory", protože v češtině se píše krom $\tan$ tak $\tg$ nemluvě o kotangensu či arkus funkcích. Hmm.. ty bych mohl přidat.\\
- - 16:24 Tak jo asi done.\\
-Tím je toto oficálně $\pm$ hotovo. Teď budu doplňovat, co chybí, když si budu číst zadání jednotlivých MO, co někam dávala Petrová. Na kreslení geometrie asi kašlu nemám na to nervy a čas xD. 
-\subsubsection{TODO-list}
+
+       \vspace{0.5cm}
+       Nějako jsem to zpracoval, nějako odmaturoval (za 1) a teď jsem to nějako upravil, abych to mohl nějako nasdílet dalším generacím
+            
+       \vspace{1.5cm}
+		\begin{LARGE}
+		\textbf{Jakub Ambroz 8.E}
+		\end{LARGE}
+       
+
+       \vfill
+            
+            
+       \vspace{0.8cm}
+     
+       \includegraphics[width=0.8\textwidth]{logo-src.png}
+       
+       Gymnázium, České Budějovice, Jírovcova 8\\
+       Česká republika\\
+       \today
+            
+   \end{center}
+\end{titlepage}
+
+\addcontentsline{toc}{part}{Úvodní část}
+\section*{Meta}
+\subsubsection{Verze}
+Public 1.1, ze dne \today
+\subsubsection{Kde stáhnout?}
 \begin{itemize}
-\item  \st{21 - Obecná rovnice u kuželoseček, dodělat} done (podle tabulek)
-\item nějaký konstrukce ?15-18?
-\item 18 vymyslet rychlý postup získání kolmé přímky (to asi vymyslím u vektorů)  \st{-> na vzdálenosti} (vzdálenosti nalezeny v tabulkách a wiki)\\ A asi něco s řezy/ průnikem přímky tělesy.
-\item 25 Asymptota a monotónnost.
-\item oh shit, terminologie směrnice a směrový vektor v 18
-\item zápisy posloupností pomocí logicko-matematických zápisů
-\item "\textbf{Prakitcké}" využití aritmetické a geometrické posloupnosti
-\item \st{Finanční matematika (spadá pod 14 -posloupnosti a řady)} done, podle tabulek
-\item 2 (Množiny) nakreslit Vennovy diagramy
-\item Nakreslit Gaussovu rovinu (obrázek obdobný tomu z tabulek)
-\item Sub a subsubsectiony a paragraohy pořešit u komplexních čísel
-\item MO-3 pojem uzavřenost , možná přidat další příklady základních operací, ale je to asi jasný a nuda takže radši nic
-\item MO-1 důkazové úlohy o dělitelnosti, nevím jestli něco nepřidat
+\item \url{https://github.com/AmbryTheBlue/Maturitni-otazky-mat}
+
 \end{itemize}
-\subsubsection{Latex tipy}
+\subsection{O díle}
 \begin{itemize}
-\item jak na tři tečky, kdy jaké používat \url{https://tex.stackexchange.com/questions/122491/difference-of-the-dots}
-\item jak udělat jednostrannou složenou závorku \url{https://tex.stackexchange.com/questions/47170/how-to-write-conditional-equations-with-one-sided-curly-brackets}
-\item Lepší způsob, jak psát \href{https://www.latex-tutorial.com/tutorials/hyperlinks/}{linky}
-\item Jak dělat \href{https://tex.stackexchange.com/questions/498/mid-vertical-bar-vert-lvert-rvert-divides}{vertikální čáru}
+\item Je to většinou jen z wiki či tabulek, ale někde jsem využíval stránky Karlovky nebo Masarykovy univerzity. Nebo často taky stránky matematika.cz. Ale v některých případech jsem využil i vlastní úvahu!
+\item Cílem bylo projetí si termínů, které by se mohli objevit při maturitě a také prohloubení znalostí o \LaTeX prostředí. A když už to je, tak jsem se to rozhodl darovat lidu.
+\item Je to pořád docela WIP, ale účel to splnilo! Pokud někde narazíte na nějaké nejasnosti, tak \textbf{dejte vědět a možná to opravím}. (seznam už známých nedostatků je v  přiloženém souboru TODO-list.txt popřípadě jako issues na githubu)
+\item Bohužel jsou způsoby zápisu občas nekonzistentní. Viz citát z tabulek \uv{Norma ČSN ISO 31-11 není závazná a má pouze charakter doporučení}. TO by vysvětlovalo, proč jsem některý věci v životě neviděl, protože prostě vypadají blbě a nikdo je nechce používat xD. Některý věci mi zase třeba přijdou v pohodě a asi se uchytí, protože kopírují zahraniční styly zápisu. Ale v české literatuře/ na hodinách se s nimi možná nesetkáte tolik.
+\item \textbf{(nekomerčně) Šiřte a upravujte dílo a jeho deriváty, jak uznáte za vhodné} (jedinou podmínkou je zachování jména autora a zachování těchto dvou pravidel). Nenesu zodpovědnost, za nic co vám čtení tohoto způsobí. Pokud si odsud odnesete něco, kvůli čemu nedáte maturitu není to můj problém.
+\textbf{Plné znění licence je v přiloženém souboru licence.txt}
+\item Pokud vás zajímá používání \LaTeX , tak nějaké typy a moje osobní postřehy jsou na konci tohoto souboru (jak .pdf tak .tex) %Opravdu jsou tam!
 \end{itemize}
 
-\begin{align*}
- \left.
-    \begin{array}{ll}
-       \text{červená} \\
-       \\
-       \text{zelená}
-    \end{array}
-\right\}_{\scaleto{a+b}{9pt}}^{\scaleto{a+d?}{9pt}} \mspace{-40mu} \text{chloroplast vznik primární endosymbiózou}\\
-       \text{červená}
- {^{\scaleto{\text{červená}}{9pt}}_{\scaleto{\text{zelená}}{9pt}}}\scaleto{ \}}{30pt}
-_{\scaleto{a+b}{9pt}}^{\scaleto{a+d?}{9pt}} \mspace{-40mu} \text{chloroplast vznik primární endosymbiózou}
-\end{align*} %well tak druhý pokus nefunguje
-
-\subsubsection{Informace pro čtenáře}
-\begin{enumerate}
-\item Norma ČSN ISO 31-11 není závazná a má pouze charakter doporučení. TO by vysvětlovalo, proč jsem některý věci vůbec neviděl, protože prostě vypadají blbě a nikdo je nechce používat xD. Některý věci mi zase třeba přijdou v pohodě a asi se uchytí, bo kopírují zahraniční styly zápisu.
-\end{enumerate}
-
-
+\newpage
+\addcontentsline{toc}{part}{Jednotlivé maturitní otázky}
 \section{Logická výstavba matematiky}
 \subsubsection{Výrok}
 \emph{Výrok} je nějaké sdělení, oznamovací věta nebo tak něco. Má smysl pokládat otázku je-li to pravda nebo ne. Můžeme výrokům přiřadit \emph{pravdivostní hodnotu} 1 (pro \emph{pravdivé výroky}) nebo 0 (pro \emph{nepravdivé výroky}). Výroky se značí malými písmeny $a,b, \dotsc, u,v, \dotsc$ (Na wiki se používají i velká písmena)
@@ -3205,6 +3144,16 @@ Viz \ref{sec:vyuziti_derivaci} o derivace. Viz \ref{sec:vyuziti_integralu} pro i
 \end{itemize}
 \subsubsection{Zadání/pojmy}
 Vyšetřování průběhu analyticky zadané funkce, monotónnost a derivace, lokální extrémy funkce a derivace, funkce konvexní a konkávní, inflexní body, asymptoty. Slovní úlohy na extrémy. Výpočty obsahů rovinných útvarů, výpočet objemu rotačního tělesa.
-
+\newpage
 \tableofcontents
+\appendix
+\addcontentsline{toc}{part}{Apendix}
+\subsection{\LaTeX}
+\subsubsection{Latex tipy}
+\begin{itemize}
+\item jak na tři tečky, kdy jaké používat \url{https://tex.stackexchange.com/questions/122491/difference-of-the-dots}
+\item jak udělat jednostrannou složenou závorku \url{https://tex.stackexchange.com/questions/47170/how-to-write-conditional-equations-with-one-sided-curly-brackets}
+\item Lepší způsob, jak psát \href{https://www.latex-tutorial.com/tutorials/hyperlinks/}{linky}
+\item Jak dělat \href{https://tex.stackexchange.com/questions/498/mid-vertical-bar-vert-lvert-rvert-divides}{vertikální čáru}
+\end{itemize}
 \end{document}
