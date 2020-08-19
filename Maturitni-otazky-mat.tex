@@ -40,10 +40,11 @@
 \begin{titlepage}
    \begin{center}
        \vspace*{1cm}
-		
+
 		\begin{Huge}
 		 \textbf{Zpracované otázky k maturitě z matematiky na Gymnáziu Jírovcova 8 pro rok 2020}\\
 		\end{Huge}
+		\vspace{0.5cm}
 		\begin{LARGE}
 		\textbf{\textcolor{red}{Verze 1.1}}
 		\end{LARGE}
@@ -51,24 +52,24 @@
 
        \vspace{0.5cm}
        Nějako jsem to zpracoval, nějako odmaturoval (za 1) a teď jsem to nějako upravil, abych to mohl nějako nasdílet dalším generacím
-            
+
        \vspace{1.5cm}
 		\begin{LARGE}
 		\textbf{Jakub Ambroz 8.E}
 		\end{LARGE}
-       
+
 
        \vfill
-            
-            
+
+
        \vspace{0.8cm}
-     
+
        \includegraphics[width=0.8\textwidth]{logo-src.png}
-       
+
        Gymnázium, České Budějovice, Jírovcova 8\\
        Česká republika\\
        \today
-            
+
    \end{center}
 \end{titlepage}
 
@@ -89,8 +90,16 @@ Public 1.1, ze dne \today
 \item Bohužel jsou způsoby zápisu občas nekonzistentní. Viz citát z tabulek \uv{Norma ČSN ISO 31-11 není závazná a má pouze charakter doporučení}. TO by vysvětlovalo, proč jsem některý věci v životě neviděl, protože prostě vypadají blbě a nikdo je nechce používat xD. Některý věci mi zase třeba přijdou v pohodě a asi se uchytí, protože kopírují zahraniční styly zápisu. Ale v české literatuře/ na hodinách se s nimi možná nesetkáte tolik.
 \item \textbf{(nekomerčně) Šiřte a upravujte dílo a jeho deriváty, jak uznáte za vhodné} (jedinou podmínkou je zachování jména autora a zachování těchto dvou pravidel). Nenesu zodpovědnost, za nic co vám čtení tohoto způsobí. Pokud si odsud odnesete něco, kvůli čemu nedáte maturitu není to můj problém.
 \textbf{Plné znění licence je v přiloženém souboru licence.txt}
+\item na konci každé otázky je Meta část, kde jsou uvedeny nějaké zdroje, seznam pojmů od Petrové (podle kterých jsem to dělal) a nějaké osobní poznámky ohledně zápisu - občas důležité
 \item Pokud vás zajímá používání \LaTeX , tak nějaké typy a moje osobní postřehy jsou na konci tohoto souboru (jak .pdf tak .tex) %Opravdu jsou tam!
 \end{itemize}
+
+\begin{center}
+       \vspace{1.5cm}
+		\begin{LARGE}
+		\textbf{Hodně zdaru u maturity!}
+		\end{LARGE}
+\end{center}
 
 \newpage
 \addcontentsline{toc}{part}{Jednotlivé maturitní otázky}
@@ -246,7 +255,7 @@ Využívá se např. při sčítání zlomků s různým jmenovatelem. \begin{sc
 \begin{equation}
 \operatorname {NSD} (a,b)=\max\{n\in \mathbb {N} :n\mid a\wedge n\mid b\}
 \end{equation}
-Zajímavá vlastnost: 
+Zajímavá vlastnost:
 \begin{equation}
  \operatorname {NSD} (a,b) \cdot \operatorname {nsn} (a,b)=ab
 \end{equation}
@@ -360,7 +369,7 @@ A^\complement &= U - A\\
 A'_U &= U \setminus A \\
 A' &= \{ x: x \in U \land x \notin A \}
 \end{align}
-Musí platit, že $A \subseteq U$. Potom $A'$ obsahuje všechny prvky, které obsahuje $U$ ale neobsahuje $A$. 
+Musí platit, že $A \subseteq U$. Potom $A'$ obsahuje všechny prvky, které obsahuje $U$ ale neobsahuje $A$.
 \item \emph{de Morganovy vzorce}
 \begin{align}
 (A \cup B)' &= A' \cap B' \\
@@ -400,7 +409,7 @@ y = f(x) && y = F(x) && f: x \mapsto y && f: x \to y
 \item $y$ je \emph{obraz} prvku $x$ při zobrazení $F$, označení $y =F(x)$
 \item $x$ je \emph{vzor} prvku $y$ při zobrazení $F$
 \item $D_F$ je \emph{definiční obor} zobrazení $F$, tj. množina vzorů všech prvků $ y \in B$
-\item $H_F$ je \emph{obor hodnot} zobrazení $F$, tj. množina obrazů všech prvků $ x \in A$ 
+\item $H_F$ je \emph{obor hodnot} zobrazení $F$, tj. množina obrazů všech prvků $ x \in A$
 \end{itemize}
 \subsubsection{Speciální případy}
 \begin{itemize}
@@ -450,7 +459,7 @@ Možná si pak dodělám obrázky Vennových diagramů, jen tak protože můžu.
 \item \url{https://cs.wikipedia.org/wiki/Dopln\%C4\%9Bk_mno\%C5\%BEiny}
 \item \url{https://en.wikipedia.org/wiki/Complement_(set_theory)}
 \item \url{https://cs.wikipedia.org/wiki/Zobrazen\%C3\%AD_(matematika)}
-\item \url{https://cs.wikipedia.org/wiki/Funkce_(matematika)}	
+\item \url{https://cs.wikipedia.org/wiki/Funkce_(matematika)}
 \end{itemize}
 \subsubsection{Zadání/Pojmy}
 Pojem množiny, způsob zadání množiny, podmnožina, vztahy mezi množinami, rovnost množin, inkluze množin, operace s množinami a jejich vlastnosti, sjednocení, průnik, rozdíl, doplněk, disjunktní množiny, grafické znázornění množin, uspořádaná dvojice, kartézský součin, zobrazení, typy zobrazení, funkce, složené zobrazení.
@@ -460,8 +469,8 @@ Máme několik množin čísel. Formální definice jsou náročnější, ale na
 \begin{itemize}
 \item \emph{Přirozená čísla} - kladná celá čísla nebo nezáporná celá čísla -> problém zda-li patří nula nebo ne -> existují různé způsoby značení, takže sranda, protože každý autor píše jinak. Vždy se ale značí $N$ nebo $\mathbb{N}$. Aby se předešlo záměnám přidávají se indexy v podobě plus a nuly, které to mají jasněji určit:\\
 \emph{Nezáporná celá čísla} (tj. včetně nuly)	: $N_0$, $N^0$, $\mathbb{N}_0$ nebo $\mathbb{N}^0 $ (taktéž je to ekvivalentní se zápisem pomocí celých čísel: $Z_0^+$ nebo $\mathbb{Z}_0^+$), (podle tabulek by to od normy ISO 31-11 mělo být jen $\mathbb{N}$, ale v celých tabulkách se to používá pro kladná celá čísla \dots)\\
-\emph{Kladná celá čísla} (tj. bez nuly): $\mathbb{N}^+$ (pomocí celých čísel $\mathbb{Z}^+$) (podle tabulek normy ISO 31-11 by to mělo být $\mathbb{N}^*$ , ale to jsem v životě neviděl, takže asi tak) 
-\item \emph{Celá čísla} - značí se $\mathbb{Z}$. Přirozená čísla jsou speciální podmnožinou celých čísel. Vzájemným sčítáním, odečítáním a násobením celých čísel vždy získáme opět jen celé číslo. Výjimku tvoří dělení. 
+\emph{Kladná celá čísla} (tj. bez nuly): $\mathbb{N}^+$ (pomocí celých čísel $\mathbb{Z}^+$) (podle tabulek normy ISO 31-11 by to mělo být $\mathbb{N}^*$ , ale to jsem v životě neviděl, takže asi tak)
+\item \emph{Celá čísla} - značí se $\mathbb{Z}$. Přirozená čísla jsou speciální podmnožinou celých čísel. Vzájemným sčítáním, odečítáním a násobením celých čísel vždy získáme opět jen celé číslo. Výjimku tvoří dělení.
 \item \emph{Racionální čísla} se značí $\mathbb{Q}$. Jsou to čísla která jde vyjádřit jako zlomek dvou celých čísel $\frac{a}{b},\; a,b \in Z$. Celá čísla jsou jejich speciální podmnožinou, kde \emph{základní tvar} zlomku má jako dělitele 1.
 \item \emph{Reální čísla} značí se $\mathbb{R}$. Jsou všechna čísla i ta která nejdou vyjádřit zlomkem, ale jdou vyjádřit nějakým (i nekonečným) desetinným rozvojem. Lze si je představit jako množinu vzdáleností bodů přímky od jednoho konkrétního bodu přímky, který si označíme 0.
 \item \emph{Iracionální čísla} jsou všechna desetinná čísla, která se nedají vyjádřit pomocí zlomku (např. $\pi, \sqrt{2}, \dotsc$). Je to tedy množina $\mathbb{R} \setminus \mathbb{Q}$
@@ -478,7 +487,7 @@ Reálná čísla můžeme znázornit na číselné ose (nekonečná přímka, kt
  \abs{a} = \left\{\begin{array}{lr}
        a & \text{pro } a \geq 0\\
        -a  & \text{pro } a < 0
-        \end{array} \right. 
+        \end{array} \right.
 \end{align}
 Absolutní hodnota rozdílu reálných čísel je rovna vzdálenosti těchto čísel na číselné ose. Pak jsou v tabulkách nějaké zajímavé příklady, ale mě moc zajímavé nepřijdou.
 \subsection{Operace s reálnými čísly a jejich vlastnosti}
@@ -488,7 +497,7 @@ Je takový prvek množiny (pro nás reálná čísla), pro který platí, že v�
 \begin{itemize}
 \item $>$ a $<$
 \item $\geq$ a $\leq$
-\item $\gg$ a $\ll$ je \emph{mnohem (řádově) větší} (resp. \emph{menší) než} 
+\item $\gg$ a $\ll$ je \emph{mnohem (řádově) větší} (resp. \emph{menší) než}
 \end{itemize}
 \subsubsection{Základní operace}
 Můžeme sčítat, odečítat, násobit a dělit. To je novinka :/
@@ -763,7 +772,7 @@ ax^4 + bx^2 + c =0 && a,b,c \in \nR \land a \neq 0
 \paragraph{Kvadratická rovnice v komplexních číslech}
 Platí-li, že koeficienty jsou komplexní čísla, tak jsou kořeny kvadratické rovnice 2 komplexní čísla:
 \begin{align}
-x_{{1,2}}= \frac  {-b\pm {\sqrt  {D}}}{2a} && a,b,c \in \nC && D=b^{2}-4ac 
+x_{{1,2}}= \frac  {-b\pm {\sqrt  {D}}}{2a} && a,b,c \in \nC && D=b^{2}-4ac
 \end{align}
 
 \subsubsection{Kubická a kvartická rovnice}
@@ -825,7 +834,7 @@ Pojem algebraická rovnice (nerovnice), definiční obor rovnice (nerovnice), mn
 \subsubsection{Funkce reálné proměnné}
 Funkce, kde je argumentem nějaká reálná proměnná (tradičně značená $x$). Funkční hodnoty se tradičně značí $y$:
 \begin{align}
-f(x) = ax^2 +bx +c && f: y=ax^2 +bx +c 
+f(x) = ax^2 +bx +c && f: y=ax^2 +bx +c
 \end{align}
 \subsubsection{Definiční obor}
 \emph{Definiční obor} (také \emph{doména}) je množina hodnot, jichž může nabývat argument funkce. Může to být libovolná podmnožina $n\nR$, ale tradičně celé $\nR$, ale musíme si dát pozor a odstranit z této množiny hodnoty, pro které nejsou operace ve funkci nadefinované (dělení nulou, logaritmus záporného čísla atd.)! Značí se třeba$D(f)$ nebo $D_f$.
@@ -859,7 +868,7 @@ Z toho vyplývá, že záleží na pořadí v jakém pořadí v jakém funkce sl
 \paragraph{Shora omezená} funkce je taková, pro kterou existuje $c \in \nR$ pro které platí:
 \begin{align}
 ( \exists c \in \nR)( \forall x \in D_f): f(x) \leq c
-\end{align} 
+\end{align}
 \paragraph{Omezená funkce} je taková funkce, která je omezená zdola a zároveň shora omezená.
 \subsection{Sudá a lichá funkce}
 \paragraph{Sudá funkce} má graf, který je osově souměrný podle osy $y$. Matematicky zapíšeme:
@@ -1005,7 +1014,7 @@ Lineární funkce ( rozdělení podle koeficientu a ), kvadratická funkce ( roz
 \subsubsection{Okolí bodu}
 V matematice můžeme okolí bodu definovat pomocí intervalu na množině reálných čísel. Máme číslo $r\in \nR$, pak \emph{epsilon okolí} pro $\varepsilon \in \nR \land \varepsilon > 0$ je otevřeným intervalem $(r- \varepsilon; r + \varepsilon)$.\\
 Epsilon okolí bodu ($a$) se také někdy značí $U(a, \varepsilon)$\\
-V tabulkách uvidíme značení $U(a)$ a jednoduché vysvětlení přes interval $(a-\delta ;a +\delta )$, kde $\delta \in \nR^{+}$ 
+V tabulkách uvidíme značení $U(a)$ a jednoduché vysvětlení přes interval $(a-\delta ;a +\delta )$, kde $\delta \in \nR^{+}$
 \paragraph{okolí} (také \emph{prstencové okolí} je stejné jen neobsahuje bod $r$:
 \begin{equation}
  (r-\varepsilon; r) \cup (r; r + \varepsilon)
@@ -1106,7 +1115,7 @@ Některé funkce mohou mít různé limity bereme-li v potaz je pravé (levé) o
 \end{align}
 \subsubsection{Pravidla počítání s limitami}
 \begin{align}
- \lim _{x\to a} f(x) = A &&  \lim _{x\to a} g(x) = B 
+ \lim _{x\to a} f(x) = A &&  \lim _{x\to a} g(x) = B
 \end{align}
 Máme-li 2 funkce jejichž limity jsou uvedeny výše, potom platí:
 \begin{align}
@@ -1123,7 +1132,7 @@ Poté platí \emph{l'Hospitalovo pravidlo} (viz \ref{sec:hospital_pravidlo}). Da
 \end{align}
 \item z předchozího vyplývá vlastnost pro 3 limity $ f(x)\leq g(x)\leq h(x)$, je to tzv. \emph{Věta o třech limitách}
 \begin{align}
-\left(  \lim _{x\to a}f(x)=A \land \lim _{x\to a}h(x)=A \right) \implies  \lim _{x\to a}g(x)=A 
+\left(  \lim _{x\to a}f(x)=A \land \lim _{x\to a}h(x)=A \right) \implies  \lim _{x\to a}g(x)=A
 \end{align}
 \end{itemize}
 \subsubsection{Důležité limity}
@@ -1223,7 +1232,7 @@ a^{\log_a L} = L &\text{	čili	} \log_a a^L = L
 \begin{equation}
 \log_a \left( x \cdot y\right) = \log_a x + \log_a y
 \end{equation}
-\item logaritmus podílu 
+\item logaritmus podílu
 \begin{equation}
 \log_a{\frac{x}{y}} = \log_a{x} - \log_a{y}
 \end{equation}
@@ -1283,7 +1292,7 @@ Platí v každém trojúhelníku (ty strany nemusí být takhle označené, plat
 Je zobecněním Pythagorovy věty. Pozor při cyklické záměně, ať se nepoplete, která strana je která a které úhly které náleží, při zadávání do kalkulačky.
 \begin{equation}
 c^2 = a^2 + b^2 - 2ab\cos\gamma
-\end{equation} 
+\end{equation}
 \subsection{Goniometrické funkce složeného argumentu}
 Jestli se tím myslí $\sin (x + j)$ tak jednoduše se na funkci posuneme o $j$ doprava (tj. doleva pro záporné $j$). To relativně znamená, že funkce se posouvá doleva (prava pro $j<0$) o $j$.\\
 Jako fakt nevím, co k tomu říct \dots
@@ -1380,7 +1389,7 @@ Neuspořádaná $k$-tice sestavená z $n$-prvků.
 Neuspořádaná $k$-tice sestavená z $n$-prvků tak, že každý se v ní vyskytuje nejvýše jednou. (tj. $k$-prvková podmnožina $n$-prvkové množiny). Platí-li $k,n \in \mathbb{N} \land k \leq n$ je počet těchto kombinací:
 \begin{equation}
 K\left(k,n\right) = \binom{n}{k}
-\end{equation} 
+\end{equation}
 \subsubsection{Kombinace s opakováním}
 Neuspořádaná $k$-tice sestavená z $n$-prvků tak, že každý se v ní vyskytuje nejvýše $k$-krát. Platí-li $k,n \in \mathbb{N}$ je počet těchto kombinací:
 \begin{equation}
@@ -1389,7 +1398,7 @@ K' \left(k,n\right) = \binom{n+k-1}{k}
 
 \subsection{Pravidla}
 \subsubsection{Součtu}
-Říká, že máme-li $a$ způsobů, jak něco udělat. A $b$ způsobů, jak udělat něco jiného. A není možné provést $a$ i $b$, takže je nutné si jeden z nich vybrat. Poté je počet možných věcí, které můžeme provést roven $a+b$.  
+Říká, že máme-li $a$ způsobů, jak něco udělat. A $b$ způsobů, jak udělat něco jiného. A není možné provést $a$ i $b$, takže je nutné si jeden z nich vybrat. Poté je počet možných věcí, které můžeme provést roven $a+b$.
 \paragraph{Příklad: }Chceme-li vybrat 1 míček z množiny 5 červených míčků máme 5 možností. Chceme-li vybrat jeden míček z množiny 7 modrých míčků máme 7 možností. Spojíme-li tyto množiny je počet možností, jak vybrat jeden míček $12=5+7$.
 \subsubsection{Součinu}
 \label{sec:pravidlo_soucinu}
@@ -1472,7 +1481,7 @@ Př. vylučující se: Padne číslo větší než 5 a padne číslo menší ne�
 \begin{equation}
 P(A \cap B) = P(A) \cdot P(B)
 \end{equation}
-Př.: Jev $A$: hodím v prvním hodu na kostce 5. Jev $B$: hodím v druhém sudé číslo. To, co hodím na první hod, nemá vliv na hod druhý, takže celková pravděpodobnost, že nastane obojí je: $\frac{1}{6} \cdot \frac{3}{6} = \frac{1}{12}$. 
+Př.: Jev $A$: hodím v prvním hodu na kostce 5. Jev $B$: hodím v druhém sudé číslo. To, co hodím na první hod, nemá vliv na hod druhý, takže celková pravděpodobnost, že nastane obojí je: $\frac{1}{6} \cdot \frac{3}{6} = \frac{1}{12}$.
 \subsection{Opakování náhodného pokusu}
 Náhodný pokus je $n$-krát zopakován, jednotlivá opakování jsou na sobě nezávislá. Pravděpodobnost, že přitom $k$-krát nastane jev $A$, který má pravděpodobnost $P(A) =p$ zjistíme vzorcem (pro nezáporné celé $k$, menší než $n$:  $k =0,1,2, \dotsc, n$)
 \begin{equation}
@@ -1483,7 +1492,7 @@ Vyplývá z definice nezávislých jevů a z kombinace nezávislých jevů (viz 
 \subsubsection{Bernoulliho schéma}
 Nazývané také \emph{binomické rozdělení}. Popisuje četnost výskytu náhodného jevu v  pokusech, ve kterých má vždy stejnou pravděpodobnost. Značení, kde $n$ je počet pokusů a $p$ je pravděpodobnost jevu:
 \begin{align}
-B(n,p) && Bi(n,p) 
+B(n,p) && Bi(n,p)
 \end{align}
 Rovnice pro výpočet pravděpodobnosti, že jev s pravděpodobností $p$ nastane $k$-krát v $n$ pokusech \eqref{eq:binom_rozdeleni}
 \subsection{Meta}
@@ -1506,7 +1515,7 @@ Náhodné pokusy, množina všech možných výsledků pokusu, jevy v množinov�
 \item \emph{Znak} - vyšetřovaná vlastnost statistických jednotek, značení $x$,např.: pohlaví, měsíční plat \dots
 \item \emph{Hodnota znaku} - znak $x$ nabývá hodnot: $\overset{*}{x}_1,\overset{*}{x}_2, \dots , \overset{*}{x}_r$, kde $r \leq n$\\
  - tyto hodnoty jsou navzájem neslučitelné a pro každou statistickou jednotku musí jedna z těchto hodnot  nastat, např.: muž/žena, 20~000Kč~\dots \\Označení hodnoty znaku $x$ pro statistickou jednotku $i$: $x_i$
- \item \emph{Kvantitativní znak} - jeho hodnoty se liší velikostí, např.: výška v cm, nebo měsíční plat zaměstnance \dots 
+ \item \emph{Kvantitativní znak} - jeho hodnoty se liší velikostí, např.: výška v cm, nebo měsíční plat zaměstnance \dots
  \item \emph{Kvalitativní znak} - jeho hodnoty se liší kvalitou, např.: pohlaví, barva vlasů \dots
  \item \emph{Četnost hodnoty znaku $\overset{*}{x}_j$} - počet statistických jednotek pro, které znak $x$ nabývá hodnoty $\overset{*}{x}_j$ se značí $n_j$. Specifikuje se také jako absolutní. Platí:
  \begin{equation}
@@ -1566,7 +1575,7 @@ Nazýván také \emph{polygon četností}. Je to lomená čára spojující body
     xmin=0, xmax=8,
     ymin=0, ymax=5,
     xtick={1,2,3,4,5,6,7,8},
-    ytick={1,2,3,4,5},    
+    ytick={1,2,3,4,5},
     legend pos=north west,
     ymajorgrids=true,
     grid style=dashed,
@@ -1598,10 +1607,10 @@ Nazývaný také \emph{histogram}. Základny sloupků znázorňují jednotlivé 
 	anchor=north},
 	ybar interval=0.5,
 ]
-\addplot 
+\addplot
 	coordinates {(1,4) (2,3)
 		 (3,2) (4,2) (5,3)(6,0)};
-\addplot 
+\addplot
 	coordinates {(1,1) (2,7)(3,3) (4,2) (5,0)};
 
 \legend{Chlapci,Dívky}
@@ -1666,9 +1675,9 @@ s_x^2 &= \frac{1}{n} \sum^n_{i=1}\left(x_i - \overline{x} \right)^2 &=& \frac{1}
 \begin{equation}
 s_x = \sqrt{s_x^2}
 \end{equation}
-\item \emph{Variační koeficient} - má smysl jen tehdy jsou li všechny hodnoty znaku nezáporné.	
+\item \emph{Variační koeficient} - má smysl jen tehdy jsou li všechny hodnoty znaku nezáporné.
 \begin{equation}
-v_x = \frac{s_x}{\overline{x}} \cdot 100\% 
+v_x = \frac{s_x}{\overline{x}} \cdot 100\%
 \end{equation}
 \item \emph{Mezikvartilová odchylka}
 \begin{equation}
@@ -1681,7 +1690,7 @@ Ve statistickém souboru vyšetřujeme uspořádanou dvojici kvantitativních zn
 \text{Výsledek šetření: 	} (x_1,y_1),(x_2,y_2) \dotsc, (x_n, y_n)\\
 r_{xy} = \frac{\frac{1}{n} \sum\limits^n_{i=1}\left(x_i - \overline{x}\right) \left(y_i - \overline{y}\right)}{s_x \cdot s_y} = \frac{\left( \frac{1}{n} \sum\limits^n_{i=1}x_i y_i \right)-\overline{x}\cdot\overline{y}}{s_x \cdot s_y}
 \end{align}
-Koeficient korelace je vždy číslo z intervalu $\langle -1, 1 \rangle$. Mezní hodnoty $r_{xy} = 1$ (respektive $r_{xy} = -1$) nabývá tehdy, když s rostoucí hodnotou znaku $x$ roste (respektive klesá) hodnota znaku $y$. A to podle vzorce $y_i = a + b x_i$, kde $a,b \in \mathbb{R}$ a $b >0$ (respektive $b<0$). 
+Koeficient korelace je vždy číslo z intervalu $\langle -1, 1 \rangle$. Mezní hodnoty $r_{xy} = 1$ (respektive $r_{xy} = -1$) nabývá tehdy, když s rostoucí hodnotou znaku $x$ roste (respektive klesá) hodnota znaku $y$. A to podle vzorce $y_i = a + b x_i$, kde $a,b \in \mathbb{R}$ a $b >0$ (respektive $b<0$).
 \subsection{Meta}
 \subsubsection{Zdroje}
 \begin{itemize}
@@ -1840,7 +1849,7 @@ Příklady limit:
 \item Každá omezená monotónní posloupnost je konvergentní.\\
 Každá shora omezená neklesající posloupnost je konvergentní.\\
 Každá zdola omezená nerostoucí posloupnost je konvergentní.
-\item 
+\item
 \begin{align}
 \lim_{n \to \infty} \frac{1}{n} = 0\\
 \left( \forall \, r>0 \right) \left( \lim_{n \to \infty} \frac{1}{n^r} = 0 \right)
@@ -1897,7 +1906,7 @@ s =  \frac{a_1}{1-q} = \frac{ \frac{175}{1000~000}}{\frac{999}{1000}} =  \frac{ 
 \end{align*}
 \paragraph{Ambryho kompletní systém součtu nekonečné geometrické řady}
 \begin{align}
-\left(\forall a_1,q \in \mathbb{R} \right) 
+\left(\forall a_1,q \in \mathbb{R} \right)
 \begin{cases}
    (\forall a_1 = 0)(s =0)\\
    (\forall a_1 \neq 0) \begin{cases}
@@ -2018,7 +2027,7 @@ dutý                                                                          &
 konvexní                                                                      & $\alpha\leq180°$   \\
 přímý                                                                         & $\alpha=180°$      \\
 \begin{tabular}[c]{@{}l@{}}konkávní\\ (=vypuklý,\\  =nekonvexní)\end{tabular} & $180°<\alpha<360°$ \\
-plný                                                                          & $\alpha=360°$     
+plný                                                                          & $\alpha=360°$
 \end{tabular}
 \end{table}
 \subsubsection{Pravidla pro dvojice úhlů}
@@ -2040,7 +2049,7 @@ Mnohoúhelník (nebo také \emph{polygon}) je část roviny vymezená úsečkami
 Zapisuje se pomocí velkých písmen označujících body za sebou bez mezer, před něj se vloží symbol pro tento útvar. Vlastnosti
 \begin{itemize}
 \item \emph{Obvod} je součet délek všech stran.
-\item součet vnitřních úhlů je roven $\pi \left(n-2\right) rad$ 
+\item součet vnitřních úhlů je roven $\pi \left(n-2\right) rad$
 \item počet úhlopříček je roven $\frac{1}{2}n(n-3)$
 \item Jestliže existuje kružnice na které leží všechny vrcholy, říkáme, že je \emph{opsaná} mnohoúhelníku. Mnohoúhelník, kterému jde kružnice opsat je \emph{tětivový} (jeho strany jsou tětivami opsané kružnice)
 \item $n$-úhelník jde vždy rozdělit na $n-2$ trojúhelníků
@@ -2060,7 +2069,7 @@ Velikost středového úhlu (popřípadě  vnějšího) je podle \ref{eq:nuhelni
 \emph{Eukleidovská konstrukce} je možná jsou-li liché dělitele $n$ různá Fermatova čísla. Lol tak to je info jak brno.\\
 \end{scriptsize}
 Obsah se počítá rozdělením na vhodné nepřekrývající se trojúhelníky a obdélníky a sečtením jednotlivých obsahů.\\
-Pravidelné mnohoúhelníky jsou symetrické. Počet os souměrnosti je roven počtu vrcholů. Je-li počet vrcholů sudý má i střed souměrnosti.\\ 
+Pravidelné mnohoúhelníky jsou symetrické. Počet os souměrnosti je roven počtu vrcholů. Je-li počet vrcholů sudý má i střed souměrnosti.\\
 Má kružnici opsanou (o polměru $r$) i kružnici vepsanou (o polměru $\rho$).  Jejich středy jsou ve stejném bodě. Vzorce pro jejich výpočet $n$-úhelníku s délkou strany $s$:
 \begin{align}
 r = \frac{s}{2\sin\left(\frac{180}{n} \right)} &&r = \frac{s}{2\tan \left(\frac{180}{n} \right)}
@@ -2094,7 +2103,7 @@ Podle stran:
 \begin{itemize}
 \item \emph{obecný} - žádné 2 strany nejsou shodné
 \item \emph{Rovnoramenný} - 2 strany jsou shodné, ale ne s třetí stranou
-\item \emph{Rovnostranný} - všechny strany jsou shodné (->  všechny úhly shodné -> 60°) 
+\item \emph{Rovnostranný} - všechny strany jsou shodné (->  všechny úhly shodné -> 60°)
 \end{itemize}
 \begin{scriptsize}
 Tak to je divná definice z wiki, já bych to dělal tak, že obecné $\ni$ rovnoramenné $\ni$ rovnostranné.\\
@@ -2164,7 +2173,7 @@ v_c^2 = c_a \cdot c_b
 \end{equation}
 \paragraph{Euklidova věta o odvěsně} - Obsah čtverce sestrojeného nad odvěsnou pravoúhlého trojúhelníku je roven obsahu obdélníku sestrojeného z přepony a úseku přepony k této odvěsně přilehlé.
 \begin{align}
-a^2 = c \cdot c_a && b^2 = c \cdot c_b 
+a^2 = c \cdot c_a && b^2 = c \cdot c_b
 \end{align}
 \paragraph{Podobnost trojúhelníků} - když mají 2 úhly shodně jsou trojúhelníky podobné (věta uu). Zapisujeme $\bigtriangleup ABC \sim \bigtriangleup DEF$. Nebo když jsou poměry délek všech odpovídajících si stran stejné (věta sss), nebo když poměry dvou odpovídajících si stran jsou stejné a shodují se v úhlu jimi sevřeném (věta sus). Nebo poměr 2 stran a shodný úhel, proti větší z nich (věta Ssu).
 \subsubsection{Rovnoramenný}
@@ -2321,7 +2330,7 @@ Asi mimo SŠ(, ikdyž v tabulkách je pravoúhlá afinita *emotikona-pokrceni-ra
 \paragraph{Stejnolehlost (homotetie)} - má jediný samodružný bod (\emph{střed stejnolehlosti}). Všechny přímky spojující vzorový bod a jeho obraz procházejí středem souměrnosti $S$. Koeficient $\kappa$. Všechna podobná zobrazení se dají složit ze stejnolehlosti a shodnosti.
 \begin{align}
 \frac{|SX'|}{|SX|} = |\kappa| && |X'Y'| = |\kappa|\cdot|XZ|
-\end{align} 
+\end{align}
 \subsection{Shodné zobrazení}
 Speciálním případem podobnosti. Zachovává velikost i tvar. Patří sem \emph{posunutí} (\emph{translace}),  \emph{otočení} (\emph{rotace}) a \emph{zrcadlení}. Patří sem taktéž osová (tj. zrcadlení) a středová (tj. rotace o 180°) souměrnost.
 \paragraph{Nepřímá shodnost} - obraz lze získat posunutím, rotací a zrcadlením vzoru.
@@ -2375,7 +2384,7 @@ Když se podíváme na tabulku, všimneme si, že barevně vyznačené mají ste
 \begin{align}
 S = 2S_p + S_{pl} &&V = S_p v
 \end{align}
-Je to typ mnohostěnů, který má 2 podstavy tvaru stejných mnohoúhelníků (jejichž strany jsou rovnoběžné) o obsahu $S_p$ leží v rovnoběžných rovinách vzdálených $v$. $S_{pl}$ je obsah pláště. Jestli je hranol \emph{kolmý} nebo \emph{kosý}, nemá vliv na objem, pokud je výška stejná. \emph{Pravidelný n-boký} označuje hranol, jehož podstavou jsou pravidelné mnohostěny. 
+Je to typ mnohostěnů, který má 2 podstavy tvaru stejných mnohoúhelníků (jejichž strany jsou rovnoběžné) o obsahu $S_p$ leží v rovnoběžných rovinách vzdálených $v$. $S_{pl}$ je obsah pláště. Jestli je hranol \emph{kolmý} nebo \emph{kosý}, nemá vliv na objem, pokud je výška stejná. \emph{Pravidelný n-boký} označuje hranol, jehož podstavou jsou pravidelné mnohostěny.
 \subsubsection{Kvádr}
 Kolmý hranol, jehož podstavami jsou pravoúhelníky.
 \begin{align}
@@ -2440,7 +2449,7 @@ S = 2 \pi rv
 \st{dualita je jen v ANJ, tak nevím terminologii.}\\
 \st{Konvexnost nemá nikde dobrou definici}\\
 \subsubsection{Zdroje}
-Tabulky a wikipedie	
+Tabulky a wikipedie
 \subsubsection{Zadání/pojmy}
 Pojem tělesa, konvexní a nekonvexní tělesa, mnohostěny, hranol, kvádr, krychle, vrcholy, hrany, stěny, stěnové úhlopříčky, tělesové úhlopříčky. Jehlan, komolý jehlan. Pravidelné mnohostěny ( tzv. platónská tělesa ) princip duality, Eulerova věta o mnohostěnech. Rotační tělesa, válec, kužel, komolý kužel, koule, kulová plocha. Polokoule, kulová úseč, kulový vrchlík ( plášť kulové úseče ), kulová výseč. Povrchy a objemy těles. Cavalieriho princip.
 
@@ -2542,7 +2551,7 @@ Strategie prodlužování přímek, o kterých víme, že jsou součástí rovin
 \subsection{Meta}
 \subsubsection{Zdroje}
 \begin{itemize}
-\item moje hlava, tabulky, wiki...	
+\item moje hlava, tabulky, wiki...
 \item \url{http://kdm.karlin.mff.cuni.cz/diplomky/ludmila_kadlecova/bezcabri/dveprimky.php}
 \item \url{https://www.karlin.mff.cuni.cz/~portal/analyticka_geometrie/prostor.php?kapitola=parametrickeVyjadreniPrimky}
 \item \url{http://ucebnice.krynicky.cz/Matematika/05_Stereometrie/2_Metricke_vlastnosti/5201_Odchylka_primek_I.pdf}
@@ -2557,7 +2566,7 @@ Vzájemná poloha bodů, přímek a rovin v prostoru. Kritéria rovnoběžnosti 
 \subsection{Vzdálenost bodů a střed úsečky}
 Vzdálenost bodů je triviální, viz \ref{sec:stereo_polohy-bod} Střed úsečky je aritmetickým průměrem souřadnic bodů v jednotlivých osách zvlášť viz \ref{sec:stred-usecky}.
 \subsection{Soustavy souřadnic}
-Osy souřadnic jsou na sebe navzájem kolmé, jednotky délky na osách jsou stejné. Body se značí často stylem $A[a_1, a_2, a_3]$, kde hodnoty odpovídají vzdálenosti v dané souřadnicové ose. 
+Osy souřadnic jsou na sebe navzájem kolmé, jednotky délky na osách jsou stejné. Body se značí často stylem $A[a_1, a_2, a_3]$, kde hodnoty odpovídají vzdálenosti v dané souřadnicové ose.
 
 \subsection{Orientované úsečky}
 \emph{Orientovaná úsečka} je $\overrightarrow{AB}$ uspořádaná dvojice bodů, kde $A$ je počáteční bod a $B$ je bod koncový. její velikost značíme $|AB|$. \emph{Souhlasně rovnoběžné nenulové orientované úsečky} $AB \uparrow \uparrow CD$. Jsou rovnoběžné a souhlasně orientované - tj. posunutím jsme schopni je dát na polopřímku se stejným počátkem a směrem.\\
@@ -2611,7 +2620,7 @@ Velikost se značí $|\vec{u}|$ a její hodnoty se získají následovně:
 \end{align}
 \subsubsection{Jednotkový vektor}
 \emph{Jednotkový vektor} je takový vektor, jehož norma (tj. délka) je rovna jedné.
-\paragraph{Norma} je funkce, která přiřazuje každému vektoru kladné reálné číslo (tzv. délka nebo velikost). Nulový vektor má jako jediný délku 0. 
+\paragraph{Norma} je funkce, která přiřazuje každému vektoru kladné reálné číslo (tzv. délka nebo velikost). Nulový vektor má jako jediný délku 0.
 \subsection{Skalární součin}
 Za podmínek $\vec{u} \neq \vec{o} \land \vec{v} \neq \vec{o}$ (v jiných případech platí $ \vec{u} \cdot \vec{v} = 0$) platí následující rovnice:
 \begin{equation}
@@ -2689,7 +2698,7 @@ Soustava souřadnic na přímce, v rovině, v prostoru. Střed dvojice bodů, vz
 \section{Analytická geometrie lineárních útvarů}
 viz \ref{sec:18} a \ref{sec:22}
 \subsection{Meta}
-wtf to už mám všechno v jiné otázce. 
+wtf to už mám všechno v jiné otázce.
 \subsubsection{Zdroje}
 \subsubsection{Zadání/ pojmy}
 Parametrické vyjádření přímky, polopřímky, úsečky, obecná rovnice přímky, směrové a normálové vektory, směrnicový a úsekový tvar rovnice přímky, směrnice přímky. Vzájemná poloha bodů a přímek v rovině, odchylka dvou přímek, vzdálenost bodů, bodu od přímky, vzdálenost dvou rovnoběžných přímek. Parametrické vyjádření přímky v prostoru, parametrické vyjádření roviny, obecná rovnice roviny, normálový vektor roviny.
@@ -2748,7 +2757,7 @@ Přímka může být buď mimoběžná, nebo může být tečnou (tj. 1 společn
 
 \subsection{Parabola}
 \begin{align}
-(x-x_0)^2 = 2p(y-y_0) && (x-m)^2 = 2p(y-n) 
+(x-x_0)^2 = 2p(y-y_0) && (x-m)^2 = 2p(y-n)
 \end{align}
 Rovnice pro paraboly s osou rovnoběžnou s osou $y$. Pro $p>0$ je parabola otevřená doprava, pro $p<0$ je otevřená doleva. Rovnice pro paraboly s osou rovnoběžnou s osou $x$ je v podstatě stejná jen se prohodí $x$ a $y$ (a taktéž $m$/$x_0$ a $n$/$y_0$). Je-li osa paraboly rovnoběžná s osou $x$ nebo osou $y$, tak je v tzv. \emph{normální poloze}. Parabola je také grafem kvadratické funkce.\\
 Parabola je množina bodů stejně vzdálených od \emph{ohniska} (neboli \emph{fokus}), značeno $F$, a od \emph{řídící přímky} (?taktéž nazývané \emph{direktix}?) označované $d$. Parabola je osově souměrná. Osa, označovaná $o$, prochází ohniskem a je kolmá na řídící přímku. Parametr $p$ je roven nejkratší vzdálenosti ohniska a řídící přímky. Z toho vyplývá:
@@ -2942,7 +2951,7 @@ Vlastnosti:
 \end{itemize}
 Směrnice tečny:
 \begin{itemize}
-\item Tečna má s křivkou společný právě jeden bod. 
+\item Tečna má s křivkou společný právě jeden bod.
 \item Směrnice přímky je tangens úhlu, který svírá daná přímka s osou x.
 \end{itemize}
 Platí to, protože poměr změny funkční hodnoty a změny argumentu odpovídá odvěsnám pravoúhlého trojúhelníku.
@@ -2994,7 +3003,7 @@ f^{\prime}(a) = \lim_{h \to 0} \frac{f(a+h)-f(a)}{h} = \lim_{x \to a} \frac{f(x)
 \label{sec:der_soucin}
 \begin{align}
 (a \cdot f(x))^\prime &= a \cdot f^{\prime}(x) && \text{, kde $a$ je nějaká konstanta}\\
-(f(x) \cdot g(x))^\prime &= f^{\prime}(x) \cdot g(x) + f(x) \cdot g^{\prime}(x) 
+(f(x) \cdot g(x))^\prime &= f^{\prime}(x) \cdot g(x) + f(x) \cdot g^{\prime}(x)
 \end{align}
 \subsubsection{Derivace podílu}
 \begin{equation}
@@ -3033,7 +3042,7 @@ Viz tabulky... nebo \url{https://cs.wikipedia.org/wiki/Derivace_element\%C3\%A1r
 Při hledání limit podílů výrazů s jednou proměnou může ušetřit namáhavé výpočty.
 \subsection{Využití derivací}
 \label{sec:vyuziti_derivaci}
-Určení chování funkce a extrémů - viz tabulka \ref{table:vlastnosti} 
+Určení chování funkce a extrémů - viz tabulka \ref{table:vlastnosti}
 \begin{table}[h!]
 \centering
 \begin{tabular}{|l|l|l|}
@@ -3155,5 +3164,64 @@ Vyšetřování průběhu analyticky zadané funkce, monotónnost a derivace, lo
 \item jak udělat jednostrannou složenou závorku \url{https://tex.stackexchange.com/questions/47170/how-to-write-conditional-equations-with-one-sided-curly-brackets}
 \item Lepší způsob, jak psát \href{https://www.latex-tutorial.com/tutorials/hyperlinks/}{linky}
 \item Jak dělat \href{https://tex.stackexchange.com/questions/498/mid-vertical-bar-vert-lvert-rvert-divides}{vertikální čáru}
+\end{itemize}
+\subsubsection{Moje poznámky}
+\begin{itemize}
+\item Jak psát fí $\phi$ vs $\varphi$ ?
+\item  $\overset{*}{x}$ \st{ akorát jsem nepřišel na to, jak tu hvězdičku vycentrovat, jako to mají v tabulkách.} aha $\overset{*}{x_r}$ vs $\overset{*}{x}_r$ pořád ale  nechápu, co tam má za $ \overset{hvezdicka}{vyznam}$ \\
+\item a co třeba $\accentset{*}{x}^2$ vs $\accentset{*}{x^2}$ vs $\overset{*}{x^2}$ vs $\overset{*}{x}^2$ . To první teda vypadá dost sexy oproti ostatním ještě musím porovnat, jestli oko rozená rozdíl mezi $\overset{*}{x}$ a $\accentset{*}{x}$ a $\accentset{\scriptstyle *}{x}$ Za mě accentset vyhrál jakožto estetičtější.
+\item $\overset{\underline{tak\, to}\, je}{ \accentset{\overline{x}}{*}_{\bar{lol}}^{dost}}$
+\item To je způsobů, jak udělat 3 tečky \dots vs ... vs $ \dots vs \ldots vs \dotsc vs ...$ vs ($\dotsm vs \dotsb vs \dotso $)
+\item co jsem nezjistil: $\dfrac{-b \pm \sqrt{D}}{2a} = \frac{-b \pm \sqrt{D}}{2a} = \tfrac{-b \pm \sqrt{D}}{2a} $
+\begin{align*}
+\dfrac{-b \pm \sqrt{D}}{2a} = \frac{-b \pm \sqrt{D}}{2a} = \tfrac{-b \pm \sqrt{D}}{2a}
+\end{align*}
+Porovnej velikost písmen ve zlomku. Frac se mění podle toho je-li to v textu nebo v "display" modu. Podle toho zkratky tfrac a dfrac, asi.
+\item align a equation a podobné již defaultně využívají display modu. Ten ve výchozím stavu využívá limits, ale toto chování jde přepsat pomocí nolimits
+\begin{align*}
+\sum^n_{i=1}x_i y_i \\
+\sum\limits^n_{i=1}x_i y_i \\
+\sum\nolimits^n_{i=1}x_i y_i
+\end{align*}
+\item V inline mathmodu je deafaultní limits: $ \sum^n_{i=1}x_i y_i$ vs $ \sum\limits^n_{i=1}x_i y_i$ vs $ \sum\nolimits^n_{i=1}x_i y_i$
+\item  Notace $\mathbb{N}$ vs $N$ má jasného vítěze na krásu. Jinak lepší způsob, jak psát \href{https://www.latex-tutorial.com/tutorials/hyperlinks/}{linky}.
+\item Vypadá to že standardem pro komplexní čísla je $a +ib$ (lepší než $a +bi$), žádné speciální fonty nebo příkazy asi nejsou. Moment co $a +\imath b$ ? \uv{( v \LaTeX existuje speciální symbol $\imath$ , ale ?asi není moc konsensus, jak to psát?)} Jonáš potvrdil neexistenci konsensu
+\item \dots Vytvořil jsem si spešl command pro $\iu$, viz eulerovo číslo
+\item Jak na Eulerovo číslo? $e$ vs $\mathrm{e}$ vs $\mathsf{e}$ vs ?  ->vytvořil jsem si command aby to bylo konzistentní $\euler$ až se rozhodnu \dots (zatím jsem se u obojího rozhodl pro mathrm)
+\item  To je způsobů, jak udělat 3 tečky \dots vs ... vs $ \dots vs \ldots vs \dotsc vs ...$ vs ($\dotsm vs \dotsb vs \dotso $)
+\item Prázdná množina $\emptyset$ vs $\varnothing$ vs $\O$ vs $\not 0$ (to poslední jsem si vymyslel, předposlední nefunguje a to druhý vypadá divně, takže naštěstí jasná volba)
+\item Jonáš schválil $\exists \, d \in \mathbb{R}; \; \left( \forall \, n \in \mathbb{N}; \; a_n \geq d \right)$ jako matematicko-logický zápis věcí\\
+ Dále:  $\exists \, c \in \mathbb{R} | \left( \forall \, n \in \mathbb{N} | a_n \leq c \right) $ a $\left( \exists \, d \in \mathbb{R} \right) \left( \forall \, n \in \mathbb{N} \right) \left( a_{n+1} = a_n + d \right)$ jsou taky validní způsoby zápisu \\
+ Dál jsem řešil s Jonášem ještě jak to správně psát, on mi něco poradil a pak prozradil, že není žádná pořádná konvence \dots To je dost na nic.
+\item Řešení vertikálních čar: $| vs \mid$: $| a |b|$ vs $\mid a\mid b\mid$ -> Hmm mezera. $\mid | \mid \mid \mid |||$ asi začínám mít halucinace, mám pocit, že se mění, která z těch čar je šedivější \dots \\
+Nový command $\abs{a}$ vs $\absb{a}$. Funguje mělo by být ekvivalentní $\lvert a \rvert$ . Další možnosti: $ \vert a \vert$ nebo $|a|$, ale rozdílné $ \mid a \mid$
+\item hmmm... $ \mathcal {H}_{f}$ (jsem našel na wiki) vs $H_f$, co u definičního oboru $\mathcal{D}_f$ vs $D_f$ ? \dots to vypadá relativně stylově, ale asi to měnit nebudu
+\item Zjistil jsem, jak si pomocí package \emph{amsmath} vytvořit vlastní "operátory", protože v češtině se píše krom $\tan$ taky $\tg$ nemluvě o kotangensu či arkus funkcích. %Viz začátek dokumentu
+\item Jak zobrazit zobrazení (a pěkné šipky):  $y = f(x) $ nebo $ y = F(x) $ nebo $ f: x \mapsto y $ nebo $ f: x \to y $ nebo $ f: x \rightarrow y$ \
+\item Jak udělat kolečko $ (h ∘ g)$ vs $ (h \circ g)$
+\item Pokusy s doplňky: $A'$ vs  jiný způsob:  $\complement$ vs $\mathsf{c}$ v praxi $A^\mathsf{c}$ vs $A^\complement$. A co velká písmena %$\Complement$ %neexisutje
+neexistuje vs $\mathsf{C}$\\
+Finální porovnání možností: $A^c$ nebo $A^C$ nebo $A^\mathsf{C}$ nebo $A^\mathsf{c}$ nebo $A^\complement$ nebo $A'$ nebo $\complement_U A$. Příkaz complement jasně vyhrává miss nejlepšího doplňku
+\item Pokud chcete řešit každý pixel, tak porovnejte:
+\begin{align*}
+\log_a (x \cdot y) &= \log_a x + \log_a y\\
+\log_a{(x \cdot y)} &= \log_a{x} + \log_a{y}\\
+\log_a{\left(x \cdot y \right)} &= \log_a{x} + \log_a{y}\\
+\log_a \left(x \cdot y \right) &= \log_a x + \log_a y
+\end{align*}
+\item Tím je toto oficiálně $\pm$ hotovo. Hodně zdaru u maturity
+\item a na závěr moje hrátky s pozicováním textu:
+\begin{align*}
+ \left.
+    \begin{array}{ll}
+       \text{červená} \\
+       \\
+       \text{zelená}
+    \end{array}
+\right\}_{\scaleto{a+b}{9pt}}^{\scaleto{a+d?}{9pt}} \mspace{-40mu} \text{chloroplast vznik primární endosymbiózou}\\
+       \text{červená}
+ {^{\scaleto{\text{červená}}{9pt}}_{\scaleto{\text{zelená}}{9pt}}}\scaleto{ \}}{30pt}
+_{\scaleto{a+b}{9pt}}^{\scaleto{a+d?}{9pt}} \mspace{-40mu} \text{chloroplast vznik primární endosymbiózou}
+\end{align*} %well tak druhý pokus nefunguje
 \end{itemize}
 \end{document}

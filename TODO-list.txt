@@ -4,22 +4,29 @@
 KNOWN ISSUES:
 # Pokud naleznete nějaký problém, či máte nějaký dotaz, tak pište a možná opravím (nebo ho alespoň zapíši sem):
 # Nebo využijte možnosti githubu - Issues
- - převést věci na github issues
 
-Starý todo-list (asi nebude doděláno (nebude-li žádáno):
-• nějaký konstrukce ?15-18?
-• 18 vymyslet rychlý postup získání kolmé přímky (to asi vymyslím u vektorů) - na vzdálenosti (vzdálenosti nalezeny v tabulkách a wiki)
-A asi něco s řezy/ průnikem přímky tělesy.
+
+Starý todo-list:
 • 25 Asymptota a monotónnost.
 • oh shit, terminologie směrnice a směrový vektor v 18
-• zápisy posloupností pomocí logicko-matematických zápisů
+• MO-3 pojem uzavřenost, možná přidat další příklady základních operací, ale je to asi jasný a nuda takže radši nic
+
+
+ABORTED (asi nebude doděláno (nebude-li žádáno)) :
 • ”Prakitcké”využití aritmetické a geometrické posloupnosti
 • 2 (Množiny) nakreslit Vennovy diagramy
 • Nakreslit Gaussovu rovinu (obrázek obdobný tomu z tabulek)
-• Sub a subsubsectiony a paragraohy pořešit u komplexních čísel
-• MO-3 pojem uzavřenost , možná přidat další příklady základních operací, ale je to asi jasný a nuda takže radši nic
 • MO-1 důkazové úlohy o dělitelnosti, nevím jestli něco nepřidat
+• nějaký konstrukce ?15-18?
+• 18 vymyslet rychlý postup získání kolmé přímky (to asi vymyslím u vektorů) - na vzdálenosti (vzdálenosti nalezeny v tabulkách a wiki)
+  A asi něco s řezy/ průnikem přímky tělesy.
 
 DONE:
 • Finanční matematika (spadá pod 14 -posloupnost a řady)  - done, podle tabulek
 • 21 Obecná rovnice u kuželoseček, dodělat - done (podle tabulek)
+- přepsat ze staré verze věci do latex-tipů
+• Sub a subsubsectiony a paragraohy pořešit u komplexních čísel
+	- nic jsme nezměnil, ale vypadá to v poho
+• zápisy posloupností pomocí logicko-matematických zápisů
+	- nic jsem neměnil, ale vypadá to, že je to uděláno velmi dobře
+- převést věci na github issues
