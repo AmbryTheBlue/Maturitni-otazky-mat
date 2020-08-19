@@ -1,4 +1,4 @@
-# Zpracované otázky ke školní maturitě z~matematiky na Gymnáziu Jírovcova 8 pro rok 2020
+# Zpracované otázky ke školní maturitě z matematiky na Gymnáziu Jírovcova 8 pro rok 2020
 ###### Nějako jsem to zpracoval, nějako odmaturoval (za 1) a teď jsem to nějako upravil, abych to mohl nějako nasdílet dalším generacím
 ## Jakub Ambroz 8.E
 Užívejte s rozumem, čtětě licenci a hodně zdaru při maturitě!

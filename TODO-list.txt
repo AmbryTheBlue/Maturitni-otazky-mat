@@ -8,8 +8,6 @@ KNOWN ISSUES:
 
 Starý todo-list:
 • 25 Asymptota a monotónnost.
-• oh shit, terminologie směrnice a směrový vektor v 18
-• MO-3 pojem uzavřenost, možná přidat další příklady základních operací, ale je to asi jasný a nuda takže radši nic
 
 
 ABORTED (asi nebude doděláno (nebude-li žádáno)) :
@@ -20,6 +18,7 @@ ABORTED (asi nebude doděláno (nebude-li žádáno)) :
 • nějaký konstrukce ?15-18?
 • 18 vymyslet rychlý postup získání kolmé přímky (to asi vymyslím u vektorů) - na vzdálenosti (vzdálenosti nalezeny v tabulkách a wiki)
   A asi něco s řezy/ průnikem přímky tělesy.
+• MO-3 pojem uzavřenost, možná přidat další příklady základních operací, ale je to asi jasný a nuda takže radši nic
 
 DONE:
 • Finanční matematika (spadá pod 14 -posloupnost a řady)  - done, podle tabulek
@@ -30,3 +29,4 @@ DONE:
 • zápisy posloupností pomocí logicko-matematických zápisů
 	- nic jsem neměnil, ale vypadá to, že je to uděláno velmi dobře
 - převést věci na github issues
+• oh shit, terminologie směrnice a směrový vektor v 18
